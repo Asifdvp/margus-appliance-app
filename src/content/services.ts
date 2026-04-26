@@ -1,32 +1,62 @@
 import type { Service } from "@/types";
 
-export const services: Service[] = [
+export const SERVICES: Service[] = [
   {
-    id: "appliance-repair",
-    title: "Appliance Repair",
-    description: "Fast and reliable repair for all major household appliances.",
-    details:
-      "Our certified technicians service washing machines, dryers, refrigerators, ovens, and more. We use genuine parts and offer warranty on all repairs.",
+    id: "kitchen",
+    title: "Kitchen Appliance Repair",
+    description:
+      "Microwave, range hood, blender & more — same-day repair in Cleveland & Parma.",
+    href: "/services/kitchen-appliance-repair",
   },
   {
-    id: "installation",
-    title: "Installation",
-    description: "Professional installation of new appliances in your home.",
-    details:
-      "From dishwashers to built-in ovens, our team ensures safe and correct installation following manufacturer guidelines.",
+    id: "washer",
+    title: "Washer Repair",
+    description:
+      "Washer not spinning or draining? Fast, same-day repair for all major brands.",
+    href: "/services/washer-repair",
   },
   {
-    id: "maintenance",
-    title: "Maintenance",
-    description: "Regular maintenance to extend the life of your appliances.",
-    details:
-      "Preventive maintenance checks that keep your appliances running efficiently and help avoid costly breakdowns.",
+    id: "dryer",
+    title: "Dryer Repair",
+    description:
+      "No heat or long drying times? We fix all dryer issues fast with quality parts.",
+    href: "/services/dryer-repair",
   },
   {
-    id: "consultation",
-    title: "Consultation",
-    description: "Expert advice on appliance selection and energy efficiency.",
-    details:
-      "Not sure which appliance to buy? Our experts help you choose the best option for your needs and budget.",
+    id: "refrigerator",
+    title: "Refrigerator Repair",
+    description:
+      "Fast fridge repair in Cleveland — cooling, ice maker & temperature issues fixed.",
+    href: "/services/refrigerator-repair",
+  },
+  {
+    id: "dishwasher",
+    title: "Dishwasher Repair",
+    description:
+      "Not cleaning or draining? Reliable dishwasher repair with upfront pricing.",
+    href: "/services/dishwasher-repair",
+  },
+  {
+    id: "freezer",
+    title: "Freezer Repair",
+    description:
+      "Freezer not freezing? Quick, affordable repair across Cleveland.",
+    href: "/services/freezer-repair",
+  },
+  {
+    id: "ice-maker",
+    title: "Ice Maker Repair",
+    description:
+      "Not working or leaking? Same-day ice maker repair in Cleveland.",
+    href: "/services/ice-maker-repair",
+  },
+  {
+    id: "oven-stove",
+    title: "Oven & Stove Repair",
+    description:
+      "Oven not heating or burner not working? We fix all major brands.",
+    href: "/services/oven-stove-repair",
   },
 ];
+
+export const services = SERVICES;

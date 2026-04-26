@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Work_Sans } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/shared/components/Navbar";
+import { Footer } from "@/shared/components/Footer";
+import { Emergency } from "@/shared/components/Emergency";
 
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
+});
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
 });
 
 export const metadata: Metadata = {
@@ -18,8 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`h-full antialiased ${manrope.variable}`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`h-full antialiased ${manrope.variable} ${workSans.variable}`}>
+      <body className="min-h-full flex flex-col">
+        <Emergency/>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
     </html>
   );
 }
