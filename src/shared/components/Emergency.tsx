@@ -1,7 +1,7 @@
 import { Container } from "@/shared/layout/Container";
 
 const textClass =
-  "font-manrope font-semibold text-[18px] leading-[28px] uppercase text-white whitespace-nowrap";
+  "font-manrope font-semibold text-[18px] leading-[28px] uppercase text-white whitespace-nowrap overflow-hidden";
 
 function MarqueeItem() {
   return (

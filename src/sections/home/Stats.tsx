@@ -31,7 +31,7 @@ export function Stats() {
   return (
     <section
       aria-label="Company statistics"
-      className="bg-brand mb-50 py-6  md:py-4"
+      className="bg-brand mb-8  py-4 lg:mb-6  lg:py-6 "
     >
       <Container>
         <ul className="flex flex-col lg:flex-row gap-12">
@@ -41,8 +41,8 @@ export function Stats() {
               className="flex flex-col items-center gap-0.5  text-white lg:flex-1 "
             >
               <div className="flex items-center gap-2 ">
-                <span>{icon}</span>
-                <span className="text-[2rem] lg:text-[42px] lg:leading-16.5   font-bold text-white leading-10 font-work-sans">
+                <span className="h-6 w-6 lg:h-9 lg:w-9 [&>svg]:w-full [&>svg]:h-full">{icon}</span>
+                <span className="text-[2rem]  leading-10  lg:text-[42px] lg:leading-16.5   font-bold text-white font-work-sans">
                   {value}
                 </span>
               </div>

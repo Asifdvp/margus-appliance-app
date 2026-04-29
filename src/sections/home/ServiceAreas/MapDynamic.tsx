@@ -7,7 +7,7 @@ export const DynamicServiceAreaMap = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="w-full h-full rounded-2xl bg-gray-100 animate-pulse" />
+      <div className="w-full h-full rounded-[24px] bg-[#32313B] animate-pulse" />
     ),
   }
 );

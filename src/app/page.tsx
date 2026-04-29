@@ -4,6 +4,13 @@ import { Stats } from "@/sections/home/Stats";
 import { Services } from "@/sections/home/Services";
 import { ServiceAreas } from "@/sections/home/ServiceAreas";
 import { Brands } from "@/sections/home/Brands";
+import { RecentJobs } from "@/sections/home/RecentJobs";
+import { Testimonials } from "@/sections/home/Testimonials";
+import { FAQ } from "@/sections/home/FAQ";
+import { CTA } from "@/sections/home/CTA";
+import { faqs } from "@/content/faq";
+import { Steps } from "@/sections/home/Steps";
+import { Blogs } from "@/sections/home/Blogs";
 
 export const metadata: Metadata = {
   title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
@@ -35,15 +42,34 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
+};
+
 export default function HomePage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       <Stats />
       <Brands />
-
       <Services />
       <ServiceAreas />
+      <Steps />
+      <RecentJobs />
+      <Testimonials />
+      <Blogs />
+      <FAQ />
+      <CTA />
     </main>
   );
 }

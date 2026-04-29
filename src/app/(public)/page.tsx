@@ -1,14 +1,16 @@
 import { Hero } from "@/sections/home/Hero";
-import { ServicesPreview } from "@/sections/home/ServicesPreview";
+import { Services } from "@/sections/home/Services";
 import { Brands } from "@/sections/home/Brands";
+import { BlogPreview } from "@/sections/home/Blog";
 import { CTA } from "@/sections/home/CTA";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <ServicesPreview />
+      <Services />
       <Brands />
+      <BlogPreview />
       <CTA />
     </>
   );

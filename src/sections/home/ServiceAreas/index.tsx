@@ -2,57 +2,57 @@ import { SERVICE_AREAS } from "@/content/service-areas";
 import { Container } from "@/shared/layout/Container";
 import { Button } from "@/shared/ui/Button";
 import { DynamicServiceAreaMap } from "./MapDynamic";
+import RightArrowIcon from "@/shared/icons/right-arrow.svg";
+import LocationPinIcon from "@/shared/icons/point.svg";
+import Link from "next/link";
 
-function LocationPinIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      <path
-        d="M10 1.667A5.833 5.833 0 0 0 4.167 7.5c0 4.375 5.833 10.833 5.833 10.833S15.833 11.875 15.833 7.5A5.833 5.833 0 0 0 10 1.667zm0 7.916a2.083 2.083 0 1 1 0-4.166 2.083 2.083 0 0 1 0 4.166z"
-        fill="#5500CC"
-      />
-    </svg>
-  );
-}
 
 export function ServiceAreas() {
   return (
-    <section className="py-12 lg:py-20 bg-white" aria-labelledby="service-areas-heading">
+    <section
+      className="pb-14 lg:pb-30 bg-white"
+      aria-labelledby="service-areas-heading"
+    >
       <Container>
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-12 lg:items-start">
-
-          {/* Left — content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mb-4 lg:mb-12">
+          <h2
+            id="service-areas-heading"
+            className="font-work-sans font-bold text-dark text-[24px] leading-8 lg:text-[48px] lg:leading-14"
+          >
+            Appliance Repair Service Areas Near Cleveland
+          </h2>
           <div>
-            <h2
-              id="service-areas-heading"
-              className="font-work-sans font-bold text-dark text-[26px] leading-8.5 lg:text-[40px] lg:leading-12.5 mb-4 lg:mb-6"
-            >
-              Appliance Repair Service Areas Near Cleveland
-            </h2>
-
-            <p className="font-manrope text-[14px] leading-5.5 text-[#535756] lg:text-[16px] lg:leading-7 mb-6 lg:mb-8">
+            <p className="font-manrope text-[14px] leading-5.5 text-secondary lg:text-[18px] lg:leading-7 mb-4">
               We serve Parma, Cleveland, and surrounding cities, providing fast
               and reliable repair for refrigerators, washers, dryers, and other
               household appliances, helping keep your home running smoothly
               without interruptions.
             </p>
 
-            <Button
+            <Link
               href="/service-areas"
-              variant="primary"
-              className="mb-8 lg:mb-10 rounded-xl bg-brand px-8 py-3 text-[15px] font-semibold text-white hover:bg-brand/90"
+              // variant="primary"
+              className="w-full  rounded-xl bg-brand px-4 py-2.5 text-[15px] lg:text-[18px] lg:leading-7 font-semibold text-white hover:bg-brand/90 hidden lg:flex items-center justify-center gap-1"
             >
-              Learn More ↗
-            </Button>
+              Learn More <RightArrowIcon />
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-12 lg:items-stretch">
+          {/* Left — content */}
+          <div>
+      
 
             {/* City grid */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-wrap gap-2 md:grid md:grid-cols-3 lg:grid-cols-2 md:gap-6">
               {SERVICE_AREAS.map((area) => (
                 <div
                   key={area.name}
-                  className="flex items-center gap-2.5 rounded-xl border border-black/6 bg-[#F8F8F8] px-4 py-3"
+                  className="flex items-center gap-2 rounded-xl  bg-[#F6F6F6] p-3 lg:px-6 lg:py-5 lg:gap-1.5"
                 >
-                  <LocationPinIcon />
-                  <span className="font-manrope text-[14px] font-medium text-dark lg:text-[15px]">
+                  <LocationPinIcon className="shrink-0 w-4 h-4 lg:w-6 lg:h-6" />
+                  <span className="font-manrope text-[14px] font-semibold leading-5.5 lg:text-[18px] lg:leading-7 text-dark">
                     {area.name}
                   </span>
                 </div>
@@ -61,10 +61,9 @@ export function ServiceAreas() {
           </div>
 
           {/* Right — map */}
-          <div className="h-85 lg:h-140 rounded-2xl overflow-hidden shadow-sm">
+          <div className="isolate h-97.5 lg:h-full rounded-3xl overflow-hidden shadow-sm">
             <DynamicServiceAreaMap />
           </div>
-
         </div>
       </Container>
     </section>

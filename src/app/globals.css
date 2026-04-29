@@ -6,29 +6,62 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --color-dark: #141414;
   --color-brand: #5500CC;
+  --color-secondary:#535756;
+  --color-grey:#757B7A;
   --font-manrope: var(--font-manrope);
   --font-work-sans: var(--font-work-sans);
   --animate-marquee: marquee 22s linear infinite;
+  --animate-marquee-y: marquee-y 22s linear infinite;
+  --main-gradient: linear-gradient(99.72deg, #F8F7FF 0%, #E2F4FB 100%);
+
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
+  from {
+    transform: translateX(0);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  to {
+    transform: translateX(-50%);
   }
 }
 
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility bg-main-gradient {
+  background: var(--main-gradient);
+}
+
+
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: var(--font-manrope), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Leaflet controls sit below the sticky navbar */
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 40;
+}
+
+.leaflet-pane {
+  z-index: 30;
 }
