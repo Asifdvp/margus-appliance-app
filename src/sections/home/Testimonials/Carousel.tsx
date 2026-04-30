@@ -4,7 +4,7 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { cn } from "@/shared/lib/utils";
 import type { Testimonial } from "@/types";
 
-function Avatar({ name }: { name: string }) {
+function Avatar({ name, image }: { name: string, image?: string }) {
   const initials = name
     .split(" ")
     .map((w) => w[0])
