@@ -2,7 +2,6 @@ import { Hero } from "@/sections/home/Hero";
 import { Services } from "@/sections/home/Services";
 import { Brands } from "@/sections/home/Brands";
 import { BlogPreview } from "@/sections/home/Blog";
-import { CTA } from "@/sections/home/CTA";
 
 export default function HomePage() {
   return (
@@ -11,7 +10,6 @@ export default function HomePage() {
       <Services />
       <Brands />
       <BlogPreview />
-      <CTA />
     </>
   );
 }
