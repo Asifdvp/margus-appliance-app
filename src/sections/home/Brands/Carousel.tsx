@@ -14,7 +14,7 @@ interface RowProps {
 function BrandRow({ brands, direction = "forward", priority = false }: RowProps) {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, align: "start", },
-    [AutoScroll({ startDelay: 0, speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: true, direction })]
+    [AutoScroll({ startDelay: 0, speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: false, direction })]
   );
 
   const items = [...brands, ...brands, ...brands];

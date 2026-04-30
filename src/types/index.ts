@@ -49,5 +49,5 @@ export type Testimonial = {
   text: string;
   name: string;
   location: string;
-  avatar?: string;
+  image?:string
 };

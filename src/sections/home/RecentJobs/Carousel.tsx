@@ -3,7 +3,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Image from "next/image";
-import type { Brand, RecentJob } from "@/types";
+import type { RecentJob } from "@/types";
 
 interface RowProps {
   brands: RecentJob[];
@@ -14,7 +14,7 @@ interface RowProps {
 function BrandRow({ brands, direction = "forward", priority = false }: RowProps) {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, align: "start" },
-    [AutoScroll({ startDelay: 0, speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: true, direction })]
+    [AutoScroll({ startDelay: 0, speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: false, direction })]
   );
 
   const items = [...brands, ...brands, ...brands];
