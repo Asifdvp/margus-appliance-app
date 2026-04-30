@@ -5,6 +5,8 @@ import { faqs } from "@/content/faq";
 import { Container } from "@/shared/layout/Container";
 import { cn } from "@/shared/lib/utils";
 import type { FaqItem } from "@/types";
+import FaqPlusIcon from "@/shared/icons/faq-plus.svg";
+import FaqMinusIcon from "@/shared/icons/faq-minus.svg";
 
 function FaqRow({ faq, isOpen, onToggle }: {
   faq: FaqItem;
@@ -12,28 +14,22 @@ function FaqRow({ faq, isOpen, onToggle }: {
   onToggle: () => void;
 }) {
   return (
-    <div className={cn("border-b border-zinc-200 transition-colors", isOpen && "bg-zinc-50")}>
+    <div className={cn("bg-[#F6F6F6] transition-colors mt-4")}>
       <button
         onClick={onToggle}
         aria-expanded={isOpen}
         aria-controls={`faq-answer-${faq.id}`}
-        className="flex w-full items-center justify-between gap-6 px-4 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+        className="flex w-full items-center justify-between gap-4 p-3 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
       >
         <span className={cn(
-          "text-sm leading-snug text-dark transition-all lg:text-base",
-          isOpen && "font-semibold"
+          "font-bold text-base leading-5.5 font-work-sans transition-all lg:text-[24px] lg:leading-7.5",
+          isOpen ? "text-dark" : "text-grey"
         )}>
           {faq.question}
         </span>
 
-        <span
-          aria-hidden
-          className={cn(
-            "shrink-0 text-xl font-light leading-none text-dark transition-transform duration-200",
-            isOpen && "rotate-45"
-          )}
-        >
-          +
+        <span aria-hidden className="shrink-0">
+          {isOpen ? <FaqMinusIcon /> : <FaqPlusIcon />}
         </span>
       </button>
 
@@ -47,7 +43,7 @@ function FaqRow({ faq, isOpen, onToggle }: {
         )}
       >
         <div className="overflow-hidden">
-          <p className="px-4 pb-5 text-sm leading-relaxed text-zinc-500 lg:text-base">
+          <p className="px-4  text-base leading-6 text-secondary font-manrope">
             {faq.answer}
           </p>
         </div>
@@ -64,16 +60,15 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-12 bg-white lg:py-20" aria-labelledby="faq-heading">
+    <section className="py-14 bg-white lg:py-20" aria-labelledby="faq-heading">
       <Container>
         <h2
           id="faq-heading"
-          className="font-work-sans font-bold text-dark text-[24px] leading-8 text-center mx-auto max-w-sm lg:text-[40px] lg:leading-12 lg:max-w-xl"
+          className="font-work-sans font-bold text-dark text-[24px] leading-8 text-center mx-auto max-w-[343px] lg:text-[48px] lg:leading-14 lg:max-w-[846px]"
         >
-          Frequently Asked Questions About Appliance Repair
-        </h2>
+Frequently Asked Questions About Appliance Repair        </h2>
 
-        <div className="mt-8 mx-auto max-w-2xl border-t border-zinc-200 lg:mt-12">
+        <div className="mt-4 mx-auto max-w-[846px] lg:mt-14">
           {faqs.map((faq) => (
             <FaqRow
               key={faq.id}

@@ -7,10 +7,10 @@ import { Brands } from "@/sections/home/Brands";
 import { RecentJobs } from "@/sections/home/RecentJobs";
 import { Testimonials } from "@/sections/home/Testimonials";
 import { FAQ } from "@/sections/home/FAQ";
-import { CTA } from "@/sections/home/CTA";
 import { faqs } from "@/content/faq";
 import { Steps } from "@/sections/home/Steps";
 import { Blogs } from "@/sections/home/Blogs";
+import { FloatingCTA } from "@/shared/components/FloatingCTA";
 
 export const metadata: Metadata = {
   title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
@@ -66,10 +66,10 @@ export default function HomePage() {
       <ServiceAreas />
       <Steps />
       <RecentJobs />
-      <Testimonials />
       <Blogs />
+      <Testimonials />
       <FAQ />
-      <CTA />
+      <FloatingCTA />
     </main>
   );
 }

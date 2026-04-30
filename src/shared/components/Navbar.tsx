@@ -2,13 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NAV_LINKS } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import PhoneIcon from "@/shared/icons/phone.svg";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("overflow-hidden", open);
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 bg-main-gradient">
@@ -72,7 +77,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden border-t border-black/8 bg-main-gradient">
+        <div className="lg:hidden min-h-dvh border-t border-black/8 bg-main-gradient">
           <Container>
             <ul className="flex flex-col py-4 gap-1">
               {NAV_LINKS.map((link) => (

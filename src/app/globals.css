@@ -14,6 +14,7 @@
   --font-work-sans: var(--font-work-sans);
   --animate-marquee: marquee 22s linear infinite;
   --animate-marquee-y: marquee-y 22s linear infinite;
+  --animate-float-in: float-in 0.35s ease-out;
   --main-gradient: linear-gradient(99.72deg, #F8F7FF 0%, #E2F4FB 100%);
 
 }
@@ -35,6 +36,17 @@
 
   to {
     transform: translateY(-50%);
+  }
+}
+
+@keyframes float-in {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

@@ -10,6 +10,7 @@ import StarRating from "./StarRating";
 export function Hero() {
   return (
     <section
+      id="hero-section"
       aria-label="Expert appliance repair in Cleveland and Parma"
       className="relative overflow-hidden bg-main-gradient"
     >
