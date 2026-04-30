@@ -33,11 +33,11 @@ export function BlogCard({ post, className }: BlogCardProps) {
         </div>
       </Link>
 
-      <div className="mt-4 space-y-1">
-        <time dateTime={post.date} className="block text-sm text-gray-500">
+      <div className="mt-5 space-y-1">
+        <time dateTime={post.date} className="block text-base leading-6 text-secondary font-manrope">
           {formatDateShort(post.date)}
         </time>
-        <h3 className="font-manrope text-base font-bold leading-snug text-dark">
+        <h3 className="mt-2 font-work-sans text-[18px] leading-6.5 font-bold lg:text-[20px] lg:leading-7 text-dark">
           <Link
             href={`/blog/${post.slug}`}
             className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 rounded-sm"

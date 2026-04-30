@@ -1,37 +1,22 @@
 import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
-
-import ScheduleIcon from "@/shared/icons/steps/booking.svg";
-import DiagnosisIcon from "@/shared/icons/steps/diagnosis.svg";
-import RepairIcon from "@/shared/icons/steps/repair.svg";
-import WarrantyIcon from "@/shared/icons/steps/warranty.svg";
-
-import type { Step } from "@/types";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
-import { StepCard } from "@/shared/ui/StepCard";
-import { STEPS } from "@/content/steps";
 import { BlogCard } from "@/shared/ui/BlogCard";
+import { BlogsCarousel } from "./BlogsCarousel";
 import { blogPosts } from "@/content/blog";
-
-const iconMap: Record<string, React.ReactNode> = {
-  schedule: <ScheduleIcon />,
-  diagnosis: <DiagnosisIcon />,
-  repair: <RepairIcon />,
-  warranty: <WarrantyIcon />,
-};
 
 const CTA_LABEL = "How we work";
 const CTA_HREF = "/about";
 
 const ctaClasses =
-  "inline-flex w-full items-center justify-center rounded-xl bg-brand px-6 py-2.5 font-manrope text-[18px] font-semibold leading-7 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 flex items-center gap-1";
+  "inline-flex w-full items-center justify-center rounded-xl bg-brand px-5 py-2.5  lg:py-4 font-manrope text-[18px] font-semibold leading-7 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 flex items-center gap-1";
 
 export function Blogs() {
   const posts = blogPosts.slice(0, 3);
 
   return (
     <section
-      className="py-14 lg:py-30 bg-white"
+      className="py-14 pb-6 lg:py-30 bg-white "
       aria-labelledby="services-heading"
     >
       <Container>
@@ -42,7 +27,7 @@ export function Blogs() {
               id="services-heading"
               className="font-work-sans font-bold text-dark text-[24px] leading-8 lg:text-[48px] lg:leading-14"
             >
-              Our Simple 4-Step Appliance Repair Process — From Call to Fix
+             Appliance Repair Tips & Expert Guides
             </h2>
 
             <div>
@@ -60,19 +45,20 @@ export function Blogs() {
           </div>
         </div>
 
-        {/* Cards grid */}
-        <div className=" flex justify-center flex-wrap   gap-5  lg:gap-[23px]">
+        {/* Mobile: Embla auto-scroll carousel */}
+        <div className="lg:hidden -mx-4 sm:-mx-6">
+          <BlogsCarousel posts={posts} />
+        </div>
+
+        {/* Desktop: 3-col grid */}
+        <div className="hidden lg:grid lg:grid-cols-3 lg:gap-6">
           {posts.map((post) => (
-            <BlogCard
-              key={post.id}
-              post={post}
-              className="w-81.5 lg:w-102.75"
-            />
+            <BlogCard key={post.id} post={post} />
           ))}
         </div>
 
         {/* Mobile CTA */}
-        <div className="mt-4 lg:hidden">
+        <div className="mt-7 lg:hidden">
           <Link href={CTA_HREF} className={`${ctaClasses} w-full`}>
             {CTA_LABEL} <ArrowIcon />
           </Link>
