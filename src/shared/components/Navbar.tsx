@@ -49,9 +49,9 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href="tel:+1234567890"
-              className="hidden lg:inline-flex items-center gap-1 font-manrope rounded-xl bg-brand px-6 py-3 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+              className=" hidden lg:inline-flex items-center gap-1 font-manrope rounded-xl bg-brand px-6 py-3 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
-              <PhoneIcon />
+              <PhoneIcon className="[&_path]:stroke-white" />
              +123 456  78 90
             </a>
 
@@ -96,7 +96,7 @@ export function Navbar() {
               href="tel:+1234567890"
               className="flex items-center justify-center gap-1 w-full rounded-xl bg-brand px-5 py-3 mb-4 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90"
             >
-              <PhoneIcon />
+              <PhoneIcon className="[&_path]:stroke-white" />
               +123 456  78 90
             </a>
           </Container>
