@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
-import { cn } from "@/shared/lib/utils";
 import { CONTACT_INFO } from "@/constants";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import expertImg from "@/shared/icons/expert.png";
@@ -17,36 +16,45 @@ export function Hero() {
       <Container className="relative">
         <div className="md:w-[53%]">
           {/* Heading */}
-          <div className="flex items-start pt-13 lg:pt-12 mb-8">
-            <h1 className="font-work-sans font-bold text-[32px] leading-10.5 lg:text-[57px] lg:leading-16.5 text-dark">
-              Expert Appliance Repair in Cleveland &amp; Parma — Fast,
-              Same&#8209;Day Service
+          <div className="flex items-start pt-4 lg:pt-10 mb-3 md:mb-8">
+            <h1 className="font-work-sans font-bold text-[30px] leading-8.75 lg:text-[57px] lg:leading-16.5 text-dark">
+              Expert Appliance Repair in{" "}
+              <span className="text-brand">
+                Cleveland &amp; Parma — Fast, Same&#8209;Day Service{" "}
+              </span>
             </h1>
           </div>
 
-          <p className="max-w-lg text-[14px] leading-5.5 lg:text-[18px] lg:leading-7 text-secondary font-manrope font-normal lg:mb-12">
+          <p className="max-w-lg text-[12px] leading-4.5 lg:text-[18px] lg:leading-7 text-secondary font-manrope font-normal mb-1 md:mb-2">
             When your refrigerator, washer, or dryer breaks down, every hour
             counts. Margus Appliance delivers certified appliance repair across
             Cleveland, Parma, and surrounding areas — with transparent pricing
             and a 90&#8209;day parts &amp; labor warranty.
           </p>
+          <p className="text-brand text-[10px] leading-4 md:text-[16px] md:leading-5 font-bold font-manrope mb-5 md:mb-12">
+            No service call fee with repair{" "}
+            <span className="text-brand inline-block w-1 h-1 rounded-full mx-2">
+              {" "}
+            </span>{" "}
+            90 day warranty
+          </p>
 
-          <div className="block lg:hidden my-8 ">
+          <div className="block lg:hidden my-5 ">
             <StarRating />
           </div>
 
           {/* CTA buttons */}
-          <div className="pb-12 lg:pb-0 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+          <div className="pb-2 lg:pb-0 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[18px] leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[14px] md:text-[18px] leading-5.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
-               Repair Now
+              Repair Now
               <RightArrowIcon aria-hidden="true" />
             </Link>
             <a
               href={CONTACT_INFO.phoneHref}
-              className="inline-flex items-center justify-center gap-1 border rounded-xl border-brand px-7 py-3.5 text-base leading-6 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center gap-1 border rounded-xl border-brand px-7 py-3 md:py-3.5 text-[14px] leading-5.5 md:text-base md:leading-6 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
               <PhoneIcon aria-hidden="true" />
               {CONTACT_INFO.phone}
@@ -54,11 +62,12 @@ export function Hero() {
           </div>
 
           {/* Star rating */}
-          <div className="hidden lg:block mt-12 pb-12">
+          <div className="hidden lg:block mt-8 pb-12">
             <StarRating />
           </div>
         </div>
-        <div className="">
+
+        <div>
           <div className="hidden md:block absolute top-0 bottom-0 right-0 w-[47%]">
             <Image
               src={expertImg}

@@ -6,5 +6,5 @@ export const brands: Brand[] = [
   { id: "bosch", name: "Bosch", logo:"/images/brands/maytag.png" },
   { id: "siemens", name: "Siemens", logo:"/images/brands/samsung.png" },
   { id: "whirlpool", name: "Whirlpool", logo: "/images/brands/haier.png" },
-  { id: "miele", name: "Miele", logo: "/images/brands/maytag.png" },
+  { id: "miele", name: "Miele", logo: "/brands/amana.png" },
 ];

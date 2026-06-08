@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Hero } from "@/sections/home/Hero";
+import { Hero } from "@/sections/home/hero";
 import { Stats } from "@/sections/home/Stats";
 import { Services } from "@/sections/home/Services";
 import { ServiceAreas } from "@/sections/home/ServiceAreas";
@@ -11,6 +11,7 @@ import { faqs } from "@/content/faq";
 import { Steps } from "@/sections/home/Steps";
 import { Blogs } from "@/sections/home/Blogs";
 import { FloatingCTA } from "@/shared/components/FloatingCTA";
+import CompanyInfo from "@/sections/home/companyInfo";
 
 export const metadata: Metadata = {
   title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
@@ -60,11 +61,12 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Hero />
-      <Stats />
+      <CompanyInfo />
+      {/* <Stats /> */}
       <Brands />
       <Services />
       <ServiceAreas />
-      <Steps />
+      {/* <Steps /> */}
       <RecentJobs />
       <Blogs />
       <Testimonials />

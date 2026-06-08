@@ -2,8 +2,8 @@ export type Service = {
   id: string;
   title: string;
   description: string;
-  href?: string;
-  icon?: string;
+  href: string;
+  icon: string;
   details?: string;
 };
 export type Step = {

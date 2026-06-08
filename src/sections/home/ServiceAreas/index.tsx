@@ -10,7 +10,7 @@ import Link from "next/link";
 export function ServiceAreas() {
   return (
     <section
-      className="pb-14 lg:pb-30 bg-white"
+      className="pt-11 lg:pt-24 pb-14 lg:pb-30 bg-white"
       aria-labelledby="service-areas-heading"
     >
       <Container>

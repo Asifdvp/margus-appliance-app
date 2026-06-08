@@ -18,13 +18,13 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-main-gradient">
       <Container>
-        <nav className="flex pt-4 lg:pt-6.75 items-center justify-between">
+        <nav className="flex pt-2 lg:pt-6.75 items-center justify-between">
           {/* Logo */}
-          <Link href="/" aria-label="Margus Appliance – Home" className="relative block h-10 w-17.5 lg:h-19 lg:w-35">
+          <Link href="/" aria-label="Margus Appliance – Home" className="relative block h-10 w-17.5 lg:h-22.5 lg:w-39.5">
             <Image
               src="/logo.png"
               alt="Margus Appliance logo"
-              width={140}
+              width={158}
               height={90}
               priority
               className="lg:absolute lg:-top-1.75 h-10 lg:h-22.5 w-auto object-contain"
@@ -56,7 +56,7 @@ export function Navbar() {
             </a>
 
             <button
-              className="lg:hidden flex flex-col justify-center items-center w-6 h-6 gap-1.75 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+              className="lg:hidden cursor-pointer flex flex-col justify-center items-center w-6 h-6 gap-1.75 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               onClick={() => setOpen((prev) => !prev)}

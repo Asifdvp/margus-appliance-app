@@ -1,7 +1,7 @@
 import { Container } from "@/shared/layout/Container";
 
 const textClass =
-  "font-manrope font-semibold text-[18px] leading-[28px] uppercase text-white whitespace-nowrap overflow-hidden";
+  "font-manrope font-semibold text-[12px] leading-[18px] md:text-[18px] md:leading-[28px] uppercase text-white whitespace-nowrap overflow-hidden";
 
 function MarqueeItem() {
   return (
@@ -22,7 +22,7 @@ function MarqueeItem() {
 
 export function Emergency() {
   return (
-    <div className="bg-dark py-1.5 shadow-[0px_4px_18px_0px_#7F7F7F40]">
+    <div className="bg-dark py-1 shadow-[0px_4px_18px_0px_#7F7F7F40]">
       {/* Mobile: auto-scrolling marquee */}
       <div className="md:hidden overflow-hidden">
         <div className="flex animate-marquee">

@@ -25,17 +25,15 @@ function BrandRow({ brands, direction = "forward", priority = false }: RowProps)
         {items.map((brand, i) => (
           <div
             key={`${brand.id}-${i}`}
-            className="flex-none w-16.25 h-8 lg:w-30 lg:h-16  rounded-lg lg:rounded-[13px] bg-[#F6F6F6] flex items-center justify-center mr-2 lg:mr-4"
+            className="relative flex-none w-20 h-4 md:w-36 md:h-10 mr-4 lg:mr-8"
           >
-            <div className="relative w-3/4 h-3/4">
-              <Image
-                src={brand.logo}
-                alt={brand.name}
-                fill
-                className="object-contain"
-                priority={priority}
-              />
-            </div>
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              fill
+              className="object-contain"
+              priority={priority}
+            />
           </div>
         ))}
       </div>
@@ -51,9 +49,8 @@ interface Props {
 export function BrandsCarousel({ brands, className }: Props) {
   return (
     <div className={`overflow-hidden min-w-0${className ? ` ${className}` : ""}`}>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 md:gap-6">
         <BrandRow brands={brands} direction="forward" priority />
-        <BrandRow brands={brands} direction="backward" />
       </div>
     </div>
   );
