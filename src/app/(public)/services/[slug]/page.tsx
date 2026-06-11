@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
   return {
     title: `${service.title} in Cleveland & Parma | Margus Appliance`,
-    description: service.longDescription ?? service.description,
+    description: service.description ?? service.description,
     openGraph: {
       title: `${service.title} | Margus Appliance`,
       description: service.description,
