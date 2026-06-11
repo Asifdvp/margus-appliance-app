@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { AllJobsHero } from "@/sections/jobs/AllJobsHero";
 import { AllJobsGrid } from "@/sections/jobs/AllJobsGrid";
+import { Blogs } from "@/sections/shared/Blogs";
+import { CTABanner } from "@/sections/shared/CTABanner";
 
 export const metadata: Metadata = {
   title: "All Jobs Done | Margus Appliance",
@@ -23,6 +25,8 @@ export default function AllJobsPage() {
     <>
       <AllJobsHero />
       <AllJobsGrid />
+      <Blogs />
+      <CTABanner />
     </>
   );
 }

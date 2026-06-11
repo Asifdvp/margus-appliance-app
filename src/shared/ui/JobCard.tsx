@@ -1,14 +1,25 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { RecentJob } from "@/types";
-import PointIcon from "@/shared/icons/point.svg";
-import DateIcon from "@/shared/icons/date.svg";
-import JobsIcon from "@/shared/icons/jobs.svg";
+import PointIcon from "@/shared/icons/jobs/point.svg";
+import DateIcon from "@/shared/icons/jobs/date.svg";
+import JobsIcon from "@/shared/icons/jobs/problem.svg";
 
-export function JobCard({ image, alt, service, location, date, problem }: RecentJob) {
-  return (
-    <article className="flex flex-col">
+type Props = RecentJob & { href?: string };
+
+export function JobCard({
+  image,
+  alt,
+  service,
+  location,
+  date,
+  problem,
+  href,
+}: Props) {
+  const inner = (
+    <>
       {/* Image + service badge */}
-      <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden">
+      <div className="relative w-full h-70 rounded-3xl overflow-hidden">
         <Image
           src={image}
           alt={alt}
@@ -17,21 +28,21 @@ export function JobCard({ image, alt, service, location, date, problem }: Recent
           className="object-cover object-center"
         />
         {service && (
-          <span className="absolute bottom-3 left-3 bg-white text-dark font-manrope font-medium text-xs leading-4.5 px-3 py-1.5 rounded-xl">
+          <span className="absolute bottom-4 left-4 bg-white text-dark font-manrope font-semibold text-xs leading-5 px-2 py-1 rounded-xl md:text-sm md:leading-6">
             {service}
           </span>
         )}
       </div>
 
       {/* Info rows */}
-      <div className="mt-4 flex flex-col gap-2.5">
+      <div className="mt-3 flex flex-col gap-2">
         {location && (
           <div className="flex items-start justify-between gap-2">
-            <span className="flex items-center gap-1.5 shrink-0 font-manrope text-xs md:text-sm text-secondary">
-              <PointIcon className="w-4 h-4 shrink-0" aria-hidden="true" />
+            <span className="flex items-center gap-1 shrink-0 font-manrope text-xs leading-5 md:text-sm text-grey">
+              <PointIcon className="w-3.5 h-3.5 md:h-5 md:w-5 shrink-0" aria-hidden="true" />
               Location
             </span>
-            <span className="font-manrope text-xs md:text-sm text-dark font-medium text-right">
+            <span className="max-w-[54%] font-manrope text-xs leading-5 md:text-base md:leading-6 text-dark font-normal text-right">
               {location}
             </span>
           </div>
@@ -39,11 +50,11 @@ export function JobCard({ image, alt, service, location, date, problem }: Recent
 
         {date && (
           <div className="flex items-start justify-between gap-2">
-            <span className="flex items-center gap-1.5 shrink-0 font-manrope text-xs md:text-sm text-secondary">
-              <DateIcon className="w-4 h-4 shrink-0" aria-hidden="true" />
+            <span className="flex items-center gap-1 shrink-0 font-manrope text-xs leading-5 md:text-sm text-grey">
+              <DateIcon className="w-3.5 h-3.5 md:h-5 md:w-5 shrink-0" aria-hidden="true" />
               Date
             </span>
-            <span className="font-manrope text-xs md:text-sm text-dark font-medium text-right">
+            <span className="max-w-[54%] font-manrope text-xs leading-5 md:text-base md:leading-6 text-dark font-normal text-right">
               {date}
             </span>
           </div>
@@ -51,16 +62,26 @@ export function JobCard({ image, alt, service, location, date, problem }: Recent
 
         {problem && (
           <div className="flex items-start justify-between gap-2">
-            <span className="flex items-center gap-1.5 shrink-0 font-manrope text-xs md:text-sm text-secondary">
-              <JobsIcon className="w-4 h-4 shrink-0" aria-hidden="true" />
+            <span className="flex items-center gap-1 shrink-0 font-manrope text-xs leading-5 md:text-sm text-grey">
+              <JobsIcon className="w-3.5 h-3.5 md:h-5 md:w-5 shrink-0" aria-hidden="true" />
               Problem
             </span>
-            <span className="font-manrope text-xs md:text-sm text-dark font-medium text-right max-w-[60%]">
+            <span className="max-w-[54%] font-manrope text-xs leading-5 md:text-base md:leading-6 text-dark font-normal text-right">
               {problem}
             </span>
           </div>
         )}
       </div>
-    </article>
+    </>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className="flex flex-col">
+        {inner}
+      </Link>
+    );
+  }
+
+  return <article className="flex flex-col">{inner}</article>;
 }

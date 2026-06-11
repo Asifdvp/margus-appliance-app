@@ -53,6 +53,11 @@ export type RecentJob = {
   location?: string;
   date?: string;
   problem?: string;
+  intro?: string[];
+  commonProblems?: string[];
+  whyChoosePoints?: string[];
+  closingHeading?: string;
+  closingText?: string[];
 };
 
 export type FaqItem = {

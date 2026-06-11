@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import L from "leaflet";
 import { renderToStaticMarkup } from "react-dom/server";
-import { MapContainer, TileLayer, Marker, Tooltip } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Tooltip, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import PointIcon from "@/shared/icons/point.svg";
 import { SERVICE_AREAS, MAP_CENTER, MAP_ZOOM } from "@/content/service-areas";
@@ -15,7 +16,19 @@ const markerIcon = L.divIcon({
   tooltipAnchor: [0, -24],
 });
 
-export function ServiceAreaMap() {
+function FlyToController({ coords }: { coords: [number, number] | null }) {
+  const map = useMap();
+  useEffect(() => {
+    if (coords) map.flyTo(coords, 13, { duration: 1 });
+  }, [coords, map]);
+  return null;
+}
+
+interface Props {
+  flyTo?: [number, number] | null;
+}
+
+export function ServiceAreaMap({ flyTo = null }: Props) {
   return (
     <MapContainer
       center={MAP_CENTER}
@@ -28,6 +41,7 @@ export function ServiceAreaMap() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      <FlyToController coords={flyTo} />
       {SERVICE_AREAS.map((area) => (
         <Marker key={area.name} position={area.coords} icon={markerIcon}>
           <Tooltip direction="top" offset={[0, -8]} opacity={1}>
