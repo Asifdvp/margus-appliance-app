@@ -1,20 +1,17 @@
-import { blogPosts } from "@/content/blog";
+import { Container } from "@/shared/layout/Container";
 import { BlogCard } from "@/shared/ui/BlogCard";
-import { PageWrapper } from "@/shared/layout/PageWrapper";
+import { blogPosts } from "@/content/blog";
 
 export function BlogList() {
   return (
-    <PageWrapper>
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight">Blog</h1>
-        <p className="mt-4 text-zinc-600">Tips, guides, and news from our team.</p>
-      </div>
-
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post) => (
-          <BlogCard key={post.id} post={post} />
-        ))}
-      </div>
-    </PageWrapper>
+    <section aria-labelledby="blog-list-heading" className="bg-white pt-6 lg:pt-18">
+      <Container>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+          {blogPosts.map((post) => (
+            <BlogCard key={post.id} post={post} full />
+          ))}
+        </div>
+      </Container>
+    </section>
   );
 }

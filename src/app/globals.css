@@ -8,6 +8,8 @@
 @theme inline {
   --color-dark: #141414;
   --color-brand: #5500CC;
+  --color-secondary-brand: #5723FF;
+  --color-main-orange: #FFBF3D;
   --color-secondary:#535756;
   --color-grey:#757B7A;
   --font-manrope: var(--font-manrope);

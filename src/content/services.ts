@@ -2,68 +2,263 @@ import type { Service } from "@/types";
 
 export const SERVICES: Service[] = [
   {
-    id: "kitchen",
-    title: "Kitchen Appliance Repair",
-    description:
-      "Microwave, range hood, blender & more — same-day repair in Cleveland & Parma.",
-    href: "/services/kitchen-appliance-repair",
-    icon:"/images/services/kitchen.png"
-  },
-  {
-    id: "washer",
+    id: "washer-repair",
     title: "Washer Repair",
-    description:
-      "Washer not spinning or draining? Fast, same-day repair for all major brands.",
+    description: "Washer not spinning or draining? Fast, same-day repair for all major brands.",
     href: "/services/washer-repair",
-    icon:"/images/services/washer.png"
+    icon: "/services/washer.png",
+    detailImage: "/services/washer.png",
+    intro: [
+      "A broken washing machine can quickly disrupt your daily routine. Whether your washer won't drain, spin, start, or is making unusual noises, our professional washer repair service is here to help.",
+      "We provide fast, reliable, and affordable repair solutions for all major washing machine brands and models. Our experienced technicians diagnose the issue accurately and work efficiently to restore your appliance as quickly as possible.",
+    ],
+    commonProblems: [
+      "Washer not draining",
+      "Washing machine not spinning",
+      "Water leakage issues",
+      "Loud or unusual noises",
+      "Washer won't start",
+      "Door or lid lock problems",
+      "Error codes and electrical issues",
+      "Slow filling or water supply problems",
+    ],
+    whyChoosePoints: [
+      "Experienced and certified technicians",
+      "Same-day and emergency repair options",
+      "Transparent pricing with no hidden fees",
+      "Repairs for all major brands",
+      "Quality replacement parts",
+      "Friendly and professional customer support",
+    ],
+    closingHeading: "Fast & Reliable Appliance Repair",
+    closingText: [
+      "We understand how important a working washing machine is for your home. That's why we focus on quick response times and long-lasting repair solutions that help prevent future problems.",
+      "Our goal is simple: get your washer running smoothly again with minimal stress and downtime.",
+      "Don't let a faulty washing machine slow you down. Contact our team today to book a professional washer repair service and get your appliance back in perfect working condition.",
+    ],
   },
   {
-    id: "dryer",
+    id: "dryer-repair",
     title: "Dryer Repair",
-    description:
-      "No heat or long drying times? We fix all dryer issues fast with quality parts.",
+    description: "No heat or long drying times? We fix all dryer issues fast with quality parts.",
     href: "/services/dryer-repair",
-    icon:"/images/services/dryer.png"
+    icon: "/images/services/dryer.png",
+    detailImage: "/images/services/dryer.png",
+    intro: [
+      "A malfunctioning dryer can leave you with wet clothes and no way to dry them. Whether your dryer won't heat, takes too long, or stops mid-cycle, our expert technicians can fix it fast.",
+      "We service all major dryer brands and models, providing reliable repairs backed by our 90-day warranty.",
+    ],
+    commonProblems: [
+      "Dryer not heating",
+      "Clothes taking too long to dry",
+      "Dryer won't start",
+      "Loud or unusual noises",
+      "Drum not turning",
+      "Overheating issues",
+      "Error codes and electrical problems",
+    ],
+    whyChoosePoints: [
+      "Same-day dryer repair service",
+      "Certified technicians for all brands",
+      "Transparent flat-rate pricing",
+      "Genuine manufacturer-approved parts",
+      "90-day parts & labor warranty",
+    ],
+    closingHeading: "Get Your Dryer Running Again",
+    closingText: [
+      "Don't let a broken dryer disrupt your household. Our experienced team provides fast, affordable dryer repairs in Cleveland and Parma.",
+      "Contact us today to schedule your same-day dryer repair service.",
+    ],
   },
   {
-    id: "refrigerator",
+    id: "refrigerator-repair",
     title: "Refrigerator Repair",
-    description:
-      "Fast fridge repair in Cleveland — cooling, ice maker & temperature issues fixed.",
+    description: "Fast fridge repair in Cleveland — cooling, ice maker & temperature issues fixed.",
     href: "/services/refrigerator-repair",
-    icon:"/images/services/refrigator.png"
+    icon: "/images/services/refrigator.png",
+    detailImage: "/images/services/refrigator.png",
+    intro: [
+      "A failing refrigerator can spoil your food and cause costly waste. Our certified technicians provide fast refrigerator repairs to keep your food fresh and your household running smoothly.",
+      "We repair all makes and models, from basic fridges to high-end French door refrigerators.",
+    ],
+    commonProblems: [
+      "Refrigerator not cooling",
+      "Freezer not freezing",
+      "Ice maker not working",
+      "Water leaking inside or under fridge",
+      "Loud compressor or fan noises",
+      "Temperature fluctuations",
+      "Door seal and gasket issues",
+    ],
+    whyChoosePoints: [
+      "Fast same-day refrigerator repair",
+      "All major brands serviced",
+      "Transparent pricing, no surprises",
+      "90-day warranty on all repairs",
+      "Locally trusted in Cleveland & Parma",
+    ],
+    closingHeading: "Keep Your Food Fresh",
+    closingText: [
+      "A refrigerator breakdown is urgent. Our team responds quickly to get your fridge back to optimal temperature as soon as possible.",
+      "Call us today for fast, reliable refrigerator repair in Cleveland and Parma.",
+    ],
   },
   {
-    id: "dishwasher",
+    id: "dishwasher-repair",
     title: "Dishwasher Repair",
-    description:
-      "Not cleaning or draining? Reliable dishwasher repair with upfront pricing.",
+    description: "Not cleaning or draining? Reliable dishwasher repair with upfront pricing.",
     href: "/services/dishwasher-repair",
-    icon:"/images/services/dishwasher.png"
+    icon: "/images/services/dishwasher.png",
+    detailImage: "/images/services/dishwasher.png",
+    intro: [
+      "A broken dishwasher means more time at the sink. Whether your dishwasher won't drain, clean dishes properly, or won't start at all, our technicians can restore it quickly.",
+      "We service all major dishwasher brands with same-day appointments available.",
+    ],
+    commonProblems: [
+      "Dishwasher not cleaning dishes",
+      "Standing water after cycle",
+      "Dishwasher won't start",
+      "Door latch problems",
+      "Unusual noises during operation",
+      "Water leaking onto floor",
+      "Error codes on control panel",
+    ],
+    whyChoosePoints: [
+      "Same-day dishwasher repair",
+      "Certified for all major brands",
+      "Upfront flat-rate pricing",
+      "Genuine replacement parts",
+      "90-day parts & labor warranty",
+    ],
+    closingHeading: "Fast Dishwasher Repair You Can Trust",
+    closingText: [
+      "Our team provides reliable dishwasher repairs in Cleveland and Parma with minimal disruption to your daily routine.",
+      "Book your repair today and have your dishwasher working like new.",
+    ],
   },
   {
-    id: "freezer",
+    id: "freezer-repair",
     title: "Freezer Repair",
-    description:
-      "Freezer not freezing? Quick, affordable repair across Cleveland.",
+    description: "Freezer not freezing? Quick, affordable repair across Cleveland.",
     href: "/services/freezer-repair",
-    icon:"/images/services/freezer.png"
+    icon: "/images/services/freezer.png",
+    detailImage: "/images/services/freezer.png",
+    intro: [
+      "A broken freezer puts your frozen food at risk. Our technicians provide fast freezer repair to protect your food and your investment.",
+      "We fix all types of freezers — chest, upright, and built-in — for all major brands.",
+    ],
+    commonProblems: [
+      "Freezer not freezing",
+      "Frost buildup inside freezer",
+      "Freezer making loud noises",
+      "Temperature not staying cold",
+      "Freezer door not sealing",
+      "Compressor issues",
+    ],
+    whyChoosePoints: [
+      "Same-day freezer repair available",
+      "All freezer types and brands",
+      "Transparent pricing",
+      "Quality replacement parts",
+      "90-day warranty included",
+    ],
+    closingHeading: "Protect Your Frozen Food",
+    closingText: [
+      "Don't let a broken freezer cost you hundreds in spoiled food. Contact our team for fast, affordable freezer repair in Cleveland and Parma.",
+    ],
   },
   {
-    id: "ice-maker",
+    id: "ice-maker-repair",
     title: "Ice Maker Repair",
-    description:
-      "Not working or leaking? Same-day ice maker repair in Cleveland.",
+    description: "Not working or leaking? Same-day ice maker repair in Cleveland.",
     href: "/services/ice-maker-repair",
-    icon:"/images/services/icemaker.png"
+    icon: "/images/services/icemaker.png",
+    detailImage: "/images/services/icemaker.png",
+    intro: [
+      "An ice maker that stops working or starts leaking can be frustrating. Our technicians diagnose and repair all ice maker issues quickly and affordably.",
+      "We service built-in, freestanding, and refrigerator ice makers from all major brands.",
+    ],
+    commonProblems: [
+      "Ice maker not producing ice",
+      "Ice maker leaking water",
+      "Small or misshapen ice cubes",
+      "Ice maker making unusual noises",
+      "Ice dispenser not working",
+      "Frozen water line issues",
+    ],
+    whyChoosePoints: [
+      "Same-day ice maker service",
+      "All brands and models",
+      "Flat-rate transparent pricing",
+      "90-day warranty on repairs",
+    ],
+    closingHeading: "Fast Ice Maker Repair",
+    closingText: [
+      "Our experienced technicians will diagnose and fix your ice maker quickly so you're back to having fresh ice whenever you need it.",
+    ],
   },
   {
-    id: "oven-stove",
+    id: "oven-stove-repair",
     title: "Oven & Stove Repair",
-    description:
-      "Oven not heating or burner not working? We fix all major brands.",
+    description: "Oven not heating or burner not working? We fix all major brands.",
     href: "/services/oven-stove-repair",
-    icon:"/images/services/oven.png"
+    icon: "/images/services/oven.png",
+    detailImage: "/images/services/oven.png",
+    intro: [
+      "A broken oven or stove makes cooking at home nearly impossible. Our certified technicians repair all types of ovens and stoves — gas, electric, and induction.",
+      "We service all major brands and provide fast, reliable repairs with transparent pricing.",
+    ],
+    commonProblems: [
+      "Oven not heating to correct temperature",
+      "Burners not igniting or heating",
+      "Oven door not closing properly",
+      "Control panel errors",
+      "Uneven baking or cooking",
+      "Gas smell or ignition issues",
+      "Self-clean cycle problems",
+    ],
+    whyChoosePoints: [
+      "Gas and electric oven specialists",
+      "Same-day appointments available",
+      "Certified and insured technicians",
+      "Upfront pricing before any work begins",
+      "90-day parts & labor warranty",
+    ],
+    closingHeading: "Get Back to Cooking",
+    closingText: [
+      "Don't let a faulty oven or stove disrupt your meals. Our team provides fast, professional oven and stove repairs across Cleveland and Parma.",
+      "Schedule your repair today and get your kitchen back in working order.",
+    ],
+  },
+  {
+    id: "kitchen-appliance-repair",
+    title: "Kitchen Appliance Repair",
+    description: "Microwave, range hood, blender & more — same-day repair in Cleveland & Parma.",
+    href: "/services/kitchen-appliance-repair",
+    icon: "/images/services/kitchen.png",
+    detailImage: "/images/services/kitchen.png",
+    intro: [
+      "From microwaves to range hoods, our technicians repair a wide range of kitchen appliances quickly and affordably.",
+      "We service all major brands and provide same-day appointments to minimize disruption to your kitchen.",
+    ],
+    commonProblems: [
+      "Microwave not heating",
+      "Range hood fan not working",
+      "Garbage disposal issues",
+      "Small appliance electrical problems",
+      "Control panel malfunctions",
+    ],
+    whyChoosePoints: [
+      "Wide range of kitchen appliances serviced",
+      "Same-day repair options",
+      "Certified technicians",
+      "Transparent pricing",
+      "90-day warranty",
+    ],
+    closingHeading: "Full Kitchen Appliance Service",
+    closingText: [
+      "Keep your kitchen running smoothly with professional appliance repair from Margus Appliance. Contact us today for fast, affordable service in Cleveland and Parma.",
+    ],
   },
 ];
 

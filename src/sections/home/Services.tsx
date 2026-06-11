@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { SERVICES } from "@/content/services";
 import { Container } from "@/shared/layout/Container";
-import { ServiceCard } from "@/shared/ui/ServiceCard";
-import type { Service } from "@/types";
+import { ServicesGrid } from "@/shared/ui/ServicesGrid";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
 
 
@@ -15,7 +13,7 @@ const ctaClasses =
 export function Services() {
   return (
     <section
-      className="pt-5 lg:py- bg-white"
+      className="pt-3 lg:pt-24 bg-white"
       aria-labelledby="services-heading"
     >
       <Container>
@@ -44,17 +42,7 @@ export function Services() {
         </div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-2 gap-4  lg:grid-cols-4 lg:gap-6">
-          {SERVICES.map((service: Service) => (
-            <ServiceCard
-              key={service.id}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              href={service.href || ""}
-            />
-          ))}
-        </div>
+        <ServicesGrid />
 
         {/* Mobile CTA */}
         <div className="mt-4 lg:hidden">

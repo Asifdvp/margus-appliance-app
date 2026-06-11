@@ -3,8 +3,9 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { cn } from "@/shared/lib/utils";
 import type { Testimonial } from "@/types";
+import Image from "next/image";
 
-function Avatar({ name, image }: { name: string, image?: string }) {
+function Avatar({ name, image }: { name: string; image?: string }) {
   const initials = name
     .split(" ")
     .map((w) => w[0])
@@ -15,27 +16,36 @@ function Avatar({ name, image }: { name: string, image?: string }) {
   return (
     <div
       aria-hidden
-      className="flex h-12 w-12 lg:w-16 lg:h-16   shrink-0 items-center justify-center rounded-full bg-secondary "
+      className="relative flex h-9 w-9 lg:w-16 lg:h-16 shrink-0 items-center justify-center rounded-full bg-[#585858] overflow-hidden"
     >
-      {initials}
+      {image ? (
+        <Image
+          src={image}
+          alt=""
+          fill
+          sizes="(min-width: 1024px) 64px, 36px"
+          className="object-cover"
+        />
+      ) : (
+        initials
+      )}
     </div>
   );
 }
 
 function TestimonialCard({ item }: { item: Testimonial }) {
   return (
-    <article className="flex flex-col gap-8 rounded-2xl bg-[#242424] p-4 lg:p-6">
-      <p className=" text-white font-normal font-manrope text-base leading-6 ">
+    <article className="flex flex-col gap-8 rounded-xl bg-[#d2d2d2] p-4 lg:p-6">
+      <p className=" text-dark font-normal font-manrope text-xs leading-4.5 md:text-base md:leading-6 ">
         {item.text}
       </p>
       <div className="flex items-center gap-3">
-        <div></div>
         <Avatar name={item.name} image={item.image} />
         <div>
-          <p className=" mb-0.5 text-sm font-semibold text-grey leading-5.5">
+          <p className=" mb-0.5 text-xs leading-4.5 md:text-sm font-semibold text-dark md:leading-5.5">
             {item.name}
           </p>
-          <p className="text-sm leading-5.5 font-normal  text-[#CCCCCC]">
+          <p className=" text-xs leading-4.5 md:text-sm md:leading-5.5 font-normal  text-[#585858]">
             {item.location}
           </p>
         </div>
@@ -215,7 +225,7 @@ export function TestimonialsCarousel({ items }: Props) {
 
   return (
     <div
-      className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+      className="grid grid-cols-1 gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3"
       onMouseEnter={() => {
         hoveredRef.current = true;
       }}

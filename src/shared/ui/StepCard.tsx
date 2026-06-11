@@ -1,34 +1,46 @@
+import Image, { type StaticImageData } from "next/image";
 import { cn } from "../lib/utils";
 
 type StepCardProps = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
+  iconSrc?: StaticImageData;
   title: string;
   description: string;
+  className?: string;
 };
 
-export function StepCard({
-  icon,
-  title,
-  description,
-}: StepCardProps) {
+export function StepCard({ icon, iconSrc, title, description, className }: StepCardProps) {
   return (
-     <div
+    <div
       className={cn(
-        "group flex flex-col rounded-xl  bg-[#F6F6F6] py-6 px-4 lg:p-6 min-h-56  lg:min-h-90  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand",
+        "flex flex-col bg-[#F6F6F6] p-4 md:p-6",
+        className,
       )}
     >
-      <div className="shrink-0 flex items-start justify-start w-12 h-12 lg:w-16 lg:h-16 mb-5">
-        {icon}
+      {/* Mobile: icon + title yan-yana | Desktop: üst-üstə */}
+      <div className="flex items-center gap-0.5 md:flex-col md:items-start md:gap-0 md:mb-1">
+        <div className="shrink-0 w-9 h-9 md:w-16.5 md:h-16 md:mb-13.5">
+          {iconSrc ? (
+            <Image
+              src={iconSrc}
+              alt=""
+              aria-hidden="true"
+              width={66}
+              height={66}
+              className="w-full h-full object-contain"
+            />
+          ) : (
+            icon
+          )}
+        </div>
+        <h3 className="md:mb-5 font-work-sans text-[14px] font-bold leading-4.5 text-dark md:text-[24px] md:leading-7.5">
+          {title}
+        </h3>
       </div>
 
-      <div className="flex-1" />
-
-      <h3 className="mb-2 lg:mb-3 font-work-sans text-[20px] font-bold leading-7 text-dark lg:text-[24px] lg:leading-7.5">
-        {title}
-      </h3>
-      <p className="font-manrope text-[14px] leading-5.5 text-secondary lg:text-[16px] lg:leading-6">
+      <p className="font-normal font-manrope text-[12px] leading-4.5 text-secondary md:text-[16px] md:leading-6">
         {description}
       </p>
-       </div>
+    </div>
   );
 }

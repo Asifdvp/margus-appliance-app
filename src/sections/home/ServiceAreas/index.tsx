@@ -10,19 +10,19 @@ import Link from "next/link";
 export function ServiceAreas() {
   return (
     <section
-      className="pt-11 lg:pt-24 pb-14 lg:pb-30 bg-white"
+      className="pt-13 lg:pt-24 bg-white"
       aria-labelledby="service-areas-heading"
     >
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mb-4 lg:mb-12">
           <h2
             id="service-areas-heading"
-            className="font-work-sans font-bold text-dark text-[24px] leading-8 lg:text-[48px] lg:leading-14"
+            className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
           >
             Appliance Repair Service Areas Near Cleveland
           </h2>
           <div>
-            <p className="font-manrope text-[14px] leading-5.5 text-secondary lg:text-[18px] lg:leading-7 mb-4">
+            <p className="font-manrope text-[12px] leading-4.5 text-secondary md:text-[18px] md:leading-7 md:mb-4">
               We serve Parma, Cleveland, and surrounding cities, providing fast
               and reliable repair for refrigerators, washers, dryers, and other
               household appliances, helping keep your home running smoothly

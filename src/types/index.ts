@@ -4,12 +4,22 @@ export type Service = {
   description: string;
   href: string;
   icon: string;
-  details?: string;
+  detailImage?: string;
+  intro?: string[];
+  commonProblems?: string[];
+  whyChoosePoints?: string[];
+  closingHeading?: string;
+  closingText?: string[];
 };
 export type Step = {
   id: string;
   title: string;
   description: string;
+};
+
+export type BlogSection = {
+  heading?: string;
+  paragraphs: string[];
 };
 
 export type BlogPost = {
@@ -18,6 +28,9 @@ export type BlogPost = {
   slug: string;
   date: string;
   coverImage?: string;
+  excerpt?: string;
+  category?: string;
+  content?: BlogSection[];
 };
 
 export type Brand = {
@@ -36,6 +49,10 @@ export type RecentJob = {
   id: string;
   image: string;
   alt: string;
+  service?: string;
+  location?: string;
+  date?: string;
+  problem?: string;
 };
 
 export type FaqItem = {

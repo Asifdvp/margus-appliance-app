@@ -8,27 +8,33 @@ import type { FaqItem } from "@/types";
 import FaqPlusIcon from "@/shared/icons/faq-plus.svg";
 import FaqMinusIcon from "@/shared/icons/faq-minus.svg";
 
-function FaqRow({ faq, isOpen, onToggle }: {
+function FaqRow({
+  faq,
+  isOpen,
+  onToggle,
+}: {
   faq: FaqItem;
   isOpen: boolean;
   onToggle: () => void;
 }) {
   return (
-    <div className={cn("bg-[#F6F6F6] transition-colors mt-4")}>
+    <div className={cn("bg-[#F6F6F6] transition-colors mt-4 p-3 rounded-xl ")}>
       <button
         onClick={onToggle}
         aria-expanded={isOpen}
         aria-controls={`faq-answer-${faq.id}`}
-        className="flex w-full items-center justify-between gap-4 p-3 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+        className="flex w-full items-center justify-between gap-2 md:gap-4  text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
       >
-        <span className={cn(
-          "font-bold text-base leading-5.5 font-work-sans transition-all lg:text-[24px] lg:leading-7.5",
-          isOpen ? "text-dark" : "text-grey"
-        )}>
+        <span
+          className={cn(
+            "font-bold text-xs leading-4.5 font-work-sans transition-all lg:text-[24px] lg:leading-7.5",
+            isOpen ? "text-dark" : "text-grey",
+          )}
+        >
           {faq.question}
         </span>
 
-        <span aria-hidden className="shrink-0">
+        <span aria-hidden className="shrink-0 cursor-pointer">
           {isOpen ? <FaqMinusIcon /> : <FaqPlusIcon />}
         </span>
       </button>
@@ -39,11 +45,11 @@ function FaqRow({ faq, isOpen, onToggle }: {
         role="region"
         className={cn(
           "grid transition-all duration-300 ease-in-out",
-          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
         )}
       >
         <div className="overflow-hidden">
-          <p className="px-4  text-base leading-6 text-secondary font-manrope">
+          <p className="mt-4 text-xs md:text-base leading-4.5 md:leading-6 text-grey font-manrope">
             {faq.answer}
           </p>
         </div>
@@ -60,23 +66,26 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-14 bg-white lg:py-20" aria-labelledby="faq-heading">
+    <section className="py-14 bg-white lg:py-24" aria-labelledby="faq-heading">
       <Container>
-        <h2
-          id="faq-heading"
-          className="font-work-sans font-bold text-dark text-[24px] leading-8 text-center mx-auto max-w-[343px] lg:text-[48px] lg:leading-14 lg:max-w-[846px]"
-        >
-Frequently Asked Questions About Appliance Repair        </h2>
+        <div className="max-w-85.75 lg:max-w-211.5 mx-auto">
+          <h2
+            id="faq-heading"
+            className="font-work-sans font-bold text-dark text-[18px] leading-6 text-center  lg:text-[48px] lg:leading-14 "
+          >
+            Frequently Asked Questions About Appliance Repair{" "}
+          </h2>
 
-        <div className="mt-4 mx-auto max-w-[846px] lg:mt-14">
-          {faqs.map((faq) => (
-            <FaqRow
-              key={faq.id}
-              faq={faq}
-              isOpen={openId === faq.id}
-              onToggle={() => toggle(faq.id)}
-            />
-          ))}
+          <div className="mt-4 lg:mt-14">
+            {faqs.map((faq) => (
+              <FaqRow
+                key={faq.id}
+                faq={faq}
+                isOpen={openId === faq.id}
+                onToggle={() => toggle(faq.id)}
+              />
+            ))}
+          </div>
         </div>
       </Container>
     </section>
