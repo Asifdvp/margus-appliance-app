@@ -11,7 +11,7 @@ export function PageHero({ heading, src, alt }: PageHeroProps) {
   return (
     <section
       aria-labelledby="page-hero-heading"
-      className="relative isolate overflow-hidden h-60 md:h-[320px] lg:h-[380px]"
+      className="relative isolate overflow-hidden h-60 md:h-80 lg:h-95"
     >
       <Image
         src={src}
