@@ -2,11 +2,16 @@
 
 import { useState } from "react";
 import { SERVICE_AREAS } from "@/content/service-areas";
+import type { ServiceArea } from "@/content/service-areas";
 import { ServiceAreaMapDynamic } from "@/shared/ui/ServiceAreaMapDynamic";
 import LocationPinIcon from "@/shared/icons/point.svg";
 import { cn } from "@/shared/lib/utils";
 
-export function ServiceAreaInteractive() {
+interface Props {
+  areas?: ServiceArea[];
+}
+
+export function ServiceAreaInteractive({ areas = SERVICE_AREAS }: Props) {
   const [flyTo, setFlyTo] = useState<[number, number] | null>(null);
   const [activeArea, setActiveArea] = useState<string | null>(null);
 
@@ -18,8 +23,8 @@ export function ServiceAreaInteractive() {
   return (
     <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-12 lg:items-stretch">
       {/* City grid */}
-      <div className="flex flex-wrap gap-2 md:grid md:grid-cols-3 lg:grid-cols-2 md:gap-6">
-        {SERVICE_AREAS.map((area) => (
+      <div className="flex flex-wrap gap-2 md:grid md:grid-cols-3 lg:grid-cols-2 md:gap-6 lg:max-h-203.5 lg:overflow-y-auto scrollbar-none">
+        {areas.map((area) => (
           <button
             key={area.name}
             onClick={() => handleAreaClick(area.name, area.coords)}
@@ -39,8 +44,8 @@ export function ServiceAreaInteractive() {
       </div>
 
       {/* Map */}
-      <div className="isolate h-97.5 lg:h-full rounded-3xl overflow-hidden shadow-sm">
-        <ServiceAreaMapDynamic flyTo={flyTo} />
+      <div className="isolate h-97.5 lg:h-full lg:max-h-160 rounded-3xl overflow-hidden shadow-sm">
+        <ServiceAreaMapDynamic flyTo={flyTo} areas={areas} />
       </div>
     </div>
   );

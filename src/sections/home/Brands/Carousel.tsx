@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
@@ -14,7 +14,7 @@ interface RowProps {
 function BrandRow({ brands, direction = "forward", priority = false }: RowProps) {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, align: "start", },
-    [AutoScroll({ startDelay: 0, speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: false, direction })]
+    [AutoScroll({ startDelay: 0, speed: 0.5, stopOnInteraction: false, stopOnMouseEnter: false, direction })]
   );
 
   const items = [...brands, ...brands, ...brands];
@@ -55,3 +55,4 @@ export function BrandsCarousel({ brands, className }: Props) {
     </div>
   );
 }
+

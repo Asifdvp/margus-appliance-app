@@ -20,7 +20,7 @@ export function Hero() {
             <h1 className="font-work-sans font-bold text-[30px] leading-8.75 lg:text-[57px] lg:leading-16.5 text-dark">
               Expert Appliance Repair in{" "}
               <span className="text-brand">
-                Cleveland &amp; Parma — Fast, Same&#8209;Day Service{" "}
+                Cleveland &amp; Greater Cleveland — Fast, Same&#8209;Day Service{" "}
               </span>
             </h1>
           </div>

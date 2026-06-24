@@ -7,6 +7,7 @@ import { MapContainer, TileLayer, Marker, Tooltip, useMap } from "react-leaflet"
 import "leaflet/dist/leaflet.css";
 import PointIcon from "@/shared/icons/point.svg";
 import { SERVICE_AREAS, MAP_CENTER, MAP_ZOOM } from "@/content/service-areas";
+import type { ServiceArea } from "@/content/service-areas";
 
 const markerIcon = L.divIcon({
   html: renderToStaticMarkup(<PointIcon style={{ width: 24, height: 24 }} />),
@@ -26,9 +27,10 @@ function FlyToController({ coords }: { coords: [number, number] | null }) {
 
 interface Props {
   flyTo?: [number, number] | null;
+  areas?: ServiceArea[];
 }
 
-export function ServiceAreaMap({ flyTo = null }: Props) {
+export function ServiceAreaMap({ flyTo = null, areas = SERVICE_AREAS }: Props) {
   return (
     <MapContainer
       center={MAP_CENTER}
@@ -42,7 +44,7 @@ export function ServiceAreaMap({ flyTo = null }: Props) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <FlyToController coords={flyTo} />
-      {SERVICE_AREAS.map((area) => (
+      {areas.map((area) => (
         <Marker key={area.name} position={area.coords} icon={markerIcon}>
           <Tooltip direction="top" offset={[0, -8]} opacity={1}>
             <span className="font-manrope text-[13px] font-semibold">{area.name}</span>

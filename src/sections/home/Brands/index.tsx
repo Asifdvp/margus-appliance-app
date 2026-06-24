@@ -16,7 +16,7 @@ export function Brands() {
             </p>
           </div>
 
-          <div className="min-w-0 max-w-full lg:max-w-200 mx-auto overflow-hidden">
+          <div className="min-w-0 max-w-full  mx-auto overflow-hidden">
             <BrandsCarousel brands={brands} />
           </div>
         </div>

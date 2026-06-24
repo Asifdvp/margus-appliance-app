@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { NAV_LINKS } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import PhoneIcon from "@/shared/icons/phone.svg";
+import RightArrowIcon from "@/shared/icons/right-arrow.svg";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -94,11 +95,19 @@ export function Navbar() {
             </ul>
             <a
               href="tel:+1234567890"
-              className="flex items-center justify-center gap-1 w-full rounded-xl bg-brand px-5 py-3 mb-4 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90"
+              className="flex items-center justify-center gap-1 w-full rounded-xl bg-brand px-5 py-3 mb-3 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90"
             >
               <PhoneIcon className="[&_path]:stroke-white" />
               +123 456  78 90
             </a>
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="flex items-center justify-center gap-1 w-full rounded-xl border border-brand px-5 py-3 mb-4 text-[16px] font-semibold leading-6 text-brand transition-colors hover:bg-brand/10"
+            >
+              Repair Now
+              <RightArrowIcon aria-hidden="true" />
+            </Link>
           </Container>
         </div>
       )}

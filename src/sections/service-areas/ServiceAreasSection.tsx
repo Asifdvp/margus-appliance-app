@@ -1,5 +1,6 @@
 import { Container } from "@/shared/layout/Container";
 import { ServiceAreaInteractive } from "@/shared/ui/ServiceAreaInteractive";
+import { ALL_SERVICE_AREAS } from "@/content/service-areas";
 
 export function ServiceAreasSection() {
   return (
@@ -14,7 +15,7 @@ export function ServiceAreasSection() {
           household appliances, helping keep your home running smoothly without
           interruptions.
         </p>
-        <ServiceAreaInteractive />
+        <ServiceAreaInteractive areas={ALL_SERVICE_AREAS} />
       </Container>
     </section>
   );

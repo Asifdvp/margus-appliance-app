@@ -15,7 +15,7 @@ export function ServiceAreas() {
             id="service-areas-heading"
             className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
           >
-            Appliance Repair Service Areas Near Cleveland
+            Areas We Serve
           </h2>
           <div>
             <p className="font-manrope text-[12px] leading-4.5 text-secondary md:text-[18px] md:leading-7 md:mb-4">
@@ -28,7 +28,7 @@ export function ServiceAreas() {
               href="/service-areas"
               className="w-full rounded-xl bg-brand px-4 py-2.5 text-[15px] lg:text-[18px] lg:leading-7 font-semibold text-white hover:bg-brand/90 hidden lg:flex items-center justify-center gap-1"
             >
-              Learn More <RightArrowIcon />
+              View All Service Areas <RightArrowIcon />
             </Link>
           </div>
         </div>
