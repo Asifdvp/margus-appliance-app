@@ -60,17 +60,17 @@ export function CTABanner() {
               <h2 className="font-work-sans font-bold text-white text-[18px] leading-6 mb-4 text-center">
                 Reliable Appliance Repair From the First Call to the Final Fix
               </h2>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col items-center gap-3 w-full px-3 pb-3">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-1 bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-8 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
+                  className="inline-flex items-center justify-center gap-1 w-full bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-8 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
                 >
                   Book Services
-                  <ArrowIcon aria-hidden="true" />
+                  <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
                 </Link>
                 <a
                   href={CONTACT_INFO.phoneHref}
-                  className="inline-flex items-center gap-2 rounded-xl border-2 border-white px-6 py-2.5 text-[18px] leading-7 font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
+                  className="inline-flex items-center justify-center gap-2 w-full rounded-xl border-2 border-white px-6 py-2.5 text-[18px] leading-7 font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
                 >
                   <PhoneIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
                   {CONTACT_INFO.phone}
