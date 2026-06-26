@@ -28,7 +28,7 @@ export function ServiceAreas() {
               href="/service-areas"
               className="w-full rounded-xl bg-brand px-4 py-2.5 text-[15px] lg:text-[18px] lg:leading-7 font-semibold text-white hover:bg-brand/90 hidden lg:flex items-center justify-center gap-1"
             >
-              View All Service Areas <RightArrowIcon />
+              View All Service Areas <RightArrowIcon className="w-5 h-5 " />
             </Link>
           </div>
         </div>

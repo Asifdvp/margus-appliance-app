@@ -52,7 +52,7 @@ export function Hero() {
               className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[14px] md:text-[18px] leading-5.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
               Book Now
-              <RightArrowIcon aria-hidden="true" />
+              <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
             </Link>
             <a
               href={CONTACT_INFO.phoneHref}

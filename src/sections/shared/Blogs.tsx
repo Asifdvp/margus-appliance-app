@@ -26,7 +26,7 @@ export function Blogs() {
             </h2>
             <div className="hidden lg:flex items-end justify-end mt-4">
               <Link href={CTA_HREF} className={ctaClasses}>
-                {CTA_LABEL} <ArrowIcon aria-hidden="true" />
+                {CTA_LABEL} <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -36,7 +36,7 @@ export function Blogs() {
 
         <div className="mt-7 lg:hidden">
           <Link href={CTA_HREF} className={ctaClasses}>
-            {CTA_LABEL} <ArrowIcon aria-hidden="true" />
+            {CTA_LABEL} <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
           </Link>
         </div>
       </Container>

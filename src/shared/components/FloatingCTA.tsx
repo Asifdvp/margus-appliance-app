@@ -60,13 +60,13 @@ export function FloatingCTA() {
           onClick={() => setOpen(false)}
         >
           Book Now
-          <RightArrowIcon aria-hidden="true" />
+          <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
         </Link>
         <a
           href={CONTACT_INFO.phoneHref}
           className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand px-5 py-3 text-[15px] font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
         >
-          <PhoneIcon aria-hidden="true" />
+          <PhoneIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
           {CONTACT_INFO.phone}
         </a>
       </div>

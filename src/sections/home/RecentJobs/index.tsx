@@ -24,7 +24,7 @@ export function RecentJobs() {
               href="/jobs"
               className="w-full rounded-xl bg-brand px-4 py-4 text-[18px] leading-7 font-semibold text-white hover:bg-brand/90 flex items-center justify-center gap-1"
             >
-              See all jobs <RightArrowIcon />
+              See all jobs <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -40,7 +40,7 @@ export function RecentJobs() {
             href="/jobs"
             className="w-full rounded-xl bg-brand px-4 py-3 text-[14px] leading-5.5 font-semibold text-white hover:bg-brand/90 flex items-center justify-center gap-1"
           >
-            See all jobs <RightArrowIcon />
+            See all jobs <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
           </Link>
         </div>
       </Container>

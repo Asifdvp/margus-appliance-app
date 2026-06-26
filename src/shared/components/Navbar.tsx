@@ -63,8 +63,8 @@ export function Navbar() {
               aria-label="Call us"
               className="inline-flex items-center justify-center gap-1 font-manrope font-semibold rounded-xl border border-brand px-2.5 py-2 text-[13px] leading-5 text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 lg:px-6 lg:py-3 lg:text-[16px] lg:leading-6"
             >
-              <PhoneIcon className="w-4 h-4 shrink-0" aria-hidden="true" />
-              (216) 304-0665
+              <PhoneIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
+           <span className="hidden md:inline"> (216) 304-0665  </span>   
             </a>
 
             <button
@@ -108,7 +108,7 @@ export function Navbar() {
               href="tel:+12163040665"
               className="flex items-center justify-center gap-1 w-full rounded-xl bg-brand px-5 py-3 mb-3 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90"
             >
-              <PhoneIcon className="[&_path]:stroke-white" />
+              <PhoneIcon className="w-5 h-5 shrink-0 [&_path]:stroke-white" aria-hidden="true" />
               (216) 304-0665
             </a>
             <Link
@@ -117,7 +117,7 @@ export function Navbar() {
               className="flex items-center justify-center gap-1 w-full rounded-xl border border-brand px-5 py-3 mb-4 text-[16px] font-semibold leading-6 text-brand transition-colors hover:bg-brand/10"
             >
               Book Now
-              <RightArrowIcon aria-hidden="true" />
+              <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
             </Link>
           </Container>
         </div>
