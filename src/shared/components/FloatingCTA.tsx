@@ -59,7 +59,7 @@ export function FloatingCTA() {
           className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
           onClick={() => setOpen(false)}
         >
-          Repair Now
+          Book Now
           <RightArrowIcon aria-hidden="true" />
         </Link>
         <a

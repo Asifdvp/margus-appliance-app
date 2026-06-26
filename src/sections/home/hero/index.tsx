@@ -20,23 +20,25 @@ export function Hero() {
             <h1 className="font-work-sans font-bold text-[30px] leading-8.75 lg:text-[57px] lg:leading-16.5 text-dark">
               Expert Appliance Repair in{" "}
               <span className="text-brand">
-                Cleveland &amp; Greater Cleveland — Fast, Same&#8209;Day Service{" "}
+                Parma &amp; Greater Cleveland — Fast, Same&#8209;Day
+                Service{" "}
               </span>
             </h1>
           </div>
 
           <p className="max-w-lg text-[12px] leading-4.5 lg:text-[18px] lg:leading-7 text-secondary font-manrope font-normal mb-1 md:mb-2">
-            When your refrigerator, washer, or dryer breaks down, every hour
-            counts. Margus Appliance delivers certified appliance repair across
-            Cleveland, Parma, and surrounding areas — with transparent pricing
-            and a 90&#8209;day parts &amp; labor warranty.
+            Margus Appliance Repair proudly serves homeowners throughout Parma,
+            Cleveland, and the Greater Cleveland area. As a family-owned
+            business, we provide fast, reliable appliance repair with honest,
+            upfront pricing, same-day service whenever available, no service
+            call fee with repair, and a 180&#8209;day parts &amp; labor warranty.
           </p>
           <p className="text-brand text-[10px] leading-4 md:text-[16px] md:leading-5 font-bold font-manrope mb-5 md:mb-12">
             No service call fee with repair{" "}
             <span className="text-brand inline-block w-1 h-1 rounded-full mx-2">
               {" "}
             </span>{" "}
-            90 day warranty
+            180 day warranty
           </p>
 
           <div className="block lg:hidden my-5 ">
@@ -49,14 +51,14 @@ export function Hero() {
               href="/contact"
               className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[14px] md:text-[18px] leading-5.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
-              Repair Now
+              Book Now
               <RightArrowIcon aria-hidden="true" />
             </Link>
             <a
               href={CONTACT_INFO.phoneHref}
-              className="inline-flex items-center justify-center gap-1 border rounded-xl border-brand px-7 py-3 md:py-3.5 text-[14px] leading-5.5 md:text-base md:leading-6 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand px-7 py-3 text-[14px] leading-5.5 md:text-[18px] md:leading-7 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
-              <PhoneIcon aria-hidden="true" />
+              <PhoneIcon className="w-4 h-4 md:w-5 md:h-5 shrink-0" aria-hidden="true" />
               {CONTACT_INFO.phone}
             </a>
           </div>

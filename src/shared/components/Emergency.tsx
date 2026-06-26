@@ -8,12 +8,12 @@ function MarqueeItem() {
     <div className="flex shrink-0 items-center gap-10 pr-10 py-1.5">
       <div className="flex items-center gap-1.5">
         <span className="flex h-2 w-2 rounded-full bg-white" />
-        <span className={textClass}>Emergency Service Available 8:00 – 17:00</span>
+        <span className={textClass}>Emergency Service Available 8am – 6pm</span>
       </div>
       <span className={textClass}>
         DON&apos;T WAIT — WE CAN FIX IT TODAY!{" "}
-        <a href="tel:+12345678900" className="hover:underline">
-          +123 456 78 90
+        <a href="tel:+12163040665" className="hover:underline">
+          (216) 304-0665
         </a>
       </span>
     </div>
@@ -36,13 +36,13 @@ export function Emergency() {
         <div className="flex items-center gap-1.5">
           <span className="flex h-2 w-2 rounded-full bg-white" />
           <span className={textClass}>
-            Emergency Service Available 8:00 – 17:00
+            Emergency Service Available 8am – 6pm
           </span>
         </div>
         <p className={textClass}>
           DON&apos;T WAIT — WE CAN FIX IT TODAY!{" "}
-          <a href="tel:+12345678900" className="hover:underline">
-            +123 456 78 90
+          <a href="tel:+12163040665" className="hover:underline">
+            (216) 304-0665
           </a>
         </p>
       </Container>

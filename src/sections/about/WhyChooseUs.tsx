@@ -42,7 +42,7 @@ const VARIANT_BG: Record<StatVariant, string> = {
 
 const STATS: Stat[] = [
   {
-    value: "10+",
+    value: "8+",
     label: "Years Active",
     icon: <DateIcon />,
     variant: "orange",
@@ -75,7 +75,14 @@ const STATS: Stat[] = [
   },
 ];
 
-function StatCard({ value, label, icon, variant, outerCorner, fillColor }: Stat) {
+function StatCard({
+  value,
+  label,
+  icon,
+  variant,
+  outerCorner,
+  fillColor,
+}: Stat) {
   const fillCorners = [outerCorner];
   return (
     <div className="relative">
@@ -88,7 +95,10 @@ function StatCard({ value, label, icon, variant, outerCorner, fillColor }: Stat)
         />
       ))}
       <article
-        className={cn("text-white relative z-10 rounded-3xl p-5 lg:p-12 flex flex-col items-center justify-center gap-0.5 text-center", VARIANT_BG[variant])}
+        className={cn(
+          "text-white relative z-10 rounded-3xl p-5 lg:p-12 flex flex-col items-center justify-center gap-0.5 text-center",
+          VARIANT_BG[variant],
+        )}
         aria-label={`${value} ${label}`}
       >
         <div className="flex items-center justify-center gap-1.5 md:gap-2">
@@ -136,8 +146,10 @@ export function WhyChooseUs() {
               Why Homeowners Choose Margus Appliance
             </h2>
             <p className="font-manrope font-normal text-dark text-xs md:text-[18px] leading-4.5 md:leading-7 mb-0.5 md:mb-4">
-              From same-day service to transparent pricing, we make appliance
-              repair simple, stress-free, and dependable for local homeowners.
+              From same-day service to honest, upfront pricing, our family-owned
+              team makes appliance repair simple, stress-free, and dependable
+              for homeowners throughout Parma, Cleveland, and the Greater
+              Cleveland area.
             </p>
             <ul className="flex flex-col gap-2.5" aria-label="Our advantages">
               {FEATURES.map((f) => (

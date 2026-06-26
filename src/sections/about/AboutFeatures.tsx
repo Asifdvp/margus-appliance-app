@@ -19,7 +19,7 @@ const FEATURES: Feature[] = [
     iconSrc: requestIcon,
     title: "Same-Day Service",
     description:
-      "Book your appliance repair by phone, email, or online — fast and easy, available 24/7.",
+      "Book your appliance repair by phone, email, or online — fast and easy",
   },
   {
     id: "one-visit",

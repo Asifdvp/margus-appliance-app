@@ -5,7 +5,7 @@ export function AllJobsHero() {
     <PageHero
       src="/service-hero.jpg"
       alt="Appliance repair jobs completed by Margus Appliance technicians"
-      heading="All Jobs Done"
+      heading="Recent Appliance Repairs"
     />
   );
 }
