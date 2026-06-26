@@ -36,7 +36,7 @@ export function Services() {
           </div>
           <div className="hidden lg:flex w-1/2 ml-auto mt-4">
             <Link href={CTA_HREF} className={`${ctaClasses} w-full`}>
-              {CTA_LABEL} <ArrowIcon />
+              {CTA_LABEL} <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -47,7 +47,7 @@ export function Services() {
         {/* Mobile CTA */}
         <div className="mt-4 lg:hidden">
           <Link href={CTA_HREF} className={`${ctaClasses} w-full`}>
-            {CTA_LABEL} <ArrowIcon />
+            {CTA_LABEL} <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
           </Link>
         </div>
       </Container>

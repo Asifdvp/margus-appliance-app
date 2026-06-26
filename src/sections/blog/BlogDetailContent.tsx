@@ -11,7 +11,6 @@ export function BlogDetailContent({ post }: Props) {
     <section className="bg-white pb-12 lg:pb-20">
       <Container>
         <div className="flex flex-col lg:flex-row lg:gap-12 lg:items-start">
-
           {/* ── Article body ─────────────────────────────── */}
           <article className="flex-1 min-w-0">
             {post.excerpt && (
@@ -61,12 +60,11 @@ export function BlogDetailContent({ post }: Props) {
                   className="inline-flex items-center gap-1 bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-16 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
                 >
                   Book Services
-                  <ArrowIcon aria-hidden="true" />
+                  <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
                 </Link>
               </div>
             </div>
           </aside>
-
         </div>
       </Container>
     </section>

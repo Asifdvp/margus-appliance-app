@@ -109,7 +109,7 @@ export function ContactSection() {
                 className="w-full inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 font-manrope text-[14px] lg:text-[18px] md:py-4 lg:leading-7 font-semibold leading-5.5 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
               >
                 Send
-                <ArrowIcon aria-hidden="true" />
+                <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
               </button>
             </form>
           </div>

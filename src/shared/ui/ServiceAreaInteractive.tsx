@@ -51,7 +51,7 @@ export function ServiceAreaInteractive({ areas = SERVICE_AREAS }: Props) {
           className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-brand px-6 py-3 lg:py-4 font-manrope text-[14px] leading-5.5 lg:text-[18px] lg:leading-7 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
         >
           View All Service Areas
-          <ArrowIcon aria-hidden="true" />
+          <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
         </Link>
       </div>
 
