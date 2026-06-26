@@ -46,14 +46,25 @@ export function Navbar() {
             ))}
           </ul>
 
-          {/* Desktop phone button + Mobile hamburger */}
-          <div className="flex items-center gap-3">
-            <a
-              href="tel:+1234567890"
-              className=" hidden lg:inline-flex items-center gap-1 font-manrope rounded-xl bg-brand px-6 py-3 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+          {/* Buttons + Mobile hamburger */}
+          <div className="flex items-center gap-2 lg:gap-3">
+            {/* Book Now — desktop: full label, mobile: short */}
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-1 font-manrope rounded-xl bg-brand px-3 py-2 text-[13px] font-semibold leading-5 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 lg:px-6 lg:py-3 lg:text-[16px] lg:leading-6"
             >
-              <PhoneIcon className="[&_path]:stroke-white" />
-             +123 456  78 90
+              Book Now
+              <RightArrowIcon className="w-3.5 h-3.5 lg:w-4 lg:h-4" aria-hidden="true" />
+            </Link>
+
+            {/* Phone — desktop: full, mobile: icon only */}
+            <a
+              href="tel:+12163040665"
+              aria-label="Call us"
+              className="inline-flex items-center justify-center gap-1 font-manrope font-semibold rounded-xl border border-brand px-2.5 py-2 text-[13px] leading-5 text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 lg:px-6 lg:py-3 lg:text-[16px] lg:leading-6"
+            >
+              <PhoneIcon className="w-4 h-4 shrink-0" aria-hidden="true" />
+              (216) 304-0665
             </a>
 
             <button
@@ -94,18 +105,18 @@ export function Navbar() {
               ))}
             </ul>
             <a
-              href="tel:+1234567890"
+              href="tel:+12163040665"
               className="flex items-center justify-center gap-1 w-full rounded-xl bg-brand px-5 py-3 mb-3 text-[16px] font-semibold leading-6 text-white transition-colors hover:bg-brand/90"
             >
               <PhoneIcon className="[&_path]:stroke-white" />
-              +123 456  78 90
+              (216) 304-0665
             </a>
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-1 w-full rounded-xl border border-brand px-5 py-3 mb-4 text-[16px] font-semibold leading-6 text-brand transition-colors hover:bg-brand/10"
             >
-              Repair Now
+              Book Now
               <RightArrowIcon aria-hidden="true" />
             </Link>
           </Container>

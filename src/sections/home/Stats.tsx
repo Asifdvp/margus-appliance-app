@@ -6,7 +6,7 @@ import WarrantyIcon from "@/shared/icons/warranty.svg";
 
 const STATS = [
   {
-    value: "10+",
+    value: "8+",
     label: "Years Active",
     icon: <DateIcon />,
   },

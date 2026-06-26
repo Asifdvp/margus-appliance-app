@@ -28,7 +28,7 @@ export function Services() {
 
             <div>
               <p className="font-manrope text-[12px] leading-4.5 text-secondary  lg:text-[18px] lg:leading-6">
-                Reliable appliance repairs backed by 10+ years of experience
+                Reliable appliance repairs backed by 8+ years of experience
               </p>
             </div>
 

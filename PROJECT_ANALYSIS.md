@@ -152,8 +152,8 @@ Testimonial  { id, text, name, location, image? }
 ```ts
 SITE_NAME    = "Margus Appliance"
 CONTACT_INFO = {
-  phone:     "+789 458 78 78",
-  phoneHref: "tel:+78945787878",
+  phone:     "(216) 304-0665",
+  phoneHref: "tel:(216) 304-0665",
   email:     "info@margusappliance.com",
   emailHref: "mailto:info@margusappliance.com",
 }
