@@ -14,7 +14,7 @@ export const SITE_DESCRIPTION = "Professional appliance services and solutions";
 
 export const CONTACT_INFO = {
   phone: "(216) 304-0665",
-  phoneHref: "tel:(216) 304-0665",
+  phoneHref: "tel:+12163040665",
   email: "info@margusappliance.com",
   emailHref: "mailto:info@margusappliance.com",
 } as const;
