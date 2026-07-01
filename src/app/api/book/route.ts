@@ -1,15 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { rateLimit } from "@/lib/rateLimit";
 
 const MAX_FIELD_LENGTH = 500;
-
-function getIp(req: NextRequest): string {
-  return (
-    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
-    req.headers.get("x-real-ip") ??
-    "unknown"
-  );
-}
 
 function sanitize(value: unknown): string {
   if (typeof value !== "string") return "";
@@ -17,20 +8,6 @@ function sanitize(value: unknown): string {
 }
 
 export async function POST(req: NextRequest) {
-  // Rate limit: 5 submissions per IP per hour
-  const ip = getIp(req);
-  const { allowed, retryAfterSeconds } = rateLimit(ip, 5, 60 * 60 * 1000);
-
-  if (!allowed) {
-    return NextResponse.json(
-      { error: "Too many requests. Please try again later." },
-      {
-        status: 429,
-        headers: { "Retry-After": String(retryAfterSeconds) },
-      }
-    );
-  }
-
   let body: Record<string, unknown>;
   try {
     body = await req.json();
@@ -38,9 +15,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  // Honeypot check — bots fill hidden fields, humans don't
+  // Honeypot — bots fill hidden fields, humans don't
   if (body.hp) {
-    return NextResponse.json({ ok: true }); // silent reject
+    return NextResponse.json({ ok: true });
   }
 
   const name      = sanitize(body.name);
@@ -49,7 +26,6 @@ export async function POST(req: NextRequest) {
   const appliance = sanitize(body.appliance);
   const email     = sanitize(body.email);
   const brand     = sanitize(body.brand);
-  const location  = sanitize(body.location);
   const issue     = sanitize(body.issue);
 
   if (!name || !phone || !zip || !appliance) {
@@ -63,10 +39,9 @@ export async function POST(req: NextRequest) {
     `📞 *Phone:* ${phone}`,
     `📍 *ZIP:* ${zip}`,
     `🔧 *Appliance:* ${appliance}`,
-    email    ? `📧 *Email:* ${email}`      : null,
-    brand    ? `🏷 *Brand:* ${brand}`      : null,
-    location ? `🏠 *Location:* ${location}` : null,
-    issue    ? `📝 *Problem:* ${issue}`    : null,
+    email    ? `📧 *Email:* ${email}`       : null,
+    brand    ? `🏷 *Brand:* ${brand}`       : null,
+    issue    ? `📝 *Problem:* ${issue}`     : null,
   ]
     .filter(Boolean)
     .join("\n");

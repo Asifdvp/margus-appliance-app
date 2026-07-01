@@ -16,7 +16,6 @@ type FormData = {
   email: string;
   brand: string;
   appliance: string;
-  location: string;
   issue: string;
 };
 
@@ -29,7 +28,6 @@ const INITIAL: FormData = {
   email: "",
   brand: "",
   appliance: "",
-  location: "",
   issue: "",
 };
 
@@ -172,32 +170,19 @@ export function BookingForm({ onSuccess }: Props) {
         </BookingField>
       </div>
 
-      {/* Row 3 — Appliance · Location */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <BookingField htmlFor="b-appliance" label="Appliance" required error={errors.appliance}>
-          <BookingSelect
-            id="b-appliance"
-            value={form.appliance}
-            onChange={(val) => {
-              setForm((prev) => ({ ...prev, appliance: val }));
-              if (errors.appliance) setErrors((prev) => ({ ...prev, appliance: undefined }));
-            }}
-            options={APPLIANCE_OPTIONS}
-            hasError={!!errors.appliance}
-          />
-        </BookingField>
-
-        <BookingField htmlFor="b-location" label="Where you located" optional>
-          <input
-            id="b-location"
-            type="text"
-            placeholder="e.g. Parma, Cleveland"
-            value={form.location}
-            onChange={handleChange("location")}
-            className={fieldCn(false)}
-          />
-        </BookingField>
-      </div>
+      {/* Row 3 — Appliance */}
+      <BookingField htmlFor="b-appliance" label="Appliance" required error={errors.appliance}>
+        <BookingSelect
+          id="b-appliance"
+          value={form.appliance}
+          onChange={(val) => {
+            setForm((prev) => ({ ...prev, appliance: val }));
+            if (errors.appliance) setErrors((prev) => ({ ...prev, appliance: undefined }));
+          }}
+          options={APPLIANCE_OPTIONS}
+          hasError={!!errors.appliance}
+        />
+      </BookingField>
 
       {/* Row 4 — Issue */}
       <BookingField htmlFor="b-issue" label="Describe your issue" optional>
