@@ -220,7 +220,7 @@ export function BookingForm({ onSuccess }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="mt-1 inline-flex items-center justify-center gap-1 w-full rounded-xl bg-brand py-4 font-manrope text-[16px] lg:text-[18px] leading-7 font-semibold text-white transition-colors hover:bg-brand/90 disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+        className="mt-1 inline-flex items-center justify-center gap-1 w-full rounded-xl bg-brand py-2.5 lg:py-4 font-manrope text-[16px] lg:text-[18px] leading-7 font-semibold text-white transition-colors hover:bg-brand/90 disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
       >
         {loading ? "Sending…" : "Send"}
         {!loading && <RightArrowIcon aria-hidden="true" className="w-5 h-5" />}

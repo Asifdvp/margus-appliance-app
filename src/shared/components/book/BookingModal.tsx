@@ -40,7 +40,7 @@ export function BookingModal({ onClose }: Props) {
         <button
           onClick={onClose}
           aria-label="Close booking modal"
-          className="border-[#F6F6F6] absolute -top-3 cursor-pointer -right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-white transition-colors hover:bg-[#E5E5E5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+          className="border-[#F6F6F6] absolute top-2 right-3 lg:-top-3 lg:-right-3 cursor-pointer z-10 flex h-7 w-7 items-center justify-center rounded-full bg-white transition-colors hover:bg-[#E5E5E5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
         >
           <CloseIcon />
         </button>
