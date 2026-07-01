@@ -1,15 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { rateLimit } from "@/lib/rateLimit";
 
 const MAX_FIELD_LENGTH = 1000;
-
-function getIp(req: NextRequest): string {
-  return (
-    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
-    req.headers.get("x-real-ip") ??
-    "unknown"
-  );
-}
 
 function sanitize(value: unknown): string {
   if (typeof value !== "string") return "";
@@ -17,16 +8,6 @@ function sanitize(value: unknown): string {
 }
 
 export async function POST(req: NextRequest) {
-  const ip = getIp(req);
-  const { allowed, retryAfterSeconds } = rateLimit(ip, 5, 60 * 60 * 1000);
-
-  if (!allowed) {
-    return NextResponse.json(
-      { error: "Too many requests. Please try again later." },
-      { status: 429, headers: { "Retry-After": String(retryAfterSeconds) } }
-    );
-  }
-
   let body: Record<string, unknown>;
   try {
     body = await req.json();
@@ -34,6 +15,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
+  // Honeypot — bots fill hidden fields, humans don't
   if (body.hp) {
     return NextResponse.json({ ok: true });
   }
@@ -53,9 +35,9 @@ export async function POST(req: NextRequest) {
     "",
     `👤 *Name:* ${name}`,
     `📞 *Phone:* ${phone}`,
-    zip     ? `📍 *ZIP:* ${zip}`           : null,
-    email   ? `📧 *Email:* ${email}`       : null,
-    message ? `📝 *Message:* ${message}`   : null,
+    zip     ? `📍 *ZIP:* ${zip}`         : null,
+    email   ? `📧 *Email:* ${email}`     : null,
+    message ? `📝 *Message:* ${message}` : null,
   ]
     .filter(Boolean)
     .join("\n");
