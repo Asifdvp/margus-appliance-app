@@ -75,9 +75,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const jobPages: MetadataRoute.Sitemap = RECENT_JOBS.map((job) => ({
     url: `${BASE_URL}/jobs/${job.id}`,
-    lastModified: new Date(
-      job.date.split(".").reverse().join("-")
-    ),
+    lastModified: job.date
+      ? new Date(job.date.split(".").reverse().join("-"))
+      : new Date(),
     changeFrequency: "yearly",
     priority: 0.5,
   }));

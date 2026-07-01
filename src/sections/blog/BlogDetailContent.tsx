@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
 import { BookNowButton } from "@/shared/components/book";
