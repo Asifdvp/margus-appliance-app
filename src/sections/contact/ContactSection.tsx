@@ -40,7 +40,7 @@ function SuccessView({ onReset }: { onReset: () => void }) {
       <div>
         <h3 className="font-work-sans font-bold text-[22px] text-dark mb-2">Message Sent!</h3>
         <p className="font-manrope text-secondary text-[14px] leading-6 max-w-xs mx-auto">
-          Thank you! We&apos;ll get back to you within 24 hours.
+          Thank you! We&apos;ll get back to you within 3-5 minutes.
         </p>
       </div>
       <button
@@ -111,7 +111,7 @@ export function ContactSection() {
             </h2>
             <p className="font-manrope text-xs leading-4.5 lg:text-base lg:leading-6 text-secondary mb-4 lg:mb-6">
               Have questions or feedback about our services? We are here to help.
-              Get in touch today, and our team will respond within 24 hours.
+              Get in touch today, and our team will respond within 3-5 minutes.
             </p>
 
             {submitted ? (

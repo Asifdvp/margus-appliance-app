@@ -61,7 +61,7 @@ export function BookingModal({ onClose }: Props) {
                   <p className="font-manrope text-secondary text-[13px] lg:text-[16px] leading-5.5 lg:leading-6">
                     Have questions or feedback about our services? We are here
                     to help. Get in touch today, and our team will respond
-                    within 24 hours.
+                    within 3-5 minutes.
                   </p>
                 </div>
                 <BookingForm onSuccess={() => setSubmitted(true)} />
