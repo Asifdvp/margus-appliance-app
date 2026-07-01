@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url: `https://margusappliance.com/jobs/${slug}`,
       type: "article",
-      publishedTime: toISODate(job.date),
+      publishedTime: job.date ? toISODate(job.date) : undefined,
       images: [
         {
           url: job.image ?? "/og-home.jpg",
@@ -63,7 +63,7 @@ export default async function JobDetailPage({ params }: Props) {
     "@type": "Article",
     headline: `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}`,
     description: job.problem ?? "Certified appliance repair by Margus Appliance.",
-    datePublished: toISODate(job.date),
+    datePublished: job.date ? toISODate(job.date) : undefined,
     image: job.image ? `https://margusappliance.com${job.image}` : "https://margusappliance.com/og-home.jpg",
     author: {
       "@type": "Organization",
