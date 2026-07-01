@@ -3,7 +3,6 @@ import { ServicesHero } from "@/sections/services/ServicesHero";
 import { ServicesList } from "@/sections/services/ServicesList";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
-import { CONTACT_INFO } from "@/constants";
 
 export const metadata: Metadata = {
   title: "Appliance Repair Services — Cleveland & Parma | Margus Appliance",
@@ -35,30 +34,9 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Margus Appliance",
-  url: "https://margusappliance.com",
-  telephone: CONTACT_INFO.phone,
-  email: CONTACT_INFO.email,
-  description:
-    "Professional appliance repair services in Cleveland, Parma, and surrounding areas.",
-  areaServed: [
-    { "@type": "City", name: "Cleveland" },
-    { "@type": "City", name: "Parma" },
-  ],
-  serviceType: "Appliance Repair",
-  priceRange: "$$",
-};
-
 export default function ServicesPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
       <ServicesHero />
       <ServicesList />
       <Blogs />

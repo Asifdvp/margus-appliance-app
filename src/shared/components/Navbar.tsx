@@ -7,6 +7,7 @@ import { NAV_LINKS } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
+import { BookNowButton } from "@/shared/components/book";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -28,7 +29,7 @@ export function Navbar() {
               width={158}
               height={90}
               priority
-              className="lg:absolute lg:-top-1.75 h-10 lg:h-22.5 w-auto object-contain"
+              className="lg:absolute lg:-top-1.75 h-10 lg:h-22.5 w-auto object-contain" style={{ width: "auto" }}
             />
           </Link>
 
@@ -49,13 +50,10 @@ export function Navbar() {
           {/* Buttons + Mobile hamburger */}
           <div className="flex items-center gap-2 lg:gap-3">
             {/* Book Now — desktop: full label, mobile: short */}
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-1 font-manrope rounded-xl bg-brand px-3 py-2 text-[13px] font-semibold leading-5 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 lg:px-6 lg:py-3 lg:text-[16px] lg:leading-6"
-            >
+            <BookNowButton className="inline-flex items-center gap-1 font-manrope rounded-xl bg-brand px-3 py-2 text-[13px] font-semibold leading-5 text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 lg:px-6 lg:py-3 lg:text-[16px] lg:leading-6">
               Book Now
               <RightArrowIcon className="w-3.5 h-3.5 lg:w-4 lg:h-4" aria-hidden="true" />
-            </Link>
+            </BookNowButton>
 
             {/* Phone — desktop: full, mobile: icon only */}
             <a
@@ -111,14 +109,13 @@ export function Navbar() {
               <PhoneIcon className="w-5 h-5 shrink-0 [&_path]:stroke-white" aria-hidden="true" />
               (216) 304-0665
             </a>
-            <Link
-              href="/contact"
+            <BookNowButton
               onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-1 w-full rounded-xl border border-brand px-5 py-3 mb-4 text-[16px] font-semibold leading-6 text-brand transition-colors hover:bg-brand/10"
             >
               Book Now
               <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
-            </Link>
+            </BookNowButton>
           </Container>
         </div>
       )}

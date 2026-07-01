@@ -33,7 +33,7 @@ export function ServiceAreas() {
           </div>
         </div>
 
-        <ServiceAreaInteractive />
+        <ServiceAreaInteractive showViewAll />
       </Container>
     </section>
   );

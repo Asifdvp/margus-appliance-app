@@ -2,9 +2,44 @@ import type { Service } from "@/types";
 
 export const SERVICES: Service[] = [
   {
+    id: "refrigerator-repair",
+    title: "Refrigerator Repair",
+    description:
+      "Fast fridge repair in Cleveland — cooling, ice maker & temperature issues fixed.",
+    href: "/services/refrigerator-repair",
+    icon: "/images/services/refrigator.png",
+    detailImage: "/images/services/refrigator.png",
+    intro: [
+      "A failing refrigerator can spoil your food and cause costly waste. Our certified technicians provide fast refrigerator repairs to keep your food fresh and your household running smoothly.",
+      "We repair all makes and models, from basic fridges to high-end French door refrigerators.",
+    ],
+    commonProblems: [
+      "Refrigerator not cooling",
+      "Freezer not freezing",
+      "Ice maker not working",
+      "Water leaking inside or under fridge",
+      "Loud compressor or fan noises",
+      "Temperature fluctuations",
+      "Door seal and gasket issues",
+    ],
+    whyChoosePoints: [
+      "Fast same-day refrigerator repair",
+      "All major brands serviced",
+      "Transparent pricing, no surprises",
+      "90-day warranty on all repairs",
+      "Locally trusted in Cleveland & Parma",
+    ],
+    closingHeading: "Keep Your Food Fresh",
+    closingText: [
+      "A refrigerator breakdown is urgent. Our team responds quickly to get your fridge back to optimal temperature as soon as possible.",
+      "Call us today for fast, reliable refrigerator repair in Cleveland and Parma.",
+    ],
+  },
+  {
     id: "washer-repair",
     title: "Washer Repair",
-    description: "Washer not spinning or draining? Fast, same-day repair for all major brands.",
+    description:
+      "Washer not spinning or draining? Fast, same-day repair for all major brands.",
     href: "/services/washer-repair",
     icon: "/services/washer.png",
     detailImage: "/services/washer.png",
@@ -40,7 +75,8 @@ export const SERVICES: Service[] = [
   {
     id: "dryer-repair",
     title: "Dryer Repair",
-    description: "No heat or long drying times? We fix all dryer issues fast with quality parts.",
+    description:
+      "No heat or long drying times? We fix all dryer issues fast with quality parts.",
     href: "/services/dryer-repair",
     icon: "/images/services/dryer.png",
     detailImage: "/images/services/dryer.png",
@@ -71,42 +107,43 @@ export const SERVICES: Service[] = [
     ],
   },
   {
-    id: "refrigerator-repair",
-    title: "Refrigerator Repair",
-    description: "Fast fridge repair in Cleveland — cooling, ice maker & temperature issues fixed.",
-    href: "/services/refrigerator-repair",
-    icon: "/images/services/refrigator.png",
-    detailImage: "/images/services/refrigator.png",
+    id: "https://www.mrfikser.com/-repair",
+    title: "Stove Repair",
+    description:
+      "Burner not working or stove won't ignite? We fix all major brands.",
+    href: "/services/stove-repair",
+    icon: "/images/services/stove.png",
+    detailImage: "/images/services/stove.png",
     intro: [
-      "A failing refrigerator can spoil your food and cause costly waste. Our certified technicians provide fast refrigerator repairs to keep your food fresh and your household running smoothly.",
-      "We repair all makes and models, from basic fridges to high-end French door refrigerators.",
+      "A broken stove makes cooking at home nearly impossible. Our certified technicians repair all types of stoves — gas, electric, and induction.",
+      "We service all major brands and provide fast, reliable repairs with transparent pricing.",
     ],
     commonProblems: [
-      "Refrigerator not cooling",
-      "Freezer not freezing",
-      "Ice maker not working",
-      "Water leaking inside or under fridge",
-      "Loud compressor or fan noises",
-      "Temperature fluctuations",
-      "Door seal and gasket issues",
+      "Burners not igniting or heating",
+      "Uneven heat distribution",
+      "Control panel errors",
+      "Gas smell or ignition issues",
+      "Surface element not working",
+      "Knobs or controls not responding",
     ],
     whyChoosePoints: [
-      "Fast same-day refrigerator repair",
-      "All major brands serviced",
-      "Transparent pricing, no surprises",
-      "90-day warranty on all repairs",
-      "Locally trusted in Cleveland & Parma",
+      "Gas and electric stove specialists",
+      "Same-day appointments available",
+      "Certified and insured technicians",
+      "Upfront pricing before any work begins",
+      "90-day parts & labor warranty",
     ],
-    closingHeading: "Keep Your Food Fresh",
+    closingHeading: "Get Back to Cooking",
     closingText: [
-      "A refrigerator breakdown is urgent. Our team responds quickly to get your fridge back to optimal temperature as soon as possible.",
-      "Call us today for fast, reliable refrigerator repair in Cleveland and Parma.",
+      "Don't let a faulty stove disrupt your meals. Our team provides fast, professional stove repairs across Cleveland and Parma.",
+      "Schedule your repair today and get your kitchen back in working order.",
     ],
   },
   {
     id: "dishwasher-repair",
     title: "Dishwasher Repair",
-    description: "Not cleaning or draining? Reliable dishwasher repair with upfront pricing.",
+    description:
+      "Not cleaning or draining? Reliable dishwasher repair with upfront pricing.",
     href: "/services/dishwasher-repair",
     icon: "/images/services/dishwasher.png",
     detailImage: "/images/services/dishwasher.png",
@@ -139,7 +176,8 @@ export const SERVICES: Service[] = [
   {
     id: "freezer-repair",
     title: "Freezer Repair",
-    description: "Freezer not freezing? Quick, affordable repair across Cleveland.",
+    description:
+      "Freezer not freezing? Quick, affordable repair across Cleveland.",
     href: "/services/freezer-repair",
     icon: "/images/services/freezer.png",
     detailImage: "/images/services/freezer.png",
@@ -170,7 +208,8 @@ export const SERVICES: Service[] = [
   {
     id: "ice-maker-repair",
     title: "Ice Maker Repair",
-    description: "Not working or leaking? Same-day ice maker repair in Cleveland.",
+    description:
+      "Not working or leaking? Same-day ice maker repair in Cleveland.",
     href: "/services/ice-maker-repair",
     icon: "/images/services/icemaker.png",
     detailImage: "/images/services/icemaker.png",
@@ -197,25 +236,27 @@ export const SERVICES: Service[] = [
       "Our experienced technicians will diagnose and fix your ice maker quickly so you're back to having fresh ice whenever you need it.",
     ],
   },
+
   {
-    id: "oven-stove-repair",
-    title: "Oven & Stove Repair",
-    description: "Oven not heating or burner not working? We fix all major brands.",
-    href: "/services/oven-stove-repair",
+    id: "oven-repair",
+    title: "Oven Repair",
+    description:
+      "Oven not heating or temperature off? We fix all major brands.",
+    href: "/services/oven-repair",
     icon: "/images/services/oven.png",
     detailImage: "/images/services/oven.png",
     intro: [
-      "A broken oven or stove makes cooking at home nearly impossible. Our certified technicians repair all types of ovens and stoves — gas, electric, and induction.",
-      "We service all major brands and provide fast, reliable repairs with transparent pricing.",
+      "A faulty oven disrupts your entire household routine. Our certified technicians repair all types of ovens — gas, electric, and convection.",
+      "We service all major brands and provide same-day appointments to get your oven back up and running fast.",
     ],
     commonProblems: [
       "Oven not heating to correct temperature",
-      "Burners not igniting or heating",
       "Oven door not closing properly",
       "Control panel errors",
       "Uneven baking or cooking",
-      "Gas smell or ignition issues",
       "Self-clean cycle problems",
+      "Heating element failure",
+      "Igniter not working",
     ],
     whyChoosePoints: [
       "Gas and electric oven specialists",
@@ -224,40 +265,10 @@ export const SERVICES: Service[] = [
       "Upfront pricing before any work begins",
       "90-day parts & labor warranty",
     ],
-    closingHeading: "Get Back to Cooking",
+    closingHeading: "Get Your Oven Back in Action",
     closingText: [
-      "Don't let a faulty oven or stove disrupt your meals. Our team provides fast, professional oven and stove repairs across Cleveland and Parma.",
+      "Don't let a broken oven disrupt your meals. Our team provides fast, professional oven repairs across Cleveland and Parma.",
       "Schedule your repair today and get your kitchen back in working order.",
-    ],
-  },
-  {
-    id: "kitchen-appliance-repair",
-    title: "Kitchen Appliance Repair",
-    description: "Microwave, range hood, blender & more — same-day repair in Cleveland & Parma.",
-    href: "/services/kitchen-appliance-repair",
-    icon: "/images/services/kitchen.png",
-    detailImage: "/images/services/kitchen.png",
-    intro: [
-      "From microwaves to range hoods, our technicians repair a wide range of kitchen appliances quickly and affordably.",
-      "We service all major brands and provide same-day appointments to minimize disruption to your kitchen.",
-    ],
-    commonProblems: [
-      "Microwave not heating",
-      "Range hood fan not working",
-      "Garbage disposal issues",
-      "Small appliance electrical problems",
-      "Control panel malfunctions",
-    ],
-    whyChoosePoints: [
-      "Wide range of kitchen appliances serviced",
-      "Same-day repair options",
-      "Certified technicians",
-      "Transparent pricing",
-      "90-day warranty",
-    ],
-    closingHeading: "Full Kitchen Appliance Service",
-    closingText: [
-      "Keep your kitchen running smoothly with professional appliance repair from Margus Appliance. Contact us today for fast, affordable service in Cleveland and Parma.",
     ],
   },
 ];

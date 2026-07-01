@@ -34,6 +34,7 @@ export function ServiceCard({
             src={icon}
             alt={`${title} icon`}
             fill
+            sizes="(min-width: 1024px) 130px, 48px"
             className="object-contain object-left"
           />
         </div>

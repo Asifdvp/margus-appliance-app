@@ -31,6 +31,7 @@ function BrandRow({ brands, direction = "forward", priority = false }: RowProps)
               src={brand.logo}
               alt={brand.name}
               fill
+              sizes="(min-width: 768px) 144px, 80px"
               className="object-contain"
               priority={priority}
             />

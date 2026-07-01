@@ -1,6 +1,5 @@
 import { RECENT_JOBS } from "@/content/recent-jobs";
 import { Container } from "@/shared/layout/Container";
-import { Button } from "@/shared/ui/Button";
 import { RecentJobsCarousel } from "./Carousel";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
 import Link from "next/link";
@@ -31,7 +30,7 @@ export function RecentJobs() {
       </Container>
 
       <Container>
-        <RecentJobsCarousel brands={RECENT_JOBS} />
+        <RecentJobsCarousel jobs={RECENT_JOBS} />
       </Container>
 
       <Container>

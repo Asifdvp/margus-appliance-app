@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Hero } from "@/sections/home/hero";
-import { Stats } from "@/sections/home/Stats";
 import { Services } from "@/sections/home/Services";
 import { ServiceAreas } from "@/sections/home/ServiceAreas";
 import { Brands } from "@/sections/home/Brands";
@@ -9,7 +8,6 @@ import { Testimonials } from "@/sections/home/Testimonials";
 import { FAQ } from "@/sections/home/FAQ";
 import { faqs } from "@/content/faq";
 import { Blogs } from "@/sections/shared/Blogs";
-import { FloatingCTA } from "@/shared/components/FloatingCTA";
 import CompanyInfo from "@/sections/home/companyInfo";
 
 export const metadata: Metadata = {
@@ -70,7 +68,7 @@ export default function HomePage() {
       <Blogs />
       <Testimonials />
       <FAQ />
-      <FloatingCTA />
+      {/* <FloatingCTA /> */}
     </main>
   );
 }

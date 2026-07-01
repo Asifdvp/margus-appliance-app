@@ -16,6 +16,7 @@ function FlexItem({ icon, title, description }: FlexItemProps) {
           src={icon}
           alt={title}
           fill
+          sizes="(min-width: 768px) 98px, 30px"
           className="object-contain"
         />
       </div>

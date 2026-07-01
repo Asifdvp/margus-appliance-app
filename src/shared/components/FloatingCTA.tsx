@@ -1,16 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { CONTACT_INFO } from "@/constants";
 import PhoneWhiteIcon from "@/shared/icons/phone-white.svg";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
+import { useBookingModal } from "./book";
 
 export function FloatingCTA() {
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
+  const { openModal } = useBookingModal();
 
   useEffect(() => {
     const sentinel = document.getElementById("hero-section");
@@ -54,14 +55,14 @@ export function FloatingCTA() {
             : "opacity-0 scale-95 pointer-events-none"
         }`}
       >
-        <Link
-          href="/contact"
+        <button
+          type="button"
+          onClick={() => { setOpen(false); openModal(); }}
           className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-          onClick={() => setOpen(false)}
         >
           Book Now
           <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
-        </Link>
+        </button>
         <a
           href={CONTACT_INFO.phoneHref}
           className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand px-5 py-3 text-[15px] font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
