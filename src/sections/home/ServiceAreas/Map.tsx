@@ -36,11 +36,12 @@ export function ServiceAreaMap({ flyTo = null, areas = SERVICE_AREAS }: Props) {
       center={MAP_CENTER}
       zoom={MAP_ZOOM}
       scrollWheelZoom={false}
+      attributionControl={false}
       className="w-full h-full rounded-2xl"
       aria-label="Margus Appliance service area map"
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <FlyToController coords={flyTo} />

@@ -31,7 +31,7 @@ export function RecentJobs() {
       </Container>
 
       <Container>
-        <RecentJobsCarousel brands={RECENT_JOBS} />
+        <RecentJobsCarousel jobs={RECENT_JOBS} />
       </Container>
 
       <Container>

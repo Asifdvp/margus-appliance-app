@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import { CONTACT_INFO } from "@/constants";
+import { BookNowButton } from "@/shared/components/book";
 
 export function CTABanner() {
   return (
@@ -19,13 +19,10 @@ export function CTABanner() {
                   Reliable Appliance Repair From the First Call to the Final Fix
                 </h2>
                 <div className="flex items-center gap-4">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-1 bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-16 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
-                  >
+                  <BookNowButton className="inline-flex items-center gap-1 bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-16 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400">
                     Book Services
                     <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
-                  </Link>
+                  </BookNowButton>
                   <a
                     href={CONTACT_INFO.phoneHref}
                     className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white px-8 py-2.5 text-[18px] leading-7 font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
@@ -61,13 +58,10 @@ export function CTABanner() {
                 Reliable Appliance Repair From the First Call to the Final Fix
               </h2>
               <div className="flex flex-col items-center gap-3 w-full px-3 pb-3">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-1 w-full bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-8 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
-                >
+                <BookNowButton className="inline-flex items-center justify-center gap-1 w-full bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-8 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400">
                   Book Services
                   <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
-                </Link>
+                </BookNowButton>
                 <a
                   href={CONTACT_INFO.phoneHref}
                   className="inline-flex items-center justify-center gap-2 w-full rounded-xl border-2 border-white px-6 py-2.5 text-[18px] leading-7 font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
 import { CONTACT_INFO } from "@/constants";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import expertImg from "@/shared/icons/expert.png";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
+import { BookNowButton } from "@/shared/components/book";
 import StarRating from "./StarRating";
 export function Hero() {
   return (
@@ -47,13 +47,10 @@ export function Hero() {
 
           {/* CTA buttons */}
           <div className="pb-2 lg:pb-0 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[14px] md:text-[18px] leading-5.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-            >
+            <BookNowButton className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[14px] md:text-[18px] leading-5.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">
               Book Now
               <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
-            </Link>
+            </BookNowButton>
             <a
               href={CONTACT_INFO.phoneHref}
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand px-7 py-3 text-[14px] leading-5.5 md:text-[18px] md:leading-7 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
@@ -76,6 +73,7 @@ export function Hero() {
               alt="Certified Margus Appliance technician in uniform, ready for service"
               fill
               priority
+              sizes="47vw"
               className="object-contain object-top"
             />
           </div>

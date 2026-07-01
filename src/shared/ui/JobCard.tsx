@@ -24,7 +24,7 @@ export function JobCard({
           src={image}
           alt={alt}
           fill
-          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          sizes="(min-width: 1024px) 420px, (min-width: 640px) 50vw, 240px"
           className="object-cover object-center"
         />
         {service && (

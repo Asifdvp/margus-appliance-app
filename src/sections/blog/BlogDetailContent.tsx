@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
+import { BookNowButton } from "@/shared/components/book";
 import type { BlogPost } from "@/types";
 
 type Props = { post: BlogPost };
@@ -55,13 +58,10 @@ export function BlogDetailContent({ post }: Props) {
                 <h3 className="font-work-sans font-bold text-white text-[18px] leading-6 mb-4 text-center">
                   Reliable Appliance Repair From the First Call to the Final Fix
                 </h3>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-1 bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-16 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400"
-                >
+                <BookNowButton className="inline-flex items-center gap-1 bg-white text-dark font-manrope font-semibold text-[18px] leading-7 px-16 py-2.5 rounded-xl hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-400">
                   Book Services
                   <ArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
-                </Link>
+                </BookNowButton>
               </div>
             </div>
           </aside>

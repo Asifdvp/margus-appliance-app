@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/shared/components/Navbar";
 import { Footer } from "@/shared/components/Footer";
 import { Emergency } from "@/shared/components/Emergency";
+import { BookingModalProvider } from "@/shared/components/book";
 import { CONTACT_INFO } from "@/constants";
 
 const manrope = Manrope({
@@ -90,10 +91,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <Emergency />
-        <Navbar />
-        {children}
-        <Footer />
+        <BookingModalProvider>
+          <Emergency />
+          <Navbar />
+          {children}
+          <Footer />
+        </BookingModalProvider>
       </body>
     </html>
   );

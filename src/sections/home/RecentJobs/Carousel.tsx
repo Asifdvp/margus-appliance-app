@@ -2,40 +2,28 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
-import Image from "next/image";
+import { JobCard } from "@/shared/ui/JobCard";
 import type { RecentJob } from "@/types";
 
 interface RowProps {
-  brands: RecentJob[];
+  jobs: RecentJob[];
   direction?: "forward" | "backward";
-  priority?: boolean;
 }
 
-function BrandRow({ brands, direction = "forward", priority = false }: RowProps) {
+function JobRow({ jobs, direction = "forward" }: RowProps) {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, align: "start" },
     [AutoScroll({ startDelay: 0, speed: 1.2, stopOnInteraction: false, stopOnMouseEnter: false, direction })]
   );
 
-  const items = [...brands, ...brands, ...brands];
+  const items = [...jobs, ...jobs, ...jobs];
 
   return (
     <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
-      <div className="flex gap-4 lg:gap-8">
-        {items.map((brand, i) => (
-          <div
-            key={`${brand.id}-${i}`}
-            className="flex-none w-51 h-35 lg:w-[320px] lg:h-55 rounded-2xl overflow-hidden"
-          >
-            <div className="relative w-full h-full">
-              <Image
-                src={brand.image}
-                alt={brand.alt}
-                fill
-                className="object-contain"
-                priority={priority}
-              />
-            </div>
+      <div className="flex gap-4 lg:gap-6">
+        {items.map((job, i) => (
+          <div key={`${job.id}-${i}`} className="flex-none w-72 lg:w-[420px]">
+            <JobCard {...job} href={`/jobs/${job.id}`} />
           </div>
         ))}
       </div>
@@ -44,16 +32,14 @@ function BrandRow({ brands, direction = "forward", priority = false }: RowProps)
 }
 
 interface Props {
-  brands: RecentJob[];
+  jobs: RecentJob[];
   className?: string;
 }
 
-export function RecentJobsCarousel ({ brands, className }: Props) {
+export function RecentJobsCarousel({ jobs, className }: Props) {
   return (
     <div className={`overflow-hidden min-w-0${className ? ` ${className}` : ""}`}>
-      <div className="flex flex-col gap-3">
-        <BrandRow brands={brands} direction="forward" priority />
-      </div>
+      <JobRow jobs={jobs} direction="forward" />
     </div>
   );
 }

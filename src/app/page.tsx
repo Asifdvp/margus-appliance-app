@@ -70,7 +70,7 @@ export default function HomePage() {
       <Blogs />
       <Testimonials />
       <FAQ />
-      <FloatingCTA />
+      {/* <FloatingCTA /> */}
     </main>
   );
 }
