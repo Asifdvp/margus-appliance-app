@@ -21,7 +21,7 @@ export function BookingSuccessView({ onClose }: Props) {
           Booking Received!
         </h2>
         <p className="font-manrope text-secondary text-[15px] leading-6 max-w-xs mx-auto">
-          Thank you! We&apos;ll contact you within 24 hours to confirm your repair appointment.
+          Thank you! We&apos;ll contact you within 3-5 minutes to confirm your repair appointment.
         </p>
       </div>
       <button
