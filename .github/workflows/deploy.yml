@@ -32,17 +32,25 @@ jobs:
           target: /tmp
       - name: Restart app
         uses: appleboy/ssh-action@v1.2.0
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
+          envs: TELEGRAM_BOT_TOKEN,TELEGRAM_CHAT_ID
           script: |
             mkdir -p ${{ env.DEPLOY_PATH }}
             find ${{ env.DEPLOY_PATH }} -mindepth 1 -delete
             tar xzf /tmp/release.tar.gz -C ${{ env.DEPLOY_PATH }}
             rm /tmp/release.tar.gz
             cd ${{ env.DEPLOY_PATH }}
+            cat > .env.local <<EOF
+            TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
+            TELEGRAM_CHAT_ID=$TELEGRAM_CHAT_ID
+            EOF
             if pm2 describe margus-app > /dev/null 2>&1; then
               pm2 restart margus-app
             else
