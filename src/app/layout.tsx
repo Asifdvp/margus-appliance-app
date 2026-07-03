@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
   },
   description:
-    "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 90-day parts & labor warranty. Call us today.",
+    "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty. Call us today.",
   openGraph: {
     siteName: "Margus Appliance",
     type: "website",
@@ -59,7 +59,7 @@ const organizationSchema = {
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
   description:
-    "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 90-day parts & labor warranty.",
+    "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 180-day parts & labor warranty.",
   areaServed: [
     "Cleveland", "Parma", "Akron", "Lakewood", "Euclid", "Strongsville",
     "Cleveland Heights", "North Ridgeville", "Westlake", "North Royalton",

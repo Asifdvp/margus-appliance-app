@@ -6,7 +6,7 @@ import { JobCard } from "@/shared/ui/JobCard";
 import { RECENT_JOBS } from "@/content/recent-jobs";
 import { cn } from "@/shared/lib/utils";
 
-const ALL = "All Jobs";
+const ALL = "Recent Jobs";
 
 const FILTERS = [
   ALL,

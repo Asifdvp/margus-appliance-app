@@ -13,11 +13,11 @@ import CompanyInfo from "@/sections/home/companyInfo";
 export const metadata: Metadata = {
   title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
   description:
-    "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 90-day parts & labor warranty. Call us today.",
+    "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty. Call us today.",
   openGraph: {
     title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
     description:
-      "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 90-day parts & labor warranty.",
+      "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty.",
     url: "https://margusappliance.com",
     type: "website",
     images: [

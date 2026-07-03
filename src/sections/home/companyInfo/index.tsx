@@ -49,7 +49,7 @@ const ITEMS: FlexItemProps[] = [
   {
     icon: "/licensed.png",
     title: "Licensed and Insured",
-    description: "Professional Service Packed by 90-day Warranty.",
+    description: "Professional Service Packed by 180-day Warranty.",
   },
 ];
 

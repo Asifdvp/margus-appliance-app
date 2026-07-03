@@ -23,7 +23,7 @@ export const STEPS: Step[] = [
     id: "warranty",
     title: "Test & Guarantee",
     description:
-      "After the repair is completed, we thoroughly test your appliance to ensure it's running at optimal performance. Every repair is backed by our 90-day parts & labor warranty.",
+      "After the repair is completed, we thoroughly test your appliance to ensure it's running at optimal performance. Every repair is backed by our 180-day parts & labor warranty.",
   },
 ];
 

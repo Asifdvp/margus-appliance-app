@@ -154,10 +154,10 @@ SITE_NAME    = "Margus Appliance"
 CONTACT_INFO = {
   phone:     "(216) 304-0665",
   phoneHref: "tel:(216) 304-0665",
-  email:     "info@margusappliance.com",
-  emailHref: "mailto:info@margusappliance.com",
+  email:     "margusappliance@gmail.com",
+  emailHref: "mailto:margusappliance@gmail.com",
 }
-NAV_LINKS = [About Us, Services, All Jobs, Blog, Contact]
+NAV_LINKS = [About Us, Services, Recent Jobs, Blog, Contact]
 ```
 
 ---
@@ -290,7 +290,7 @@ JSON-LD structured data added as `<script type="application/ld+json">` in page b
 ## 12. What's NOT Built Yet
 
 - `/about` page (linked from Navbar "About Us")
-- `/jobs` page (linked from Navbar "All Jobs")
+- `/jobs` page (linked from Navbar "Recent Jobs")
 - `companyInfo` section (placeholder created, needs implementation)
 - Contact form backend (form exists, no submission logic)
 - Blog real content (3 duplicate dummy posts)
