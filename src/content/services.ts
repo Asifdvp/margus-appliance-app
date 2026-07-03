@@ -11,7 +11,7 @@ export const SERVICES: Service[] = [
     detailImage: "/images/services/refrigator.png",
     intro: [
       "A failing refrigerator can spoil your food and cause costly waste. Our certified technicians provide fast refrigerator repairs to keep your food fresh and your household running smoothly.",
-      "We repair all makes and models, from basic fridges to high-end French door refrigerators.",
+      "We repair all makes and models, from basic fridges to high-end refrigerators.",
     ],
     commonProblems: [
       "Refrigerator not cooling",
@@ -26,7 +26,7 @@ export const SERVICES: Service[] = [
       "Fast same-day refrigerator repair",
       "All major brands serviced",
       "Transparent pricing, no surprises",
-      "90-day warranty on all repairs",
+      "180-day warranty on all repairs",
       "Locally trusted in Cleveland & Parma",
     ],
     closingHeading: "Keep Your Food Fresh",
@@ -82,7 +82,7 @@ export const SERVICES: Service[] = [
     detailImage: "/images/services/dryer.png",
     intro: [
       "A malfunctioning dryer can leave you with wet clothes and no way to dry them. Whether your dryer won't heat, takes too long, or stops mid-cycle, our expert technicians can fix it fast.",
-      "We service all major dryer brands and models, providing reliable repairs backed by our 90-day warranty.",
+      "We service all major dryer brands and models, providing reliable repairs backed by our 180-day warranty.",
     ],
     commonProblems: [
       "Dryer not heating",
@@ -98,7 +98,7 @@ export const SERVICES: Service[] = [
       "Certified technicians for all brands",
       "Transparent flat-rate pricing",
       "Genuine manufacturer-approved parts",
-      "90-day parts & labor warranty",
+      "180-day parts & labor warranty",
     ],
     closingHeading: "Get Your Dryer Running Again",
     closingText: [
@@ -131,7 +131,7 @@ export const SERVICES: Service[] = [
       "Same-day appointments available",
       "Certified and insured technicians",
       "Upfront pricing before any work begins",
-      "90-day parts & labor warranty",
+      "180-day parts & labor warranty",
     ],
     closingHeading: "Get Back to Cooking",
     closingText: [
@@ -165,7 +165,7 @@ export const SERVICES: Service[] = [
       "Certified for all major brands",
       "Upfront flat-rate pricing",
       "Genuine replacement parts",
-      "90-day parts & labor warranty",
+      "180-day parts & labor warranty",
     ],
     closingHeading: "Fast Dishwasher Repair You Can Trust",
     closingText: [
@@ -198,7 +198,7 @@ export const SERVICES: Service[] = [
       "All freezer types and brands",
       "Transparent pricing",
       "Quality replacement parts",
-      "90-day warranty included",
+      "180-day warranty included",
     ],
     closingHeading: "Protect Your Frozen Food",
     closingText: [
@@ -229,7 +229,7 @@ export const SERVICES: Service[] = [
       "Same-day ice maker service",
       "All brands and models",
       "Flat-rate transparent pricing",
-      "90-day warranty on repairs",
+      "180-day warranty on repairs",
     ],
     closingHeading: "Fast Ice Maker Repair",
     closingText: [
@@ -263,7 +263,7 @@ export const SERVICES: Service[] = [
       "Same-day appointments available",
       "Certified and insured technicians",
       "Upfront pricing before any work begins",
-      "90-day parts & labor warranty",
+      "180-day parts & labor warranty",
     ],
     closingHeading: "Get Your Oven Back in Action",
     closingText: [

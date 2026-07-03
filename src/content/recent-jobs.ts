@@ -66,7 +66,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Upfront, transparent pricing",
       "All major brands serviced",
       "OEM and quality replacement parts",
-      "90-day parts and labor warranty",
+      "180-day parts and labor warranty",
     ],
     closingHeading: "Fast & Reliable Refrigerator Repair",
     closingText: [
@@ -103,7 +103,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "No hidden charges or service fees",
       "Gas and electric dryer repairs",
       "All major brands covered",
-      "90-day warranty on all repairs",
+      "180-day warranty on all repairs",
     ],
     closingHeading: "Fast & Reliable Dryer Repair",
     closingText: [
@@ -140,7 +140,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Honest, upfront pricing",
       "All major brands serviced",
       "Genuine replacement parts used",
-      "90-day parts and labor warranty",
+      "180-day parts and labor warranty",
     ],
     closingHeading: "Fast & Reliable Dishwasher Repair",
     closingText: [
@@ -177,7 +177,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Transparent, upfront pricing",
       "All major brands repaired",
       "Quality OEM replacement parts",
-      "90-day warranty on all work",
+      "180-day warranty on all work",
     ],
     closingHeading: "Fast & Reliable Freezer Repair",
     closingText: [
@@ -214,7 +214,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "No surprise fees — upfront quotes",
       "All major oven and range brands",
       "OEM parts for lasting repairs",
-      "90-day parts and labor warranty",
+      "180-day parts and labor warranty",
     ],
     closingHeading: "Fast & Reliable Oven & Stove Repair",
     closingText: [
@@ -251,7 +251,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Transparent pricing — no surprises",
       "All refrigerator brands serviced",
       "Genuine replacement parts",
-      "90-day warranty on all repairs",
+      "180-day warranty on all repairs",
     ],
     closingHeading: "Fast & Reliable Ice Maker Repair",
     closingText: [
@@ -288,7 +288,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Upfront pricing with no hidden fees",
       "All major appliance brands covered",
       "Safe, quality replacement parts",
-      "90-day warranty on all repairs",
+      "180-day warranty on all repairs",
     ],
     closingHeading: "Fast & Reliable Kitchen Appliance Repair",
     closingText: [
@@ -325,7 +325,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Transparent, no-surprise pricing",
       "All major brands repaired",
       "Genuine OEM replacement parts",
-      "90-day parts and labor warranty",
+      "180-day parts and labor warranty",
     ],
     closingHeading: "Fast & Reliable Washer Repair",
     closingText: [
@@ -362,7 +362,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Honest, upfront pricing",
       "All major brands serviced",
       "Genuine replacement parts",
-      "90-day warranty on all work",
+      "180-day warranty on all work",
     ],
     closingHeading: "Fast & Reliable Refrigerator Repair",
     closingText: [
@@ -399,7 +399,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "No hidden fees — upfront quotes",
       "Gas and electric dryer repairs",
       "All major brands covered",
-      "90-day warranty on repairs",
+      "180-day warranty on repairs",
     ],
     closingHeading: "Fast & Reliable Dryer Repair",
     closingText: [
@@ -436,7 +436,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "Transparent pricing — no surprises",
       "All major brands serviced",
       "Genuine replacement parts",
-      "90-day parts and labor warranty",
+      "180-day parts and labor warranty",
     ],
     closingHeading: "Fast & Reliable Dishwasher Repair",
     closingText: [

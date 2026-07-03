@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Appliance Repair Services — Cleveland & Parma | Margus Appliance",
     description:
-      "Same-day appliance repair in Cleveland & Parma. Certified technicians, transparent pricing, 90-day warranty.",
+      "Same-day appliance repair in Cleveland & Parma. Certified technicians, transparent pricing, 180-day warranty.",
     url: "https://margusappliance.com/services",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Appliance Repair Services | Margus Appliance",
     description:
-      "Same-day appliance repair in Cleveland & Parma. 90-day warranty.",
+      "Same-day appliance repair in Cleveland & Parma. 180-day warranty.",
   },
   alternates: {
     canonical: "https://margusappliance.com/services",

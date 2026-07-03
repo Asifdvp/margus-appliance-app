@@ -8,11 +8,11 @@ import { AboutFeatures } from "@/sections/about/AboutFeatures";
 export const metadata: Metadata = {
   title: "About Margus Appliance — Trusted Appliance Repair in Cleveland & Parma",
   description:
-    "Margus Appliance is a certified appliance repair company serving Cleveland, Parma, and surrounding areas. Honest pricing, same-day service, and a 90-day parts & labor warranty.",
+    "Margus Appliance is a certified appliance repair company serving Cleveland, Parma, and surrounding areas. Honest pricing, same-day service, and a 180-day parts & labor warranty.",
   openGraph: {
     title: "About Margus Appliance — Trusted Appliance Repair in Cleveland & Parma",
     description:
-      "Certified appliance repair in Cleveland & Parma. Transparent pricing, same-day service, and a 90-day parts & labor warranty.",
+      "Certified appliance repair in Cleveland & Parma. Transparent pricing, same-day service, and a 180-day parts & labor warranty.",
     url: "https://margusappliance.com/about",
     type: "website",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Margus Appliance — Trusted Appliance Repair",
     description:
-      "Certified appliance repair in Cleveland & Parma. Same-day service and 90-day warranty.",
+      "Certified appliance repair in Cleveland & Parma. Same-day service and 180-day warranty.",
   },
   alternates: {
     canonical: "https://margusappliance.com/about",
@@ -43,7 +43,7 @@ const localBusinessSchema = {
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
   description:
-    "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 90-day parts & labor warranty.",
+    "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 180-day parts & labor warranty.",
   areaServed: [
     { "@type": "City", name: "Cleveland" },
     { "@type": "City", name: "Parma" },

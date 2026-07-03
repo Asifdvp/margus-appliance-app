@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
         heading: "When to Call a Professional",
         paragraphs: [
           "If you've worked through all four steps and the washer still won't drain, the problem is likely a failing drain pump, a faulty lid switch, or a damaged control board — all of which require professional repair.",
-          "Our certified technicians at Margus Appliance provide same-day washer repair in Cleveland and Parma. We'll diagnose the exact issue and fix it right the first time, backed by our 90-day parts and labor warranty.",
+          "Our certified technicians at Margus Appliance provide same-day washer repair in Cleveland and Parma. We'll diagnose the exact issue and fix it right the first time, backed by our 180-day parts and labor warranty.",
         ],
       },
     ],

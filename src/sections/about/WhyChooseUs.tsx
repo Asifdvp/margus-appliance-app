@@ -9,7 +9,7 @@ import WarrantyMainIcon from "@/shared/icons/warranty.svg";
 
 const FEATURES = [
   "Transparent flat-rate pricing",
-  "Warranty on parts & labor",
+  "180 day warranty on parts & labor",
   "Certified technicians",
   "Genuine manufacturer parts",
   "Fast response times",

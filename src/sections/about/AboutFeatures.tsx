@@ -40,7 +40,7 @@ const FEATURES: Feature[] = [
     iconSrc: testIcon,
     title: "Licensed and Insured",
     description:
-      "Every repair is backed by our 90-day parts & labor warranty for your complete peace of mind.",
+      "Every repair is backed by our 180-day parts & labor warranty for your complete peace of mind.",
   },
 ];
 
