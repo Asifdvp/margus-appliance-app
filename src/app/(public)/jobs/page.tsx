@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { AllJobsHero } from "@/sections/jobs/AllJobsHero";
 import { AllJobsGrid } from "@/sections/jobs/AllJobsGrid";
 import { Blogs } from "@/sections/shared/Blogs";
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Completed Appliance Repair Jobs | Margus Appliance",
     description:
       "Real completed appliance repair jobs from certified technicians in Cleveland & Parma.",
-    url: "https://margusappliance.com/jobs",
+    url: "https://margusappliancerepair.com/jobs",
     type: "website",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Real completed appliance repair jobs from certified technicians in Cleveland & Parma.",
   },
   alternates: {
-    canonical: "https://margusappliance.com/jobs",
+    canonical: "https://margusappliancerepair.com/jobs",
   },
 };
 

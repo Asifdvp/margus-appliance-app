@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { PageHero } from "@/shared/ui/PageHero";
 import { ContactSection } from "@/sections/contact/ContactSection";
 import { CONTACT_INFO } from "@/constants";
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Contact Margus Appliance — Same-Day Appliance Repair",
     description:
       "Get in touch with Margus Appliance for fast, reliable appliance repair in Cleveland & Parma. Call or send a message.",
-    url: "https://margusappliance.com/contact",
+    url: "https://margusappliancerepair.com/contact",
     type: "website",
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Book same-day appliance repair in Cleveland & Parma. Call or message us.",
   },
   alternates: {
-    canonical: "https://margusappliance.com/contact",
+    canonical: "https://margusappliancerepair.com/contact",
   },
 };
 
@@ -37,16 +37,16 @@ const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   name: "Contact Margus Appliance",
-  url: "https://margusappliance.com/contact",
+  url: "https://margusappliancerepair.com/contact",
   description:
     "Contact page for Margus Appliance — certified appliance repair in Cleveland, Parma, and surrounding areas.",
   mainEntity: {
     "@type": "LocalBusiness",
-    "@id": "https://margusappliance.com/#organization",
+    "@id": "https://margusappliancerepair.com/#organization",
     name: "Margus Appliance",
     telephone: CONTACT_INFO.phone,
     email: CONTACT_INFO.email,
-    url: "https://margusappliance.com",
+    url: "https://margusappliancerepair.com",
   },
 };
 

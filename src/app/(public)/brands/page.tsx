@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { BrandsList } from "@/sections/brands/BrandsList";
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Appliance Brands We Repair | Margus Appliance",
     description:
       "Certified repair for all major brands — Whirlpool, Samsung, LG, GE, Bosch, KitchenAid, Maytag, and more. Serving Cleveland & Parma.",
-    url: "https://margusappliance.com/brands",
+    url: "https://margusappliancerepair.com/brands",
     type: "website",
     images: [
       {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Certified repair for Whirlpool, Samsung, LG, GE, Bosch, and more in Cleveland & Parma.",
   },
   alternates: {
-    canonical: "https://margusappliance.com/brands",
+    canonical: "https://margusappliancerepair.com/brands",
   },
 };
 

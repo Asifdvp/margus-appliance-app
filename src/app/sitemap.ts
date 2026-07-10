@@ -1,9 +1,9 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { SERVICES } from "@/content/services";
 import { blogPosts } from "@/content/blog";
 import { RECENT_JOBS } from "@/content/recent-jobs";
 
-const BASE_URL = "https://margusappliance.com";
+const BASE_URL = "https://margusappliancerepair.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

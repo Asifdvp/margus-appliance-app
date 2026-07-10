@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Hero } from "@/sections/home/hero";
 import { Services } from "@/sections/home/Services";
 import { ServiceAreas } from "@/sections/home/ServiceAreas";
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
     description:
       "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty.",
-    url: "https://margusappliance.com",
+    url: "https://margusappliancerepair.com",
     type: "website",
     images: [
       {
-        url: "https://margusappliance.com/og-home.jpg",
+        url: "https://margusappliancerepair.com/og-home.jpg",
         width: 1200,
         height: 630,
         alt: "Margus Appliance — Expert Appliance Repair in Cleveland & Parma",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas.",
   },
   alternates: {
-    canonical: "https://margusappliance.com",
+    canonical: "https://margusappliancerepair.com",
   },
 };
 
