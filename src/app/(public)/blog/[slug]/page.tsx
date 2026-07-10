@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description,
-      url: `https://margusappliance.com/blog/${slug}`,
+      url: `https://margusappliancerepair.com/blog/${slug}`,
       type: "article",
       publishedTime: toISODate(post.date),
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
     },
     alternates: {
-      canonical: `https://margusappliance.com/blog/${slug}`,
+      canonical: `https://margusappliancerepair.com/blog/${slug}`,
     },
   };
 }
@@ -60,27 +60,27 @@ export default async function BlogDetailPage({ params }: Props) {
     description: post.excerpt ?? post.title,
     datePublished: toISODate(post.date),
     dateModified: toISODate(post.date),
-    url: `https://margusappliance.com/blog/${slug}`,
+    url: `https://margusappliancerepair.com/blog/${slug}`,
     image: post.coverImage
-      ? `https://margusappliance.com${post.coverImage}`
-      : "https://margusappliance.com/images/blogs/blog.jpg",
+      ? `https://margusappliancerepair.com${post.coverImage}`
+      : "https://margusappliancerepair.com/images/blogs/blog.jpg",
     author: {
       "@type": "Organization",
       name: "Margus Appliance",
-      url: "https://margusappliance.com",
+      url: "https://margusappliancerepair.com",
     },
     publisher: {
       "@type": "Organization",
-      "@id": "https://margusappliance.com/#organization",
+      "@id": "https://margusappliancerepair.com/#organization",
       name: "Margus Appliance",
       logo: {
         "@type": "ImageObject",
-        url: "https://margusappliance.com/logo.png",
+        url: "https://margusappliancerepair.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://margusappliance.com/blog/${slug}`,
+      "@id": `https://margusappliancerepair.com/blog/${slug}`,
     },
   };
 

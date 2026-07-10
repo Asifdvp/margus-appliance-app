@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: `https://margusappliance.com/jobs/${slug}`,
+      url: `https://margusappliancerepair.com/jobs/${slug}`,
       type: "article",
       publishedTime: job.date ? toISODate(job.date) : undefined,
       images: [
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
     },
-    alternates: { canonical: `https://margusappliance.com/jobs/${slug}` },
+    alternates: { canonical: `https://margusappliancerepair.com/jobs/${slug}` },
   };
 }
 
@@ -64,19 +64,19 @@ export default async function JobDetailPage({ params }: Props) {
     headline: `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}`,
     description: job.problem ?? "Certified appliance repair by Margus Appliance.",
     datePublished: job.date ? toISODate(job.date) : undefined,
-    image: job.image ? `https://margusappliance.com${job.image}` : "https://margusappliance.com/og-home.jpg",
+    image: job.image ? `https://margusappliancerepair.com${job.image}` : "https://margusappliancerepair.com/og-home.jpg",
     author: {
       "@type": "Organization",
-      "@id": "https://margusappliance.com/#organization",
+      "@id": "https://margusappliancerepair.com/#organization",
       name: "Margus Appliance",
     },
     publisher: {
       "@type": "Organization",
-      "@id": "https://margusappliance.com/#organization",
+      "@id": "https://margusappliancerepair.com/#organization",
       name: "Margus Appliance",
       logo: {
         "@type": "ImageObject",
-        url: "https://margusappliance.com/logo.png",
+        url: "https://margusappliancerepair.com/logo.png",
       },
     },
     about: {
@@ -84,7 +84,7 @@ export default async function JobDetailPage({ params }: Props) {
       name: job.service ?? "Appliance Repair",
       provider: {
         "@type": "LocalBusiness",
-        "@id": "https://margusappliance.com/#organization",
+        "@id": "https://margusappliancerepair.com/#organization",
         name: "Margus Appliance",
         telephone: CONTACT_INFO.phone,
       },

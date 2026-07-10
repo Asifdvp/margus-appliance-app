@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Manrope, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/shared/components/Navbar";
@@ -18,7 +18,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://margusappliance.com"),
+  metadataBase: new URL("https://margusappliancerepair.com"),
   title: {
     template: "%s | Margus Appliance",
     default: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
@@ -52,10 +52,10 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://margusappliance.com/#organization",
+  "@id": "https://margusappliancerepair.com/#organization",
   name: "Margus Appliance",
-  url: "https://margusappliance.com",
-  logo: "https://margusappliance.com/logo.png",
+  url: "https://margusappliancerepair.com",
+  logo: "https://margusappliancerepair.com/logo.png",
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
   description:

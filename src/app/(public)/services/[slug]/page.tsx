@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${service.title} in Cleveland & Parma | Margus Appliance`,
       description: service.description,
-      url: `https://margusappliance.com/services/${service.id}`,
+      url: `https://margusappliancerepair.com/services/${service.id}`,
       type: "website",
       images: [
         {
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: service.description,
     },
     alternates: {
-      canonical: `https://margusappliance.com/services/${service.id}`,
+      canonical: `https://margusappliancerepair.com/services/${service.id}`,
     },
   };
 }
@@ -54,13 +54,13 @@ export default async function ServiceDetailPage({ params }: Props) {
     "@type": "Service",
     name: service.title,
     description: service.description,
-    url: `https://margusappliance.com/services/${service.id}`,
+    url: `https://margusappliancerepair.com/services/${service.id}`,
     provider: {
       "@type": "LocalBusiness",
-      "@id": "https://margusappliance.com/#organization",
+      "@id": "https://margusappliancerepair.com/#organization",
       name: "Margus Appliance",
       telephone: CONTACT_INFO.phone,
-      url: "https://margusappliance.com",
+      url: "https://margusappliancerepair.com",
     },
     areaServed: [
       { "@type": "City", name: "Cleveland" },

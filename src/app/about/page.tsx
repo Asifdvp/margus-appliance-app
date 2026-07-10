@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { AboutHero } from "@/sections/about/AboutHero";
 import { WhyChooseUs } from "@/sections/about/WhyChooseUs";
 import { AboutCTA } from "@/sections/about/AboutCTA";
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     title: "About Margus Appliance — Trusted Appliance Repair in Cleveland & Parma",
     description:
       "Certified appliance repair in Cleveland & Parma. Transparent pricing, same-day service, and a 180-day parts & labor warranty.",
-    url: "https://margusappliance.com/about",
+    url: "https://margusappliancerepair.com/about",
     type: "website",
     images: [
       {
-        url: "https://margusappliance.com/images/about/hero-bg.jpg",
+        url: "https://margusappliancerepair.com/images/about/hero-bg.jpg",
         width: 1200,
         height: 630,
         alt: "Margus Appliance — Expert Appliance Repair Team in Cleveland",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Certified appliance repair in Cleveland & Parma. Same-day service and 180-day warranty.",
   },
   alternates: {
-    canonical: "https://margusappliance.com/about",
+    canonical: "https://margusappliancerepair.com/about",
   },
 };
 
@@ -39,7 +39,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Margus Appliance",
-  url: "https://margusappliance.com",
+  url: "https://margusappliancerepair.com",
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
   description:

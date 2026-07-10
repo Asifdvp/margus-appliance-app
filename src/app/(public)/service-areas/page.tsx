@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { PageHero } from "@/shared/ui/PageHero";
 import { ServiceAreasSection } from "@/sections/service-areas/ServiceAreasSection";
 import { Blogs } from "@/sections/shared/Blogs";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Appliance Repair Service Areas | Margus Appliance",
     description:
       "Same-day appliance repair in Cleveland, Parma, Akron, Strongsville, Westlake, and 50+ surrounding cities.",
-    url: "https://margusappliance.com/service-areas",
+    url: "https://margusappliancerepair.com/service-areas",
     type: "website",
     images: [
       {
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
       "Same-day appliance repair in Cleveland, Parma, Akron, and 50+ surrounding cities.",
   },
   alternates: {
-    canonical: "https://margusappliance.com/service-areas",
+    canonical: "https://margusappliancerepair.com/service-areas",
   },
 };
 
 const serviceAreasSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://margusappliance.com/#organization",
+  "@id": "https://margusappliancerepair.com/#organization",
   name: "Margus Appliance",
-  url: "https://margusappliance.com/service-areas",
+  url: "https://margusappliancerepair.com/service-areas",
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
   description:
