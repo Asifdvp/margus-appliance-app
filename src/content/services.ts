@@ -5,7 +5,7 @@ export const SERVICES: Service[] = [
     id: "refrigerator-repair",
     title: "Refrigerator Repair",
     description:
-      "Fast fridge repair in Cleveland — cooling, ice maker & temperature issues fixed.",
+      "Not cooling? Not making ice? Water leaking?",
     href: "/services/refrigerator-repair",
     icon: "/images/services/refrigator.png",
     detailImage: "/images/services/refrigator.png",
@@ -39,7 +39,7 @@ export const SERVICES: Service[] = [
     id: "washer-repair",
     title: "Washer Repair",
     description:
-      "Washer not spinning or draining? Fast, same-day repair for all major brands.",
+      "Not spinning? Not draining? Not starting?",
     href: "/services/washer-repair",
     icon: "/services/washer.png",
     detailImage: "/services/washer.png",
@@ -76,7 +76,7 @@ export const SERVICES: Service[] = [
     id: "dryer-repair",
     title: "Dryer Repair",
     description:
-      "No heat or long drying times? We fix all dryer issues fast with quality parts.",
+      "Not heating? Not starting? Making loud noises?",
     href: "/services/dryer-repair",
     icon: "/images/services/dryer.png",
     detailImage: "/images/services/dryer.png",
@@ -108,9 +108,9 @@ export const SERVICES: Service[] = [
   },
   {
     id: "https://www.mrfikser.com/-repair",
-    title: "Stove Repair",
+    title: "Stove & Cooktop Repair",
     description:
-      "Burner not working or stove won't ignite? We fix all major brands.",
+      "Burner not heating? Not igniting? Controls not responding?",
     href: "/services/stove-repair",
     icon: "/images/services/stove.png",
     detailImage: "/images/services/stove.png",
@@ -143,7 +143,7 @@ export const SERVICES: Service[] = [
     id: "dishwasher-repair",
     title: "Dishwasher Repair",
     description:
-      "Not cleaning or draining? Reliable dishwasher repair with upfront pricing.",
+      "Not drying? Not filling with water? Leaking?",
     href: "/services/dishwasher-repair",
     icon: "/images/services/dishwasher.png",
     detailImage: "/images/services/dishwasher.png",
@@ -177,7 +177,7 @@ export const SERVICES: Service[] = [
     id: "freezer-repair",
     title: "Freezer Repair",
     description:
-      "Freezer not freezing? Quick, affordable repair across Cleveland.",
+      "Not freezing? Frost buildup? Temperature problems?",
     href: "/services/freezer-repair",
     icon: "/images/services/freezer.png",
     detailImage: "/images/services/freezer.png",
@@ -209,7 +209,7 @@ export const SERVICES: Service[] = [
     id: "ice-maker-repair",
     title: "Ice Maker Repair",
     description:
-      "Not working or leaking? Same-day ice maker repair in Cleveland.",
+      "Not making ice? Leaking water? Frost buildup?",
     href: "/services/ice-maker-repair",
     icon: "/images/services/icemaker.png",
     detailImage: "/images/services/icemaker.png",
@@ -241,7 +241,7 @@ export const SERVICES: Service[] = [
     id: "oven-repair",
     title: "Oven Repair",
     description:
-      "Oven not heating or temperature off? We fix all major brands.",
+      "Not heating? Temperature issues? Turning on by itself?",
     href: "/services/oven-repair",
     icon: "/images/services/oven.png",
     detailImage: "/images/services/oven.png",

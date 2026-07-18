@@ -40,13 +40,13 @@ const StarRating = () => {
         </div>
       </div>
 
-<div className="md:hidden block">
+<div className="md:hidden ml-auto">
   <Image
-  src="/rate.png"
-  alt="Google Reviews badge"
-  width={74}
-  height={49}
-  className="object-contain -ml-3"
+    src="/rate.png"
+    alt="Google Reviews badge"
+    width={96}
+    height={64}
+    className="object-contain"
   />
 </div>
 
