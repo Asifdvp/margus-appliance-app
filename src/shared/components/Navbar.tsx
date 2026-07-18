@@ -22,14 +22,14 @@ export function Navbar() {
       <Container>
         <nav className="flex pt-2 lg:pt-6.75 items-center justify-between">
           {/* Logo */}
-          <Link href="/" aria-label="Margus Appliance – Home" className="relative block h-10 w-17.5 lg:h-22.5 lg:w-39.5">
+          <Link href="/" aria-label="Margus Appliance – Home" className="relative block h-13 w-23 lg:h-28 lg:w-49">
             <Image
               src="/logo.png"
               alt="Margus Appliance logo"
               width={158}
               height={90}
               priority
-              className="lg:absolute lg:-top-1.75 h-10 lg:h-22.5 w-auto object-contain" style={{ width: "auto" }}
+              className="lg:absolute lg:-top-1.75 h-13 lg:h-28 w-auto object-contain" style={{ width: "auto" }}
             />
           </Link>
 
