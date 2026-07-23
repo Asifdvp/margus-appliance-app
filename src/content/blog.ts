@@ -389,7 +389,7 @@ export const blogPosts: BlogPost[] = [
     slug: "oven-not-heating-evenly",
     date: "15.03.2026",
     coverImage: "/images/blogs/blog.jpg",
-    category: "Oven & Stove Repair",
+    category: "Stove & Cooktop Repair",
     excerpt:
       "Uneven baking — burnt edges, raw centres — is almost always caused by one of three things. Our technicians explain what they check first.",
     content: [
