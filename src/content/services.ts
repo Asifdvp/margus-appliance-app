@@ -41,8 +41,8 @@ export const SERVICES: Service[] = [
     description:
       "Not spinning? Not draining? Not starting?",
     href: "/services/washer-repair",
-    icon: "/services/washer.png",
-    detailImage: "/services/washer.png",
+    icon: "/images/services/washer.png",
+    detailImage: "/images/services/washer.png",
     intro: [
       "A broken washing machine can quickly disrupt your daily routine. Whether your washer won't drain, spin, start, or is making unusual noises, our professional washer repair service is here to help.",
       "We provide fast, reliable, and affordable repair solutions for all major washing machine brands and models. Our experienced technicians diagnose the issue accurately and work efficiently to restore your appliance as quickly as possible.",
