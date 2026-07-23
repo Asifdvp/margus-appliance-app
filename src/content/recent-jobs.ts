@@ -190,7 +190,7 @@ export const RECENT_JOBS: RecentJob[] = [
     id: "job-6",
     image: "/images/jobs/job-5.jpg",
     alt: "Oven repair in Brunswick",
-    service: "Oven & Stove Repair",
+    service: "Stove & Cooktop Repair",
     location: "Brunswick",
     date: "18.02.2026",
     problem: "Oven not reaching set temperature",
@@ -216,7 +216,7 @@ export const RECENT_JOBS: RecentJob[] = [
       "OEM parts for lasting repairs",
       "180-day parts and labor warranty",
     ],
-    closingHeading: "Fast & Reliable Oven & Stove Repair",
+    closingHeading: "Fast & Reliable Stove & Cooktop Repair",
     closingText: [
       "An oven that won't heat properly can disrupt meal planning and daily life. Our technicians are trained to diagnose and fix both gas and electric ovens efficiently.",
       "We service all major brands including GE, Whirlpool, Samsung, LG, Bosch, and more.",

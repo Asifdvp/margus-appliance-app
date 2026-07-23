@@ -13,7 +13,7 @@ const FILTERS = [
   "Refrigerator Repair",
   "Washer Repair",
   "Dryer Repair",
-  "Oven & Stove Repair",
+  "Stove & Cooktop Repair",
   "Dishwasher Repair",
   "Freezer Repair",
   "Kitchen Appliance Repair",
