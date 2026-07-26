@@ -1,12 +1,18 @@
 import Image from "next/image";
 import { Container } from "@/shared/layout/Container";
-import { CONTACT_INFO } from "@/constants";
+import { CONTACT_INFO, FALLBACK_RATING, FALLBACK_REVIEW_COUNT } from "@/constants";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import expertImg from "@/shared/icons/expert.png";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
 import { BookNowButton } from "@/shared/components/book";
+import { getGoogleBusinessData } from "@/shared/lib/googleReviews";
 import StarRating from "./StarRating";
-export function Hero() {
+
+export async function Hero() {
+  const googleData = await getGoogleBusinessData();
+  const rating = googleData?.rating ?? FALLBACK_RATING;
+  const reviewCount = googleData?.reviewCount ?? FALLBACK_REVIEW_COUNT;
+
   return (
     <section
       id="hero-section"
@@ -43,7 +49,7 @@ export function Hero() {
           </p>
 
           <div className="block lg:hidden my-5 ">
-            <StarRating />
+            <StarRating rating={rating} reviewCount={reviewCount} />
           </div>
 
           {/* CTA buttons */}
@@ -66,7 +72,7 @@ export function Hero() {
 
           {/* Star rating */}
           <div className="hidden lg:block mt-8 pb-12">
-            <StarRating />
+            <StarRating rating={rating} reviewCount={reviewCount} />
           </div>
         </div>
 
