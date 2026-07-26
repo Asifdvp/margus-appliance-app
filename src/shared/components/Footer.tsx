@@ -4,7 +4,6 @@ import { NAV_LINKS, SITE_NAME, CONTACT_INFO } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import { cn } from "@/shared/lib/utils";
 import FacebookIcon from "@/shared/icons/facebook.svg";
-import XIcon from "@/shared/icons/x-twitter.svg";
 import LinkedInIcon from "@/shared/icons/linkedin.svg";
 import InstagramIcon from "@/shared/icons/instagram.svg";
 
@@ -18,7 +17,6 @@ const SOCIAL_LINKS = [
     href: "https://facebook.com/margusappliance",
     Icon: FacebookIcon,
   },
-  { label: "X (Twitter)", href: "https://x.com/margusappliance", Icon: XIcon },
   {
     label: "LinkedIn",
     href: "https://linkedin.com/company/margusappliance",
