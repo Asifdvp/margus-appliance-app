@@ -47,6 +47,8 @@ export type NavLink = {
 
 export type RecentJob = {
   id: string;
+  /** SEO-friendly URL slug, e.g. "washer-repair-cleveland-heights". Used for /jobs/{slug}. */
+  slug: string;
   image: string;
   alt: string;
   service?: string;
@@ -72,4 +74,19 @@ export type Testimonial = {
   name: string;
   location: string;
   image?:string
+};
+
+export type GoogleReview = {
+  id: string;
+  author: string;
+  authorPhoto?: string;
+  rating: number;
+  text: string;
+  relativeDate: string;
+};
+
+export type GoogleBusinessData = {
+  rating: number;
+  reviewCount: number;
+  reviews: GoogleReview[];
 };

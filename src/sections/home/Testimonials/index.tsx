@@ -1,8 +1,27 @@
-import { testimonials } from "@/content/testimonials";
+import { testimonials as fallbackTestimonials } from "@/content/testimonials";
 import { Container } from "@/shared/layout/Container";
 import { TestimonialsCarousel } from "./Carousel";
+import { getGoogleBusinessData } from "@/shared/lib/googleReviews";
+import type { Testimonial } from "@/types";
 
-export function Testimonials() {
+// Below this many real Google reviews with text, the carousel looks sparse
+// (it repeats items to fill 3 columns) — fall back to curated content instead.
+const MIN_REAL_REVIEWS = 6;
+
+export async function Testimonials() {
+  const googleData = await getGoogleBusinessData();
+
+  const testimonials: Testimonial[] =
+    googleData && googleData.reviews.length >= MIN_REAL_REVIEWS
+      ? googleData.reviews.map((r) => ({
+          id: r.id,
+          text: r.text,
+          name: r.author,
+          location: "Verified Google Review",
+          image: r.authorPhoto,
+        }))
+      : fallbackTestimonials;
+
   return (
     <section
       className="mt-10.5 lg:mt-24  py-6 bg-[#DFDFDF] overflow-hidden lg:py-12"

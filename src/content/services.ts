@@ -107,7 +107,7 @@ export const SERVICES: Service[] = [
     ],
   },
   {
-    id: "https://www.mrfikser.com/-repair",
+    id: "stove-repair",
     title: "Stove & Cooktop Repair",
     description:
       "Burner not heating? Not igniting? Controls not responding?",

@@ -23,7 +23,7 @@ function JobRow({ jobs, direction = "forward" }: RowProps) {
       <div className="flex gap-4 lg:gap-6">
         {items.map((job, i) => (
           <div key={`${job.id}-${i}`} className="flex-none w-72 lg:w-[420px]">
-            <JobCard {...job} href={`/jobs/${job.id}`} />
+            <JobCard {...job} href={`/jobs/${job.slug}`} />
           </div>
         ))}
       </div>
