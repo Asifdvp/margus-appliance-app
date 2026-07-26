@@ -36,7 +36,6 @@ export function JobGallery({ images, alt, mainClassName, sizes = "100vw" }: Prop
 
   useEffect(() => {
     if (!mainApi) return;
-    onSelect();
     mainApi.on("select", onSelect).on("reInit", onSelect);
   }, [mainApi, onSelect]);
 
