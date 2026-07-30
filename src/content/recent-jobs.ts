@@ -67,7 +67,7 @@ export const RECENT_JOBS: RecentJob[] = [
     whyChoosePoints: [
       "Same-day dryer repair service",
       "Certified technicians for all brands",
-      "Transparent flat-rate pricing",
+      "Transparent, upfront pricing",
       "Genuine manufacturer-approved parts",
       "180-day parts & labor warranty",
     ],

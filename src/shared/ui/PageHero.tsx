@@ -6,9 +6,10 @@ type PageHeroProps = {
   src: string;
   alt: string;
   eyebrow?: string;
+  badges?: string[];
 };
 
-export function PageHero({ heading, src, alt, eyebrow }: PageHeroProps) {
+export function PageHero({ heading, src, alt, eyebrow, badges }: PageHeroProps) {
   return (
     <section
       aria-labelledby="page-hero-heading"
@@ -36,6 +37,11 @@ export function PageHero({ heading, src, alt, eyebrow }: PageHeroProps) {
           >
             {heading}
           </h1>
+          {badges && badges.length > 0 && (
+            <p className="mt-3 font-manrope text-xs lg:text-sm text-white/85">
+              {badges.join(" · ")}
+            </p>
+          )}
         </div>
       </Container>
     </section>

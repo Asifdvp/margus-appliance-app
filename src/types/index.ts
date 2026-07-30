@@ -5,11 +5,18 @@ export type Service = {
   href: string;
   icon: string;
   detailImage?: string;
+  heroTitle?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  badges?: string[];
   intro?: string[];
   commonProblems?: string[];
+  commonProblemsNote?: string;
+  sections?: BlogSection[];
   whyChoosePoints?: string[];
   closingHeading?: string;
   closingText?: string[];
+  faqs?: FaqItem[];
 };
 export type Step = {
   id: string;

@@ -5,7 +5,7 @@ import { ServiceAreas } from "@/sections/home/ServiceAreas";
 import { Brands } from "@/sections/home/Brands";
 import { RecentJobs } from "@/sections/home/RecentJobs";
 import { Testimonials } from "@/sections/home/Testimonials";
-import { FAQ } from "@/sections/home/FAQ";
+import { FAQ } from "@/sections/shared/FAQ";
 import { faqs } from "@/content/faq";
 import { Blogs } from "@/sections/shared/Blogs";
 import CompanyInfo from "@/sections/home/companyInfo";

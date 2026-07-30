@@ -8,7 +8,7 @@ import WarrantyIcon from "@/shared/icons/about-warranty.svg";
 import WarrantyMainIcon from "@/shared/icons/warranty.svg";
 
 const FEATURES = [
-  "Transparent flat-rate pricing",
+  "Transparent, upfront pricing",
   "180 day warranty on parts & labor",
   "Certified technicians",
   "Genuine manufacturer parts",
@@ -66,7 +66,7 @@ const STATS: Stat[] = [
     fillColor: "#FFBF3D",
   },
   {
-    value: "90",
+    value: "180",
     label: "Day Warranty",
     icon: <WarrantyMainIcon />,
     variant: "orange",
