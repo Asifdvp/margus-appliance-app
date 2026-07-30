@@ -10,6 +10,7 @@ export type Service = {
   metaDescription?: string;
   badges?: string[];
   intro?: string[];
+  preProblemsSections?: BlogSection[];
   commonProblems?: string[];
   commonProblemsNote?: string;
   sections?: BlogSection[];
