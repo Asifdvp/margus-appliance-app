@@ -39,8 +39,32 @@ export function ServiceContent({ service }: Props) {
                     </li>
                   ))}
                 </ul>
+                {service.commonProblemsNote && (
+                  <p className="mt-2 font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary italic">
+                    {service.commonProblemsNote}
+                  </p>
+                )}
               </div>
             )}
+
+            {/* Additional info sections */}
+            {service.sections?.map((section, i) => (
+              <div key={section.heading ?? i} className="mb-3 md:mb-6">
+                {section.heading && (
+                  <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
+                    {section.heading}
+                  </h2>
+                )}
+                {section.paragraphs.map((p, j) => (
+                  <p
+                    key={j}
+                    className="mb-2 md:mb-3 font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+            ))}
 
             {/* Why Choose */}
             {service.whyChoosePoints && (

@@ -9,30 +9,84 @@ export const SERVICES: Service[] = [
     href: "/services/refrigerator-repair",
     icon: "/images/services/refrigator.png",
     detailImage: "/images/services/refrigator.png",
+    heroTitle: "Refrigerator Repair in Cleveland & Parma",
+    badges: [
+      "Same-day service",
+      "Free upfront quotes",
+      "180-day parts & labor warranty",
+    ],
     intro: [
-      "A failing refrigerator can spoil your food and cause costly waste. Our certified technicians provide fast refrigerator repairs to keep your food fresh and your household running smoothly.",
-      "We repair all makes and models, from basic fridges to high-end refrigerators.",
+      "When your refrigerator stops working, every hour counts — spoiled food and rising temperatures can cost you fast. Margus Appliance Repair provides same-day refrigerator repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. Our technicians diagnose cooling, defrost, and leak problems on-site and complete most repairs in a single visit. We repair all makes and models, from basic top-freezers to high-end French-door and built-in refrigerators.",
     ],
     commonProblems: [
-      "Refrigerator not cooling",
-      "Freezer not freezing",
-      "Ice maker not working",
-      "Water leaking inside or under fridge",
-      "Loud compressor or fan noises",
-      "Temperature fluctuations",
-      "Door seal and gasket issues",
+      "Refrigerator not cooling or not cold enough",
+      "Freezer section not freezing",
+      "Ice maker not working or making too little ice",
+      "Water leaking inside or pooling under the fridge",
+      "Loud compressor, buzzing, or clicking noises",
+      "Temperature swinging too warm or too cold",
+      "Frost building up and blocking the freezer vent",
+      "Worn door seals and gaskets letting cold air escape",
     ],
-    whyChoosePoints: [
-      "Fast same-day refrigerator repair",
-      "All major brands serviced",
-      "Transparent pricing, no surprises",
-      "180-day warranty on all repairs",
-      "Locally trusted in Cleveland & Parma",
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Refrigerator Cooling?",
+        paragraphs: [
+          "Warm milk, spoiled leftovers, and a hum that suddenly stops are early warning signs. A refrigerator that won't cool disrupts your whole household within hours. The most common causes are failing compressors, blocked condenser coils, faulty thermostats, and worn door seals. Our technicians serving Cleveland and Parma are trained to diagnose and repair all of these — quickly, because cooling failures rarely wait for a convenient time.",
+        ],
+      },
+      {
+        heading: "Refrigerator Brands We Repair",
+        paragraphs: [
+          "We service all major refrigerator brands, including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, KitchenAid, Bosch, and Kenmore. Samsung and LG models often have sensor or control-board issues unique to those brands, and our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Refrigerator?",
+        paragraphs: [
+          "The decision comes down to three things: the unit's age, the repair cost, and warranty coverage. As a rule of thumb, a newer fridge with a simple fault (like a bad ice maker) is almost always worth repairing, while a very old unit with a failing compressor may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can make the call with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Refrigerator Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide refrigerator repair throughout the Greater Cleveland area, including Parma, Lakewood, Strongsville, Cleveland Heights, North Olmsted, Westlake, Solon, Euclid, Avon, and Medina, plus many surrounding communities.",
+        ],
+      },
     ],
-    closingHeading: "Keep Your Food Fresh",
-    closingText: [
-      "A refrigerator breakdown is urgent. Our team responds quickly to get your fridge back to optimal temperature as soon as possible.",
-      "Call us today for fast, reliable refrigerator repair in Cleveland and Parma.",
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides refrigerator repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day service, free upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "what-causes-not-cooling",
+        question: "What causes a refrigerator to stop cooling?",
+        answer:
+          "The most common causes are failing compressors, blocked condenser coils, faulty thermostats, and worn door seals — plus sensor or control-board issues on Samsung and LG models.",
+      },
+      {
+        id: "cost",
+        question: "How much does refrigerator repair cost in Cleveland?",
+        answer:
+          "It depends on the brand, the part, and the severity of the fault. Our diagnostic visit and quote are always upfront and transparent, so you'll know the exact price before any work starts.",
+      },
+      {
+        id: "repair-or-replace",
+        question: "Should I repair or replace my refrigerator?",
+        answer:
+          "If your fridge is relatively new and the repair costs less than half the price of a new unit, repair is usually the smarter choice. Our technician will give you an honest recommendation.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day refrigerator repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {

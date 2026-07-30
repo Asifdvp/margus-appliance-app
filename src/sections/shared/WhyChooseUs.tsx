@@ -66,7 +66,7 @@ const STATS: Stat[] = [
     fillColor: "#FFBF3D",
   },
   {
-    value: "90",
+    value: "180",
     label: "Day Warranty",
     icon: <WarrantyMainIcon />,
     variant: "orange",

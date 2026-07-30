@@ -58,7 +58,15 @@ function FaqRow({
   );
 }
 
-export function FAQ() {
+type Props = {
+  items?: FaqItem[];
+  heading?: string;
+};
+
+export function FAQ({
+  items = faqs,
+  heading = "Frequently Asked Questions About Appliance Repair",
+}: Props) {
   const [openId, setOpenId] = useState<string | null>(null);
 
   function toggle(id: string) {
@@ -73,11 +81,11 @@ export function FAQ() {
             id="faq-heading"
             className="font-work-sans font-bold text-dark text-[18px] leading-6 text-center  lg:text-[48px] lg:leading-14 "
           >
-            Frequently Asked Questions About Appliance Repair{" "}
+            {heading}
           </h2>
 
           <div className="mt-4 lg:mt-14">
-            {faqs.map((faq) => (
+            {items.map((faq) => (
               <FaqRow
                 key={faq.id}
                 faq={faq}

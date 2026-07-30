@@ -15,32 +15,32 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    id: "same-day",
+    id: "book-in-minutes",
     iconSrc: requestIcon,
-    title: "Same-Day Service",
+    title: "Book in Minutes",
     description:
-      "Book your appliance repair by phone, email, or online — fast and easy",
+      "Schedule your repair by phone, email, or online — whichever is easiest. Same-day appointments are available seven days a week.",
   },
   {
-    id: "one-visit",
+    id: "on-site-diagnosis",
     iconSrc: diagnosisIcon,
-    title: "One Visit Repairs",
+    title: "On-Site Diagnosis",
     description:
-      "Our certified technician arrives fully equipped to diagnose your appliance and provide an upfront quote.",
+      "A certified technician arrives fully equipped, inspects your appliance, and pinpoints the root cause of the problem.",
   },
   {
-    id: "honest-pricing",
+    id: "upfront-quote",
     iconSrc: repairIcon,
-    title: "Honest Pricing",
+    title: "Upfront Quote",
     description:
-      "We use only manufacturer-approved parts to ensure long-lasting performance and reliable repairs.",
+      "Before any work begins, you get a clear, honest price — no hidden fees and no surprises on the final invoice.",
   },
   {
-    id: "licensed",
+    id: "licensed-insured",
     iconSrc: testIcon,
     title: "Licensed and Insured",
     description:
-      "Every repair is backed by our 180-day parts & labor warranty for your complete peace of mind.",
+      "Once you approve, we complete the repair with manufacturer-approved parts, test the appliance, and back it with our 180-day parts & labor warranty.",
   },
 ];
 
@@ -53,7 +53,7 @@ export function AboutFeatures() {
             id="about-features-heading"
             className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[32px] lg:leading-10"
           >
-            Our Simple 4-Step Appliance Repair Process — From Call to Fix
+            Our Simple 4-Step Repair Process — From Call to Fix
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
