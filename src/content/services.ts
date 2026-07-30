@@ -100,33 +100,88 @@ export const SERVICES: Service[] = [
     href: "/services/washer-repair",
     icon: "/images/services/washer.png",
     detailImage: "/images/services/washer.png",
+    heroTitle: "Washer & Washing Machine Repair in Cleveland & Parma",
+    metaTitle: "Washer Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day washer & washing machine repair in Cleveland & Parma, OH. No service call fee, 180-day warranty, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
+      "180-day parts & labor warranty",
+    ],
     intro: [
-      "A broken washing machine can quickly disrupt your daily routine. Whether your washer won't drain, spin, start, or is making unusual noises, our professional washer repair service is here to help.",
-      "We provide fast, reliable, and affordable repair solutions for all major washing machine brands and models. Our experienced technicians diagnose the issue accurately and work efficiently to restore your appliance as quickly as possible.",
+      "A broken washing machine piles up laundry fast and throws off your whole week. Margus Appliance Repair provides same-day washer repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair all makes and models, from traditional top-load washers to modern high-efficiency front-loaders.",
     ],
     commonProblems: [
-      "Washer not draining",
-      "Washing machine not spinning",
-      "Water leakage issues",
-      "Loud or unusual noises",
-      "Washer won't start",
-      "Door or lid lock problems",
-      "Error codes and electrical issues",
-      "Slow filling or water supply problems",
+      "Washer not spinning or not spinning fast enough",
+      "Washer not draining, or water left sitting in the drum",
+      "Machine not filling with water",
+      "Washer won't start or won't turn on",
+      "Water leaking during a cycle",
+      "Washer shaking, vibrating, or \"walking\" across the floor",
+      "Loud banging, grinding, or squealing noises",
+      "Drum not agitating, or clothes still dirty after a wash",
+      "Bad odor or mildew smell from the machine",
     ],
-    whyChoosePoints: [
-      "Experienced and certified technicians",
-      "Same-day and emergency repair options",
-      "Transparent pricing with no hidden fees",
-      "Repairs for all major brands",
-      "Quality replacement parts",
-      "Friendly and professional customer support",
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Washer Working Right?",
+        paragraphs: [
+          "A washer that won't spin or drain usually traces back to a worn drive belt, a clogged drain pump, a failing door latch, or an electrical control fault. A machine that leaks or shakes often has a loose hose, a worn shock absorber, or an unbalanced load. Ignoring these symptoms can turn a simple fix into a costlier repair — or a flooded laundry room. Our technicians serving Cleveland and Parma diagnose the exact mechanical or electrical cause instead of guessing at symptoms.",
+        ],
+      },
+      {
+        heading: "Washer Brands We Repair",
+        paragraphs: [
+          "We service all major washing machine brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, Kenmore, and Frigidaire. Whether it's a high-efficiency front-loader with a digital control board or a dependable older top-loader, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Washer?",
+        paragraphs: [
+          "It comes down to three things: the machine's age, the repair cost, and warranty coverage. As a rule of thumb, a washer under 8 years old with a common fault (like a bad pump or belt) is usually worth repairing, while a very old machine with a failed motor or transmission may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Washer Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide washer and washing machine repair throughout the Greater Cleveland area, including Parma, Lakewood, Strongsville, Cleveland Heights, North Olmsted, Westlake, Solon, Euclid, Avon, and Medina, plus many surrounding communities.",
+        ],
+      },
     ],
-    closingHeading: "Fast & Reliable Appliance Repair",
-    closingText: [
-      "We understand how important a working washing machine is for your home. That's why we focus on quick response times and long-lasting repair solutions that help prevent future problems.",
-      "Our goal is simple: get your washer running smoothly again with minimal stress and downtime.",
-      "Don't let a faulty washing machine slow you down. Contact our team today to book a professional washer repair service and get your appliance back in perfect working condition.",
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides washer repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day washer repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "why-wont-spin-drain",
+        question: "Why won't my washer spin or drain?",
+        answer:
+          "The most common causes are a worn drive belt, a clogged or failed drain pump, a faulty door latch, or a motor issue. Our technician will diagnose the exact cause on-site.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for washer repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "repair-or-replace",
+        question: "Should I repair or replace my washing machine?",
+        answer:
+          "If your washer is relatively new and the repair costs less than half the price of a new machine, repair is usually the smarter choice. Our technician will give you an honest recommendation.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day washer repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
