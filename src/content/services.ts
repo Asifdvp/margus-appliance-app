@@ -297,29 +297,107 @@ export const SERVICES: Service[] = [
     href: "/services/stove-repair",
     icon: "/images/services/stove.png",
     detailImage: "/images/services/stove.png",
-    intro: [
-      "A broken stove makes cooking at home nearly impossible. Our certified technicians repair all types of stoves — gas, electric, and induction.",
-      "We service all major brands and provide fast, reliable repairs with transparent pricing.",
-    ],
-    commonProblems: [
-      "Burners not igniting or heating",
-      "Uneven heat distribution",
-      "Control panel errors",
-      "Gas smell or ignition issues",
-      "Surface element not working",
-      "Knobs or controls not responding",
-    ],
-    whyChoosePoints: [
-      "Gas and electric stove specialists",
-      "Same-day appointments available",
-      "Certified and insured technicians",
-      "Upfront pricing before any work begins",
+    heroTitle: "Stove & Cooktop Repair in Cleveland & Parma",
+    metaTitle: "Stove & Cooktop Repair Cleveland & Parma | Same-Day",
+    metaDescription:
+      "Fast, same-day stove & cooktop repair in Cleveland & Parma, OH. Gas & electric, no service call fee, 180-day warranty. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
       "180-day parts & labor warranty",
     ],
-    closingHeading: "Get Back to Cooking",
-    closingText: [
-      "Don't let a faulty stove disrupt your meals. Our team provides fast, professional stove repairs across Cleveland and Parma.",
-      "Schedule your repair today and get your kitchen back in working order.",
+    intro: [
+      "A stove burner that won't light or heat can bring dinner to a halt — and a burner that clicks endlessly, sparks unexpectedly, or gives off a faint gas odor is a safety concern you shouldn't ignore. Margus Appliance Repair provides same-day stove and cooktop repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair both gas and electric stoves and cooktops, all makes and models.",
+    ],
+    preProblemsSections: [
+      {
+        heading: "What Warning Signs Mean Your Stove Needs Repair?",
+        paragraphs: [
+          "A burner that clicks without lighting, sparks unexpectedly, or emits a faint gas smell signals trouble you shouldn't ignore. These symptoms often point to failing igniters, damaged control boards, or gas-line issues that only get worse without prompt attention — and delaying can turn a minor repair into a full replacement, leaving your kitchen without a working cooktop for days. Watch for these signs in particular:",
+        ],
+        list: [
+          "Burners that spark repeatedly or refuse to ignite",
+          "A persistent gas smell near the stove or cooktop",
+          "One burner heats while others stay cold, or heating is uneven",
+          "Unusual clicking, buzzing, or an electrical odor from the control panel",
+          "Scorch marks or discoloration around the burner knobs",
+        ],
+        note: "If you smell gas, shut off the appliance and call us right away.",
+      },
+    ],
+    commonProblems: [
+      "Gas burner won't ignite or won't light",
+      "Electric burner stays cold or won't get hot enough",
+      "Igniter clicking that won't stop",
+      "Sparking, or a burner that won't spark at all",
+      "Uneven heating across burners",
+      "Control knobs or touch controls not responding",
+      "One burner works but others don't",
+      "Gas smell around the cooktop",
+    ],
+    sections: [
+      {
+        heading: "Why Isn't Your Stove Working Right?",
+        paragraphs: [
+          "A gas burner that won't light usually points to a clogged burner port, a faulty igniter, or a bad spark module. An electric burner that stays cold often means a burned-out heating element, a loose connection, or a failed switch. Controls that won't respond can trace back to a faulty control board. Our technicians serving Cleveland and Parma diagnose the exact cause — and treat any gas-related issue as a safety priority, not a guess.",
+        ],
+      },
+      {
+        heading: "Stove & Cooktop Brands We Repair",
+        paragraphs: [
+          "We service all major stove and cooktop brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, KitchenAid, and Frigidaire, both gas and electric models. Whether it's a modern induction cooktop, a sealed gas burner, a built-in flush-mounted cooktop, or a classic electric coil stove, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Stove?",
+        paragraphs: [
+          "It comes down to the appliance's age, the repair cost, and warranty coverage. As a rule of thumb, a stove or cooktop under 8 years old with a common fault (like a bad igniter or heating element) is usually worth repairing, while a very old unit with widespread failures may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Stove & Cooktop Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide stove and cooktop repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides stove repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day stove and cooktop repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "gas-burner-wont-light",
+        question: "Why won't my gas burner light?",
+        answer:
+          "The most common causes are a clogged burner port, a faulty igniter, or a bad spark module. Our technician will find and fix the exact cause on-site.",
+      },
+      {
+        id: "electric-burner-wont-heat",
+        question: "My electric burner won't heat — what's wrong?",
+        answer:
+          "Usually it's a burned-out heating element, a loose connection, or a failed switch. These are common, straightforward repairs.",
+      },
+      {
+        id: "clicking-gas-smell-safety",
+        question: "Is it safe to keep using a stove that clicks or smells like gas?",
+        answer:
+          "Constant clicking often just means a dirty or misaligned igniter, but a gas smell should always be treated seriously. Shut off the appliance and call us promptly — these faults tend to worsen with continued use.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for stove repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day stove repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {

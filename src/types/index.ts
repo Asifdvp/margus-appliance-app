@@ -28,6 +28,8 @@ export type Step = {
 export type BlogSection = {
   heading?: string;
   paragraphs: string[];
+  list?: string[];
+  note?: string;
 };
 
 export type BlogPost = {
