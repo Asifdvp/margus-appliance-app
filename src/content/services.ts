@@ -192,30 +192,101 @@ export const SERVICES: Service[] = [
     href: "/services/dryer-repair",
     icon: "/images/services/dryer.png",
     detailImage: "/images/services/dryer.png",
-    intro: [
-      "A malfunctioning dryer can leave you with wet clothes and no way to dry them. Whether your dryer won't heat, takes too long, or stops mid-cycle, our expert technicians can fix it fast.",
-      "We service all major dryer brands and models, providing reliable repairs backed by our 180-day warranty.",
-    ],
-    commonProblems: [
-      "Dryer not heating",
-      "Clothes taking too long to dry",
-      "Dryer won't start",
-      "Loud or unusual noises",
-      "Drum not turning",
-      "Overheating issues",
-      "Error codes and electrical problems",
-    ],
-    whyChoosePoints: [
-      "Same-day dryer repair service",
-      "Certified technicians for all brands",
-      "Transparent, upfront pricing",
-      "Genuine manufacturer-approved parts",
+    heroTitle: "Dryer Repair in Cleveland & Parma",
+    metaTitle: "Dryer Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day dryer repair in Cleveland & Parma, OH. No service call fee, 180-day warranty, gas & electric, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
       "180-day parts & labor warranty",
     ],
-    closingHeading: "Get Your Dryer Running Again",
-    closingText: [
-      "Don't let a broken dryer disrupt your household. Our experienced team provides fast, affordable dryer repairs in Cleveland and Parma.",
-      "Contact us today to schedule your same-day dryer repair service.",
+    intro: [
+      "A dryer that won't heat or won't turn leaves you with piles of wet laundry and no quick fix. Margus Appliance Repair provides same-day dryer repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair all makes and models, both gas and electric dryers.",
+    ],
+    preProblemsSections: [
+      {
+        heading: "What Are the Signs Your Dryer Needs Repair?",
+        paragraphs: [
+          "A few warning signs separate a minor glitch from a real breakdown: no heat, a drum that won't spin, a dryer that won't start, loud grinding or thumping, and cycles that stop halfway through. These aren't just annoyances — a struggling dryer draws extra electricity while failing to dry your clothes, and small problems often grow into pricier failures if ignored. Most homeowners notice one of these signs first, then start looking for someone who can diagnose it correctly the first time.",
+        ],
+      },
+    ],
+    commonProblems: [
+      "Dryer not heating or not getting hot enough",
+      "Clothes still damp, or dryer taking too long to dry",
+      "Drum not spinning or not tumbling",
+      "Dryer won't start or won't turn on",
+      "Loud banging, squealing, or thumping noises",
+      "Dryer overheating or shutting off mid-cycle",
+      "Burning smell during a cycle",
+      "Dryer runs but stops before the cycle ends",
+    ],
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Dryer Working Right?",
+        paragraphs: [
+          "A dryer that won't heat usually points to a failed heating element, a blown thermal fuse, or a faulty thermostat. A drum that won't turn often means a broken drive belt or a worn motor. Long drying times and mid-cycle shutoffs frequently trace back to clogged vents or airflow restrictions — and a clogged dryer vent isn't just slow, it's a fire risk worth fixing fast. Our technicians serving Cleveland and Parma check these components methodically instead of replacing parts by trial and error, whether it's a gas dryer that won't ignite or an electric model that spins but never warms up.",
+        ],
+      },
+      {
+        heading: "Dryer Brands We Repair",
+        paragraphs: [
+          "We service all major dryer brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, Kenmore, and Frigidaire, both gas and electric models. Whether it's a modern moisture-sensing dryer with electronic controls or a dependable older unit, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Dryer?",
+        paragraphs: [
+          "It comes down to the dryer's age, the repair cost, and warranty coverage. As a rule of thumb, a dryer under 8 years old with a common fault (like a heating element or drive belt) is usually worth repairing, while a very old unit with a failed motor may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Dryer Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide dryer repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities. Cleveland and Parma addresses receive the same scheduling priority — we treat the area as one connected service zone, not separate territories.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides dryer repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dryer repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "why-wont-heat",
+        question: "Why won't my dryer heat?",
+        answer:
+          "The most common causes are a failed heating element, a blown thermal fuse, or a faulty thermostat. Our technician will diagnose the exact cause on-site.",
+      },
+      {
+        id: "taking-too-long",
+        question: "Why is my dryer taking so long to dry?",
+        answer:
+          "Long drying times usually come from a clogged vent, restricted airflow, or a weak heating element. A clogged vent is also a fire hazard, so it's worth checking promptly.",
+      },
+      {
+        id: "stops-mid-cycle",
+        question: "Why does my dryer stop mid-cycle?",
+        answer:
+          "Mid-cycle stops often point to overheating sensors, worn belts, or airflow restrictions that trigger an automatic shutoff. A technician can pinpoint which one is at fault.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for dryer repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day dryer repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
