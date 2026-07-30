@@ -16,12 +16,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = SERVICES.find((s) => s.id === slug);
   if (!service) return {};
+  const title =
+    service.metaTitle ??
+    `${service.title} in Cleveland & Parma | Margus Appliance`;
+  const description = service.metaDescription ?? service.description;
   return {
-    title: `${service.title} in Cleveland & Parma | Margus Appliance`,
-    description: service.description,
+    title,
+    description,
     openGraph: {
-      title: `${service.title} in Cleveland & Parma | Margus Appliance`,
-      description: service.description,
+      title,
+      description,
       url: `https://margusappliancerepair.com/services/${service.id}`,
       type: "website",
       images: [
@@ -35,8 +39,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${service.title} in Cleveland & Parma | Margus Appliance`,
-      description: service.description,
+      title,
+      description,
     },
     alternates: {
       canonical: `https://margusappliancerepair.com/services/${service.id}`,

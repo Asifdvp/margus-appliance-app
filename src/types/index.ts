@@ -6,6 +6,8 @@ export type Service = {
   icon: string;
   detailImage?: string;
   heroTitle?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   badges?: string[];
   intro?: string[];
   commonProblems?: string[];

@@ -10,6 +10,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/refrigator.png",
     detailImage: "/images/services/refrigator.png",
     heroTitle: "Refrigerator Repair in Cleveland & Parma",
+    metaTitle: "Refrigerator Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day refrigerator repair in Cleveland & Parma, OH. Free upfront quotes, 180-day parts & labor warranty, all major brands. Call today!",
     badges: [
       "Same-day service",
       "Free upfront quotes",
@@ -150,7 +153,7 @@ export const SERVICES: Service[] = [
     whyChoosePoints: [
       "Same-day dryer repair service",
       "Certified technicians for all brands",
-      "Transparent flat-rate pricing",
+      "Transparent, upfront pricing",
       "Genuine manufacturer-approved parts",
       "180-day parts & labor warranty",
     ],
