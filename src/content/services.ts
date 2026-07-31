@@ -408,30 +408,88 @@ export const SERVICES: Service[] = [
     href: "/services/dishwasher-repair",
     icon: "/images/services/dishwasher.png",
     detailImage: "/images/services/dishwasher.png",
-    intro: [
-      "A broken dishwasher means more time at the sink. Whether your dishwasher won't drain, clean dishes properly, or won't start at all, our technicians can restore it quickly.",
-      "We service all major dishwasher brands with same-day appointments available.",
-    ],
-    commonProblems: [
-      "Dishwasher not cleaning dishes",
-      "Standing water after cycle",
-      "Dishwasher won't start",
-      "Door latch problems",
-      "Unusual noises during operation",
-      "Water leaking onto floor",
-      "Error codes on control panel",
-    ],
-    whyChoosePoints: [
-      "Same-day dishwasher repair",
-      "Certified for all major brands",
-      "Upfront flat-rate pricing",
-      "Genuine replacement parts",
+    heroTitle: "Dishwasher Repair in Cleveland & Parma",
+    metaTitle: "Dishwasher Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day dishwasher repair in Cleveland & Parma, OH. No service call fee, 180-day warranty, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
       "180-day parts & labor warranty",
     ],
-    closingHeading: "Fast Dishwasher Repair You Can Trust",
-    closingText: [
-      "Our team provides reliable dishwasher repairs in Cleveland and Parma with minimal disruption to your daily routine.",
-      "Book your repair today and have your dishwasher working like new.",
+    intro: [
+      "A dishwasher that won't drain, leaves dishes dirty, or leaks across your kitchen floor turns a convenience into a daily headache. Margus Appliance Repair provides same-day dishwasher repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair all makes and models, from built-in units to portable and drawer-style dishwashers.",
+    ],
+    commonProblems: [
+      "Dishwasher not draining, or standing water in the bottom",
+      "Dishes still dirty or not getting clean",
+      "Machine not filling with water",
+      "Water leaking onto the floor",
+      "Dishwasher won't start or won't turn on",
+      "Dishes not drying at the end of the cycle",
+      "Loud grinding, humming, or knocking noises",
+      "Door won't latch or won't stay closed",
+      "Bad odor or standing-water smell",
+    ],
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Dishwasher Working Right?",
+        paragraphs: [
+          "A dishwasher that won't drain usually points to a clogged drain hose, a failed drain pump, or a blocked filter. Dishes that come out dirty often mean a worn spray arm, clogged spray holes, or a faulty water inlet valve. Leaks typically trace back to a worn door gasket or a loose hose connection — and a small leak left alone can damage your flooring and cabinetry over time, turning a minor repair into a costly renovation. Our technicians serving Cleveland and Parma diagnose the exact cause instead of guessing.",
+        ],
+      },
+      {
+        heading: "Dishwasher Brands We Repair",
+        paragraphs: [
+          "We service all major dishwasher brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, KitchenAid, and Frigidaire. Whether it's a modern quiet built-in with a digital control panel or a dependable older unit, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Dishwasher?",
+        paragraphs: [
+          "It comes down to the machine's age, the repair cost, and warranty coverage. As a rule of thumb, a dishwasher under 8 years old with a common fault (like a bad pump or spray arm) is usually worth repairing, while a very old unit with multiple failing parts may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Dishwasher Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide dishwasher repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides dishwasher repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dishwasher repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "wont-drain",
+        question: "Why won't my dishwasher drain?",
+        answer:
+          "The most common causes are a clogged drain hose, a failed drain pump, or a blocked filter. Our technician will find and fix the exact cause on-site.",
+      },
+      {
+        id: "dishes-still-dirty",
+        question: "Why are my dishes still dirty after a cycle?",
+        answer:
+          "Usually it's a worn or clogged spray arm, a faulty water inlet valve, or buildup blocking the spray holes. These are common, fixable issues.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for dishwasher repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day dishwasher repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
@@ -442,28 +500,97 @@ export const SERVICES: Service[] = [
     href: "/services/freezer-repair",
     icon: "/images/services/freezer.png",
     detailImage: "/images/services/freezer.png",
+    heroTitle: "Freezer Repair in Cleveland & Parma",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
+      "180-day parts & labor warranty",
+    ],
     intro: [
-      "A broken freezer puts your frozen food at risk. Our technicians provide fast freezer repair to protect your food and your investment.",
-      "We fix all types of freezers — chest, upright, and built-in — for all major brands.",
+      "A freezer that stops holding temperature can spoil a month's worth of food in a matter of hours — one night it's humming along, the next morning the ice cream has softened and the meat is thawing. Margus Appliance Repair provides same-day freezer repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair chest, upright, and deep freezers from every major brand.",
     ],
     commonProblems: [
-      "Freezer not freezing",
-      "Frost buildup inside freezer",
-      "Freezer making loud noises",
-      "Temperature not staying cold",
-      "Freezer door not sealing",
-      "Compressor issues",
+      "Freezer not freezing or not cold enough",
+      "Frost or ice building up unevenly on the walls",
+      "Compressor running constantly and never cycling off",
+      "Temperature swinging warmer or colder than the setting",
+      "Water leaking or pooling under the unit",
+      "Freezer not defrosting properly",
+      "Loud humming, buzzing, or clicking noises",
+      "Door or lid not sealing tightly",
+      "Back panel feeling warm to the touch",
     ],
-    whyChoosePoints: [
-      "Same-day freezer repair available",
-      "All freezer types and brands",
-      "Transparent pricing",
-      "Quality replacement parts",
-      "180-day warranty included",
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Freezer Working Right?",
+        paragraphs: [
+          "A freezer that won't hold temperature usually points to a failing compressor, dirty or blocked condenser coils, a faulty start relay, or worn door seals letting warm air in. Heavy or uneven frost buildup often means a bad defrost heater, timer, or thermostat. Food-spoilage risk climbs fast once the internal temperature rises above 32°F — sometimes within hours — so our technicians serving Cleveland and Parma diagnose the exact cause quickly instead of guessing.",
+        ],
+      },
+      {
+        heading: "Freezer Brands We Repair",
+        paragraphs: [
+          "We service all major freezer brands, including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, and Kenmore. Whether it's a large chest freezer in the garage, an upright in the basement, or a compact deep freezer, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Freezer?",
+        paragraphs: [
+          "It comes down to the unit's age, the repair cost, and warranty coverage. As a rule of thumb, a freezer under 8 years old with a common fault (like a start relay or defrost heater) is usually worth repairing, while a very old unit with a failing compressor may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "The Warning Signs of a Failing Freezer",
+        paragraphs: [
+          "Catching a freezer problem early can save your food. Watch for a compressor that runs constantly without cycling off, frost accumulating unevenly along the interior walls, a unit that hums loudly or leaks water, or a back panel that feels warm to the touch. These signs usually appear before a total failure — calling as soon as you notice them keeps a small repair from becoming a freezer full of spoiled groceries.",
+        ],
+      },
+      {
+        heading: "Freezer Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide freezer repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities.",
+        ],
+      },
     ],
-    closingHeading: "Protect Your Frozen Food",
-    closingText: [
-      "Don't let a broken freezer cost you hundreds in spoiled food. Contact our team for fast, affordable freezer repair in Cleveland and Parma.",
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides freezer repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day freezer repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "not-freezing",
+        question: "Why isn't my freezer freezing?",
+        answer:
+          "The most common causes are a failing compressor, dirty condenser coils, a faulty start relay, or worn door seals. Our technician will find the exact cause on-site.",
+      },
+      {
+        id: "frost-buildup",
+        question: "Why is there so much frost buildup in my freezer?",
+        answer:
+          "Heavy frost usually points to a bad defrost heater, timer, or thermostat, or a door that isn't sealing properly. These are common, fixable issues.",
+      },
+      {
+        id: "how-long",
+        question: "How long does a freezer repair take?",
+        answer:
+          "Most freezer repairs are completed on the first visit, since our technicians carry commonly needed parts — which limits how long you're without safe cold storage.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for freezer repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day freezer repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
