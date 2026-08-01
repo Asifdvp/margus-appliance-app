@@ -11,29 +11,21 @@ import { Blogs } from "@/sections/shared/Blogs";
 import CompanyInfo from "@/sections/home/companyInfo";
 
 export const metadata: Metadata = {
-  title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
+  title: "Appliance Repair Cleveland & Parma, OH | Margus",
   description:
-    "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty. Call us today.",
+    "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). No service call fee with repair, 180-day warranty. Call (216) 304-0665.",
   openGraph: {
-    title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
+    title: "Appliance Repair Cleveland & Parma, OH | Margus",
     description:
-      "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty.",
+      "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). No service call fee with repair, 180-day warranty. Call (216) 304-0665.",
     url: "https://margusappliancerepair.com",
     type: "website",
-    images: [
-      {
-        url: "https://margusappliancerepair.com/og-home.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Margus Appliance — Expert Appliance Repair in Cleveland & Parma",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
+    title: "Appliance Repair Cleveland & Parma, OH | Margus",
     description:
-      "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas.",
+      "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). No service call fee with repair, 180-day warranty.",
   },
   alternates: {
     canonical: "https://margusappliancerepair.com",

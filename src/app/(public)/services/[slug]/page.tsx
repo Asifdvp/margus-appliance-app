@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: "/og-home.jpg",
+          url: "/opengraph-image",
           width: 1200,
           height: 630,
           alt: `${service.title} — Margus Appliance`,

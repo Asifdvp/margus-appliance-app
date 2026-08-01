@@ -29,7 +29,7 @@ const StarRating = () => {
           aria-label="Rated 4.9 out of 5 stars"
         >
           <p className="text-[9px] leading-2.5 font-regular font-manrope lg:text-[16px] lg:leading-5.5  text-grey ">
-            4.9/5 — 600+ Google Reviews
+            4.9/5 — 184 Google Reviews
           </p>
 
           <div className="flex  gap-0.7 md:gap-1.5">

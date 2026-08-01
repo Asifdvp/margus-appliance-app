@@ -18,3 +18,12 @@ export const CONTACT_INFO = {
   email: "margusappliance@gmail.com",
   emailHref: "mailto:margusappliance@gmail.com",
 } as const;
+
+export const ADDRESS = {
+  street: "6520 Broadview Rd",
+  city: "Parma",
+  state: "OH",
+  zip: "44134",
+  full: "6520 Broadview Rd, Parma, OH 44134",
+  mapsHref: "https://maps.app.goo.gl/iCp4nBpYsp52zUmG7",
+} as const;

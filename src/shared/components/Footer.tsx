@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { NAV_LINKS, SITE_NAME, CONTACT_INFO } from "@/constants";
+import { NAV_LINKS, SITE_NAME, CONTACT_INFO, ADDRESS } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import { cn } from "@/shared/lib/utils";
 import FacebookIcon from "@/shared/icons/facebook.svg";
@@ -72,6 +72,14 @@ export function Footer({ className }: FooterProps) {
             <span className="mb-2 md:mb-3 text-sm leading-5.5 font-semibold tracking-widest text-[#141414]/60">
               Contact {SITE_NAME}
             </span>
+            <a
+              href={ADDRESS.mapsHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base leading-6 md:text-[20px] md:leading-7.5 font-normal text-[#141414] transition-colors hover:text-dark/70 focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark"
+            >
+              {ADDRESS.full}
+            </a>
             <a
               href={CONTACT_INFO.phoneHref}
               className="text-base leading-6 md:text-[20px] md:leading-7.5 font-normal text-[#141414] transition-colors hover:text-dark/70 focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark"

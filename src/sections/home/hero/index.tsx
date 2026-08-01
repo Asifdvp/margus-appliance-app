@@ -18,20 +18,19 @@ export function Hero() {
           {/* Heading */}
           <div className="flex items-start pt-4 lg:pt-10 mb-3 md:mb-8">
             <h1 className="font-work-sans font-bold text-[30px] leading-8.75 lg:text-[57px] lg:leading-16.5 text-dark">
-              Expert Appliance Repair in{" "}
+              Appliance Repair in{" "}
               <span className="text-brand">
-                Parma & Greater Cleveland — Fast, Same‑Day Service
+                Cleveland & Parma — Fast, Same‑Day Service
               </span>
             </h1>
           </div>
 
           <p className="max-w-lg text-[12px] leading-4.5 lg:text-[18px] lg:leading-7 text-secondary font-manrope font-normal mb-1 md:mb-2">
-            Margus Appliance Repair proudly serves homeowners throughout Parma,
-            Cleveland, and the Greater Cleveland area. As a family-owned
-            business, we provide fast, reliable appliance repair with honest,
-            upfront pricing, same-day service whenever available, no service
-            call fee with repair, and a 180&#8209;day parts &amp; labor
-            warranty.
+            Margus Appliance Repair is a local, family-owned team providing
+            fast, same-day repair for refrigerators, washers, dryers, ovens,
+            and more across Cleveland, Parma, Lakewood, and all of Greater
+            Cleveland, Ohio. Honest, upfront pricing, no service call fee
+            with repair, and a 180&#8209;day parts &amp; labor warranty.
           </p>
           <p className="text-brand text-[14px] leading-5.5 md:text-[20px] md:leading-8 font-bold font-manrope mb-5 md:mb-12">
             No service call fee with repair{" "}
