@@ -1,8 +1,27 @@
-import { testimonials } from "@/content/testimonials";
+import { testimonials as fallbackTestimonials } from "@/content/testimonials";
 import { Container } from "@/shared/layout/Container";
 import { TestimonialsCarousel } from "./Carousel";
+import { getGoogleBusinessData } from "@/shared/lib/googleReviews";
+import type { Testimonial } from "@/types";
 
-export function Testimonials() {
+// Below this many real Google reviews with text, the carousel looks sparse
+// (it repeats items to fill 3 columns) — fall back to curated content instead.
+const MIN_REAL_REVIEWS = 6;
+
+export async function Testimonials() {
+  const googleData = await getGoogleBusinessData();
+
+  const testimonials: Testimonial[] =
+    googleData && googleData.reviews.length >= MIN_REAL_REVIEWS
+      ? googleData.reviews.map((r) => ({
+          id: r.id,
+          text: r.text,
+          name: r.author,
+          location: "Verified Google Review",
+          image: r.authorPhoto,
+        }))
+      : fallbackTestimonials;
+
   return (
     <section
       className="mt-10.5 lg:mt-24  py-6 bg-[#DFDFDF] overflow-hidden lg:py-12"
@@ -19,10 +38,10 @@ export function Testimonials() {
             Real Satisfaction.
           </h2>
           <p className="mt-4 font-manrope text-xs leading-4.5 text-dark lg:mt-0 lg:text-[18px] lg:leading-7 ">
-            At Margus Appliance, we&apos;re committed to keeping your home
-            appliances running smoothly. With years of hands-on experience, our
-            mission is simple: fast, honest, and expert service that our
-            customers can depend on.
+            At Margus Appliance Repair, we&apos;re committed to keeping your
+            appliances running smoothly. With 8 years of hands-on experience
+            serving Cleveland and Parma, our mission is simple: fast, honest,
+            expert service you can depend on.
           </p>
         </div>
 

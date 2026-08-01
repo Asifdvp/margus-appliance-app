@@ -1,9 +1,9 @@
 ﻿import type { Metadata } from "next";
 import { AboutHero } from "@/sections/about/AboutHero";
-import { WhyChooseUs } from "@/sections/about/WhyChooseUs";
+import { WhyChooseUs } from "@/sections/shared/WhyChooseUs";
 import { AboutCTA } from "@/sections/about/AboutCTA";
 import { CONTACT_INFO } from "@/constants";
-import { AboutFeatures } from "@/sections/about/AboutFeatures";
+import { AboutFeatures } from "@/sections/shared/AboutFeatures";
 
 export const metadata: Metadata = {
   title: "About Margus Appliance — Trusted Appliance Repair in Cleveland & Parma",

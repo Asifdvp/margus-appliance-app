@@ -23,12 +23,12 @@ export function Services() {
               id="services-heading"
               className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
             >
-              Appliance repair Services we provide
+              Appliance Repair Services in Cleveland & Parma
             </h2>
 
             <div>
               <p className="font-manrope text-[12px] leading-4.5 text-secondary  lg:text-[18px] lg:leading-6">
-                Reliable appliance repairs backed by 8+ years of experience
+                Reliable, same-day appliance repair backed by 8+ years of experience serving Greater Cleveland.
               </p>
             </div>
 

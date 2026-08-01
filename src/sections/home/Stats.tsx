@@ -21,7 +21,7 @@ const STATS = [
     icon: <JobsIcon />,
   },
   {
-    value: "90",
+    value: "180",
     label: "Day Warranty",
     icon: <WarrantyIcon />,
   },

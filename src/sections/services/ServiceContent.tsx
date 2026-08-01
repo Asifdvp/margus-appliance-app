@@ -1,6 +1,43 @@
 ﻿import Image from "next/image";
 import { Container } from "@/shared/layout/Container";
-import type { Service } from "@/types";
+import type { BlogSection, Service } from "@/types";
+
+function InfoSection({ section }: { section: BlogSection }) {
+  return (
+    <div className="mb-3 md:mb-6">
+      {section.heading && (
+        <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
+          {section.heading}
+        </h2>
+      )}
+      {section.paragraphs.map((p, i) => (
+        <p
+          key={i}
+          className="mb-2 md:mb-3 font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary"
+        >
+          {p}
+        </p>
+      ))}
+      {section.list && (
+        <ul className="list-disc pl-5 flex flex-col gap-1.5 mb-2 md:mb-3">
+          {section.list.map((item) => (
+            <li
+              key={item}
+              className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
+      {section.note && (
+        <p className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary italic">
+          {section.note}
+        </p>
+      )}
+    </div>
+  );
+}
 
 type Props = { service: Service };
 
@@ -23,6 +60,11 @@ export function ServiceContent({ service }: Props) {
               </p>
             ))}
 
+            {/* Sections before the problems list */}
+            {service.preProblemsSections?.map((section, i) => (
+              <InfoSection key={section.heading ?? i} section={section} />
+            ))}
+
             {/* Common Problems */}
             {service.commonProblems && (
               <div className="my-3 md:my-6">
@@ -39,8 +81,18 @@ export function ServiceContent({ service }: Props) {
                     </li>
                   ))}
                 </ul>
+                {service.commonProblemsNote && (
+                  <p className="mt-2 font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary italic">
+                    {service.commonProblemsNote}
+                  </p>
+                )}
               </div>
             )}
+
+            {/* Additional info sections */}
+            {service.sections?.map((section, i) => (
+              <InfoSection key={section.heading ?? i} section={section} />
+            ))}
 
             {/* Why Choose */}
             {service.whyChoosePoints && (

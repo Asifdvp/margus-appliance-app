@@ -1,7 +1,13 @@
 import { cn } from "@/shared/lib/utils";
 import Image from "next/image";
 import StarIcon from "@/shared/icons/star.svg";
-const StarRating = () => {
+
+interface Props {
+  rating: number;
+  reviewCount: number;
+}
+
+const StarRating = ({ rating, reviewCount }: Props) => {
   return (
     <div className="flex items-center gap-3 lg:gap-4">
       <div className="flex shrink-0" aria-hidden="true">
@@ -26,10 +32,10 @@ const StarRating = () => {
       <div>
         <div
           className="flex items-start flex-col gap-0.5 "
-          aria-label="Rated 4.9 out of 5 stars"
+          aria-label={`Rated ${rating.toFixed(1)} out of 5 stars`}
         >
           <p className="text-[9px] leading-2.5 font-regular font-manrope lg:text-[16px] lg:leading-5.5  text-grey ">
-            4.9/5 — 184 Google Reviews
+            {rating.toFixed(1)}/5 — {reviewCount.toLocaleString("en-US")}+ Google Reviews
           </p>
 
           <div className="flex  gap-0.7 md:gap-1.5">

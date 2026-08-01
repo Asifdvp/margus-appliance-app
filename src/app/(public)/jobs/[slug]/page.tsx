@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { RECENT_JOBS } from "@/content/recent-jobs";
@@ -14,17 +16,33 @@ function toISODate(dateStr: string): string {
   return `${year}-${month}-${day}T00:00:00Z`;
 }
 
+// Extra photos are dropped straight into public/images/recent-jobs/{id}/
+// alongside cover.jpg — no data entry needed, they're picked up automatically.
+function getGalleryImages(jobId: string): string[] {
+  const dir = path.join(process.cwd(), "public", "images", "recent-jobs", jobId);
+  let files: string[];
+  try {
+    files = fs.readdirSync(dir);
+  } catch {
+    return [];
+  }
+  return files
+    .filter((f) => !/^cover\./i.test(f))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .map((f) => `/images/recent-jobs/${jobId}/${f}`);
+}
+
 export function generateStaticParams() {
-  return RECENT_JOBS.map((job) => ({ slug: job.id }));
+  return RECENT_JOBS.map((job) => ({ slug: job.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const job = RECENT_JOBS.find((j) => j.id === slug);
+  const job = RECENT_JOBS.find((j) => j.slug === slug);
   if (!job) return {};
 
   const title = `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"} | Margus Appliance`;
-  const description = `${job.problem ? job.problem + ". " : ""}Certified appliance repair by Margus Appliance in ${job.location ?? "Cleveland"}, Ohio.`;
+  const description = `${job.problem ? job.problem + ". " : ""}See how our certified technicians diagnosed and repaired it in ${job.location ?? "Cleveland"}, Ohio. Same-day appliance repair — call today.`;
 
   return {
     title,
@@ -55,8 +73,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function JobDetailPage({ params }: Props) {
   const { slug } = await params;
-  const job = RECENT_JOBS.find((j) => j.id === slug);
+  const job = RECENT_JOBS.find((j) => j.slug === slug);
   if (!job) notFound();
+
+  const gallery = getGalleryImages(job.id);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://margusappliancerepair.com" },
+      { "@type": "ListItem", position: 2, name: "Recent Jobs", item: "https://margusappliancerepair.com/jobs" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}`,
+        item: `https://margusappliancerepair.com/jobs/${job.slug}`,
+      },
+    ],
+  };
 
   const jobSchema = {
     "@context": "https://schema.org",
@@ -98,10 +133,18 @@ export default async function JobDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jobSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="hidden lg:block">
-        <JobDetailHero problem={job.problem} image={job.image} alt={job.alt} />
+        <JobDetailHero
+          problem={job.problem}
+          service={job.service}
+          location={job.location}
+        />
       </div>
-      <JobDetailContent job={job} />
+      <JobDetailContent job={job} gallery={gallery} />
       <Blogs />
       <CTABanner />
     </>

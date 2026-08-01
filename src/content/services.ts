@@ -9,30 +9,87 @@ export const SERVICES: Service[] = [
     href: "/services/refrigerator-repair",
     icon: "/images/services/refrigator.png",
     detailImage: "/images/services/refrigator.png",
+    heroTitle: "Refrigerator Repair in Cleveland & Parma",
+    metaTitle: "Refrigerator Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day refrigerator repair in Cleveland & Parma, OH. Free upfront quotes, 180-day parts & labor warranty, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "Free upfront quotes",
+      "180-day parts & labor warranty",
+    ],
     intro: [
-      "A failing refrigerator can spoil your food and cause costly waste. Our certified technicians provide fast refrigerator repairs to keep your food fresh and your household running smoothly.",
-      "We repair all makes and models, from basic fridges to high-end refrigerators.",
+      "When your refrigerator stops working, every hour counts — spoiled food and rising temperatures can cost you fast. Margus Appliance Repair provides same-day refrigerator repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. Our technicians diagnose cooling, defrost, and leak problems on-site and complete most repairs in a single visit. We repair all makes and models, from basic top-freezers to high-end French-door and built-in refrigerators.",
     ],
     commonProblems: [
-      "Refrigerator not cooling",
-      "Freezer not freezing",
-      "Ice maker not working",
-      "Water leaking inside or under fridge",
-      "Loud compressor or fan noises",
-      "Temperature fluctuations",
-      "Door seal and gasket issues",
+      "Refrigerator not cooling or not cold enough",
+      "Freezer section not freezing",
+      "Ice maker not working or making too little ice",
+      "Water leaking inside or pooling under the fridge",
+      "Loud compressor, buzzing, or clicking noises",
+      "Temperature swinging too warm or too cold",
+      "Frost building up and blocking the freezer vent",
+      "Worn door seals and gaskets letting cold air escape",
     ],
-    whyChoosePoints: [
-      "Fast same-day refrigerator repair",
-      "All major brands serviced",
-      "Transparent pricing, no surprises",
-      "180-day warranty on all repairs",
-      "Locally trusted in Cleveland & Parma",
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Refrigerator Cooling?",
+        paragraphs: [
+          "Warm milk, spoiled leftovers, and a hum that suddenly stops are early warning signs. A refrigerator that won't cool disrupts your whole household within hours. The most common causes are failing compressors, blocked condenser coils, faulty thermostats, and worn door seals. Our technicians serving Cleveland and Parma are trained to diagnose and repair all of these — quickly, because cooling failures rarely wait for a convenient time.",
+        ],
+      },
+      {
+        heading: "Refrigerator Brands We Repair",
+        paragraphs: [
+          "We service all major refrigerator brands, including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, KitchenAid, Bosch, and Kenmore. Samsung and LG models often have sensor or control-board issues unique to those brands, and our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Refrigerator?",
+        paragraphs: [
+          "The decision comes down to three things: the unit's age, the repair cost, and warranty coverage. As a rule of thumb, a newer fridge with a simple fault (like a bad ice maker) is almost always worth repairing, while a very old unit with a failing compressor may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can make the call with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Refrigerator Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide refrigerator repair throughout the Greater Cleveland area, including Parma, Lakewood, Strongsville, Cleveland Heights, North Olmsted, Westlake, Solon, Euclid, Avon, and Medina, plus many surrounding communities.",
+        ],
+      },
     ],
-    closingHeading: "Keep Your Food Fresh",
-    closingText: [
-      "A refrigerator breakdown is urgent. Our team responds quickly to get your fridge back to optimal temperature as soon as possible.",
-      "Call us today for fast, reliable refrigerator repair in Cleveland and Parma.",
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides refrigerator repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day service, free upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "what-causes-not-cooling",
+        question: "What causes a refrigerator to stop cooling?",
+        answer:
+          "The most common causes are failing compressors, blocked condenser coils, faulty thermostats, and worn door seals — plus sensor or control-board issues on Samsung and LG models.",
+      },
+      {
+        id: "cost",
+        question: "How much does refrigerator repair cost in Cleveland?",
+        answer:
+          "It depends on the brand, the part, and the severity of the fault. Our diagnostic visit and quote are always upfront and transparent, so you'll know the exact price before any work starts.",
+      },
+      {
+        id: "repair-or-replace",
+        question: "Should I repair or replace my refrigerator?",
+        answer:
+          "If your fridge is relatively new and the repair costs less than half the price of a new unit, repair is usually the smarter choice. Our technician will give you an honest recommendation.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day refrigerator repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
@@ -43,33 +100,88 @@ export const SERVICES: Service[] = [
     href: "/services/washer-repair",
     icon: "/images/services/washer.png",
     detailImage: "/images/services/washer.png",
+    heroTitle: "Washer & Washing Machine Repair in Cleveland & Parma",
+    metaTitle: "Washer Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day washer & washing machine repair in Cleveland & Parma, OH. No service call fee, 180-day warranty, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
+      "180-day parts & labor warranty",
+    ],
     intro: [
-      "A broken washing machine can quickly disrupt your daily routine. Whether your washer won't drain, spin, start, or is making unusual noises, our professional washer repair service is here to help.",
-      "We provide fast, reliable, and affordable repair solutions for all major washing machine brands and models. Our experienced technicians diagnose the issue accurately and work efficiently to restore your appliance as quickly as possible.",
+      "A broken washing machine piles up laundry fast and throws off your whole week. Margus Appliance Repair provides same-day washer repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair all makes and models, from traditional top-load washers to modern high-efficiency front-loaders.",
     ],
     commonProblems: [
-      "Washer not draining",
-      "Washing machine not spinning",
-      "Water leakage issues",
-      "Loud or unusual noises",
-      "Washer won't start",
-      "Door or lid lock problems",
-      "Error codes and electrical issues",
-      "Slow filling or water supply problems",
+      "Washer not spinning or not spinning fast enough",
+      "Washer not draining, or water left sitting in the drum",
+      "Machine not filling with water",
+      "Washer won't start or won't turn on",
+      "Water leaking during a cycle",
+      "Washer shaking, vibrating, or \"walking\" across the floor",
+      "Loud banging, grinding, or squealing noises",
+      "Drum not agitating, or clothes still dirty after a wash",
+      "Bad odor or mildew smell from the machine",
     ],
-    whyChoosePoints: [
-      "Experienced and certified technicians",
-      "Same-day and emergency repair options",
-      "Transparent pricing with no hidden fees",
-      "Repairs for all major brands",
-      "Quality replacement parts",
-      "Friendly and professional customer support",
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Washer Working Right?",
+        paragraphs: [
+          "A washer that won't spin or drain usually traces back to a worn drive belt, a clogged drain pump, a failing door latch, or an electrical control fault. A machine that leaks or shakes often has a loose hose, a worn shock absorber, or an unbalanced load. Ignoring these symptoms can turn a simple fix into a costlier repair — or a flooded laundry room. Our technicians serving Cleveland and Parma diagnose the exact mechanical or electrical cause instead of guessing at symptoms.",
+        ],
+      },
+      {
+        heading: "Washer Brands We Repair",
+        paragraphs: [
+          "We service all major washing machine brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, Kenmore, and Frigidaire. Whether it's a high-efficiency front-loader with a digital control board or a dependable older top-loader, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Washer?",
+        paragraphs: [
+          "It comes down to three things: the machine's age, the repair cost, and warranty coverage. As a rule of thumb, a washer under 8 years old with a common fault (like a bad pump or belt) is usually worth repairing, while a very old machine with a failed motor or transmission may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Washer Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide washer and washing machine repair throughout the Greater Cleveland area, including Parma, Lakewood, Strongsville, Cleveland Heights, North Olmsted, Westlake, Solon, Euclid, Avon, and Medina, plus many surrounding communities.",
+        ],
+      },
     ],
-    closingHeading: "Fast & Reliable Appliance Repair",
-    closingText: [
-      "We understand how important a working washing machine is for your home. That's why we focus on quick response times and long-lasting repair solutions that help prevent future problems.",
-      "Our goal is simple: get your washer running smoothly again with minimal stress and downtime.",
-      "Don't let a faulty washing machine slow you down. Contact our team today to book a professional washer repair service and get your appliance back in perfect working condition.",
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides washer repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day washer repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "why-wont-spin-drain",
+        question: "Why won't my washer spin or drain?",
+        answer:
+          "The most common causes are a worn drive belt, a clogged or failed drain pump, a faulty door latch, or a motor issue. Our technician will diagnose the exact cause on-site.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for washer repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "repair-or-replace",
+        question: "Should I repair or replace my washing machine?",
+        answer:
+          "If your washer is relatively new and the repair costs less than half the price of a new machine, repair is usually the smarter choice. Our technician will give you an honest recommendation.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day washer repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
@@ -80,30 +192,101 @@ export const SERVICES: Service[] = [
     href: "/services/dryer-repair",
     icon: "/images/services/dryer.png",
     detailImage: "/images/services/dryer.png",
-    intro: [
-      "A malfunctioning dryer can leave you with wet clothes and no way to dry them. Whether your dryer won't heat, takes too long, or stops mid-cycle, our expert technicians can fix it fast.",
-      "We service all major dryer brands and models, providing reliable repairs backed by our 180-day warranty.",
-    ],
-    commonProblems: [
-      "Dryer not heating",
-      "Clothes taking too long to dry",
-      "Dryer won't start",
-      "Loud or unusual noises",
-      "Drum not turning",
-      "Overheating issues",
-      "Error codes and electrical problems",
-    ],
-    whyChoosePoints: [
-      "Same-day dryer repair service",
-      "Certified technicians for all brands",
-      "Transparent flat-rate pricing",
-      "Genuine manufacturer-approved parts",
+    heroTitle: "Dryer Repair in Cleveland & Parma",
+    metaTitle: "Dryer Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day dryer repair in Cleveland & Parma, OH. No service call fee, 180-day warranty, gas & electric, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
       "180-day parts & labor warranty",
     ],
-    closingHeading: "Get Your Dryer Running Again",
-    closingText: [
-      "Don't let a broken dryer disrupt your household. Our experienced team provides fast, affordable dryer repairs in Cleveland and Parma.",
-      "Contact us today to schedule your same-day dryer repair service.",
+    intro: [
+      "A dryer that won't heat or won't turn leaves you with piles of wet laundry and no quick fix. Margus Appliance Repair provides same-day dryer repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair all makes and models, both gas and electric dryers.",
+    ],
+    preProblemsSections: [
+      {
+        heading: "What Are the Signs Your Dryer Needs Repair?",
+        paragraphs: [
+          "A few warning signs separate a minor glitch from a real breakdown: no heat, a drum that won't spin, a dryer that won't start, loud grinding or thumping, and cycles that stop halfway through. These aren't just annoyances — a struggling dryer draws extra electricity while failing to dry your clothes, and small problems often grow into pricier failures if ignored. Most homeowners notice one of these signs first, then start looking for someone who can diagnose it correctly the first time.",
+        ],
+      },
+    ],
+    commonProblems: [
+      "Dryer not heating or not getting hot enough",
+      "Clothes still damp, or dryer taking too long to dry",
+      "Drum not spinning or not tumbling",
+      "Dryer won't start or won't turn on",
+      "Loud banging, squealing, or thumping noises",
+      "Dryer overheating or shutting off mid-cycle",
+      "Burning smell during a cycle",
+      "Dryer runs but stops before the cycle ends",
+    ],
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Dryer Working Right?",
+        paragraphs: [
+          "A dryer that won't heat usually points to a failed heating element, a blown thermal fuse, or a faulty thermostat. A drum that won't turn often means a broken drive belt or a worn motor. Long drying times and mid-cycle shutoffs frequently trace back to clogged vents or airflow restrictions — and a clogged dryer vent isn't just slow, it's a fire risk worth fixing fast. Our technicians serving Cleveland and Parma check these components methodically instead of replacing parts by trial and error, whether it's a gas dryer that won't ignite or an electric model that spins but never warms up.",
+        ],
+      },
+      {
+        heading: "Dryer Brands We Repair",
+        paragraphs: [
+          "We service all major dryer brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, Kenmore, and Frigidaire, both gas and electric models. Whether it's a modern moisture-sensing dryer with electronic controls or a dependable older unit, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Dryer?",
+        paragraphs: [
+          "It comes down to the dryer's age, the repair cost, and warranty coverage. As a rule of thumb, a dryer under 8 years old with a common fault (like a heating element or drive belt) is usually worth repairing, while a very old unit with a failed motor may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Dryer Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide dryer repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities. Cleveland and Parma addresses receive the same scheduling priority — we treat the area as one connected service zone, not separate territories.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides dryer repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dryer repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "why-wont-heat",
+        question: "Why won't my dryer heat?",
+        answer:
+          "The most common causes are a failed heating element, a blown thermal fuse, or a faulty thermostat. Our technician will diagnose the exact cause on-site.",
+      },
+      {
+        id: "taking-too-long",
+        question: "Why is my dryer taking so long to dry?",
+        answer:
+          "Long drying times usually come from a clogged vent, restricted airflow, or a weak heating element. A clogged vent is also a fire hazard, so it's worth checking promptly.",
+      },
+      {
+        id: "stops-mid-cycle",
+        question: "Why does my dryer stop mid-cycle?",
+        answer:
+          "Mid-cycle stops often point to overheating sensors, worn belts, or airflow restrictions that trigger an automatic shutoff. A technician can pinpoint which one is at fault.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for dryer repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day dryer repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
@@ -114,29 +297,107 @@ export const SERVICES: Service[] = [
     href: "/services/stove-repair",
     icon: "/images/services/stove.png",
     detailImage: "/images/services/stove.png",
-    intro: [
-      "A broken stove makes cooking at home nearly impossible. Our certified technicians repair all types of stoves — gas, electric, and induction.",
-      "We service all major brands and provide fast, reliable repairs with transparent pricing.",
-    ],
-    commonProblems: [
-      "Burners not igniting or heating",
-      "Uneven heat distribution",
-      "Control panel errors",
-      "Gas smell or ignition issues",
-      "Surface element not working",
-      "Knobs or controls not responding",
-    ],
-    whyChoosePoints: [
-      "Gas and electric stove specialists",
-      "Same-day appointments available",
-      "Certified and insured technicians",
-      "Upfront pricing before any work begins",
+    heroTitle: "Stove & Cooktop Repair in Cleveland & Parma",
+    metaTitle: "Stove & Cooktop Repair Cleveland & Parma | Same-Day",
+    metaDescription:
+      "Fast, same-day stove & cooktop repair in Cleveland & Parma, OH. Gas & electric, no service call fee, 180-day warranty. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
       "180-day parts & labor warranty",
     ],
-    closingHeading: "Get Back to Cooking",
-    closingText: [
-      "Don't let a faulty stove disrupt your meals. Our team provides fast, professional stove repairs across Cleveland and Parma.",
-      "Schedule your repair today and get your kitchen back in working order.",
+    intro: [
+      "A stove burner that won't light or heat can bring dinner to a halt — and a burner that clicks endlessly, sparks unexpectedly, or gives off a faint gas odor is a safety concern you shouldn't ignore. Margus Appliance Repair provides same-day stove and cooktop repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair both gas and electric stoves and cooktops, all makes and models.",
+    ],
+    preProblemsSections: [
+      {
+        heading: "What Warning Signs Mean Your Stove Needs Repair?",
+        paragraphs: [
+          "A burner that clicks without lighting, sparks unexpectedly, or emits a faint gas smell signals trouble you shouldn't ignore. These symptoms often point to failing igniters, damaged control boards, or gas-line issues that only get worse without prompt attention — and delaying can turn a minor repair into a full replacement, leaving your kitchen without a working cooktop for days. Watch for these signs in particular:",
+        ],
+        list: [
+          "Burners that spark repeatedly or refuse to ignite",
+          "A persistent gas smell near the stove or cooktop",
+          "One burner heats while others stay cold, or heating is uneven",
+          "Unusual clicking, buzzing, or an electrical odor from the control panel",
+          "Scorch marks or discoloration around the burner knobs",
+        ],
+        note: "If you smell gas, shut off the appliance and call us right away.",
+      },
+    ],
+    commonProblems: [
+      "Gas burner won't ignite or won't light",
+      "Electric burner stays cold or won't get hot enough",
+      "Igniter clicking that won't stop",
+      "Sparking, or a burner that won't spark at all",
+      "Uneven heating across burners",
+      "Control knobs or touch controls not responding",
+      "One burner works but others don't",
+      "Gas smell around the cooktop",
+    ],
+    sections: [
+      {
+        heading: "Why Isn't Your Stove Working Right?",
+        paragraphs: [
+          "A gas burner that won't light usually points to a clogged burner port, a faulty igniter, or a bad spark module. An electric burner that stays cold often means a burned-out heating element, a loose connection, or a failed switch. Controls that won't respond can trace back to a faulty control board. Our technicians serving Cleveland and Parma diagnose the exact cause — and treat any gas-related issue as a safety priority, not a guess.",
+        ],
+      },
+      {
+        heading: "Stove & Cooktop Brands We Repair",
+        paragraphs: [
+          "We service all major stove and cooktop brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, KitchenAid, and Frigidaire, both gas and electric models. Whether it's a modern induction cooktop, a sealed gas burner, a built-in flush-mounted cooktop, or a classic electric coil stove, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Stove?",
+        paragraphs: [
+          "It comes down to the appliance's age, the repair cost, and warranty coverage. As a rule of thumb, a stove or cooktop under 8 years old with a common fault (like a bad igniter or heating element) is usually worth repairing, while a very old unit with widespread failures may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Stove & Cooktop Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide stove and cooktop repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides stove repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day stove and cooktop repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "gas-burner-wont-light",
+        question: "Why won't my gas burner light?",
+        answer:
+          "The most common causes are a clogged burner port, a faulty igniter, or a bad spark module. Our technician will find and fix the exact cause on-site.",
+      },
+      {
+        id: "electric-burner-wont-heat",
+        question: "My electric burner won't heat — what's wrong?",
+        answer:
+          "Usually it's a burned-out heating element, a loose connection, or a failed switch. These are common, straightforward repairs.",
+      },
+      {
+        id: "clicking-gas-smell-safety",
+        question: "Is it safe to keep using a stove that clicks or smells like gas?",
+        answer:
+          "Constant clicking often just means a dirty or misaligned igniter, but a gas smell should always be treated seriously. Shut off the appliance and call us promptly — these faults tend to worsen with continued use.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for stove repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day stove repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
@@ -147,30 +408,88 @@ export const SERVICES: Service[] = [
     href: "/services/dishwasher-repair",
     icon: "/images/services/dishwasher.png",
     detailImage: "/images/services/dishwasher.png",
-    intro: [
-      "A broken dishwasher means more time at the sink. Whether your dishwasher won't drain, clean dishes properly, or won't start at all, our technicians can restore it quickly.",
-      "We service all major dishwasher brands with same-day appointments available.",
-    ],
-    commonProblems: [
-      "Dishwasher not cleaning dishes",
-      "Standing water after cycle",
-      "Dishwasher won't start",
-      "Door latch problems",
-      "Unusual noises during operation",
-      "Water leaking onto floor",
-      "Error codes on control panel",
-    ],
-    whyChoosePoints: [
-      "Same-day dishwasher repair",
-      "Certified for all major brands",
-      "Upfront flat-rate pricing",
-      "Genuine replacement parts",
+    heroTitle: "Dishwasher Repair in Cleveland & Parma",
+    metaTitle: "Dishwasher Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day dishwasher repair in Cleveland & Parma, OH. No service call fee, 180-day warranty, all major brands. Call today!",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
       "180-day parts & labor warranty",
     ],
-    closingHeading: "Fast Dishwasher Repair You Can Trust",
-    closingText: [
-      "Our team provides reliable dishwasher repairs in Cleveland and Parma with minimal disruption to your daily routine.",
-      "Book your repair today and have your dishwasher working like new.",
+    intro: [
+      "A dishwasher that won't drain, leaves dishes dirty, or leaks across your kitchen floor turns a convenience into a daily headache. Margus Appliance Repair provides same-day dishwasher repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair all makes and models, from built-in units to portable and drawer-style dishwashers.",
+    ],
+    commonProblems: [
+      "Dishwasher not draining, or standing water in the bottom",
+      "Dishes still dirty or not getting clean",
+      "Machine not filling with water",
+      "Water leaking onto the floor",
+      "Dishwasher won't start or won't turn on",
+      "Dishes not drying at the end of the cycle",
+      "Loud grinding, humming, or knocking noises",
+      "Door won't latch or won't stay closed",
+      "Bad odor or standing-water smell",
+    ],
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Dishwasher Working Right?",
+        paragraphs: [
+          "A dishwasher that won't drain usually points to a clogged drain hose, a failed drain pump, or a blocked filter. Dishes that come out dirty often mean a worn spray arm, clogged spray holes, or a faulty water inlet valve. Leaks typically trace back to a worn door gasket or a loose hose connection — and a small leak left alone can damage your flooring and cabinetry over time, turning a minor repair into a costly renovation. Our technicians serving Cleveland and Parma diagnose the exact cause instead of guessing.",
+        ],
+      },
+      {
+        heading: "Dishwasher Brands We Repair",
+        paragraphs: [
+          "We service all major dishwasher brands, including Samsung, LG, Whirlpool, GE, Maytag, Bosch, KitchenAid, and Frigidaire. Whether it's a modern quiet built-in with a digital control panel or a dependable older unit, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Dishwasher?",
+        paragraphs: [
+          "It comes down to the machine's age, the repair cost, and warranty coverage. As a rule of thumb, a dishwasher under 8 years old with a common fault (like a bad pump or spray arm) is usually worth repairing, while a very old unit with multiple failing parts may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "Dishwasher Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide dishwasher repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides dishwasher repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dishwasher repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "wont-drain",
+        question: "Why won't my dishwasher drain?",
+        answer:
+          "The most common causes are a clogged drain hose, a failed drain pump, or a blocked filter. Our technician will find and fix the exact cause on-site.",
+      },
+      {
+        id: "dishes-still-dirty",
+        question: "Why are my dishes still dirty after a cycle?",
+        answer:
+          "Usually it's a worn or clogged spray arm, a faulty water inlet valve, or buildup blocking the spray holes. These are common, fixable issues.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for dishwasher repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day dishwasher repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {
@@ -181,28 +500,97 @@ export const SERVICES: Service[] = [
     href: "/services/freezer-repair",
     icon: "/images/services/freezer.png",
     detailImage: "/images/services/freezer.png",
+    heroTitle: "Freezer Repair in Cleveland & Parma",
+    badges: [
+      "Same-day service",
+      "No service call fee when we complete the repair",
+      "180-day parts & labor warranty",
+    ],
     intro: [
-      "A broken freezer puts your frozen food at risk. Our technicians provide fast freezer repair to protect your food and your investment.",
-      "We fix all types of freezers — chest, upright, and built-in — for all major brands.",
+      "A freezer that stops holding temperature can spoil a month's worth of food in a matter of hours — one night it's humming along, the next morning the ice cream has softened and the meat is thawing. Margus Appliance Repair provides same-day freezer repair for homeowners across Cleveland, Parma, and the surrounding Greater Cleveland area. As a local, family-owned business based in Parma, our licensed technicians diagnose the problem on-site, give you an honest price up front, and complete most repairs in a single visit. We repair chest, upright, and deep freezers from every major brand.",
     ],
     commonProblems: [
-      "Freezer not freezing",
-      "Frost buildup inside freezer",
-      "Freezer making loud noises",
-      "Temperature not staying cold",
-      "Freezer door not sealing",
-      "Compressor issues",
+      "Freezer not freezing or not cold enough",
+      "Frost or ice building up unevenly on the walls",
+      "Compressor running constantly and never cycling off",
+      "Temperature swinging warmer or colder than the setting",
+      "Water leaking or pooling under the unit",
+      "Freezer not defrosting properly",
+      "Loud humming, buzzing, or clicking noises",
+      "Door or lid not sealing tightly",
+      "Back panel feeling warm to the touch",
     ],
-    whyChoosePoints: [
-      "Same-day freezer repair available",
-      "All freezer types and brands",
-      "Transparent pricing",
-      "Quality replacement parts",
-      "180-day warranty included",
+    commonProblemsNote:
+      "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    sections: [
+      {
+        heading: "Why Isn't Your Freezer Working Right?",
+        paragraphs: [
+          "A freezer that won't hold temperature usually points to a failing compressor, dirty or blocked condenser coils, a faulty start relay, or worn door seals letting warm air in. Heavy or uneven frost buildup often means a bad defrost heater, timer, or thermostat. Food-spoilage risk climbs fast once the internal temperature rises above 32°F — sometimes within hours — so our technicians serving Cleveland and Parma diagnose the exact cause quickly instead of guessing.",
+        ],
+      },
+      {
+        heading: "Freezer Brands We Repair",
+        paragraphs: [
+          "We service all major freezer brands, including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, and Kenmore. Whether it's a large chest freezer in the garage, an upright in the basement, or a compact deep freezer, our technicians carry the diagnostic knowledge and common parts to fix most problems on the first visit.",
+        ],
+      },
+      {
+        heading: "Should You Repair or Replace Your Freezer?",
+        paragraphs: [
+          "It comes down to the unit's age, the repair cost, and warranty coverage. As a rule of thumb, a freezer under 8 years old with a common fault (like a start relay or defrost heater) is usually worth repairing, while a very old unit with a failing compressor may cost more to fix than it's worth. Our technician gives you an honest, upfront quote based on the actual fault found on-site — so you can decide with facts, not guesswork.",
+        ],
+      },
+      {
+        heading: "The Warning Signs of a Failing Freezer",
+        paragraphs: [
+          "Catching a freezer problem early can save your food. Watch for a compressor that runs constantly without cycling off, frost accumulating unevenly along the interior walls, a unit that hums loudly or leaks water, or a back panel that feels warm to the touch. These signs usually appear before a total failure — calling as soon as you notice them keeps a small repair from becoming a freezer full of spoiled groceries.",
+        ],
+      },
+      {
+        heading: "Freezer Repair Across Greater Cleveland",
+        paragraphs: [
+          "We provide freezer repair throughout the Greater Cleveland area, including Cleveland, Parma, Lakewood, Akron, Strongsville, Cleveland Heights, Euclid, North Olmsted, Westlake, Solon, and Medina, plus many surrounding communities.",
+        ],
+      },
     ],
-    closingHeading: "Protect Your Frozen Food",
-    closingText: [
-      "Don't let a broken freezer cost you hundreds in spoiled food. Contact our team for fast, affordable freezer repair in Cleveland and Parma.",
+    faqs: [
+      {
+        id: "who-provides",
+        question: "Who provides freezer repair in Cleveland?",
+        answer:
+          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day freezer repair, upfront quotes, and a 180-day parts and labor warranty.",
+      },
+      {
+        id: "not-freezing",
+        question: "Why isn't my freezer freezing?",
+        answer:
+          "The most common causes are a failing compressor, dirty condenser coils, a faulty start relay, or worn door seals. Our technician will find the exact cause on-site.",
+      },
+      {
+        id: "frost-buildup",
+        question: "Why is there so much frost buildup in my freezer?",
+        answer:
+          "Heavy frost usually points to a bad defrost heater, timer, or thermostat, or a door that isn't sealing properly. These are common, fixable issues.",
+      },
+      {
+        id: "how-long",
+        question: "How long does a freezer repair take?",
+        answer:
+          "Most freezer repairs are completed on the first visit, since our technicians carry commonly needed parts — which limits how long you're without safe cold storage.",
+      },
+      {
+        id: "service-call-fee",
+        question: "Do you charge a service call fee for freezer repair?",
+        answer:
+          "No — there's no separate service call fee as long as you proceed with the repair. You'll get a clear, upfront price before any work begins.",
+      },
+      {
+        id: "same-day",
+        question: "Do you offer same-day freezer repair?",
+        answer:
+          "Yes. We offer same-day service across Cleveland, Parma, and surrounding areas whenever our schedule allows.",
+      },
     ],
   },
   {

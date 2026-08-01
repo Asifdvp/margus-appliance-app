@@ -5,11 +5,19 @@ export type Service = {
   href: string;
   icon: string;
   detailImage?: string;
+  heroTitle?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  badges?: string[];
   intro?: string[];
+  preProblemsSections?: BlogSection[];
   commonProblems?: string[];
+  commonProblemsNote?: string;
+  sections?: BlogSection[];
   whyChoosePoints?: string[];
   closingHeading?: string;
   closingText?: string[];
+  faqs?: FaqItem[];
 };
 export type Step = {
   id: string;
@@ -20,6 +28,8 @@ export type Step = {
 export type BlogSection = {
   heading?: string;
   paragraphs: string[];
+  list?: string[];
+  note?: string;
 };
 
 export type BlogPost = {
@@ -47,6 +57,8 @@ export type NavLink = {
 
 export type RecentJob = {
   id: string;
+  /** SEO-friendly URL slug, e.g. "washer-repair-cleveland-heights". Used for /jobs/{slug}. */
+  slug: string;
   image: string;
   alt: string;
   service?: string;
@@ -72,4 +84,19 @@ export type Testimonial = {
   name: string;
   location: string;
   image?:string
+};
+
+export type GoogleReview = {
+  id: string;
+  author: string;
+  authorPhoto?: string;
+  rating: number;
+  text: string;
+  relativeDate: string;
+};
+
+export type GoogleBusinessData = {
+  rating: number;
+  reviewCount: number;
+  reviews: GoogleReview[];
 };
