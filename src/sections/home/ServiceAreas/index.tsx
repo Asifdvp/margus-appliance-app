@@ -13,16 +13,17 @@ export function ServiceAreas() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mb-4 lg:mb-12">
           <h2
             id="service-areas-heading"
-            className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
+            className="font-work-sans font-bold text-dark text-[22px] leading-7 lg:text-[48px] lg:leading-14"
           >
             Areas We Serve
           </h2>
           <div>
-            <p className="font-manrope text-[12px] leading-4.5 text-secondary md:text-[18px] md:leading-7 md:mb-4">
-              We serve Parma, Cleveland, and surrounding cities, providing fast
-              and reliable repair for refrigerators, washers, dryers, and other
-              household appliances, helping keep your home running smoothly
-              without interruptions.
+            <p className="font-manrope text-[15px] leading-5.5 text-secondary md:text-[18px] md:leading-7 md:mb-4">
+              We proudly serve Cleveland, Parma, Lakewood, Strongsville, Euclid,
+              Solon, Westlake, North Olmsted, and communities across Greater
+              Cleveland — providing fast, same-day repair for refrigerators,
+              washers, dryers, ovens, and other household appliances, keeping
+              your home running without interruption.
             </p>
             <Link
               href="/service-areas"

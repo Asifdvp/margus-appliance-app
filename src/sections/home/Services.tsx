@@ -21,14 +21,14 @@ export function Services() {
           <div className="text-center lg:text-left grid grid-cols-1 gap-0.5 lg:grid-cols-2 lg:gap-0  lg:items-center">
             <h2
               id="services-heading"
-              className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
+              className="font-work-sans font-bold text-dark text-[22px] leading-7 lg:text-[48px] lg:leading-14"
             >
-              Appliance repair Services we provide
+              Appliance Repair Services in Cleveland & Parma
             </h2>
 
             <div>
-              <p className="font-manrope text-[12px] leading-4.5 text-secondary  lg:text-[18px] lg:leading-6">
-                Reliable appliance repairs backed by 8+ years of experience
+              <p className="font-manrope text-[15px] leading-5.5 text-secondary  lg:text-[18px] lg:leading-6">
+                Reliable, same-day appliance repair backed by 8+ years of experience serving Greater Cleveland.
               </p>
             </div>
 

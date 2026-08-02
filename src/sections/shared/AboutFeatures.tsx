@@ -33,7 +33,7 @@ const FEATURES: Feature[] = [
     iconSrc: repairIcon,
     title: "Upfront Quote",
     description:
-      "Before any work begins, you get a clear, honest price — no hidden fees and no surprises on the final invoice.",
+      "Before any work begins, you get a clear, honest price — no hidden fees. Your $89 diagnostic fee is applied straight to the repair when you move forward.",
   },
   {
     id: "licensed-insured",
@@ -46,7 +46,7 @@ const FEATURES: Feature[] = [
 
 export function AboutFeatures() {
   return (
-    <section aria-labelledby="about-features-heading">
+    <section aria-labelledby="about-features-heading" className="py-8 lg:py-16">
       <Container>
         <div className="mb-7 md:mb-8">
           <h2

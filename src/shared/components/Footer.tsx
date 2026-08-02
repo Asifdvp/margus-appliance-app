@@ -1,10 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { NAV_LINKS, SITE_NAME, CONTACT_INFO } from "@/constants";
+import { NAV_LINKS, SITE_NAME, CONTACT_INFO, ADDRESS } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import { cn } from "@/shared/lib/utils";
 import FacebookIcon from "@/shared/icons/facebook.svg";
-import LinkedInIcon from "@/shared/icons/linkedin.svg";
 import InstagramIcon from "@/shared/icons/instagram.svg";
 
 interface FooterProps {
@@ -14,17 +13,12 @@ interface FooterProps {
 const SOCIAL_LINKS = [
   {
     label: "Facebook",
-    href: "https://facebook.com/margusappliance",
+    href: "https://www.facebook.com/share/19699YsqAt/?mibextid=wwXIfr",
     Icon: FacebookIcon,
   },
   {
-    label: "LinkedIn",
-    href: "https://linkedin.com/company/margusappliance",
-    Icon: LinkedInIcon,
-  },
-  {
     label: "Instagram",
-    href: "https://instagram.com/margusappliance",
+    href: "https://www.instagram.com/margusappliancerepair?igsh=MTFsMnZ2MTFrZTN2&utm_source=qr",
     Icon: InstagramIcon,
   },
 ];
@@ -71,6 +65,14 @@ export function Footer({ className }: FooterProps) {
               Contact {SITE_NAME}
             </span>
             <a
+              href={ADDRESS.mapsHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base leading-6 md:text-[20px] md:leading-7.5 font-normal text-[#141414] transition-colors hover:text-dark/70 focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark"
+            >
+              {ADDRESS.full}
+            </a>
+            <a
               href={CONTACT_INFO.phoneHref}
               className="text-base leading-6 md:text-[20px] md:leading-7.5 font-normal text-[#141414] transition-colors hover:text-dark/70 focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark"
             >
@@ -107,6 +109,32 @@ export function Footer({ className }: FooterProps) {
               ))}
             </ul>
           </div>
+        </div>
+
+        <hr className="border-dark/15" />
+
+        <div className="flex flex-col items-center gap-3 pt-6 text-center md:flex-row md:justify-between md:text-left">
+          <p className="font-manrope text-xs leading-4.5 text-dark/60">
+            © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
+          </p>
+          <ul className="flex items-center gap-6">
+            <li>
+              <Link
+                href="/privacy-policy"
+                className="font-manrope text-xs leading-4.5 text-dark/60 transition-colors hover:text-dark focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/terms-of-service"
+                className="font-manrope text-xs leading-4.5 text-dark/60 transition-colors hover:text-dark focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark"
+              >
+                Terms of Service
+              </Link>
+            </li>
+          </ul>
         </div>
       </Container>
     </footer>

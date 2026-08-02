@@ -14,11 +14,20 @@ export const SITE_DESCRIPTION = "Professional appliance services and solutions";
 
 // Used when live Google review data (SERPAPI_API_KEY / SERPAPI_PLACE_ID) isn't configured
 export const FALLBACK_RATING = 4.9;
-export const FALLBACK_REVIEW_COUNT = 600;
+export const FALLBACK_REVIEW_COUNT = 180;
 
 export const CONTACT_INFO = {
   phone: "(216) 304-0665",
   phoneHref: "tel:+12163040665",
   email: "margusappliance@gmail.com",
   emailHref: "mailto:margusappliance@gmail.com",
+} as const;
+
+export const ADDRESS = {
+  street: "6520 Broadview Rd",
+  city: "Parma",
+  state: "OH",
+  zip: "44134",
+  full: "6520 Broadview Rd, Parma, OH 44134",
+  mapsHref: "https://maps.app.goo.gl/iCp4nBpYsp52zUmG7",
 } as const;

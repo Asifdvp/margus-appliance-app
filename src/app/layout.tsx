@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://margusappliancerepair.com"),
   title: {
     template: "%s | Margus Appliance",
-    default: "Expert Appliance Repair in Cleveland & Parma | Margus Appliance",
+    default: "Appliance Repair Cleveland & Parma, OH | Margus",
   },
   description:
-    "Certified same-day appliance repair in Cleveland, Parma, and surrounding areas. Transparent pricing and a 180-day parts & labor warranty. Call us today.",
+    "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.",
   openGraph: {
     siteName: "Margus Appliance",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "/og-home.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Margus Appliance — Expert Appliance Repair in Cleveland & Parma",
@@ -58,6 +58,14 @@ const organizationSchema = {
   logo: "https://margusappliancerepair.com/logo.png",
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "6520 Broadview Rd",
+    addressLocality: "Parma",
+    addressRegion: "OH",
+    postalCode: "44134",
+    addressCountry: "US",
+  },
   description:
     "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 180-day parts & labor warranty.",
   areaServed: [
@@ -76,7 +84,10 @@ const organizationSchema = {
   ].map((name) => ({ "@type": "City", name })),
   serviceType: "Appliance Repair",
   priceRange: "$$",
-  sameAs: ["https://www.facebook.com/margusappliance"],
+  sameAs: [
+    "https://www.facebook.com/share/19699YsqAt/?mibextid=wwXIfr",
+    "https://www.instagram.com/margusappliancerepair",
+  ],
 };
 
 export default function RootLayout({

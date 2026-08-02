@@ -11,7 +11,7 @@ export function Brands() {
             <h2 className="text-center text-brand text-base leading-6 font-work-sans font-semibold mb-0.5 md:mb-4 md:font-bold md:text-[32px] md:leading-10 ">
               Appliance Brands We Repair
             </h2>
-            <p className="text-center font-manrope font-normal text-[14px] leading-4.5 text-secondary md:text-[18px] md:leading-7">
+            <p className="text-center font-manrope font-normal text-[15px] leading-5.5 text-secondary md:text-[18px] md:leading-7">
              From everyday brands to high-end appliances
             </p>
           </div>

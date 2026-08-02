@@ -8,7 +8,7 @@ import WarrantyIcon from "@/shared/icons/about-warranty.svg";
 import WarrantyMainIcon from "@/shared/icons/warranty.svg";
 
 const FEATURES = [
-  "Transparent, upfront pricing",
+  "$89 diagnostic, waived when you approve the repair",
   "180 day warranty on parts & labor",
   "Certified technicians",
   "Genuine manufacturer parts",

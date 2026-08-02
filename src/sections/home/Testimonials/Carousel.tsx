@@ -4,6 +4,7 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { cn } from "@/shared/lib/utils";
 import type { Testimonial } from "@/types";
 import Image from "next/image";
+import StarIcon from "@/shared/icons/star.svg";
 
 function Avatar({ name, image }: { name: string; image?: string }) {
   const initials = name
@@ -16,7 +17,10 @@ function Avatar({ name, image }: { name: string; image?: string }) {
   return (
     <div
       aria-hidden
-      className="relative flex h-9 w-9 lg:w-16 lg:h-16 shrink-0 items-center justify-center rounded-full bg-[#585858] overflow-hidden"
+      className={cn(
+        "relative flex h-9 w-9 lg:w-16 lg:h-16 shrink-0 items-center justify-center rounded-full overflow-hidden",
+        image ? "bg-[#585858]" : "bg-brand text-white font-work-sans font-bold text-xs lg:text-xl",
+      )}
     >
       {image ? (
         <Image
@@ -33,20 +37,32 @@ function Avatar({ name, image }: { name: string; image?: string }) {
   );
 }
 
+function Stars() {
+  return (
+    <div className="flex items-center gap-0.5" aria-hidden="true">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <StarIcon key={i} className="w-3 h-3 lg:w-4 lg:h-4" />
+      ))}
+    </div>
+  );
+}
+
 function TestimonialCard({ item }: { item: Testimonial }) {
   return (
-    <article className="flex flex-col gap-8 rounded-xl bg-[#d2d2d2] p-4 lg:p-6">
-      <p className=" text-dark font-normal font-manrope text-xs leading-4.5 md:text-base md:leading-6 ">
+    <article className="flex flex-col gap-4 rounded-xl bg-[#d2d2d2] p-4 lg:p-6">
+      <Stars />
+      <p className=" text-dark font-normal font-manrope text-[15px] leading-5.5 md:text-base md:leading-6 ">
         {item.text}
       </p>
       <div className="flex items-center gap-3">
         <Avatar name={item.name} image={item.image} />
         <div>
-          <p className=" mb-0.5 text-xs leading-4.5 md:text-sm font-semibold text-dark md:leading-5.5">
+          <p className=" mb-0.5 text-[14px] leading-5 md:text-sm font-semibold text-dark md:leading-5.5">
             {item.name}
           </p>
-          <p className=" text-xs leading-4.5 md:text-sm md:leading-5.5 font-normal  text-[#585858]">
+          <p className=" text-[13px] leading-4.5 md:text-sm md:leading-5.5 font-normal  text-[#585858]">
             {item.location}
+            {item.date ? ` · ${item.date}` : ""}
           </p>
         </div>
       </div>

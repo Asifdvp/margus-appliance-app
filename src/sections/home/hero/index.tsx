@@ -24,23 +24,22 @@ export async function Hero() {
           {/* Heading */}
           <div className="flex items-start pt-4 lg:pt-10 mb-3 md:mb-8">
             <h1 className="font-work-sans font-bold text-[30px] leading-8.75 lg:text-[57px] lg:leading-16.5 text-dark">
-              Expert Appliance Repair in{" "}
+              Appliance Repair in{" "}
               <span className="text-brand">
-                Parma & Greater Cleveland — Fast, Same‑Day Service
+                Cleveland & Parma — Fast, Same‑Day Service
               </span>
             </h1>
           </div>
 
-          <p className="max-w-lg text-[12px] leading-4.5 lg:text-[18px] lg:leading-7 text-secondary font-manrope font-normal mb-1 md:mb-2">
-            Margus Appliance Repair proudly serves homeowners throughout Parma,
-            Cleveland, and the Greater Cleveland area. As a family-owned
-            business, we provide fast, reliable appliance repair with honest,
-            upfront pricing, same-day service whenever available, no service
-            call fee with repair, and a 180&#8209;day parts &amp; labor
-            warranty.
+          <p className="max-w-lg text-[16px] leading-6.5 lg:text-[18px] lg:leading-7 text-secondary font-manrope font-normal mb-2 md:mb-2">
+            Margus Appliance Repair is a local, family-owned team providing
+            fast, same-day repair for refrigerators, washers, dryers, ovens,
+            and more across Cleveland, Parma, Lakewood, and all of Greater
+            Cleveland, Ohio. Honest, upfront pricing and a 180&#8209;day
+            parts &amp; labor warranty.
           </p>
-          <p className="text-brand text-[14px] leading-5.5 md:text-[20px] md:leading-8 font-bold font-manrope mb-5 md:mb-12">
-            No service call fee with repair{" "}
+          <p className="text-brand text-[16px] leading-6.5 md:text-[20px] md:leading-8 font-bold font-manrope mb-5 md:mb-12">
+            Honest, upfront pricing{" "}
             <span
               aria-hidden="true"
               className="text-brand inline-block w-1 h-1 rounded-full mx-2"
@@ -54,13 +53,13 @@ export async function Hero() {
 
           {/* CTA buttons */}
           <div className="pb-2 lg:pb-0 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
-            <BookNowButton className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[14px] md:text-[18px] leading-5.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">
+            <BookNowButton className="inline-flex items-center justify-center gap-1 rounded-xl bg-brand py-3 text-[16px] md:text-[18px] leading-6.5 md:leading-7 px-3 lg:px-14 font-semibold text-white transition-colors hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">
               Book Now
               <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
             </BookNowButton>
             <a
               href={CONTACT_INFO.phoneHref}
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand px-7 py-3 text-[14px] leading-5.5 md:text-[18px] md:leading-7 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand px-7 py-3 text-[16px] leading-6.5 md:text-[18px] md:leading-7 font-semibold text-brand transition-colors hover:bg-brand/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
             >
               <PhoneIcon
                 className="w-4 h-4 md:w-5 md:h-5 shrink-0"

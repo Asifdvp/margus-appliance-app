@@ -83,7 +83,8 @@ export type Testimonial = {
   text: string;
   name: string;
   location: string;
-  image?:string
+  image?: string;
+  date?: string;
 };
 
 export type GoogleReview = {

@@ -31,17 +31,17 @@ export async function Testimonials() {
         <div className="mb-4 lg:mb-14 lg:grid lg:grid-cols-2  lg:items-center">
           <h2
             id="testimonials-heading"
-            className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
+            className="font-work-sans font-bold text-dark text-[22px] leading-7 lg:text-[48px] lg:leading-14"
           >
             Real Stories.
             <br />
             Real Satisfaction.
           </h2>
-          <p className="mt-4 font-manrope text-xs leading-4.5 text-dark lg:mt-0 lg:text-[18px] lg:leading-7 ">
-            At Margus Appliance, we&apos;re committed to keeping your home
-            appliances running smoothly. With years of hands-on experience, our
-            mission is simple: fast, honest, and expert service that our
-            customers can depend on.
+          <p className="mt-4 font-manrope text-[15px] leading-5.5 text-dark lg:mt-0 lg:text-[18px] lg:leading-7 ">
+            At Margus Appliance Repair, we&apos;re committed to keeping your
+            appliances running smoothly. With 8 years of hands-on experience
+            serving Cleveland and Parma, our mission is simple: fast, honest,
+            expert service you can depend on.
           </p>
         </div>
 
