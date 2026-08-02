@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: "Appliance Repair Cleveland & Parma, OH | Margus",
   },
   description:
-    "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). No service call fee with repair, 180-day warranty. Call (216) 304-0665.",
+    "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.",
   openGraph: {
     siteName: "Margus Appliance",
     type: "website",
@@ -84,7 +84,10 @@ const organizationSchema = {
   ].map((name) => ({ "@type": "City", name })),
   serviceType: "Appliance Repair",
   priceRange: "$$",
-  sameAs: ["https://www.facebook.com/margusappliance"],
+  sameAs: [
+    "https://www.facebook.com/share/19699YsqAt/?mibextid=wwXIfr",
+    "https://www.instagram.com/margusappliancerepair",
+  ],
 };
 
 export default function RootLayout({

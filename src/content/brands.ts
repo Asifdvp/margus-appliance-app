@@ -13,8 +13,8 @@ export const brands: Brand[] = [
   { id: "kitchenaid", name: "KitchenAid", logo: "/brands/kitchenAid.png" },
   { id: "maytag",     name: "Maytag",     logo: "/brands/maytag.png" },
   { id: "frigidaire", name: "Frigidaire", logo: "/brands/frigidaire.png" },
-  { id: "kenmore",    name: "Kenmore",    logo: "/brands/speedQueen.png" },
-  { id: "kenmore",    name: "Kenmore",    logo: "/brands/wolf.png" },
-  { id: "kenmore",    name: "Kenmore",    logo: "/brands/viking.png" },
+  { id: "speedqueen", name: "Speed Queen", logo: "/brands/speedQueen.png" },
+  { id: "wolf",       name: "Wolf",       logo: "/brands/wolf.png" },
+  { id: "viking",     name: "Viking",     logo: "/brands/viking.png" },
   { id: "kenmore",    name: "Kenmore",    logo: "/brands/kenmore.png" },
 ];

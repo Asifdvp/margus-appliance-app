@@ -14,7 +14,7 @@ export const SITE_DESCRIPTION = "Professional appliance services and solutions";
 
 // Used when live Google review data (SERPAPI_API_KEY / SERPAPI_PLACE_ID) isn't configured
 export const FALLBACK_RATING = 4.9;
-export const FALLBACK_REVIEW_COUNT = 600;
+export const FALLBACK_REVIEW_COUNT = 180;
 
 export const CONTACT_INFO = {
   phone: "(216) 304-0665",

@@ -14,7 +14,7 @@ export function RecentJobs() {
         <div className=" mb-4 lg:mb-14 grid grid-cols-1 lg:grid-cols-2 lg:gap-8 lg:items-center">
           <h2
             id="recent-jobs-heading"
-            className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[48px] lg:leading-14"
+            className="font-work-sans font-bold text-dark text-[22px] leading-7 lg:text-[48px] lg:leading-14"
           >
             Recent Appliance Repair Jobs
           </h2>
@@ -37,7 +37,7 @@ export function RecentJobs() {
         <div className="lg:hidden mt-4">
           <Link
             href="/jobs"
-            className="w-full rounded-xl bg-brand px-4 py-3 text-[14px] leading-5.5 font-semibold text-white hover:bg-brand/90 flex items-center justify-center gap-1"
+            className="w-full rounded-xl bg-brand px-4 py-3 text-[16px] leading-6.5 font-semibold text-white hover:bg-brand/90 flex items-center justify-center gap-1"
           >
             See Recent Jobs <RightArrowIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
           </Link>

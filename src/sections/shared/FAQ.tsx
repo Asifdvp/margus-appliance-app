@@ -27,7 +27,7 @@ function FaqRow({
       >
         <span
           className={cn(
-            "font-bold text-xs leading-4.5 font-work-sans transition-all lg:text-[24px] lg:leading-7.5",
+            "font-bold text-[15px] leading-5.5 font-work-sans transition-all lg:text-[24px] lg:leading-7.5",
             isOpen ? "text-dark" : "text-grey",
           )}
         >
@@ -49,7 +49,7 @@ function FaqRow({
         )}
       >
         <div className="overflow-hidden">
-          <p className="mt-4 text-xs md:text-base leading-4.5 md:leading-6 text-grey font-manrope">
+          <p className="mt-4 text-[14px] md:text-base leading-5.5 md:leading-6 text-grey font-manrope">
             {faq.answer}
           </p>
         </div>
@@ -79,7 +79,7 @@ export function FAQ({
         <div className="max-w-85.75 lg:max-w-211.5 mx-auto">
           <h2
             id="faq-heading"
-            className="font-work-sans font-bold text-dark text-[18px] leading-6 text-center  lg:text-[48px] lg:leading-14 "
+            className="font-work-sans font-bold text-dark text-[22px] leading-7 text-center  lg:text-[48px] lg:leading-14 "
           >
             {heading}
           </h2>

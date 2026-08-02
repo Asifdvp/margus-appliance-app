@@ -51,7 +51,7 @@ export function ServiceCard({
         {title}
       </h3>
 
-      <p className="mt-2 font-manrope text-[12px] leading-4.5 text-secondary lg:mt-3 lg:text-[16px] lg:leading-6">
+      <p className="mt-2 font-manrope text-[13px] leading-4.5 text-secondary lg:mt-3 lg:text-[16px] lg:leading-6">
         {description}
       </p>
 

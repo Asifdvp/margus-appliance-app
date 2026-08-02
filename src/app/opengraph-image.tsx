@@ -61,7 +61,7 @@ export default async function Image() {
               4.9/5 Rating
             </div>
             <div style={{ display: "flex", fontSize: 26, color: "#FFFFFF", fontWeight: 600 }}>
-              184 Google Reviews
+              180+ Google Reviews
             </div>
           </div>
           <div style={{ display: "flex", fontSize: 36, color: "#FFFFFF", fontWeight: 800 }}>

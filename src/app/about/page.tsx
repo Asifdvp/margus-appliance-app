@@ -1,67 +1,51 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { AboutHero } from "@/sections/about/AboutHero";
+import { AboutStory } from "@/sections/about/AboutStory";
 import { WhyChooseUs } from "@/sections/shared/WhyChooseUs";
-import { AboutCTA } from "@/sections/about/AboutCTA";
-import { CONTACT_INFO } from "@/constants";
+import { AboutTrust } from "@/sections/about/AboutTrust";
 import { AboutFeatures } from "@/sections/shared/AboutFeatures";
+import { AboutCoverage } from "@/sections/about/AboutCoverage";
+import { AboutCTA } from "@/sections/about/AboutCTA";
 
 export const metadata: Metadata = {
-  title: "About Margus Appliance — Trusted Appliance Repair in Cleveland & Parma",
+  title: "About Margus Appliance Repair | Cleveland & Parma, OH",
   description:
-    "Margus Appliance is a certified appliance repair company serving Cleveland, Parma, and surrounding areas. Honest pricing, same-day service, and a 180-day parts & labor warranty.",
+    "Margus Appliance Repair is a family-owned appliance repair company serving Cleveland & Parma, OH for 8+ years. Honest upfront pricing, 180-day warranty.",
   openGraph: {
-    title: "About Margus Appliance — Trusted Appliance Repair in Cleveland & Parma",
+    title: "About Margus Appliance Repair | Cleveland & Parma, OH",
     description:
-      "Certified appliance repair in Cleveland & Parma. Transparent pricing, same-day service, and a 180-day parts & labor warranty.",
+      "Family-owned appliance repair serving Cleveland & Parma, OH for 8+ years. Honest upfront pricing, same-day service, 180-day warranty.",
     url: "https://margusappliancerepair.com/about",
     type: "website",
     images: [
       {
-        url: "https://margusappliancerepair.com/images/about/hero-bg.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Margus Appliance — Expert Appliance Repair Team in Cleveland",
+        alt: "Margus Appliance — Expert Appliance Repair in Cleveland & Parma",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Margus Appliance — Trusted Appliance Repair",
+    title: "About Margus Appliance Repair | Cleveland & Parma, OH",
     description:
-      "Certified appliance repair in Cleveland & Parma. Same-day service and 180-day warranty.",
+      "Family-owned appliance repair serving Cleveland & Parma, OH for 8+ years.",
   },
   alternates: {
     canonical: "https://margusappliancerepair.com/about",
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Margus Appliance",
-  url: "https://margusappliancerepair.com",
-  telephone: CONTACT_INFO.phone,
-  email: CONTACT_INFO.email,
-  description:
-    "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 180-day parts & labor warranty.",
-  areaServed: [
-    { "@type": "City", name: "Cleveland" },
-    { "@type": "City", name: "Parma" },
-  ],
-  serviceType: "Appliance Repair",
-  priceRange: "$$",
-};
-
 export default function AboutPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
       <AboutHero />
+      <AboutStory />
       <WhyChooseUs />
+      <AboutTrust />
       <AboutFeatures />
+      <AboutCoverage />
       <AboutCTA />
     </>
   );

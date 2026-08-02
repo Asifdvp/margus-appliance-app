@@ -5,7 +5,7 @@ export function AboutHero() {
     <PageHero
       src="/about-hero.jpg"
       alt="Professional kitchen range appliance serviced by Margus Appliance"
-      heading="Family-Owned Appliance Repair Serving Parma & Greater Cleveland"
+      heading="Family-Owned Appliance Repair in Cleveland & Parma"
     />
   );
 }
