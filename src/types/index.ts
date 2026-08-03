@@ -48,6 +48,15 @@ export type Brand = {
   name: string;
   logo: string;
   website?: string;
+  description?: string;
+  heroTitle?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  intro?: string[];
+  commonProblems?: string[];
+  commonProblemsNote?: string;
+  sections?: BlogSection[];
+  faqs?: FaqItem[];
 };
 
 export type NavLink = {

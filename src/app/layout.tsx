@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { Manrope, Work_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/shared/components/Navbar";
 import { Footer } from "@/shared/components/Footer";
@@ -98,6 +99,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`h-full antialiased ${manrope.variable} ${workSans.variable}`}>
       <body className="min-h-full flex flex-col">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DFS4YRDR0T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DFS4YRDR0T');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

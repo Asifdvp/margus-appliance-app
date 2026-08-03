@@ -2,44 +2,8 @@
 import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
 import { brands } from "@/content/brands";
-import type { BlogSection, Service } from "@/types";
-
-function InfoSection({ section }: { section: BlogSection }) {
-  return (
-    <div className="mb-3 md:mb-6">
-      {section.heading && (
-        <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
-          {section.heading}
-        </h2>
-      )}
-      {section.paragraphs.map((p, i) => (
-        <p
-          key={i}
-          className="mb-2 md:mb-3 font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary"
-        >
-          {p}
-        </p>
-      ))}
-      {section.list && (
-        <ul className="list-disc pl-5 flex flex-col gap-1.5 mb-2 md:mb-3">
-          {section.list.map((item) => (
-            <li
-              key={item}
-              className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
-      {section.note && (
-        <p className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary italic">
-          {section.note}
-        </p>
-      )}
-    </div>
-  );
-}
+import { InfoSection } from "@/shared/ui/InfoSection";
+import type { Service } from "@/types";
 
 type Props = { service: Service };
 
@@ -102,7 +66,9 @@ export function ServiceContent({ service }: Props) {
                     key={brand.id}
                     className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary"
                   >
-                    {brand.name}
+                    <Link href={`/brands/${brand.id}`} className="hover:text-brand transition-colors">
+                      {brand.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
