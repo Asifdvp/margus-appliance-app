@@ -501,6 +501,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/freezer.png",
     detailImage: "/images/services/freezer.png",
     heroTitle: "Freezer Repair in Cleveland & Parma",
+    metaTitle: "Freezer Repair Cleveland & Parma | Same-Day Service",
+    metaDescription:
+      "Fast, same-day freezer repair in Cleveland & Parma, OH. Honest, upfront pricing, 180-day warranty, all major brands. Call today!",
     badges: [
       "Same-day service",
       "Honest upfront pricing",

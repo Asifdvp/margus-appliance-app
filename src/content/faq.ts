@@ -2,33 +2,33 @@ import type { FaqItem } from "@/types";
 
 export const faqs: FaqItem[] = [
   {
-    id: "response-time",
-    question: "How much is your service fee?",
+    id: "same-day",
+    question: "Do you offer same-day appliance repair?",
     answer:
-      "Our service call and diagnostic fee is $89. If you choose to move forward with the repair, the diagnostic fee is waived—you only pay for the repair.",
+      "Yes — Margus Appliance Repair offers same-day and next-day service for refrigerators, washers, dryers, ovens, and more across Cleveland, Parma, and surrounding areas whenever scheduling allows.",
+  },
+  {
+    id: "diagnostic-fee",
+    question: "How much is your diagnostic fee?",
+    answer:
+      "Our diagnostic fee is $89, and it's waived when you proceed with the repair — so you only pay for the repair itself. You'll always get an upfront price before any work begins.",
   },
   {
     id: "brands",
-    question: "Do you offer same-day appliance repair?",
+    question: "Which brands do you repair?",
     answer:
-      "Yes! We offer same-day and next-day appliance repair whenever scheduling allows. Contact us early for the best availability.",
+      "We repair all major brands, including Samsung, LG, Whirlpool, GE, Maytag, KitchenAid, Frigidaire, Bosch, and Fisher & Paykel. Our technicians carry parts for most common brands to fix your appliance on the first visit.",
+  },
+  {
+    id: "coverage-area",
+    question: "What areas do you serve?",
+    answer:
+      "We serve Cleveland, Parma, Lakewood, Strongsville, Euclid, Solon, Westlake, North Olmsted, and surrounding Greater Cleveland communities from our Parma, Ohio base.",
   },
   {
     id: "warranty",
-    question: "What appliance brands do you repair?",
+    question: "What warranty comes with a repair?",
     answer:
-      "We service most major appliance brands, including Whirlpool, LG, Samsung, GE, Frigidaire, KitchenAid, Maytag, Bosch, Electrolux, Amana, Kenmore, and many more.",
-  },
-  {
-    id: "cost",
-    question: "Do you repair both gas and electric appliances?",
-    answer:
-      "Yes. We repair both gas and electric dryers, ovens, ranges, cooktops, and other major household appliances.",
-  },
-  {
-    id: "gas-electric",
-    question: "Do you offer a warranty on repairs?",
-    answer:
-      "Yes. All completed repairs are backed by our 180-day workmanship warranty. If an issue related to our repair occurs during the warranty period, we’ll make it right.",
+      "Every completed repair includes a 180-day parts & labor warranty. We also provide upfront pricing and complete most repairs in a single visit.",
   },
 ];
