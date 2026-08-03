@@ -8,7 +8,7 @@ export const brands: Brand[] = [
     logo: "/brands/samsung.png",
     description: "Certified Samsung appliance repair in Cleveland & Parma",
     heroTitle: "Samsung Appliance Repair in Cleveland & Parma",
-    metaTitle: "Samsung Appliance Repair Cleveland & Parma | Margus Appliance",
+    metaTitle: "Samsung Appliance Repair Cleveland & Parma",
     metaDescription:
       "Certified Samsung refrigerator, washer, dryer & appliance repair in Cleveland & Parma, OH. Same-day service, honest pricing, 180-day warranty. Call today!",
     intro: [

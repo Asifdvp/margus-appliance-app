@@ -17,8 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brand = brands.find((b) => b.id === slug);
   if (!brand) return {};
   const title =
-    brand.metaTitle ??
-    `${brand.name} Appliance Repair in Cleveland & Parma | Margus Appliance`;
+    brand.metaTitle ?? `${brand.name} Appliance Repair in Cleveland & Parma`;
   const description =
     brand.metaDescription ??
     brand.description ??
