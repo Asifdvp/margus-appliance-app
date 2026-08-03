@@ -4,7 +4,7 @@ import { BrandsCarousel } from "./Carousel";
 
 export function Brands() {
   return (
-    <section className=" bg-white pt-1">
+    <section className=" bg-white pt-10.5 lg:pt-15 ">
       <Container>
         <div className="grid grid-cols-1 gap-3 lg:gap-5 items-center justify-center">
           <div>

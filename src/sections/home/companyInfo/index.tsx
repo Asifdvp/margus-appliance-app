@@ -55,7 +55,7 @@ const ITEMS: FlexItemProps[] = [
 
 const CompanyInfo = () => {
   return (
-    <section className="py-2 md:py-8">
+    <section className="py-2 md:py-8 bg-[#F6F6F6] ">
       <Container>
         <div className="bg-[#F6F6F6] rounded-3xl py-4 px-2 md:py-4 md:pb-5 md:px-10">
           <div className="grid grid-cols-2 gap-x-3 gap-y-5 md:grid-cols-4 md:gap-x-10 md:gap-y-0">
