@@ -66,6 +66,7 @@ export default async function BlogDetailPage({ params }: Props) {
       : "https://margusappliancerepair.com/images/blogs/blog.jpg",
     author: {
       "@type": "Organization",
+      "@id": "https://margusappliancerepair.com/#organization",
       name: "Margus Appliance",
       url: "https://margusappliancerepair.com",
     },
@@ -84,11 +85,40 @@ export default async function BlogDetailPage({ params }: Props) {
     },
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://margusappliancerepair.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://margusappliancerepair.com/blog",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `https://margusappliancerepair.com/blog/${slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <BlogDetailHero post={post} />
       <BlogDetailContent post={post} />

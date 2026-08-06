@@ -11,7 +11,6 @@ import { Blogs } from "@/sections/shared/Blogs";
 import CompanyInfo from "@/sections/home/companyInfo";
 
 export const metadata: Metadata = {
-  title: "Appliance Repair Cleveland & Parma, OH | Margus",
   description:
     "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.",
   openGraph: {

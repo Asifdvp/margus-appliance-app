@@ -2,6 +2,7 @@
 import { SERVICES } from "@/content/services";
 import { blogPosts } from "@/content/blog";
 import { RECENT_JOBS } from "@/content/recent-jobs";
+import { brands } from "@/content/brands";
 
 const BASE_URL = "https://margusappliancerepair.com";
 
@@ -94,5 +95,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...servicePages, ...blogPages, ...jobPages];
+  // Only brands with authored detail content have a page — see the
+  // matching `dynamicParams = false` guard in brands/[slug]/page.tsx.
+  const brandPages: MetadataRoute.Sitemap = brands
+    .filter((b) => b.intro)
+    .map((brand) => ({
+      url: `${BASE_URL}/brands/${brand.id}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
+
+  return [...staticPages, ...servicePages, ...blogPages, ...jobPages, ...brandPages];
 }

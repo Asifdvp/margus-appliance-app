@@ -1,45 +1,9 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/shared/layout/Container";
-import { brands } from "@/content/brands";
-import type { BlogSection, Service } from "@/types";
-
-function InfoSection({ section }: { section: BlogSection }) {
-  return (
-    <div className="mb-3 md:mb-6">
-      {section.heading && (
-        <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
-          {section.heading}
-        </h2>
-      )}
-      {section.paragraphs.map((p, i) => (
-        <p
-          key={i}
-          className="mb-2 md:mb-3 font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary"
-        >
-          {p}
-        </p>
-      ))}
-      {section.list && (
-        <ul className="list-disc pl-5 flex flex-col gap-1.5 mb-2 md:mb-3">
-          {section.list.map((item) => (
-            <li
-              key={item}
-              className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
-      {section.note && (
-        <p className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary italic">
-          {section.note}
-        </p>
-      )}
-    </div>
-  );
-}
+import { InfoSection } from "@/shared/ui/InfoSection";
+import { linkifyBrandNames } from "@/shared/lib/linkifyBrandNames";
+import type { Service } from "@/types";
 
 type Props = { service: Service };
 
@@ -92,31 +56,31 @@ export function ServiceContent({ service }: Props) {
             )}
 
             {/* Brands We Repair */}
-            <div className="mb-3 md:mb-6">
-              <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
-                Brands We Repair
-              </h2>
-              <ul className="list-disc pl-5 grid grid-cols-2 gap-x-6 gap-y-1.5">
-                {brands.map((brand) => (
-                  <li
-                    key={brand.id}
-                    className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary"
+            {service.brandsText && (
+              <div className="mb-3 md:mb-6">
+                <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
+                  {service.title.replace(/ Repair$/, "")} Brands We Repair
+                </h2>
+                <p className="mb-2 font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary">
+                  {linkifyBrandNames(service.brandsText)}
+                </p>
+                <p className="mb-2 font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary">
+                  Whatever brand you own, our technicians carry the
+                  diagnostic knowledge and common parts to fix most problems
+                  on the first visit.
+                </p>
+                <p className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary">
+                  Don&apos;t see your brand?{" "}
+                  <Link
+                    href="/brands"
+                    className="font-semibold text-brand underline underline-offset-2 hover:text-brand/80"
                   >
-                    {brand.name}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-2 font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary">
-                Don&apos;t see your brand?{" "}
-                <Link
-                  href="/brands"
-                  className="font-semibold text-brand underline underline-offset-2 hover:text-brand/80"
-                >
-                  View all brands we service
-                </Link>
-                .
-              </p>
-            </div>
+                    View all brands we service
+                  </Link>
+                  .
+                </p>
+              </div>
+            )}
 
             {/* Additional info sections */}
             {service.sections?.map((section, i) => (

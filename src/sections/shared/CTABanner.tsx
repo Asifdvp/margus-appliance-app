@@ -34,7 +34,7 @@ export function CTABanner() {
               </div>
               <div className="absolute right-0 bottom-0 w-120 h-[calc(100%+8rem)]">
                 <Image
-                  src="/about-man.png"
+                  src="/about-man.webp"
                   alt="Margus Appliance certified technician ready for service"
                   fill
                   className="object-cover object-top"
@@ -47,7 +47,7 @@ export function CTABanner() {
             <div className="lg:hidden flex flex-col items-center pt-0 pb-3 px-3">
               <div className="relative w-75 h-60 -mt-15">
                 <Image
-                  src="/about-man.png"
+                  src="/about-man.webp"
                   alt="Margus Appliance certified technician ready for service"
                   fill
                   className="object-cover object-top"

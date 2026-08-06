@@ -47,7 +47,7 @@ export function BlogDetailContent({ post }: Props) {
                 {/* Technician image — overflows above card */}
                 <div className="relative w-75 h-60 -mt-15">
                   <Image
-                    src="/about-man.png"
+                    src="/about-man.webp"
                     alt="Margus Appliance technician"
                     fill
                     className="object-cover object-top"

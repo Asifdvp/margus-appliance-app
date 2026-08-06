@@ -1,5 +1,10 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
+import { PageHero } from "@/shared/ui/PageHero";
+import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 import { BrandsList } from "@/sections/brands/BrandsList";
+import { Blogs } from "@/sections/shared/Blogs";
+import { CTABanner } from "@/sections/shared/CTABanner";
+import { brands } from "@/content/brands";
 
 export const metadata: Metadata = {
   title: "Appliance Brands We Repair — Whirlpool, Samsung, LG & More",
@@ -31,6 +36,56 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://margusappliancerepair.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Brands",
+      item: "https://margusappliancerepair.com/brands",
+    },
+  ],
+};
+
+const brandsListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: brands.map((brand, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: brand.name,
+    url: `https://margusappliancerepair.com/brands/${brand.id}`,
+  })),
+};
+
 export default function BrandsPage() {
-  return <BrandsList />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(brandsListSchema) }}
+      />
+      <PageHero
+        src="/service-hero.jpg"
+        alt="Appliance brands repaired by Margus Appliance technicians"
+        heading="Appliance Brands We Repair"
+      />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Brands" }]} />
+      <BrandsList />
+      <Blogs />
+      <CTABanner />
+    </>
+  );
 }

@@ -3,7 +3,7 @@ import { PageWrapper } from "@/shared/layout/PageWrapper";
 import { CONTACT_INFO, ADDRESS, SITE_NAME } from "@/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Margus Appliance",
+  title: "Privacy Policy",
   description:
     "How Margus Appliance Repair collects, uses, and protects the information you share with us in Cleveland & Parma, OH.",
   alternates: {

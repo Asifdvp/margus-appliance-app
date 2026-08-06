@@ -1,9 +1,18 @@
 import { PageHero } from "@/shared/ui/PageHero";
 import type { RecentJob } from "@/types";
 
-type Props = Pick<RecentJob, "problem" | "service" | "location">;
+type Props = Pick<
+  RecentJob,
+  "problem" | "service" | "location" | "heroTitle" | "badges"
+>;
 
-export function JobDetailHero({ problem, service, location }: Props) {
+export function JobDetailHero({
+  problem,
+  service,
+  location,
+  heroTitle,
+  badges,
+}: Props) {
   return (
     <PageHero
       src="/service-hero.jpg"
@@ -12,8 +21,9 @@ export function JobDetailHero({ problem, service, location }: Props) {
           ? `${service} in ${location} by Margus Appliance`
           : "Professional appliance repair services by Margus Appliance"
       }
-      heading={problem ?? "Appliance Repair Job"}
-      eyebrow={service && location ? `${service} in ${location}` : undefined}
+      heading={heroTitle ?? problem ?? "Appliance Repair Job"}
+      eyebrow={location ? `Recent Job · ${location}, OH` : "Recent Job"}
+      badges={badges}
     />
   );
 }

@@ -3,7 +3,7 @@ import { PageWrapper } from "@/shared/layout/PageWrapper";
 import { CONTACT_INFO, ADDRESS, SITE_NAME } from "@/constants";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Margus Appliance",
+  title: "Terms of Service",
   description:
     "The terms that govern use of the Margus Appliance Repair website and our appliance repair services in Cleveland & Parma, OH.",
   alternates: {
