@@ -80,8 +80,22 @@ export type RecentJob = {
   location?: string;
   date?: string;
   problem?: string;
+  /** Brand id (e.g. "subzero") — cross-linked to /brands/{id} only if that brand has a detail page. */
+  brand?: string;
+  heroTitle?: string;
+  badges?: string[];
+  metaTitle?: string;
+  metaDescription?: string;
   intro?: string[];
+  diagnosis?: string;
+  repairAction?: string;
+  result?: string;
+  /** Lead-in sentence before the "Learn more about our services" link. Defaults to "Need the same kind of repair?" */
+  learnMoreIntro?: string;
+  /** Overrides the trailing ", or see our {brand} page" clause with custom text linking to /brands instead. */
+  learnMoreSuffixText?: string;
   commonProblems?: string[];
+  whyChooseHeading?: string;
   whyChoosePoints?: string[];
   closingHeading?: string;
   closingText?: string[];

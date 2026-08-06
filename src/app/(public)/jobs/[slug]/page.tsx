@@ -41,8 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const job = RECENT_JOBS.find((j) => j.slug === slug);
   if (!job) return {};
 
-  const title = `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"} | Margus Appliance`;
-  const description = `${job.problem ? job.problem + ". " : ""}See how our certified technicians diagnosed and repaired it in ${job.location ?? "Cleveland"}, Ohio. Same-day appliance repair — call today.`;
+  const title =
+    job.metaTitle ??
+    `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}`;
+  const description =
+    job.metaDescription ??
+    `${job.problem ? job.problem + ". " : ""}See how our certified technicians diagnosed and repaired it in ${job.location ?? "Cleveland"}, Ohio. Same-day appliance repair — call today.`;
 
   return {
     title,
@@ -142,6 +146,8 @@ export default async function JobDetailPage({ params }: Props) {
           problem={job.problem}
           service={job.service}
           location={job.location}
+          heroTitle={job.heroTitle}
+          badges={job.badges}
         />
       </div>
       <JobDetailContent job={job} gallery={gallery} />
