@@ -52,10 +52,15 @@ export type Brand = {
   heroTitle?: string;
   metaTitle?: string;
   metaDescription?: string;
+  badges?: string[];
   intro?: string[];
+  preProblemsSections?: BlogSection[];
+  commonProblemsIntro?: string;
   commonProblems?: string[];
   commonProblemsNote?: string;
   sections?: BlogSection[];
+  closingHeading?: string;
+  closingText?: string[];
   faqs?: FaqItem[];
 };
 

@@ -8,8 +8,12 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+// Only brands with authored detail content (`intro` present) get a page —
+// the rest 404 instead of rendering a thin, mostly-empty template.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  return brands.map((brand) => ({ slug: brand.id }));
+  return brands.filter((b) => b.intro).map((brand) => ({ slug: brand.id }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

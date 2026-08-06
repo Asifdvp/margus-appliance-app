@@ -95,12 +95,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  const brandPages: MetadataRoute.Sitemap = brands.map((brand) => ({
-    url: `${BASE_URL}/brands/${brand.id}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  // Only brands with authored detail content have a page — see the
+  // matching `dynamicParams = false` guard in brands/[slug]/page.tsx.
+  const brandPages: MetadataRoute.Sitemap = brands
+    .filter((b) => b.intro)
+    .map((brand) => ({
+      url: `${BASE_URL}/brands/${brand.id}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
 
   return [...staticPages, ...servicePages, ...blogPages, ...jobPages, ...brandPages];
 }

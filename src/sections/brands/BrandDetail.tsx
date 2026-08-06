@@ -14,7 +14,10 @@ type Props = { brand: Brand };
 export function BrandDetail({ brand }: Props) {
   return (
     <>
-      <BrandHero title={brand.heroTitle ?? `${brand.name} Appliance Repair`} />
+      <BrandHero
+        title={brand.heroTitle ?? `${brand.name} Appliance Repair`}
+        badges={brand.badges}
+      />
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },

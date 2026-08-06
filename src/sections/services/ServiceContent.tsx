@@ -66,9 +66,13 @@ export function ServiceContent({ service }: Props) {
                     key={brand.id}
                     className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary"
                   >
-                    <Link href={`/brands/${brand.id}`} className="hover:text-brand transition-colors">
-                      {brand.name}
-                    </Link>
+                    {brand.intro ? (
+                      <Link href={`/brands/${brand.id}`} className="hover:text-brand transition-colors">
+                        {brand.name}
+                      </Link>
+                    ) : (
+                      brand.name
+                    )}
                   </li>
                 ))}
               </ul>

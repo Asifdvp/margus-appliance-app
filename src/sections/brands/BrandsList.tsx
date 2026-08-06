@@ -2,6 +2,44 @@ import Image from "next/image";
 import Link from "next/link";
 import { brands } from "@/content/brands";
 import { Container } from "@/shared/layout/Container";
+import type { Brand } from "@/types";
+
+function BrandCard({ brand }: { brand: Brand }) {
+  const logo = (
+    <div className="relative h-10 w-full">
+      <Image
+        src={brand.logo}
+        alt={`${brand.name} appliance repair`}
+        fill
+        sizes="(min-width: 1024px) 160px, 33vw"
+        className="object-contain"
+      />
+    </div>
+  );
+
+  if (!brand.intro) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-3 rounded-xl bg-[#F6F6F6] p-6">
+        {logo}
+        <span className="font-manrope text-sm font-semibold text-dark">
+          {brand.name}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      href={`/brands/${brand.id}`}
+      className="group flex flex-col items-center justify-center gap-3 rounded-xl bg-[#F6F6F6] p-6 transition-colors hover:bg-brand/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+    >
+      {logo}
+      <span className="font-manrope text-sm font-semibold text-dark group-hover:text-brand transition-colors">
+        {brand.name}
+      </span>
+    </Link>
+  );
+}
 
 export function BrandsList() {
   return (
@@ -25,24 +63,7 @@ export function BrandsList() {
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6">
           {brands.map((brand) => (
-            <Link
-              key={brand.id}
-              href={`/brands/${brand.id}`}
-              className="group flex flex-col items-center justify-center gap-3 rounded-xl bg-[#F6F6F6] p-6 transition-colors hover:bg-brand/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-            >
-              <div className="relative h-10 w-full">
-                <Image
-                  src={brand.logo}
-                  alt={`${brand.name} appliance repair`}
-                  fill
-                  sizes="(min-width: 1024px) 160px, 33vw"
-                  className="object-contain"
-                />
-              </div>
-              <span className="font-manrope text-sm font-semibold text-dark group-hover:text-brand transition-colors">
-                {brand.name}
-              </span>
-            </Link>
+            <BrandCard key={brand.id} brand={brand} />
           ))}
         </div>
       </Container>

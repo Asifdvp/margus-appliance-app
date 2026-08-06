@@ -23,12 +23,22 @@ export function BrandContent({ brand }: Props) {
               </p>
             ))}
 
+            {/* Sections before the problems list */}
+            {brand.preProblemsSections?.map((section, i) => (
+              <InfoSection key={section.heading ?? i} section={section} />
+            ))}
+
             {/* Common Problems */}
             {brand.commonProblems && (
               <div className="my-3 md:my-6">
                 <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
                   Common {brand.name} Appliance Problems We Fix
                 </h2>
+                {brand.commonProblemsIntro && (
+                  <p className="mb-2 font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary">
+                    {brand.commonProblemsIntro}
+                  </p>
+                )}
                 <ul className="list-disc pl-5 flex flex-col gap-1.5">
                   {brand.commonProblems.map((item) => (
                     <li
@@ -51,6 +61,25 @@ export function BrandContent({ brand }: Props) {
             {brand.sections?.map((section, i) => (
               <InfoSection key={section.heading ?? i} section={section} />
             ))}
+
+            {/* Closing CTA line */}
+            {brand.closingText && (
+              <div className="mt-3 md:mt-6">
+                {brand.closingHeading && (
+                  <h2 className="font-work-sans font-bold text-dark text-[18px] md:text-[24px] leading-6 md:leading-8 mb-2">
+                    {brand.closingHeading}
+                  </h2>
+                )}
+                {brand.closingText.map((p, i) => (
+                  <p
+                    key={i}
+                    className="font-manrope text-sm lg:text-base leading-6 text-secondary font-semibold"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Logo badge column — desktop only, sticky */}
