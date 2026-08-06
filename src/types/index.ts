@@ -14,6 +14,7 @@ export type Service = {
   commonProblems?: string[];
   commonProblemsNote?: string;
   sections?: BlogSection[];
+  brandsText?: string;
   whyChoosePoints?: string[];
   closingHeading?: string;
   closingText?: string[];

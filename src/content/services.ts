@@ -33,6 +33,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major refrigerator brands, including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Kenmore, and Amana refrigerators.",
     sections: [
       {
         heading: "Why Isn't Your Refrigerator Cooling?",
@@ -125,6 +127,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major washing machine brands, including Whirlpool, Samsung, LG, Maytag, GE, Bosch, Speed Queen, Frigidaire, and Kenmore washers.",
     sections: [
       {
         heading: "Why Isn't Your Washer Working Right?",
@@ -224,6 +228,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major dryer brands, including Whirlpool, Samsung, LG, Maytag, GE, Bosch, Speed Queen, and Frigidaire dryers, both gas and electric.",
     sections: [
       {
         heading: "Why Isn't Your Dryer Working Right?",
@@ -335,6 +341,8 @@ export const SERVICES: Service[] = [
       "One burner works but others don't",
       "Gas smell around the cooktop",
     ],
+    brandsText:
+      "We repair all major stove and cooktop brands, including Samsung, LG, Whirlpool, GE, KitchenAid, Bosch, Frigidaire, Wolf, Viking, and Thermador.",
     sections: [
       {
         heading: "Why Isn't Your Stove Working Right?",
@@ -433,6 +441,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major dishwasher brands, including Bosch, Samsung, LG, Whirlpool, KitchenAid, GE, Frigidaire, and Maytag dishwashers.",
     sections: [
       {
         heading: "Why Isn't Your Dishwasher Working Right?",
@@ -525,6 +535,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major freezer brands, including Whirlpool, GE, Frigidaire, Samsung, LG, Sub-Zero, Kenmore, and Amana freezers.",
     sections: [
       {
         heading: "Why Isn't Your Freezer Working Right?",
@@ -628,6 +640,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major ice maker brands, including Samsung, LG, Whirlpool, GE, Frigidaire, KitchenAid, Sub-Zero, and Kenmore.",
     sections: [
       {
         heading: "Why Isn't Your Ice Maker Working?",
@@ -735,6 +749,8 @@ export const SERVICES: Service[] = [
     ],
     commonProblemsNote:
       "If your problem isn't listed here, call us anyway — our diagnostic visit will pinpoint the exact issue.",
+    brandsText:
+      "We repair all major oven brands, including Samsung, LG, Whirlpool, GE, Maytag, KitchenAid, Bosch, Frigidaire, Wolf, Viking, and Thermador ovens, both gas and electric.",
     sections: [
       {
         heading: "Why Isn't Your Oven Heating?",
