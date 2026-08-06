@@ -7,8 +7,39 @@ import { AboutFeatures } from "@/sections/shared/AboutFeatures";
 import { AboutCoverage } from "@/sections/about/AboutCoverage";
 import { AboutCTA } from "@/sections/about/AboutCTA";
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://margusappliancerepair.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About",
+      item: "https://margusappliancerepair.com/about",
+    },
+  ],
+};
+
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Margus Appliance",
+  url: "https://margusappliancerepair.com/about",
+  mainEntity: {
+    "@type": "LocalBusiness",
+    "@id": "https://margusappliancerepair.com/#organization",
+    name: "Margus Appliance",
+  },
+};
+
 export const metadata: Metadata = {
-  title: "About Margus Appliance Repair | Cleveland & Parma, OH",
+  title: "About Us | Cleveland & Parma, OH",
   description:
     "Margus Appliance Repair is a family-owned appliance repair company serving Cleveland & Parma, OH for 8+ years. Honest upfront pricing, 180-day warranty.",
   openGraph: {
@@ -40,6 +71,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <AboutHero />
       <AboutStory />
       <WhyChooseUs />

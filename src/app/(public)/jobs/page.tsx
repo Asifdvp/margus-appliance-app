@@ -3,9 +3,10 @@ import { AllJobsHero } from "@/sections/jobs/AllJobsHero";
 import { AllJobsGrid } from "@/sections/jobs/AllJobsGrid";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
+import { RECENT_JOBS } from "@/content/recent-jobs";
 
 export const metadata: Metadata = {
-  title: "Completed Appliance Repair Jobs — Cleveland & Parma | Margus Appliance",
+  title: "Completed Appliance Repair Jobs — Cleveland & Parma",
   description:
     "Browse real completed appliance repair jobs by Margus Appliance — serving Cleveland, Parma, Strongsville, Westlake, and surrounding areas. See our certified technicians' work.",
   openGraph: {
@@ -34,9 +35,47 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://margusappliancerepair.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Recent Jobs",
+      item: "https://margusappliancerepair.com/jobs",
+    },
+  ],
+};
+
+const jobsListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: RECENT_JOBS.map((job, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}`,
+    url: `https://margusappliancerepair.com/jobs/${job.slug}`,
+  })),
+};
+
 export default function AllJobsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jobsListSchema) }}
+      />
       <AllJobsHero />
       <AllJobsGrid />
       <Blogs />

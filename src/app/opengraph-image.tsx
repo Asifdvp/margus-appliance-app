@@ -25,7 +25,7 @@ export default async function Image() {
           background: "linear-gradient(135deg, #2A0066 0%, #5500CC 55%, #7A2EE6 100%)",
         }}
       >
-        <img src={logoSrc} width={200} height={114} style={{ objectFit: "contain" }} />
+        <img src={logoSrc} width={200} height={114} style={{ objectFit: "contain" }} alt="" />
 
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div
