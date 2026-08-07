@@ -24,10 +24,8 @@ export async function Hero() {
           {/* Heading */}
           <div className="flex items-start pt-4 lg:pt-10 mb-3 md:mb-8">
             <h1 className="font-work-sans font-bold text-[30px] leading-8.75 lg:text-[57px] lg:leading-16.5 text-dark">
-              Appliance Repair in{" "}
-              <span className="text-brand">
-                Cleveland & Parma — Fast, Same‑Day Service
-              </span>
+              <span>Appliance Repair in </span>
+              <span className="text-brand">Cleveland & Parma — Fast, Same‑Day Service</span>
             </h1>
           </div>
 
