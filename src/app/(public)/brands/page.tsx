@@ -5,6 +5,7 @@ import { BrandsList } from "@/sections/brands/BrandsList";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { brands } from "@/content/brands";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Appliance Brands We Repair — Whirlpool, Samsung, LG & More",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: "Appliance Brands We Repair | Margus Appliance",
     description:
       "Certified repair for all major brands — Whirlpool, Samsung, LG, GE, Bosch, KitchenAid, Maytag, and more. Serving Cleveland & Parma.",
-    url: "https://margusappliancerepair.com/brands",
+    url: canonicalUrl("/brands"),
     type: "website",
     images: [
       {
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
       "Certified repair for Whirlpool, Samsung, LG, GE, Bosch, and more in Cleveland & Parma.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/brands",
+    canonical: canonicalUrl("/brands"),
   },
 };
 

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { PageWrapper } from "@/shared/layout/PageWrapper";
 import { CONTACT_INFO, ADDRESS, SITE_NAME } from "@/constants";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "How Margus Appliance Repair collects, uses, and protects the information you share with us in Cleveland & Parma, OH.",
   alternates: {
-    canonical: "https://margusappliancerepair.com/privacy-policy",
+    canonical: canonicalUrl("/privacy-policy"),
   },
   robots: { index: true, follow: true },
 };

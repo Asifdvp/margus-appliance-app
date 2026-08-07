@@ -8,6 +8,7 @@ import { JobDetailContent } from "@/sections/jobs/JobDetailContent";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { CONTACT_INFO } from "@/constants";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: `https://margusappliancerepair.com/jobs/${slug}`,
+      url: canonicalUrl(`/jobs/${slug}`),
       type: "article",
       publishedTime: job.date ? toISODate(job.date) : undefined,
       images: [
@@ -71,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
     },
-    alternates: { canonical: `https://margusappliancerepair.com/jobs/${slug}` },
+    alternates: { canonical: canonicalUrl(`/jobs/${slug}`) },
   };
 }
 

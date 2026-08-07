@@ -5,6 +5,7 @@ import { BlogDetailHero } from "@/sections/blog/BlogDetailHero";
 import { BlogDetailContent } from "@/sections/blog/BlogDetailContent";
 import { BlogDetailRelated } from "@/sections/blog/BlogDetailRelated";
 import { CTABanner } from "@/sections/shared/CTABanner";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description,
-      url: `https://margusappliancerepair.com/blog/${slug}`,
+      url: canonicalUrl(`/blog/${slug}`),
       type: "article",
       publishedTime: toISODate(post.date),
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
     },
     alternates: {
-      canonical: `https://margusappliancerepair.com/blog/${slug}`,
+      canonical: canonicalUrl(`/blog/${slug}`),
     },
   };
 }

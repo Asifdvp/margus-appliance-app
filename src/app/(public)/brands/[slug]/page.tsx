@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { brands } from "@/content/brands";
 import { BrandDetail } from "@/sections/brands/BrandDetail";
 import { CONTACT_INFO } from "@/constants";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: `https://margusappliancerepair.com/brands/${brand.id}`,
+      url: canonicalUrl(`/brands/${brand.id}`),
       type: "website",
       images: [
         {
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
     },
     alternates: {
-      canonical: `https://margusappliancerepair.com/brands/${brand.id}`,
+      canonical: canonicalUrl(`/brands/${brand.id}`),
     },
   };
 }

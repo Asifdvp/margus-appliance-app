@@ -7,6 +7,7 @@ import { Footer } from "@/shared/components/Footer";
 import { Emergency } from "@/shared/components/Emergency";
 import { BookingModalProvider } from "@/shared/components/book";
 import { CONTACT_INFO } from "@/constants";
+import { SITE_URL } from "@/shared/lib/seo";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://margusappliancerepair.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     template: "%s | Margus Appliance",
     default: "Appliance Repair Cleveland & Parma, OH | Margus",

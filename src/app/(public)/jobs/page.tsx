@@ -4,6 +4,7 @@ import { AllJobsGrid } from "@/sections/jobs/AllJobsGrid";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { RECENT_JOBS } from "@/content/recent-jobs";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Completed Appliance Repair Jobs — Cleveland & Parma",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: "Completed Appliance Repair Jobs | Margus Appliance",
     description:
       "Real completed appliance repair jobs from certified technicians in Cleveland & Parma.",
-    url: "https://margusappliancerepair.com/jobs",
+    url: canonicalUrl("/jobs"),
     type: "website",
     images: [
       {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       "Real completed appliance repair jobs from certified technicians in Cleveland & Parma.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/jobs",
+    canonical: canonicalUrl("/jobs"),
   },
 };
 

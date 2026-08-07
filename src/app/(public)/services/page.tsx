@@ -7,6 +7,7 @@ import { CTABanner } from "@/sections/shared/CTABanner";
 import { FAQ } from "@/sections/shared/FAQ";
 import { SERVICES } from "@/content/services";
 import { faqs } from "@/content/faq";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Appliance Repair Services in Cleveland & Parma, OH",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     title: "Appliance Repair Services in Cleveland & Parma, OH | Margus",
     description:
       "Same-day appliance repair in Cleveland & Parma, OH. Refrigerators, washers, dryers, ovens & more. Honest pricing, 180-day warranty. Call (216) 304-0665.",
-    url: "https://margusappliancerepair.com/services",
+    url: canonicalUrl("/services"),
     type: "website",
     images: [
       {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
       "Same-day appliance repair in Cleveland & Parma, OH. Refrigerators, washers, dryers, ovens & more. Honest pricing, 180-day warranty.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/services",
+    canonical: canonicalUrl("/services"),
   },
 };
 
