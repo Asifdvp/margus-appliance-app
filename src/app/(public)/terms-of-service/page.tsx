@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { PageWrapper } from "@/shared/layout/PageWrapper";
 import { CONTACT_INFO, ADDRESS, SITE_NAME } from "@/constants";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "The terms that govern use of the Margus Appliance Repair website and our appliance repair services in Cleveland & Parma, OH.",
   alternates: {
-    canonical: "https://margusappliancerepair.com/terms-of-service",
+    canonical: canonicalUrl("/terms-of-service"),
   },
   robots: { index: true, follow: true },
 };

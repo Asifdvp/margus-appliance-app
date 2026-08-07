@@ -2,6 +2,7 @@
 import { PageHero } from "@/shared/ui/PageHero";
 import { ContactSection } from "@/sections/contact/ContactSection";
 import { CONTACT_INFO } from "@/constants";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact Us — Book Same-Day Appliance Repair in Cleveland",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     title: "Contact Margus Appliance — Same-Day Appliance Repair",
     description:
       "Get in touch with Margus Appliance for fast, reliable appliance repair in Cleveland & Parma. Call or send a message.",
-    url: "https://margusappliancerepair.com/contact",
+    url: canonicalUrl("/contact"),
     type: "website",
     images: [
       {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
       "Book same-day appliance repair in Cleveland & Parma. Call or message us.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/contact",
+    canonical: canonicalUrl("/contact"),
   },
 };
 

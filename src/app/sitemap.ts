@@ -3,8 +3,7 @@ import { SERVICES } from "@/content/services";
 import { blogPosts } from "@/content/blog";
 import { RECENT_JOBS } from "@/content/recent-jobs";
 import { brands } from "@/content/brands";
-
-const BASE_URL = "https://margusappliancerepair.com";
+import { SITE_URL as BASE_URL } from "@/shared/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

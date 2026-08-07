@@ -5,6 +5,7 @@ import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { CONTACT_INFO } from "@/constants";
 import { ALL_SERVICE_AREAS } from "@/content/service-areas";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Appliance Repair Service Areas — Cleveland, Parma & Surrounding Cities",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: "Appliance Repair Service Areas | Margus Appliance",
     description:
       "Same-day appliance repair in Cleveland, Parma, Akron, Strongsville, Westlake, and 50+ surrounding cities.",
-    url: "https://margusappliancerepair.com/service-areas",
+    url: canonicalUrl("/service-areas"),
     type: "website",
     images: [
       {
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
       "Same-day appliance repair in Cleveland, Parma, Akron, and 50+ surrounding cities.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/service-areas",
+    canonical: canonicalUrl("/service-areas"),
   },
 };
 

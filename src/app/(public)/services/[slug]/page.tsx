@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SERVICES } from "@/content/services";
 import { ServiceDetail } from "@/sections/services/ServiceDetail";
 import { CONTACT_INFO } from "@/constants";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: `https://margusappliancerepair.com/services/${service.id}`,
+      url: canonicalUrl(`/services/${service.id}`),
       type: "website",
       images: [
         {
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
     },
     alternates: {
-      canonical: `https://margusappliancerepair.com/services/${service.id}`,
+      canonical: canonicalUrl(`/services/${service.id}`),
     },
   };
 }

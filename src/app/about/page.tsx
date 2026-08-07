@@ -6,6 +6,7 @@ import { AboutTrust } from "@/sections/about/AboutTrust";
 import { AboutFeatures } from "@/sections/shared/AboutFeatures";
 import { AboutCoverage } from "@/sections/about/AboutCoverage";
 import { AboutCTA } from "@/sections/about/AboutCTA";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     title: "About Margus Appliance Repair | Cleveland & Parma, OH",
     description:
       "Family-owned appliance repair serving Cleveland & Parma, OH for 8+ years. Honest upfront pricing, same-day service, 180-day warranty.",
-    url: "https://margusappliancerepair.com/about",
+    url: canonicalUrl("/about"),
     type: "website",
     images: [
       {
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
       "Family-owned appliance repair serving Cleveland & Parma, OH for 8+ years.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/about",
+    canonical: canonicalUrl("/about"),
   },
 };
 

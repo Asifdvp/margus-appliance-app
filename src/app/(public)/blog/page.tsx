@@ -3,6 +3,7 @@ import { BlogHero } from "@/sections/blog/BlogHero";
 import { BlogList } from "@/sections/blog/BlogList";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { blogPosts } from "@/content/blog";
+import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   title: "Appliance Repair Tips & Expert Guides",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     title: "Appliance Repair Tips & Expert Guides | Margus Appliance",
     description:
       "Troubleshooting tips and repair guides from certified appliance technicians in Cleveland & Parma.",
-    url: "https://margusappliancerepair.com/blog",
+    url: canonicalUrl("/blog"),
     type: "website",
     images: [
       {
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
       "Practical repair guides from certified technicians in Cleveland & Parma.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com/blog",
+    canonical: canonicalUrl("/blog"),
   },
 };
 
