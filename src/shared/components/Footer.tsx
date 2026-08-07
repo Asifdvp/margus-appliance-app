@@ -18,7 +18,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/margusappliancerepair?igsh=MTFsMnZ2MTFrZTN2&utm_source=qr",
+    href: "https://www.instagram.com/margusappliancerepair",
     Icon: InstagramIcon,
   },
 ];

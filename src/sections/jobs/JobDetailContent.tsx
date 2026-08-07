@@ -40,9 +40,9 @@ export function JobDetailContent({ job, gallery = [] }: Props) {
             </p>
           )}
           {(job.heroTitle ?? job.problem) && (
-            <h1 className="font-work-sans font-bold text-dark text-[30px] leading-8.75">
+            <h2 className="font-work-sans font-bold text-dark text-[30px] leading-8.75">
               {job.heroTitle ?? job.problem}
-            </h1>
+            </h2>
           )}
           {job.badges && job.badges.length > 0 && (
             <p className="mt-2 font-manrope text-xs text-grey">

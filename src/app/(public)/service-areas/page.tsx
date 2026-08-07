@@ -9,7 +9,7 @@ import { ALL_SERVICE_AREAS } from "@/content/service-areas";
 export const metadata: Metadata = {
   title: "Appliance Repair Service Areas — Cleveland, Parma & Surrounding Cities",
   description:
-    "Margus Appliance serves Cleveland, Parma, Akron, Strongsville, Westlake, Brunswick, Berea, Lakewood, and 50+ surrounding cities. Same-day appliance repair with certified technicians.",
+    "Margus Appliance serves Cleveland, Parma, Akron, Strongsville, Westlake, and 50+ surrounding cities. Same-day repair, certified technicians.",
   openGraph: {
     title: "Appliance Repair Service Areas | Margus Appliance",
     description:

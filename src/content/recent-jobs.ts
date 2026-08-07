@@ -121,7 +121,7 @@ export const RECENT_JOBS: RecentJob[] = [
     ],
     metaTitle: "Sub-Zero Refrigerator Repair in Brecksville",
     metaDescription:
-      "Sub-Zero freezer not cooling in Brecksville? We diagnosed a failed compressor and fixed it same-day. Refrigerator repair across Greater Cleveland. Call (216) 304-0665.",
+      "Sub-Zero freezer not cooling in Brecksville? We diagnosed a failed compressor and fixed it same-day. Call (216) 304-0665.",
     intro: [
       "When a Brecksville homeowner called us, their Sub-Zero refrigerator had an unusual problem: the fridge section was staying cold, but the freezer had stopped cooling completely. With a premium brand like Sub-Zero, a fast, accurate diagnosis matters — these are high-value appliances worth repairing rather than replacing.",
     ],
@@ -221,7 +221,7 @@ export const RECENT_JOBS: RecentJob[] = [
     ],
     metaTitle: "Maytag Washer Repair in Westlake | Fixed Same-Day",
     metaDescription:
-      "Maytag washer not filling with water in Westlake? We diagnosed a failed inlet valve and fixed it same-day. Washer repair across Greater Cleveland. Call (216) 304-0665.",
+      "Maytag washer not filling with water in Westlake? We diagnosed a failed inlet valve and fixed it same-day. Call (216) 304-0665.",
     intro: [
       "A Maytag washer in Westlake stopped filling with water, which prevented the wash cycle from starting altogether. When a washer won't fill, the cause is usually somewhere in the water-supply path — so that's where we started.",
     ],

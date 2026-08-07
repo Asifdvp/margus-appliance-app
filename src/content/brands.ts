@@ -293,7 +293,7 @@ export const brands: Brand[] = [
     heroTitle: "Whirlpool Appliance Repair in Cleveland & Parma",
     metaTitle: "Whirlpool Appliance Repair Cleveland & Parma",
     metaDescription:
-      "Certified Whirlpool refrigerator, washer, dryer & appliance repair in Cleveland & Parma, OH. Same-day service, $89 diagnostic waived with repair, 180-day warranty. Call today!",
+      "Same-day Whirlpool appliance repair in Cleveland & Parma, OH. $89 diagnostic waived with repair, 180-day warranty. Call today!",
     badges: [
       "Same-day service",
       "$89 diagnostic, waived with repair",

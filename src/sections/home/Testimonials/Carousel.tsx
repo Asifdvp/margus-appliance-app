@@ -25,7 +25,7 @@ function Avatar({ name, image }: { name: string; image?: string }) {
       {image ? (
         <Image
           src={image}
-          alt=""
+          alt={name}
           fill
           sizes="(min-width: 1024px) 64px, 36px"
           className="object-cover"
