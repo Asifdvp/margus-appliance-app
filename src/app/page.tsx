@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Appliance Repair Cleveland & Parma, OH | Margus",
     description:
       "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.",
-    url: "https://margusappliancerepair.com",
+    url: "https://margusappliancerepair.com/",
     type: "website",
   },
   twitter: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty.",
   },
   alternates: {
-    canonical: "https://margusappliancerepair.com",
+    canonical: "https://margusappliancerepair.com/",
   },
 };
 
