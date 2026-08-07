@@ -4,12 +4,13 @@ import { cn } from "../lib/utils";
 type StepCardProps = {
   icon?: React.ReactNode;
   iconSrc?: StaticImageData;
+  iconAlt?: string;
   title: string;
   description: string;
   className?: string;
 };
 
-export function StepCard({ icon, iconSrc, title, description, className }: StepCardProps) {
+export function StepCard({ icon, iconSrc, iconAlt = "", title, description, className }: StepCardProps) {
   return (
     <div
       className={cn(
@@ -23,8 +24,8 @@ export function StepCard({ icon, iconSrc, title, description, className }: StepC
           {iconSrc ? (
             <Image
               src={iconSrc}
-              alt=""
-              aria-hidden="true"
+              alt={iconAlt}
+              aria-hidden={iconAlt ? undefined : "true"}
               width={66}
               height={66}
               className="w-full h-full object-contain"

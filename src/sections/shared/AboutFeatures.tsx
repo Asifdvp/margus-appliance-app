@@ -61,6 +61,7 @@ export function AboutFeatures() {
             <StepCard
               key={f.id}
               iconSrc={f.iconSrc}
+              iconAlt={`${f.title} icon`}
               title={f.title}
               description={f.description}
             />
@@ -73,6 +74,7 @@ export function AboutFeatures() {
             <StepCard
               key={f.id}
               iconSrc={f.iconSrc}
+              iconAlt={`${f.title} icon`}
               title={f.title}
               description={f.description}
             />

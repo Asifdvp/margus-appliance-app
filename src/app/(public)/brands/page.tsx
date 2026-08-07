@@ -9,7 +9,7 @@ import { brands } from "@/content/brands";
 export const metadata: Metadata = {
   title: "Appliance Brands We Repair — Whirlpool, Samsung, LG & More",
   description:
-    "Margus Appliance repairs all major appliance brands including Whirlpool, Samsung, LG, GE, Bosch, KitchenAid, Maytag, and more. Certified technicians in Cleveland & Parma.",
+    "Margus Appliance repairs all major brands — Whirlpool, Samsung, LG, GE, Bosch, KitchenAid, and more. Certified technicians in Cleveland & Parma.",
   openGraph: {
     title: "Appliance Brands We Repair | Margus Appliance",
     description:

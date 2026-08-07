@@ -8,7 +8,7 @@ import { RECENT_JOBS } from "@/content/recent-jobs";
 export const metadata: Metadata = {
   title: "Completed Appliance Repair Jobs — Cleveland & Parma",
   description:
-    "Browse real completed appliance repair jobs by Margus Appliance — serving Cleveland, Parma, Strongsville, Westlake, and surrounding areas. See our certified technicians' work.",
+    "Browse real completed appliance repair jobs by Margus Appliance in Cleveland, Parma & Greater Cleveland. See our certified technicians' work.",
   openGraph: {
     title: "Completed Appliance Repair Jobs | Margus Appliance",
     description:

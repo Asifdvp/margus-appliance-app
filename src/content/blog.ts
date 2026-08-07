@@ -9,7 +9,7 @@ export const blogPosts: BlogPost[] = [
     coverImage: "/images/blogs/blog.jpg",
     category: "Washer Repair",
     excerpt:
-      "A washing machine that won't drain is one of the most common appliance complaints. Before you call a technician, try these four simple troubleshooting steps that can save you time and money.",
+      "A washing machine that won't drain is one of the most common appliance complaints. Try these four simple troubleshooting steps before calling a technician.",
     content: [
       {
         paragraphs: [
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     coverImage: "/images/blogs/blog.jpg",
     category: "Refrigerator Repair",
     excerpt:
-      "Your refrigerator gives warning signs before it fails completely. Learn the five key indicators that mean it's time to call a technician — before you're stuck with spoiled food.",
+      "Your refrigerator gives warning signs before it fails completely. Learn the five key indicators that mean it's time to call a technician.",
     content: [
       {
         paragraphs: [
