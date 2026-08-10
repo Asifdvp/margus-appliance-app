@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container } from "@/shared/layout/Container";
 import { CONTACT_INFO, FALLBACK_RATING, FALLBACK_REVIEW_COUNT } from "@/constants";
 import PhoneIcon from "@/shared/icons/phone.svg";
-import expertImg from "@/shared/icons/expert.png";
+import expertImg from "@/shared/icons/expert.webp";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
 import { BookNowButton } from "@/shared/components/book";
 import { getGoogleBusinessData } from "@/shared/lib/googleReviews";
