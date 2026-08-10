@@ -79,7 +79,7 @@ export default function BrandsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(brandsListSchema) }}
       />
       <PageHero
-        src="/service-hero.jpg"
+        src="/service-hero.webp"
         alt="Appliance brands repaired by Margus Appliance technicians"
         heading="Appliance Brands We Repair"
       />

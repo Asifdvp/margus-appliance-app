@@ -77,7 +77,7 @@ export default async function BlogDetailPage({ params }: Props) {
       name: "Margus Appliance",
       logo: {
         "@type": "ImageObject",
-        url: "https://margusappliancerepair.com/logo.png",
+        url: "https://margusappliancerepair.com/logo.webp",
       },
     },
     mainEntityOfPage: {

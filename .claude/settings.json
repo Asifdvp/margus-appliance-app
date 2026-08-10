@@ -6,7 +6,9 @@
       "Bash(lsof -ti:3000 -sTCP:LISTEN)",
       "Bash(xargs -r kill)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(npm run *)",
+      "Bash(node \"C:\\\\Users\\\\amustafayev\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-amustafayev-Desktop-Private-Projects-margus-appliance-app\\\\bce3a632-cd63-4bd6-a1b8-18b6ed09ae0e\\\\scratchpad\\\\check-len.js\")"
     ]
   }
 }

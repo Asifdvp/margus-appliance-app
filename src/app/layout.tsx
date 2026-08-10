@@ -57,7 +57,7 @@ const organizationSchema = {
   "@id": "https://margusappliancerepair.com/#organization",
   name: "Margus Appliance",
   url: "https://margusappliancerepair.com",
-  logo: "https://margusappliancerepair.com/logo.png",
+  logo: "https://margusappliancerepair.com/logo.webp",
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,
   address: {

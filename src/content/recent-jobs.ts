@@ -4,7 +4,7 @@ export const RECENT_JOBS: RecentJob[] = [
   {
     id: "job-1",
     slug: "washer-repair-cleveland-heights",
-    image: "/images/recent-jobs/job-1/cover.jpg",
+    image: "/images/recent-jobs/job-1/cover.webp",
     alt: "Washer repair in Cleveland Heights",
     service: "Washer Repair",
     location: "Cleveland Heights",
@@ -56,7 +56,7 @@ export const RECENT_JOBS: RecentJob[] = [
   {
     id: "job-2",
     slug: "dryer-repair-cleveland-heights",
-    image: "/images/recent-jobs/job-2/cover.jpg",
+    image: "/images/recent-jobs/job-2/cover.webp",
     alt: "Dryer repair in Cleveland Heights",
     service: "Dryer Repair",
     location: "Cleveland Heights",
@@ -106,7 +106,7 @@ export const RECENT_JOBS: RecentJob[] = [
   {
     id: "job-3",
     slug: "refrigerator-repair-brecksville",
-    image: "/images/recent-jobs/job-3/cover.jpg",
+    image: "/images/recent-jobs/job-3/cover.webp",
     alt: "Refrigerator repair in Brecksville",
     service: "Refrigerator Repair",
     location: "Brecksville",
@@ -155,7 +155,7 @@ export const RECENT_JOBS: RecentJob[] = [
   {
     id: "job-4",
     slug: "oven-repair-parma",
-    image: "/images/recent-jobs/job-4/cover.jpg",
+    image: "/images/recent-jobs/job-4/cover.webp",
     alt: "Oven repair in Parma",
     service: "Oven Repair",
     location: "Parma",
@@ -207,7 +207,7 @@ export const RECENT_JOBS: RecentJob[] = [
   {
     id: "job-5",
     slug: "washer-repair-westlake",
-    image: "/images/recent-jobs/job-5/cover.jpg",
+    image: "/images/recent-jobs/job-5/cover.webp",
     alt: "Washer repair in Westlake",
     service: "Washer Repair",
     location: "Westlake",
@@ -260,7 +260,7 @@ export const RECENT_JOBS: RecentJob[] = [
   {
     id: "job-6",
     slug: "dishwasher-repair-avon-lake",
-    image: "/images/recent-jobs/job-6/cover.jpg",
+    image: "/images/recent-jobs/job-6/cover.webp",
     alt: "Dishwasher repair in Avon Lake",
     service: "Dishwasher Repair",
     location: "Avon Lake",

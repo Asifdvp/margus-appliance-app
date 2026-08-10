@@ -33,7 +33,7 @@ export function Footer({ className }: FooterProps) {
         <div className="flex flex-col items-center gap-4 mb-4 md:mb-3 md:flex-row md:items-center md:justify-between">
           <Link href="/" aria-label="Margus Appliance – Go to homepage">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Margus Appliance logo"
               width={160}
               height={90}

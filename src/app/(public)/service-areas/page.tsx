@@ -63,7 +63,7 @@ export default function ServiceAreasPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceAreasSchema) }}
       />
       <PageHero
-        src="/service-hero.jpg"
+        src="/service-hero.webp"
         alt="Appliance repair service areas in Cleveland and Parma"
         heading="Appliance Repair Service Areas Near Cleveland"
       />

@@ -15,7 +15,7 @@ export function JobDetailHero({
 }: Props) {
   return (
     <PageHero
-      src="/service-hero.jpg"
+      src="/service-hero.webp"
       alt={
         service && location
           ? `${service} in ${location} by Margus Appliance`

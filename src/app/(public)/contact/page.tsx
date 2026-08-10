@@ -59,7 +59,7 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
       />
       <PageHero
-        src="/service-hero.jpg"
+        src="/service-hero.webp"
         alt="Contact Margus Appliance for appliance repair services"
         heading="Contact Us"
       />

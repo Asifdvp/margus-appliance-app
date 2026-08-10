@@ -1,10 +1,10 @@
 import { type StaticImageData } from "next/image";
 import { Container } from "@/shared/layout/Container";
 import { StepCard } from "@/shared/ui/StepCard";
-import requestIcon from "@/shared/icons/steps/request.png";
-import diagnosisIcon from "@/shared/icons/steps/diagnosis.png";
-import repairIcon from "@/shared/icons/steps/repair.png";
-import testIcon from "@/shared/icons/steps/test.png";
+import requestIcon from "@/shared/icons/steps/request.webp";
+import diagnosisIcon from "@/shared/icons/steps/diagnosis.webp";
+import repairIcon from "@/shared/icons/steps/repair.webp";
+import testIcon from "@/shared/icons/steps/test.webp";
 
 type Feature = {
   id: string;
