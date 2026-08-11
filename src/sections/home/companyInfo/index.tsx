@@ -32,22 +32,22 @@ function FlexItem({ icon, title, description }: FlexItemProps) {
 
 const ITEMS: FlexItemProps[] = [
   {
-    icon: "/same-day.png",
+    icon: "/same-day.webp",
     title: "Same-Day Service",
     description: "Emergency repairs, 7 days a week.",
   },
   {
-    icon: "/one-visit.png",
+    icon: "/one-visit.webp",
     title: "One Visit Repairs",
     description: "Most repairs completed on the first visit.",
   },
   {
-    icon: "/honest-pricing.png",
+    icon: "/honest-pricing.webp",
     title: "Honest Pricing",
     description: "No hidden fees. Upfront, transparent prices.",
   },
   {
-    icon: "/licensed.png",
+    icon: "/licensed.webp",
     title: "Licensed and Insured",
     description: "Professional Service Packed by 180-day Warranty.",
   },

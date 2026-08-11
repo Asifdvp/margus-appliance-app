@@ -24,7 +24,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" aria-label="Margus Appliance – Home" className="relative block h-13 w-23 lg:h-28 lg:w-49">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Margus Appliance logo"
               width={158}
               height={90}

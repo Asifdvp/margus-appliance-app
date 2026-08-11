@@ -3,7 +3,7 @@ import { PageHero } from "@/shared/ui/PageHero";
 export function ServicesHero() {
   return (
     <PageHero
-      src="/service-hero.jpg"
+      src="/service-hero.webp"
       alt="Appliance repair services by Margus Appliance technicians"
       heading="Appliance Repair Services"
     />

@@ -55,7 +55,7 @@ const StarRating = ({ rating, reviewCount }: Props) => {
 
 <div className="md:hidden ml-auto">
   <Image
-    src="/rate.png"
+    src="/rate.webp"
     alt="Google Reviews badge"
     width={96}
     height={64}

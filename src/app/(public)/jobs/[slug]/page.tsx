@@ -18,7 +18,7 @@ function toISODate(dateStr: string): string {
 }
 
 // Extra photos are dropped straight into public/images/recent-jobs/{id}/
-// alongside cover.jpg — no data entry needed, they're picked up automatically.
+// alongside cover.webp — no data entry needed, they're picked up automatically.
 function getGalleryImages(jobId: string): string[] {
   const dir = path.join(process.cwd(), "public", "images", "recent-jobs", jobId);
   let files: string[];
@@ -116,7 +116,7 @@ export default async function JobDetailPage({ params }: Props) {
       name: "Margus Appliance",
       logo: {
         "@type": "ImageObject",
-        url: "https://margusappliancerepair.com/logo.png",
+        url: "https://margusappliancerepair.com/logo.webp",
       },
     },
     about: {

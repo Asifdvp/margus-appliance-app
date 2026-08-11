@@ -7,8 +7,8 @@ export const SERVICES: Service[] = [
     description:
       "Not cooling? Not making ice? Water leaking?",
     href: "/services/refrigerator-repair",
-    icon: "/images/services/refrigator.png",
-    detailImage: "/images/services/refrigator.png",
+    icon: "/images/services/refrigator.webp",
+    detailImage: "/images/services/refrigator.webp",
     heroTitle: "Refrigerator Repair in Cleveland & Parma",
     metaTitle: "Refrigerator Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
@@ -100,8 +100,8 @@ export const SERVICES: Service[] = [
     description:
       "Not spinning? Not draining? Not starting?",
     href: "/services/washer-repair",
-    icon: "/images/services/washer.png",
-    detailImage: "/images/services/washer.png",
+    icon: "/images/services/washer.webp",
+    detailImage: "/images/services/washer.webp",
     heroTitle: "Washer & Washing Machine Repair in Cleveland & Parma",
     metaTitle: "Washer Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
@@ -194,8 +194,8 @@ export const SERVICES: Service[] = [
     description:
       "Not heating? Not starting? Making loud noises?",
     href: "/services/dryer-repair",
-    icon: "/images/services/dryer.png",
-    detailImage: "/images/services/dryer.png",
+    icon: "/images/services/dryer.webp",
+    detailImage: "/images/services/dryer.webp",
     heroTitle: "Dryer Repair in Cleveland & Parma",
     metaTitle: "Dryer Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
@@ -301,8 +301,8 @@ export const SERVICES: Service[] = [
     description:
       "Burner not heating? Not igniting? Controls not responding?",
     href: "/services/stove-repair",
-    icon: "/images/services/stove.png",
-    detailImage: "/images/services/stove.png",
+    icon: "/images/services/stove.webp",
+    detailImage: "/images/services/stove.webp",
     heroTitle: "Stove & Cooktop Repair in Cleveland & Parma",
     metaTitle: "Stove & Cooktop Repair Cleveland & Parma | Same-Day",
     metaDescription:
@@ -414,8 +414,8 @@ export const SERVICES: Service[] = [
     description:
       "Not drying? Not filling with water? Leaking?",
     href: "/services/dishwasher-repair",
-    icon: "/images/services/dishwasher.png",
-    detailImage: "/images/services/dishwasher.png",
+    icon: "/images/services/dishwasher.webp",
+    detailImage: "/images/services/dishwasher.webp",
     heroTitle: "Dishwasher Repair in Cleveland & Parma",
     metaTitle: "Dishwasher Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
@@ -508,8 +508,8 @@ export const SERVICES: Service[] = [
     description:
       "Not freezing? Frost buildup? Temperature problems?",
     href: "/services/freezer-repair",
-    icon: "/images/services/freezer.png",
-    detailImage: "/images/services/freezer.png",
+    icon: "/images/services/freezer.webp",
+    detailImage: "/images/services/freezer.webp",
     heroTitle: "Freezer Repair in Cleveland & Parma",
     metaTitle: "Freezer Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
@@ -614,8 +614,8 @@ export const SERVICES: Service[] = [
     description:
       "Not making ice? Leaking water? Frost buildup?",
     href: "/services/ice-maker-repair",
-    icon: "/images/services/icemaker.png",
-    detailImage: "/images/services/icemaker.png",
+    icon: "/images/services/icemaker.webp",
+    detailImage: "/images/services/icemaker.webp",
     heroTitle: "Ice Maker Repair in Cleveland & Parma",
     metaTitle: "Ice Maker Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
@@ -714,8 +714,8 @@ export const SERVICES: Service[] = [
     description:
       "Not heating? Temperature issues? Turning on by itself?",
     href: "/services/oven-repair",
-    icon: "/images/services/oven.png",
-    detailImage: "/images/services/oven.png",
+    icon: "/images/services/oven.webp",
+    detailImage: "/images/services/oven.webp",
     heroTitle: "Oven Repair in Cleveland & Parma",
     metaTitle: "Oven Repair Cleveland & Parma | Same-Day Service",
     metaDescription:
