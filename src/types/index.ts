@@ -41,7 +41,12 @@ export type BlogPost = {
   coverImage?: string;
   excerpt?: string;
   category?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   content?: BlogSection[];
+  faqs?: FaqItem[];
+  /** Service id (from SERVICES) to link as a contextual CTA below the article. */
+  relatedServiceId?: string;
 };
 
 export type Brand = {

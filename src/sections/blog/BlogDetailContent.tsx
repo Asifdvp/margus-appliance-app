@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Container } from "@/shared/layout/Container";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
 import { BookNowButton } from "@/shared/components/book";
+import { InfoSection } from "@/shared/ui/InfoSection";
 import type { BlogPost } from "@/types";
 
 type Props = { post: BlogPost };
@@ -22,21 +23,7 @@ export function BlogDetailContent({ post }: Props) {
             )}
 
             {post.content?.map((section, i) => (
-              <div key={i} className="mb-6">
-                {section.heading && (
-                  <h2 className="font-work-sans font-bold text-dark text-lg leading-6 lg:text-2xl  lg:leading-8 mb-2">
-                    {section.heading}
-                  </h2>
-                )}
-                {section.paragraphs.map((p, j) => (
-                  <p
-                    key={j}
-                    className="font-manrope text-xs leading-4.5 md:text-base md:leading-6  text-secondary mb-3"
-                  >
-                    {p}
-                  </p>
-                ))}
-              </div>
+              <InfoSection key={i} section={section} />
             ))}
           </article>
 

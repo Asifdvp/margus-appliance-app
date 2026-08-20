@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import { blogPosts, getBlogPostBySlug } from "@/content/blog";
 import { BlogDetailHero } from "@/sections/blog/BlogDetailHero";
 import { BlogDetailContent } from "@/sections/blog/BlogDetailContent";
+import { BlogRelatedService } from "@/sections/blog/BlogRelatedService";
 import { BlogDetailRelated } from "@/sections/blog/BlogDetailRelated";
+import { FAQ } from "@/sections/shared/FAQ";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { canonicalUrl } from "@/shared/lib/seo";
 
@@ -24,14 +26,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
 
-  const description = post.excerpt ?? post.title;
+  const title = post.metaTitle ?? post.title;
+  const description = post.metaDescription ?? post.excerpt ?? post.title;
   const ogImage = post.coverImage ?? "/images/blogs/blog.jpg";
 
   return {
-    title: post.title,
+    title,
     description,
     openGraph: {
-      title: post.title,
+      title,
       description,
       url: canonicalUrl(`/blog/${slug}`),
       type: "article",
@@ -40,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title,
       description,
     },
     alternates: {
@@ -111,6 +114,16 @@ export default async function BlogDetailPage({ params }: Props) {
     ],
   };
 
+  const faqSchema = post.faqs && post.faqs.length > 0 && {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <>
       <script
@@ -121,8 +134,20 @@ export default async function BlogDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <BlogDetailHero post={post} />
       <BlogDetailContent post={post} />
+      {post.relatedServiceId && (
+        <BlogRelatedService serviceId={post.relatedServiceId} />
+      )}
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQ items={post.faqs} heading="Frequently Asked Questions" />
+      )}
       <BlogDetailRelated currentSlug={slug} />
       <CTABanner />
     </>
