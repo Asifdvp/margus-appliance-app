@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: job.date ? toISODate(job.date) : undefined,
       images: [
         {
-          url: job.image ?? "/opengraph-image",
+          url: job.image ?? "/og-image.png",
           width: 1200,
           height: 630,
           alt: job.alt ?? title,
@@ -105,7 +105,7 @@ export default async function JobDetailPage({ params }: Props) {
     headline: `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}`,
     description: job.problem ?? "Certified appliance repair by Margus Appliance.",
     datePublished: job.date ? toISODate(job.date) : undefined,
-    image: job.image ? `https://margusappliancerepair.com${job.image}` : "https://margusappliancerepair.com/opengraph-image",
+    image: job.image ? `https://margusappliancerepair.com${job.image}` : "https://margusappliancerepair.com/og-image.png",
     author: {
       "@type": "Organization",
       "@id": "https://margusappliancerepair.com/#organization",

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://margusappliancerepair.com/opengraph-image",
+        url: "https://margusappliancerepair.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Appliance repair guides by Margus Appliance",
