@@ -6,7 +6,7 @@ import { Navbar } from "@/shared/components/Navbar";
 import { Footer } from "@/shared/components/Footer";
 import { Emergency } from "@/shared/components/Emergency";
 import { BookingModalProvider } from "@/shared/components/book";
-import { CONTACT_INFO } from "@/constants";
+import { CONTACT_INFO, FALLBACK_RATING, FALLBACK_REVIEW_COUNT } from "@/constants";
 import { SITE_URL } from "@/shared/lib/seo";
 
 const manrope = Manrope({
@@ -86,6 +86,12 @@ const organizationSchema = {
   ].map((name) => ({ "@type": "City", name })),
   serviceType: "Appliance Repair",
   priceRange: "$$",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: FALLBACK_RATING,
+    reviewCount: FALLBACK_REVIEW_COUNT,
+    bestRating: 5,
+  },
   sameAs: [
     "https://www.facebook.com/share/19699YsqAt/?mibextid=wwXIfr",
     "https://www.instagram.com/margusappliancerepair",

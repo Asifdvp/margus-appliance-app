@@ -26,8 +26,10 @@ const SOCIAL_LINKS = [
 export function Footer({ className }: FooterProps) {
   return (
     <footer
-      className={cn("pt-8 pb-14 md:p-5", className)}
-      style={{ background: "linear-gradient(99.72deg, #F8F7FF 0%, #E2F4FB 100%)" }}
+      className={cn(
+        "pt-8 pb-14 md:p-5 bg-[linear-gradient(99.72deg,#F8F7FF_0%,#E2F4FB_100%)]",
+        className,
+      )}
     >
       <Container>
         <div className="flex flex-col items-center gap-4 mb-4 md:mb-3 md:flex-row md:items-center md:justify-between">

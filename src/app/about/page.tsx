@@ -60,6 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@margusappliance",
     title: "About Margus Appliance Repair | Cleveland & Parma, OH",
     description:
       "Family-owned appliance repair serving Cleveland & Parma, OH for 8+ years.",

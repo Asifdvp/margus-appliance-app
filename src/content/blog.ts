@@ -222,7 +222,7 @@ export const blogPosts: BlogPost[] = [
     title: "Dishwasher Leaving Dishes Dirty? Try These Fixes First",
     slug: "dishwasher-not-cleaning-dishes",
     date: "18.02.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Dishwasher Repair",
     metaTitle: "Dishwasher Not Cleaning Dishes? Try This First",
     metaDescription:
@@ -288,7 +288,7 @@ export const blogPosts: BlogPost[] = [
     title: "When to Repair vs. Replace Your Home Appliance",
     slug: "repair-vs-replace-appliance",
     date: "22.02.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Expert Advice",
     metaTitle: "Appliance Repair vs. Replace: How to Decide",
     metaDescription:
@@ -420,7 +420,7 @@ export const blogPosts: BlogPost[] = [
     title: "Why Is My Washing Machine Making a Loud Banging Noise?",
     slug: "washing-machine-banging-noise",
     date: "05.03.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Washer Repair",
     metaTitle: "Washer Making a Loud Banging Noise? Here's Why",
     metaDescription:
@@ -486,7 +486,7 @@ export const blogPosts: BlogPost[] = [
     title: "Freezer Frost Buildup: Causes and How to Fix It",
     slug: "freezer-frost-buildup",
     date: "10.03.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Freezer Repair",
     metaTitle: "Freezer Frost Buildup: Causes & How to Fix It",
     metaDescription:
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
     title: "Oven Not Heating Evenly? Here's What Our Technicians Look For",
     slug: "oven-not-heating-evenly",
     date: "15.03.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Oven Repair",
     metaTitle: "Oven Not Heating Evenly? What Causes It",
     metaDescription:
@@ -619,7 +619,7 @@ export const blogPosts: BlogPost[] = [
     title: "Ice Maker Not Working? Check These Things First",
     slug: "ice-maker-not-working",
     date: "20.03.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Ice Maker Repair",
     metaTitle: "Ice Maker Not Working? Check These 4 Things",
     metaDescription:
@@ -691,7 +691,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Prepare Your Appliances for Winter in Cleveland",
     slug: "prepare-appliances-for-winter",
     date: "25.03.2026",
-    coverImage: "/images/blogs/blog.jpg",
+    coverImage: "/images/blogs/blog.webp",
     category: "Maintenance Tips",
     metaTitle: "How to Prepare Your Appliances for Winter",
     metaDescription:

@@ -5,7 +5,7 @@ import type { BlogPost } from "@/types";
 type Props = { post: BlogPost };
 
 export function BlogDetailHero({ post }: Props) {
-  const coverSrc = post.coverImage ?? "/images/blogs/blog.jpg";
+  const coverSrc = post.coverImage ?? "/images/blogs/blog.webp";
 
   return (
     <section

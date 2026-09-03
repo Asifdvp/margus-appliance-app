@@ -29,7 +29,7 @@ export function Navbar() {
               width={158}
               height={90}
               priority
-              className="lg:absolute lg:-top-1.75 h-13 lg:h-28 w-auto object-contain" style={{ width: "auto" }}
+              className="lg:absolute lg:-top-1.75 h-13 lg:h-28 w-auto object-contain"
             />
           </Link>
 
