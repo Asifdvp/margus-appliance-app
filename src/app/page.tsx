@@ -9,7 +9,7 @@ import { FAQ } from "@/sections/shared/FAQ";
 import { faqs } from "@/content/faq";
 import { Blogs } from "@/sections/shared/Blogs";
 import CompanyInfo from "@/sections/home/companyInfo";
-import { canonicalUrl } from "@/shared/lib/seo";
+import { canonicalUrl, SITE_URL } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
   description:
@@ -27,9 +27,6 @@ export const metadata: Metadata = {
     description:
       "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty.",
   },
-  alternates: {
-    canonical: canonicalUrl("/"),
-  },
 };
 
 const faqSchema = {
@@ -44,23 +41,29 @@ const faqSchema = {
 
 export default function HomePage() {
   return (
-    <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Hero />
-      <CompanyInfo />
-      {/* <Stats /> */}
-      <Brands />
-      <Services />
-      <ServiceAreas />
-      {/* <Steps /> */}
-      <RecentJobs />
-      <Blogs />
-      <Testimonials />
-      <FAQ />
-      {/* <FloatingCTA /> */}
-    </main>
+    <>
+      {/* Next.js's metadata API always collapses a root-path canonical to
+          the bare origin (no trailing slash), so it's rendered manually here
+          to match the homepage's real URL. */}
+      <link rel="canonical" href={`${SITE_URL}/`} />
+      <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <Hero />
+        <CompanyInfo />
+        {/* <Stats /> */}
+        <Brands />
+        <Services />
+        <ServiceAreas />
+        {/* <Steps /> */}
+        <RecentJobs />
+        <Blogs />
+        <Testimonials />
+        <FAQ />
+        {/* <FloatingCTA /> */}
+      </main>
+    </>
   );
 }
