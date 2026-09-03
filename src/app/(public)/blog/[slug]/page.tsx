@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = post.metaTitle ?? post.title;
   const description = post.metaDescription ?? post.excerpt ?? post.title;
-  const ogImage = post.coverImage ?? "/images/blogs/blog.jpg";
+  const ogImage = post.coverImage ?? "/images/blogs/blog.webp";
 
   return {
     title,
@@ -43,6 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
+      site: "@margusappliance",
       title,
       description,
     },
@@ -67,7 +68,7 @@ export default async function BlogDetailPage({ params }: Props) {
     url: `https://margusappliancerepair.com/blog/${slug}`,
     image: post.coverImage
       ? `https://margusappliancerepair.com${post.coverImage}`
-      : "https://margusappliancerepair.com/images/blogs/blog.jpg",
+      : "https://margusappliancerepair.com/images/blogs/blog.webp",
     author: {
       "@type": "Organization",
       "@id": "https://margusappliancerepair.com/#organization",

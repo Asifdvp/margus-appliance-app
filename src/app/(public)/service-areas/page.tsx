@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-home.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Margus Appliance service areas around Cleveland, Ohio",
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@margusappliance",
     title: "Appliance Repair Service Areas | Margus Appliance",
     description:
       "Same-day appliance repair in Cleveland, Parma, Akron, and 50+ surrounding cities.",

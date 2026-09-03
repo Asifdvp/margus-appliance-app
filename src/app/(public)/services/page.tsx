@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://margusappliancerepair.com/images/services/hero-bg.jpg",
+        url: "https://margusappliancerepair.com/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Margus Appliance repair services in Cleveland",
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@margusappliance",
     title: "Appliance Repair Services in Cleveland & Parma, OH | Margus",
     description:
       "Same-day appliance repair in Cleveland & Parma, OH. Refrigerators, washers, dryers, ovens & more. Honest pricing, 180-day warranty.",

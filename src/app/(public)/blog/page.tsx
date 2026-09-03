@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://margusappliancerepair.com/images/blog/hero-bg.jpg",
+        url: "https://margusappliancerepair.com/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Appliance repair guides by Margus Appliance",
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@margusappliance",
     title: "Appliance Repair Tips & Expert Guides | Margus Appliance",
     description:
       "Practical repair guides from certified technicians in Cleveland & Parma.",

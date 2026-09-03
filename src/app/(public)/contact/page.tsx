@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-home.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Contact Margus Appliance",
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@margusappliance",
     title: "Contact Margus Appliance — Same-Day Appliance Repair",
     description:
       "Book same-day appliance repair in Cleveland & Parma. Call or message us.",
