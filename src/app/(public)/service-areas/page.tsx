@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { PageHero } from "@/shared/ui/PageHero";
+import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 import { ServiceAreasSection } from "@/sections/service-areas/ServiceAreasSection";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
@@ -56,6 +57,35 @@ const serviceAreasSchema = {
   priceRange: "$$",
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://margusappliancerepair.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Service Areas",
+      item: "https://margusappliancerepair.com/service-areas",
+    },
+  ],
+};
+
+const areasListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: ALL_SERVICE_AREAS.map((area, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: area.name,
+  })),
+};
+
 export default function ServiceAreasPage() {
   return (
     <>
@@ -63,11 +93,20 @@ export default function ServiceAreasPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceAreasSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areasListSchema) }}
+      />
       <PageHero
         src="/service-hero.webp"
         alt="Appliance repair service areas in Cleveland and Parma"
         heading="Appliance Repair Service Areas Near Cleveland"
       />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Service Areas" }]} />
       <ServiceAreasSection />
       <Blogs />
       <CTABanner />
