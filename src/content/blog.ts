@@ -1091,6 +1091,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    id: "16",
+    title: "Refrigerator Leaking Water? How to Find Where It's Coming From",
+    slug: "refrigerator-leak-find-source",
+    date: "18.09.2026",
+    coverImage: "/images/blogs/refrigerator-leaking-water.webp",
+    category: "Refrigerator Repair",
+    metaTitle: "Refrigerator Leaking? How to Trace the Water Source",
+    metaDescription:
+      "Water around your fridge doesn't always start where you see it. Here's how to trace a refrigerator leak back to its real source, location by location.",
+    excerpt:
+      "Water around your refrigerator doesn't necessarily mean the leak started where the puddle appeared. Here's how to trace it back to the real source — freezer, fridge compartment, water line, filter, or ice maker — before assuming a part has failed.",
+    relatedServiceId: "refrigerator-repair",
+    content: [
+      {
+        paragraphs: [
+          "Finding water around your refrigerator doesn't necessarily mean the leak started where the puddle appeared. Water can travel along panels, tubing, or the bottom of a compartment before becoming visible.",
+          "That's why one of the most important steps in diagnosing a refrigerator leak is identifying where the water first appears and tracing its path back toward the source.",
+          "Before assuming a part has failed, look at the location of the water. Is it in the freezer, inside the refrigerator compartment, under the crisper drawers, around the water filter, behind the refrigerator, or on the floor? The location can help narrow down which system needs to be inspected.",
+        ],
+      },
+      {
+        heading: "Water or Ice in the Freezer Compartment",
+        paragraphs: [
+          "Water or a sheet of ice on the freezer floor can be a sign of a restricted defrost drain. During the defrost cycle, water needs a clear path to drain out of the compartment. If that path becomes blocked, water can collect and freeze on the freezer floor and may eventually leak outside the refrigerator.",
+          "When a clogged drain is found, the complete drainage path should be checked. Clearing the opening inside the freezer doesn't necessarily mean the drain tube farther downstream is completely clear.",
+        ],
+      },
+      {
+        heading: "Water Inside the Refrigerator or Under the Crisper Drawers",
+        paragraphs: [
+          "Water inside the fresh-food compartment should be treated as a separate symptom. Check whether the moisture is appearing along the back of the compartment, on a shelf, around the filter area, or underneath the crisper drawers.",
+          "Depending on the refrigerator design, the inspection may lead toward the drainage system, water filter area, internal water tubing, or nearby water connections. The puddle is a clue — not necessarily the source. Follow the moisture back toward its earliest visible point before deciding which component is responsible.",
+        ],
+      },
+      {
+        heading: "Water Behind or Under the Refrigerator",
+        paragraphs: [
+          "If water is appearing behind or underneath the refrigerator, inspect the water supply system. Check the water supply line, fittings, and connection points for visible moisture or damage. The shutoff valve and the refrigerator's water inlet valve area should also be inspected.",
+          "Remember that a small leak can travel along tubing or another surface before reaching the floor.",
+        ],
+      },
+      {
+        heading: "Water Around the Water Filter",
+        paragraphs: [
+          "If moisture appears around the water filter, check whether the filter is properly installed and inspect the surrounding area for signs of leakage. A filter that isn't seated correctly can leak — the filter itself, the sealing area, or the filter housing may require inspection.",
+          "If the leak started shortly after a filter replacement, the filter installation is an important place to begin.",
+        ],
+      },
+      {
+        heading: "Ice Maker and Water Connections",
+        paragraphs: [
+          "Water around the freezer or ice maker area can also involve the ice maker's water supply. The fill tube and water connections should be inspected for signs of leakage. Don't assume that ice on the freezer floor automatically means the defrost drain is the only possible source.",
+          "Tracing where the water actually begins is more reliable than diagnosing the refrigerator from the final location of the puddle.",
+        ],
+      },
+      {
+        heading: "If the Leak Involves the Water Supply, Shut the Water Off",
+        paragraphs: [
+          "If you find an active leak involving the refrigerator's pressurized water system, shut off the refrigerator's water supply as soon as it can be done safely. This includes leaks involving the supply line, water inlet valve, water filter area, ice maker water connection, or water tubing.",
+          "Stopping the water supply can prevent additional water from entering the leaking system while the source is being identified and repaired. Having an accessible shutoff valve near the refrigerator can also make it much easier to isolate the water supply quickly when a leak occurs.",
+        ],
+      },
+      {
+        heading: "Don't Stop at the First Problem",
+        paragraphs: [
+          "Finding one problem doesn't always mean you've found the only problem. A proper refrigerator leak diagnosis means identifying where the water is appearing, tracing its path, determining whether the issue involves the drainage system or the pressurized water supply, and inspecting the related components.",
+          "If a clogged drain is found, check the complete drain path. If there are signs of leakage around the water supply system, inspect those components separately. Most importantly, don't replace a part simply because it's close to the puddle — find the actual source and verify that the leak has stopped after the repair.",
+          "If locating the source requires removing internal panels or accessing components that aren't safely accessible, professional diagnosis is the better option.",
+        ],
+      },
+      {
+        heading: "Same-Day Refrigerator Repair in Cleveland & Parma",
+        paragraphs: [
+          "Margus Appliance Repair has spent 8 years helping homeowners across Cleveland and Parma, OH trace refrigerator leaks to their real source and fix them right the first time — not just replace whatever part happens to be closest.",
+          "Same-day service is available, our diagnostic fee is $89, and it's waived once you move forward with the repair. Every repair comes backed by a 180-day warranty.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        id: "location-tells-cause",
+        question: "Does the location of a refrigerator leak tell you what's wrong?",
+        answer:
+          "It's a strong starting clue, not a final answer. Water in the freezer usually points toward the defrost drain, while water behind or under the fridge points toward the water supply — but the puddle is where water ends up, not always where it started.",
+      },
+      {
+        id: "ice-on-freezer-floor",
+        question: "What does ice on the freezer floor usually mean?",
+        answer:
+          "Most often a restricted or clogged defrost drain. But clearing the opening inside the freezer doesn't guarantee the drain tube further downstream is clear too — the full path should be checked.",
+      },
+      {
+        id: "when-shut-off-water",
+        question: "When should I shut off my refrigerator's water supply?",
+        answer:
+          "As soon as you find an active leak involving the supply line, water inlet valve, filter area, or ice maker connection. Shutting it off safely prevents more water from entering the system while the source is identified.",
+      },
+      {
+        id: "replace-closest-part",
+        question: "Should I replace a part just because it's near the leak?",
+        answer:
+          "No. The closest part isn't always the source — replacing it without confirming the actual cause often means the leak comes back. Trace the water to where it truly begins before repairing anything.",
+      },
+      {
+        id: "when-call-professional",
+        question: "When should I call a professional for a refrigerator leak?",
+        answer:
+          "If finding the source requires removing internal panels or reaching components that aren't easily accessible, or if you've checked the obvious points and the leak continues, professional diagnosis is the safer, more reliable option.",
+      },
+    ],
+  },
 ];
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined =>
