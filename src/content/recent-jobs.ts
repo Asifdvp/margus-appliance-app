@@ -309,4 +309,56 @@ export const RECENT_JOBS: RecentJob[] = [
       "Our team provides reliable dishwasher repair across Avon Lake, Cleveland, Parma, and Greater Cleveland — with minimal disruption to your daily routine.",
     ],
   },
+  {
+    id: "job-7",
+    slug: "refrigerator-repair-shaker-heights",
+    image: "/images/recent-jobs/job-7/cover.webp",
+    alt: "Refrigerator repair in Shaker Heights",
+    service: "Refrigerator Repair",
+    location: "Shaker Heights",
+    date: "15.09.2026",
+    problem: "Leaking water near the freezer",
+    brand: "whirlpool",
+    heroTitle: "Whirlpool Refrigerator Repair in Shaker Heights — Leaking Near the Freezer",
+    badges: [
+      "Traced the water trail to its full source",
+      "Clogged drain & a seeping inlet valve",
+      "Fixed same-day",
+    ],
+    metaTitle: "Refrigerator Leak Repair in Shaker Heights | Whirlpool",
+    metaDescription:
+      "Whirlpool refrigerator leaking in Shaker Heights? We found and fixed two causes — a clogged drain and a seeping valve — same-day. Call (216) 304-0665.",
+    intro: [
+      "We recently completed a refrigerator repair in Shaker Heights after the homeowner noticed water periodically collecting near the right front corner of their Whirlpool refrigerator, by the freezer section. Water on the floor doesn't always show exactly where a leak started — one of the most important parts of diagnosing a leak is following the water trail back to its true source, instead of stopping at the first thing you find.",
+    ],
+    diagnosis:
+      "Inside the freezer, we found a layer of frozen water covering the bottom. We first checked the ice maker and its water supply tube, but both checked out fine. After removing the evaporator cover, we found a clogged defrost drain — the likely cause of the ice buildup. Rather than stopping there, we opened the rear machine compartment and inspected the complete drain path, where buildup inside the drain tube was also restricting water flow — clearing a blockage inside the freezer doesn't necessarily mean the entire drain path is clear. While we were back there, we found a second, unrelated issue: the water inlet valve was seeping.",
+    repairAction:
+      "We cleared the clogged defrost drain and cleaned the drain tube in the machine compartment, restoring proper flow through the entire drain path. We then replaced the seeping water inlet valve and swapped the old copper water supply line for a braided stainless-steel line, and installed a shutoff valve behind the refrigerator so the homeowner has direct access to shut off the water supply if it's ever needed again.",
+    result:
+      "What initially looked like one refrigerator leak turned out to involve two separate problems — a restricted drain system and a leaking water inlet valve. By following the water trail and continuing the inspection after finding the first issue, we were able to address both instead of stopping at the first visible cause.",
+    learnMoreIntro:
+      "This is the difference a thorough diagnosis makes: following the problem to its full source instead of stopping at the first fix.",
+    commonProblems: [
+      "Refrigerator not cooling or freezer not freezing",
+      "Water leaking inside or under the fridge",
+      "Ice maker not working",
+      "Frost or ice buildup inside the freezer",
+      "Loud compressor or fan noises",
+      "Worn door seals and gaskets",
+    ],
+    whyChooseHeading: "Why Shaker Heights Homeowners Choose Margus",
+    whyChoosePoints: [
+      "Technicians who trace a problem to its full source, not just the first visible cause",
+      "Same-day refrigerator repair — because a leak can't wait",
+      "Honest, upfront pricing — an $89 diagnostic fee, waived when you proceed with the repair",
+      "All major brands, including Whirlpool, serviced with quality replacement parts",
+      "180-day parts & labor warranty on every repair",
+      "Locally trusted across Shaker Heights, Cleveland, Parma, and Greater Cleveland",
+    ],
+    closingHeading: "Thorough Diagnosis, Lasting Repairs",
+    closingText: [
+      "A refrigerator leak is rarely just about the water you can see — it's about finding every cause behind it. Our team takes the time to trace problems to their full source, so you get a lasting fix instead of a repeat visit.",
+    ],
+  },
 ];
