@@ -14,7 +14,7 @@ export function ServiceAreaHighlights() {
           Appliance Repair Across Greater Cleveland
         </h2>
         <p className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary mb-6 lg:mb-10 max-w-211.5">
-          We repair refrigerators, washers, dryers, dishwashers, ovens, and more in 57+ cities across Northeast Ohio. Here's what appliance repair looks like in a few of the areas we cover most.
+          We repair refrigerators, washers, dryers, dishwashers, ovens, and more in 57+ cities across Northeast Ohio. Here&apos;s what appliance repair looks like in a few of the areas we cover most.
         </p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {SERVICE_AREA_HIGHLIGHTS.map((area) => (
