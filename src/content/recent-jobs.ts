@@ -621,4 +621,173 @@ export const RECENT_JOBS: RecentJob[] = [
       "A dryer that won't heat puts laundry day on hold — and it's worth a proper diagnosis rather than a guess based on the appliance's age. Our experienced team provides fast, reliable dryer repair across Independence, Cleveland, Parma, and Greater Cleveland.",
     ],
   },
+  {
+    id: "job-13",
+    slug: "lg-washer-pe-error-parma",
+    image: "/images/recent-jobs/job-13/cover.webp",
+    alt: "LG top-load washer showing a PE error during a repair in Parma, Ohio",
+    service: "Washer Repair",
+    location: "Parma",
+    date: "06.10.2026",
+    problem: "PE error — incorrect water-level reading",
+    brand: "lg",
+    heroTitle: "LG Washer Repair in Parma — PE Error, and Why It Isn't Always the Sensor",
+    badges: [
+      "Traced the PE error past the obvious part",
+      "Failed water-level pressure sensor",
+      "Fixed same-day",
+    ],
+    metaTitle: "LG Washer PE Error Repair in Parma, OH",
+    metaDescription:
+      "LG washer showing a PE error in Parma? We replaced a failed water-level pressure sensor same-day — but the sensor isn't the only cause. Call (216) 304-0665.",
+    intro: [
+      "A PE error on an LG washer points toward a problem in the machine's water-level pressure sensing system — the circuit that tells the washer how much water is actually in the tub. When that signal is wrong or missing, the washer can't confirm the fill level and stops with the error.",
+      "On this recent LG top-load washer repair in Parma, our diagnosis led us to the pressure sensor, and replacing the sensor corrected the problem. But a PE error does not automatically mean the pressure sensor itself has failed — the same code can come from several different points in that circuit, which is why the diagnosis matters more than the code.",
+    ],
+    diagnosis:
+      "We started at the pressure sensor, but checked the full water-level circuit before condemning any part. The pressure sensor hose is a common culprit on its own: if it becomes damaged, kinked, disconnected, or works loose from heavy vibration, the washer receives incorrect water-level information even though the sensor is perfectly good. On a top-load LG like this one, worn suspension rods allow excessive tub movement and banging, and that extra movement is often what shakes the hose loose in the first place — on a front-load machine, the same symptom would point toward the shock absorbers instead. We also inspected the wiring and connections in the pressure-sensing circuit, and kept the main control board on the list: if the sensor and hose both test correctly but the washer still isn't processing the water-level signal, the board needs to be evaluated. In this repair, the pressure sensor itself tested faulty.",
+    repairAction:
+      "We replaced the failed water-level pressure sensor, reseated and secured the pressure hose on the tub, and ran the washer through a full fill, wash, and drain cycle to confirm the water level was being read and reported correctly with no return of the error.",
+    result:
+      "The washer is filling, sensing, and cycling normally again with no PE error. Worth noting: another LG washer showing this exact same code may have a completely different underlying cause — which is why accurate diagnosis comes before parts, instead of ordering a sensor the moment a PE code appears.",
+    learnMoreIntro:
+      "A PE error is one of the most commonly misdiagnosed LG washer faults — the code names a system, not a part.",
+    commonProblems: [
+      "PE, OE, IE, or UE error codes on the display",
+      "Washer won't fill, or overfills",
+      "Washer won't drain or spin",
+      "Excessive banging, shaking, or walking during the spin cycle",
+      "Washer stops partway through a cycle",
+      "Water leaking from under the machine",
+      "Lid lock or door lock problems",
+    ],
+    whyChooseHeading: "Why Parma Homeowners Choose Margus",
+    whyChoosePoints: [
+      "Error codes diagnosed properly — we test the whole circuit instead of replacing the first likely part",
+      "Same-day washer repair across Parma and Greater Cleveland",
+      "Honest, upfront pricing — an $89 diagnostic fee, waived when you proceed with the repair",
+      "All major brands, including LG Direct Drive and Inverter models, serviced with quality replacement parts",
+      "180-day parts & labor warranty on every repair",
+      "Locally owned and based right here in Parma",
+    ],
+    closingHeading: "Washer Diagnostics Done Right",
+    closingText: [
+      "An error code tells you which system the washer is unhappy with — not which part failed. Our technicians test the circuit behind the code, so the part that actually failed is the part that gets replaced, and the fault doesn't come back a month later.",
+      "We proudly serve Parma and the Greater Cleveland area with professional washer diagnostics and repair. Margus Appliance Repair — where reputation matters.",
+    ],
+  },
+  {
+    id: "job-14",
+    slug: "kenmore-dryer-heating-without-starting-shaker-heights",
+    image: "/images/recent-jobs/job-14/cover.webp",
+    alt: "Kenmore electric dryer with the door open during a repair in Shaker Heights, Ohio",
+    service: "Dryer Repair",
+    location: "Shaker Heights",
+    date: "06.10.2026",
+    problem: "Producing heat with the drum stopped",
+    brand: "kenmore",
+    heroTitle: "Kenmore Dryer Repair in Shaker Heights — Heating Without Starting",
+    badges: [
+      "Heating element shorted to ground",
+      "Element replaced, safe operation restored",
+      "Fixed same-day",
+    ],
+    metaTitle: "Kenmore Dryer Heats Without Starting — Shaker Heights",
+    metaDescription:
+      "Kenmore dryer heating without starting in Shaker Heights? We found a heating element shorted to ground and replaced it same-day. Call (216) 304-0665.",
+    intro: [
+      "A Kenmore electric dryer in Shaker Heights had an unusual problem: it was producing heat even though the Start button had not been pressed and the drum was not running. That combination is what makes this fault stand out — when the drum isn't turning, the blower isn't moving air through the cabinet either, so any heat being produced has nowhere to go.",
+      "For that reason, a dryer that heats while it should be sitting idle is one of the few appliance faults worth treating as urgent. Disconnecting power at the breaker until it can be inspected is the safer approach.",
+    ],
+    diagnosis:
+      "During diagnosis, we found that the heating element was touching the metal heater housing and had shorted to ground. A dryer heating element is designed to stay electrically isolated from the metal cabinet around it. Once part of the coil makes contact with that housing, it creates an unintended electrical path — and on a 240-volt electric dryer, that path can energize the element even when the controls are off and the motor isn't running. That is why this dryer was producing heat without ever being started.",
+    repairAction:
+      "We replaced the heating element, restoring proper isolation between the coil and the heater housing, then tested the dryer to confirm it produced heat only while a cycle was actually running — and that the heat stopped when the cycle ended.",
+    result:
+      "The dryer heats on demand and stays cold when idle, the way it should. The underlying fault was electrical rather than mechanical, which is exactly why it produced such an unusual symptom — and why diagnosing it correctly mattered more than the part itself.",
+    learnMoreIntro:
+      "An electrical fault like this one produces symptoms that look nothing like a typical dryer problem.",
+    learnMoreSuffixText: "the other dryer brands we service",
+    commonProblems: [
+      "Dryer heating when it shouldn't, or heating with the drum stopped",
+      "No heat at all, or clothes still damp after a full cycle",
+      "Drum won't turn",
+      "Dryer takes two or three cycles to dry a single load",
+      "Loud thumping, squealing, or grinding during operation",
+      "Dryer shuts off partway through a cycle",
+      "Burning or overheated smell while running",
+    ],
+    whyChooseHeading: "Why Shaker Heights Homeowners Choose Margus",
+    whyChoosePoints: [
+      "Electrical faults diagnosed properly — we find the cause before replacing parts",
+      "Same-day dryer repair, with priority when a fault is a safety concern",
+      "Honest, upfront pricing — an $89 diagnostic fee, waived when you proceed with the repair",
+      "All major brands, including Kenmore, Whirlpool, and Maytag, serviced with quality replacement parts",
+      "180-day parts & labor warranty on every repair",
+      "Locally trusted across Shaker Heights, Cleveland, Parma, and Greater Cleveland",
+    ],
+    closingHeading: "This Isn't Only a Kenmore Problem",
+    closingText: [
+      "A grounded heating element isn't limited to Kenmore dryers. The same type of failure can occur on many electric dryers, including Whirlpool, Maytag, and other brands that use a traditional resistance heating element.",
+      "Abnormal heating can also come from a stuck heater relay, a control board or timer fault, or a wiring problem, which is why proper diagnosis matters before any part is replaced. If a dryer starts heating while the drum is not running, heats before Start is pressed, or keeps producing heat when it should be idle, disconnect the power and have it inspected.",
+      "Margus Appliance Repair provides professional dryer diagnostics and repair in Shaker Heights, Parma, and throughout the Greater Cleveland area. Margus Appliance Repair — where reputation matters.",
+    ],
+  },
+  {
+    id: "job-15",
+    slug: "oven-door-locked-after-self-clean-parma",
+    image: "/images/recent-jobs/job-15/cover.webp",
+    alt: "Built-in GE Profile wall oven and microwave combination unit in a Parma, Ohio kitchen",
+    service: "Oven Repair",
+    location: "Parma",
+    date: "06.10.2026",
+    problem: "Door stayed locked after the Self-Clean cycle",
+    brand: "ge",
+    heroTitle: "GE Oven Repair in Parma — Door Locked After Self-Clean",
+    badges: [
+      "Door-lock system accessed and released",
+      "Lock motor, latch switch & wiring inspected",
+      "Built-in wall oven",
+    ],
+    metaTitle: "Oven Door Locked After Self-Clean in Parma, OH",
+    metaDescription:
+      "Oven door still locked after Self-Clean in Parma? What to try first, why you shouldn't force it, and when the lock motor or latch needs service. (216) 304-0665.",
+    intro: [
+      "A recent service call involved a built-in GE Profile wall oven in Parma that stayed locked after the Self-Clean cycle. During Self-Clean, the oven reaches extremely high temperatures and the door locks automatically for safety — and even after the cycle ends, it can remain locked until the oven has cooled sufficiently.",
+      "So the first thing worth confirming is simply whether the oven is genuinely cool. If it has already cooled and the door still will not open, a few things can be tried before service is required: depending on the model, pressing Cancel/Off, resetting power at the circuit breaker, or briefly restarting and then cancelling Self-Clean may allow the lock system to reset.",
+      "If none of that works, do not force the door open. A self-clean latch is built to hold against extreme heat, and forcing it is far more likely to damage the door or the latch assembly than to release it.",
+    ],
+    diagnosis:
+      "Once the lock will not release on its own, the oven needs to be accessed so the door-lock system can be released and inspected directly. On a built-in unit like this one, that means working above the oven cavity, where the lock motor, latch switch, and their wiring sit behind the control area. The fault can be anywhere along that chain — the door-lock mechanism or its motor, the latch switch, the wiring between them, or the electronic control that drives the lock. One additional clue is worth watching for: if the display continues to show HOT after the oven has completely cooled, the oven temperature sensor and its circuit belong in the diagnosis too, because the control may still believe the oven is too hot to unlock.",
+    repairAction:
+      "We accessed the lock assembly, released the door, and inspected the mechanism, lock motor, latch switch, and associated wiring — so the actual cause could be identified rather than assuming the lock itself was the only problem.",
+    result:
+      "The door was released and the lock circuit inspected, returning the oven to normal use with the real cause identified instead of guessed at.",
+    learnMoreIntro:
+      "A door that stays locked after Self-Clean is one of the most common post-cycle oven faults — and one of the easiest to misdiagnose.",
+    commonProblems: [
+      "Oven door locked or stuck after a Self-Clean cycle",
+      "Display stuck showing HOT, LOC, or a lock indicator",
+      "Control panel unresponsive after Self-Clean",
+      "Oven not heating, or heating to the wrong temperature",
+      "Oven takes far too long to preheat",
+      "F-series error codes on the control panel",
+      "Bake or broil element not working",
+    ],
+    whyChooseHeading: "Why Parma Homeowners Call Margus for Oven Repair",
+    whyChoosePoints: [
+      "Built-in and wall-oven experience, including units that have to be pulled to be serviced",
+      "Same-day oven repair across Parma and Greater Cleveland",
+      "Honest, upfront pricing — an $89 diagnostic fee, waived when you proceed with the repair",
+      "All major brands, including GE and GE Profile, serviced with quality replacement parts",
+      "180-day parts & labor warranty on every repair",
+      "Locally owned, based in Parma, and serving Greater Cleveland for 8 years",
+    ],
+    closingHeading: "Why a Post-Self-Clean Lock Deserves a Real Diagnosis",
+    closingText: [
+      "Self-Clean operates at temperatures far above normal baking temperatures, which is why a door-lock problem that appears after the cycle deserves a proper inspection. The same heat that cleans the oven also stresses the latch assembly, the wiring near the control, and the temperature-sensing circuit.",
+      "Assuming the lock itself is the only problem is the most common mistake here. The lock mechanism or motor, the latch switch, the wiring, the electronic control, and the temperature-sensing circuit can all produce the identical symptom — a door that simply will not open.",
+      "Margus Appliance Repair proudly serves Parma and the Greater Cleveland area with professional oven diagnostics and repair. Margus Appliance Repair — where reputation matters.",
+    ],
+  },
 ];
