@@ -20,7 +20,9 @@ export function ServiceAreaHighlights() {
           {SERVICE_AREA_HIGHLIGHTS.map((area) => (
             <div key={area.name} className="bg-white rounded-2xl p-4 lg:p-6">
               <h3 className="font-work-sans font-bold text-dark text-[16px] leading-5.5 lg:text-[20px] lg:leading-7 mb-2">
-                {area.name} Appliance Repair
+                <Link href={`/service-areas/${area.slug}`} className="hover:text-brand transition-colors">
+                  {area.name} Appliance Repair
+                </Link>
               </h3>
               <p className="font-manrope text-xs md:text-sm leading-4.5 md:leading-5.5 text-secondary">
                 {area.text}
