@@ -3,6 +3,7 @@ import { SERVICES } from "@/content/services";
 import { blogPosts } from "@/content/blog";
 import { RECENT_JOBS } from "@/content/recent-jobs";
 import { brands } from "@/content/brands";
+import { SERVICE_AREA_HIGHLIGHTS } from "@/content/service-area-highlights";
 import { SITE_URL as BASE_URL } from "@/shared/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -105,5 +106,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }));
 
-  return [...staticPages, ...servicePages, ...blogPages, ...jobPages, ...brandPages];
+  const cityPages: MetadataRoute.Sitemap = SERVICE_AREA_HIGHLIGHTS.map((city) => ({
+    url: `${BASE_URL}/service-areas/${city.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...servicePages, ...blogPages, ...jobPages, ...brandPages, ...cityPages];
 }

@@ -95,6 +95,11 @@ const organizationSchema = {
   sameAs: [
     "https://www.facebook.com/share/19699YsqAt/?mibextid=wwXIfr",
     "https://www.instagram.com/margusappliancerepair",
+    "https://share.google/PdsmvDTZFQKkUaDI9",
+    "https://www.yelp.com/biz/margus-appliance-repair-parma",
+    "https://www.mapquest.com/us/ohio/margus-appliance-repair-776434435",
+    "https://margus-appliance-repair.wheree.com/",
+    "https://local.yahoo.com/info-238521836-margus-appliance-repair-parma/",
   ],
 };
 
