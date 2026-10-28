@@ -1,12 +1,17 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/shared/layout/Container";
 import { InfoSection } from "@/shared/ui/InfoSection";
 import { ServicesGrid } from "@/shared/ui/ServicesGrid";
+import { RECENT_JOBS } from "@/content/recent-jobs";
 import type { Brand } from "@/types";
+import ArrowIcon from "@/shared/icons/right-arrow.svg";
 
 type Props = { brand: Brand };
 
 export function BrandContent({ brand }: Props) {
+  const brandJobs = RECENT_JOBS.filter((job) => job.brand === brand.id);
+
   return (
     <section className="bg-white py-3 lg:pt-18 lg:pb-18">
       <Container>
@@ -97,6 +102,35 @@ export function BrandContent({ brand }: Props) {
             </div>
           </div>
         </div>
+
+        {brandJobs.length > 0 && (
+          <div className="mt-10 lg:mt-16">
+            <h2 className="font-work-sans font-bold text-dark text-[18px] leading-6 lg:text-[24px] lg:leading-8 mb-4 lg:mb-6">
+              {brand.name} Appliances We&apos;ve Repaired
+            </h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+              {brandJobs.map((job) => (
+                <Link
+                  key={job.id}
+                  href={`/jobs/${job.slug}`}
+                  className="bg-[#F6F6F6] rounded-2xl p-4 lg:p-6 hover:bg-brand/5 transition-colors"
+                >
+                  <p className="font-manrope font-semibold text-xs uppercase tracking-wide text-brand mb-1">
+                    {job.service}
+                    {job.location ? ` · ${job.location}` : ""}
+                  </p>
+                  <h3 className="font-work-sans font-bold text-dark text-[16px] leading-5.5 mb-1">
+                    {job.problem}
+                  </h3>
+                  <span className="inline-flex items-center gap-1 font-manrope text-xs font-semibold text-brand">
+                    See the repair
+                    <ArrowIcon className="h-3 w-3 shrink-0" aria-hidden="true" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Cross-link: all services we offer for this brand */}
         <div className="mt-10 lg:mt-16">

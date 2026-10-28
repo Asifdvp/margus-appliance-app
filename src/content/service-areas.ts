@@ -97,7 +97,6 @@ export const ALL_SERVICE_AREAS: ServiceArea[] = [
   { name: "Cuyahoga Falls", coords: [41.1337, -81.4845] },
   { name: "Brunswick", coords: [41.2384, -81.8418] },
   { name: "Stow", coords: [41.1595, -81.4407] },
-  { name: "North Olmsted", coords: [41.4151, -81.9235] },
   { name: "Garfield Heights", coords: [41.4173, -81.6065] },
   { name: "Medina", coords: [41.1384, -81.864] },
   { name: "Wadsworth", coords: [41.0257, -81.7299] },
@@ -114,4 +113,7 @@ export const ALL_SERVICE_AREAS: ServiceArea[] = [
   { name: "Fairlawn", coords: [41.1243, -81.6175] },
   { name: "Sagamore Hills", coords: [41.3117, -81.5682] },
   { name: "Gates Mills", coords: [41.5175, -81.4033] },
+  // Source: Wikipedia "Parma Heights, Ohio" infobox coordinates
+  // (41°23'10"N 81°45'48"W), sourced there from GNIS/USGS.
+  { name: "Parma Heights", coords: [41.38611, -81.76333] },
 ];

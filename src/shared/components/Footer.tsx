@@ -3,6 +3,8 @@ import Image from "next/image";
 import { NAV_LINKS, SITE_NAME, CONTACT_INFO, ADDRESS } from "@/constants";
 import { Container } from "@/shared/layout/Container";
 import { cn } from "@/shared/lib/utils";
+import { SERVICES } from "@/content/services";
+import { SERVICE_AREA_HIGHLIGHTS } from "@/content/service-area-highlights";
 import FacebookIcon from "@/shared/icons/facebook.svg";
 import InstagramIcon from "@/shared/icons/instagram.svg";
 
@@ -59,7 +61,71 @@ export function Footer({ className }: FooterProps) {
           </nav>
         </div>
 
-        <hr className="hidden md:block border-[#141414]/15" />
+        <hr className="border-[#141414]/15" />
+
+        <div className="grid grid-cols-1 gap-8 py-8 text-center sm:grid-cols-3 sm:text-left">
+          <div>
+            <span className="mb-3 block text-sm leading-5.5 font-semibold tracking-widest text-[#141414]/60 font-manrope">
+              Services
+            </span>
+            <ul className="flex flex-col gap-2.5">
+              {SERVICES.map((service) => (
+                <li key={service.id}>
+                  <Link
+                    href={service.href}
+                    className="font-manrope text-sm leading-5.5 text-[#141414] transition-colors hover:text-dark/70"
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <span className="mb-3 block text-sm leading-5.5 font-semibold tracking-widest text-[#141414]/60 font-manrope">
+              Service Areas
+            </span>
+            <ul className="flex flex-col gap-2.5">
+              {SERVICE_AREA_HIGHLIGHTS.map((city) => (
+                <li key={city.slug}>
+                  <Link
+                    href={`/service-areas/${city.slug}`}
+                    className="font-manrope text-sm leading-5.5 text-[#141414] transition-colors hover:text-dark/70"
+                  >
+                    {city.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <span className="mb-3 block text-sm leading-5.5 font-semibold tracking-widest text-[#141414]/60 font-manrope">
+              More
+            </span>
+            <ul className="flex flex-col gap-2.5">
+              <li>
+                <Link
+                  href="/brands"
+                  className="font-manrope text-sm leading-5.5 text-[#141414] transition-colors hover:text-dark/70"
+                >
+                  Brands We Repair
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sitemap"
+                  className="font-manrope text-sm leading-5.5 text-[#141414] transition-colors hover:text-dark/70"
+                >
+                  Full Site Map
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr className="border-[#141414]/15" />
 
         <div className="flex flex-col items-center gap-8 py-8 md:flex-row md:items-start md:justify-between">
           <address className="flex flex-col items-center gap-1 not-italic md:items-start">
