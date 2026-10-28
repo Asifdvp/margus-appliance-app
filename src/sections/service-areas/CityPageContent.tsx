@@ -3,6 +3,7 @@ import { Container } from "@/shared/layout/Container";
 import { SERVICES } from "@/content/services";
 import { RECENT_JOBS } from "@/content/recent-jobs";
 import type { ServiceAreaHighlight } from "@/content/service-area-highlights";
+import { milesFromParma } from "@/shared/lib/geo";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
 
 type Props = {
@@ -12,14 +13,21 @@ type Props = {
 
 export function CityPageContent({ city, nearbyCities }: Props) {
   const cityJobs = RECENT_JOBS.filter((job) => job.location === city.name);
+  const distance = milesFromParma(city.name);
 
   return (
     <section className="bg-white py-10.5 lg:py-18">
       <Container>
-        <div className="max-w-211.5">
-          <p className="font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary mb-6 lg:mb-10">
+        <div className="max-w-211.5 mb-6 lg:mb-10">
+          <p className="font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary">
             {city.text}
           </p>
+          {distance !== null && distance > 0 && (
+            <p className="mt-3 font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary">
+              {city.name} is about {distance} miles from our Parma shop — well within our
+              same-day service area.
+            </p>
+          )}
         </div>
 
         {cityJobs.length > 0 && (
