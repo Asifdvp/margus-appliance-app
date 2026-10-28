@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
         destination: "https://margusappliancerepair.com/:path*",
         permanent: true,
       },
+      // GSC reported Googlebot still requesting this old URL (404). The
+      // job's id is "job-4" but its route is built from its slug, so
+      // /jobs/job-4 never resolved. Send it to the job's real current URL.
+      {
+        source: "/jobs/job-4",
+        destination: "/jobs/oven-repair-parma",
+        permanent: true,
+      },
     ];
   },
 
