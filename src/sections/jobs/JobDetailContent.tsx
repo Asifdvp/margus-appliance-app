@@ -3,6 +3,7 @@ import { Container } from "@/shared/layout/Container";
 import { JobGallery } from "@/shared/ui/JobGallery";
 import { SERVICES } from "@/content/services";
 import { brands } from "@/content/brands";
+import { SERVICE_AREA_HIGHLIGHTS } from "@/content/service-area-highlights";
 import type { RecentJob } from "@/types";
 import PointIcon from "@/shared/icons/jobs/point.svg";
 import DateIcon from "@/shared/icons/jobs/date.svg";
@@ -12,6 +13,7 @@ type Props = { job: RecentJob; gallery?: string[] };
 export function JobDetailContent({ job, gallery = [] }: Props) {
   const relatedService = SERVICES.find((s) => s.title === job.service);
   const relatedBrand = brands.find((b) => b.id === job.brand && b.intro);
+  const relatedCity = SERVICE_AREA_HIGHLIGHTS.find((c) => c.name === job.location);
 
   return (
     <section className="bg-white pt-4 pb-10.5 lg:py-18 ">
@@ -122,6 +124,19 @@ export function JobDetailContent({ job, gallery = [] }: Props) {
                     </>
                   )
                 )}
+                .
+              </p>
+            )}
+
+            {relatedCity && (
+              <p className="mb-3 md:mb-6 font-manrope text-xs lg:text-base leading-4.5 md:leading-6 text-secondary">
+                See more about{" "}
+                <Link
+                  href={`/service-areas/${relatedCity.slug}`}
+                  className="text-brand font-semibold hover:underline"
+                >
+                  appliance repair in {relatedCity.name}
+                </Link>
                 .
               </p>
             )}
