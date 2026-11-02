@@ -1,4 +1,5 @@
 import type { GoogleBusinessData } from "@/types";
+import { FALLBACK_RATING, FALLBACK_REVIEW_COUNT } from "@/constants";
 
 const SERPAPI_URL = "https://serpapi.com/search.json";
 const REVALIDATE_SECONDS = 60 * 60 * 24; // once a day — rating/review count change slowly
@@ -62,4 +63,18 @@ export async function getGoogleBusinessData(): Promise<GoogleBusinessData | null
   } catch {
     return null;
   }
+}
+
+/**
+ * Live rating + review count, falling back to the static constants when
+ * SerpApi isn't configured or the request fails. Use this (instead of
+ * FALLBACK_RATING/FALLBACK_REVIEW_COUNT directly) anywhere the numbers are
+ * displayed or embedded in schema, so they stay in sync automatically.
+ */
+export async function getRatingSummary(): Promise<{ rating: number; reviewCount: number }> {
+  const data = await getGoogleBusinessData();
+  return {
+    rating: data?.rating ?? FALLBACK_RATING,
+    reviewCount: data?.reviewCount ?? FALLBACK_REVIEW_COUNT,
+  };
 }

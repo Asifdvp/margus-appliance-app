@@ -10,33 +10,37 @@ import { faqs } from "@/content/faq";
 import { Blogs } from "@/sections/shared/Blogs";
 import CompanyInfo from "@/sections/home/companyInfo";
 import { canonicalUrl, SITE_URL } from "@/shared/lib/seo";
+import { getRatingSummary } from "@/shared/lib/googleReviews";
 
-export const metadata: Metadata = {
-  description:
-    "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.",
-  openGraph: {
-    title: "Appliance Repair Cleveland & Parma, OH | Margus",
-    description:
-      "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.",
-    url: canonicalUrl("/"),
-    type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Margus Appliance — Expert Appliance Repair in Cleveland & Parma",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@margusappliance",
-    title: "Appliance Repair Cleveland & Parma, OH | Margus",
-    description:
-      "Same-day appliance repair in Cleveland & Parma, OH — 4.9★ (184 Google reviews). Honest, upfront pricing. 180-day warranty.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { rating, reviewCount } = await getRatingSummary();
+  const description = `Same-day appliance repair in Cleveland & Parma, OH — ${rating.toFixed(1)}★ (${reviewCount} Google reviews). Honest, upfront pricing. 180-day warranty. Call (216) 304-0665.`;
+  const shortDescription = `Same-day appliance repair in Cleveland & Parma, OH — ${rating.toFixed(1)}★ (${reviewCount} Google reviews). Honest, upfront pricing. 180-day warranty.`;
+
+  return {
+    description,
+    openGraph: {
+      title: "Appliance Repair Cleveland & Parma, OH | Margus",
+      description,
+      url: canonicalUrl("/"),
+      type: "website",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Margus Appliance — Expert Appliance Repair in Cleveland & Parma",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@margusappliance",
+      title: "Appliance Repair Cleveland & Parma, OH | Margus",
+      description: shortDescription,
+    },
+  };
+}
 
 const faqSchema = {
   "@context": "https://schema.org",

@@ -1,7 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { PageHero } from "@/shared/ui/PageHero";
 import { ContactSection } from "@/sections/contact/ContactSection";
-import { CONTACT_INFO } from "@/constants";
 import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
@@ -42,14 +41,7 @@ const contactPageSchema = {
   url: "https://margusappliancerepair.com/contact",
   description:
     "Contact page for Margus Appliance — certified appliance repair in Cleveland, Parma, and surrounding areas.",
-  mainEntity: {
-    "@type": "LocalBusiness",
-    "@id": "https://margusappliancerepair.com/#organization",
-    name: "Margus Appliance",
-    telephone: CONTACT_INFO.phone,
-    email: CONTACT_INFO.email,
-    url: "https://margusappliancerepair.com",
-  },
+  mainEntity: { "@id": "https://margusappliancerepair.com/#organization" },
 };
 
 export default function ContactPage() {
