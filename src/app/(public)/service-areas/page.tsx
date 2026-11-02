@@ -46,8 +46,7 @@ export const metadata: Metadata = {
 const serviceAreasSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://margusappliancerepair.com/#organization",
-  name: "Margus Appliance",
+  name: "Margus Appliance Repair",
   url: "https://margusappliancerepair.com/service-areas",
   telephone: CONTACT_INFO.phone,
   email: CONTACT_INFO.email,

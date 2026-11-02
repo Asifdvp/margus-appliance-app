@@ -1,17 +1,15 @@
 import Image from "next/image";
 import { Container } from "@/shared/layout/Container";
-import { CONTACT_INFO, FALLBACK_RATING, FALLBACK_REVIEW_COUNT } from "@/constants";
+import { CONTACT_INFO } from "@/constants";
 import PhoneIcon from "@/shared/icons/phone.svg";
 import expertImg from "@/shared/icons/expert.webp";
 import RightArrowIcon from "@/shared/icons/right-arrow.svg";
 import { BookNowButton } from "@/shared/components/book";
-import { getGoogleBusinessData } from "@/shared/lib/googleReviews";
+import { getRatingSummary } from "@/shared/lib/googleReviews";
 import StarRating from "./StarRating";
 
 export async function Hero() {
-  const googleData = await getGoogleBusinessData();
-  const rating = googleData?.rating ?? FALLBACK_RATING;
-  const reviewCount = googleData?.reviewCount ?? FALLBACK_REVIEW_COUNT;
+  const { rating, reviewCount } = await getRatingSummary();
 
   return (
     <section

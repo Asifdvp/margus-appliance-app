@@ -32,11 +32,7 @@ const aboutPageSchema = {
   "@type": "AboutPage",
   name: "About Margus Appliance",
   url: "https://margusappliancerepair.com/about",
-  mainEntity: {
-    "@type": "LocalBusiness",
-    "@id": "https://margusappliancerepair.com/#organization",
-    name: "Margus Appliance",
-  },
+  mainEntity: { "@id": "https://margusappliancerepair.com/#organization" },
 };
 
 export const metadata: Metadata = {

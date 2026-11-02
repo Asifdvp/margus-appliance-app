@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SERVICES } from "@/content/services";
 import { ServiceDetail } from "@/sections/services/ServiceDetail";
-import { CONTACT_INFO } from "@/constants";
 import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = {
@@ -60,13 +59,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     name: service.title,
     description: service.description,
     url: `https://margusappliancerepair.com/services/${service.id}`,
-    provider: {
-      "@type": "LocalBusiness",
-      "@id": "https://margusappliancerepair.com/#organization",
-      name: "Margus Appliance",
-      telephone: CONTACT_INFO.phone,
-      url: "https://margusappliancerepair.com",
-    },
+    provider: { "@id": "https://margusappliancerepair.com/#organization" },
     areaServed: [
       { "@type": "City", name: "Cleveland" },
       { "@type": "City", name: "Parma" },

@@ -7,7 +7,6 @@ import { JobDetailHero } from "@/sections/jobs/JobDetailHero";
 import { JobDetailContent } from "@/sections/jobs/JobDetailContent";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
-import { CONTACT_INFO } from "@/constants";
 import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -106,29 +105,12 @@ export default async function JobDetailPage({ params }: Props) {
     description: job.problem ?? "Certified appliance repair by Margus Appliance.",
     datePublished: job.date ? toISODate(job.date) : undefined,
     image: job.image ? `https://margusappliancerepair.com${job.image}` : "https://margusappliancerepair.com/og-image.png",
-    author: {
-      "@type": "Organization",
-      "@id": "https://margusappliancerepair.com/#organization",
-      name: "Margus Appliance",
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://margusappliancerepair.com/#organization",
-      name: "Margus Appliance",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://margusappliancerepair.com/logo.webp",
-      },
-    },
+    author: { "@id": "https://margusappliancerepair.com/#organization" },
+    publisher: { "@id": "https://margusappliancerepair.com/#organization" },
     about: {
       "@type": "Service",
       name: job.service ?? "Appliance Repair",
-      provider: {
-        "@type": "LocalBusiness",
-        "@id": "https://margusappliancerepair.com/#organization",
-        name: "Margus Appliance",
-        telephone: CONTACT_INFO.phone,
-      },
+      provider: { "@id": "https://margusappliancerepair.com/#organization" },
       areaServed: { "@type": "City", name: job.location ?? "Cleveland" },
     },
   };

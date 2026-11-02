@@ -69,21 +69,8 @@ export default async function BlogDetailPage({ params }: Props) {
     image: post.coverImage
       ? `https://margusappliancerepair.com${post.coverImage}`
       : "https://margusappliancerepair.com/images/blogs/blog.webp",
-    author: {
-      "@type": "Organization",
-      "@id": "https://margusappliancerepair.com/#organization",
-      name: "Margus Appliance",
-      url: "https://margusappliancerepair.com",
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://margusappliancerepair.com/#organization",
-      name: "Margus Appliance",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://margusappliancerepair.com/logo.webp",
-      },
-    },
+    author: { "@id": "https://margusappliancerepair.com/#organization" },
+    publisher: { "@id": "https://margusappliancerepair.com/#organization" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://margusappliancerepair.com/blog/${slug}`,

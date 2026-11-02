@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { brands } from "@/content/brands";
 import { BrandDetail } from "@/sections/brands/BrandDetail";
-import { CONTACT_INFO } from "@/constants";
 import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = {
@@ -70,13 +69,7 @@ export default async function BrandDetailPage({ params }: Props) {
       `Certified ${brand.name} appliance repair in Cleveland & Parma, OH.`,
     brand: { "@type": "Brand", name: brand.name },
     url: `https://margusappliancerepair.com/brands/${brand.id}`,
-    provider: {
-      "@type": "LocalBusiness",
-      "@id": "https://margusappliancerepair.com/#organization",
-      name: "Margus Appliance",
-      telephone: CONTACT_INFO.phone,
-      url: "https://margusappliancerepair.com",
-    },
+    provider: { "@id": "https://margusappliancerepair.com/#organization" },
     areaServed: [
       { "@type": "City", name: "Cleveland" },
       { "@type": "City", name: "Parma" },
