@@ -6,7 +6,6 @@ import { ServiceAreaHighlights } from "@/sections/service-areas/ServiceAreaHighl
 import { FAQ } from "@/sections/shared/FAQ";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
-import { CONTACT_INFO } from "@/constants";
 import { ALL_SERVICE_AREAS, SERVICE_AREA_FAQS } from "@/content/service-areas";
 import { canonicalUrl } from "@/shared/lib/seo";
 
@@ -45,11 +44,10 @@ export const metadata: Metadata = {
 
 const serviceAreasSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Service",
   name: "Margus Appliance Repair",
   url: "https://margusappliancerepair.com/service-areas",
-  telephone: CONTACT_INFO.phone,
-  email: CONTACT_INFO.email,
+  provider: { "@id": "https://margusappliancerepair.com/#organization" },
   description:
     "Certified appliance repair company serving Cleveland and 57+ cities across Northeast Ohio.",
   areaServed: ALL_SERVICE_AREAS.map((area) => ({
@@ -57,7 +55,6 @@ const serviceAreasSchema = {
     name: area.name,
   })),
   serviceType: "Appliance Repair",
-  priceRange: "$$",
 };
 
 const breadcrumbSchema = {

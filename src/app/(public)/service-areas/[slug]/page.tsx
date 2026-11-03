@@ -6,7 +6,6 @@ import { CityPageContent } from "@/sections/service-areas/CityPageContent";
 import { FAQ } from "@/sections/shared/FAQ";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
-import { CONTACT_INFO } from "@/constants";
 import { SERVICE_AREA_FAQS } from "@/content/service-areas";
 import { SERVICE_AREA_HIGHLIGHTS } from "@/content/service-area-highlights";
 import { canonicalUrl, SITE_URL } from "@/shared/lib/seo";
@@ -64,17 +63,15 @@ export default async function CityServiceAreaPage({ params }: Props) {
 
   const nearbyCities = SERVICE_AREA_HIGHLIGHTS.filter((c) => c.slug !== slug).slice(0, 6);
 
-  const localBusinessSchema = {
+  const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Service",
     name: "Margus Appliance Repair",
     url: canonicalUrl(`/service-areas/${slug}`),
-    telephone: CONTACT_INFO.phone,
-    email: CONTACT_INFO.email,
+    provider: { "@id": "https://margusappliancerepair.com/#organization" },
     description: `Certified appliance repair serving ${city.name}, Ohio — same-day service, honest upfront pricing, 180-day parts & labor warranty.`,
     areaServed: { "@type": "City", name: city.name },
     serviceType: "Appliance Repair",
-    priceRange: "$$",
   };
 
   const breadcrumbSchema = {
@@ -96,7 +93,7 @@ export default async function CityServiceAreaPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"
