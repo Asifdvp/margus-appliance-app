@@ -41,7 +41,6 @@ const contactPageSchema = {
   url: "https://margusappliancerepair.com/contact",
   description:
     "Contact page for Margus Appliance — certified appliance repair in Cleveland, Parma, and surrounding areas.",
-  mainEntity: { "@id": "https://margusappliancerepair.com/#organization" },
 };
 
 export default function ContactPage() {
