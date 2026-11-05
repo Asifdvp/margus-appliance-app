@@ -339,7 +339,7 @@ export const brands: Brand[] = [
         id: "who-provides",
         question: "Who provides Whirlpool appliance repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, provides Whirlpool appliance repair across Cleveland and Greater Cleveland, with 8 years of experience, same-day service, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, provides Whirlpool appliance repair across Cleveland and Greater Cleveland, with 8 years of experience, same-day service, and a 180-day parts and labor warranty.",
       },
       {
         id: "same-day",
