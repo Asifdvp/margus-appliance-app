@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides refrigerator repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day service, honest upfront pricing, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day service, honest upfront pricing, and a 180-day parts and labor warranty.",
       },
       {
         id: "what-causes-not-cooling",
@@ -160,7 +160,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides washer repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day washer repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day washer repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "why-wont-spin-drain",
@@ -261,7 +261,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides dryer repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dryer repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dryer repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "why-wont-heat",
@@ -374,7 +374,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides stove repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day stove and cooktop repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day stove and cooktop repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "gas-burner-wont-light",
@@ -474,7 +474,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides dishwasher repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dishwasher repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day dishwasher repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "wont-drain",
@@ -574,7 +574,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides freezer repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day freezer repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day freezer repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "not-freezing",
@@ -673,7 +673,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides ice maker repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day ice maker repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day ice maker repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "why-not-making-ice",
@@ -782,7 +782,7 @@ export const SERVICES: Service[] = [
         id: "who-provides",
         question: "Who provides oven repair in Cleveland?",
         answer:
-          "Margus Appliance Repair LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day oven repair, upfront quotes, and a 180-day parts and labor warranty.",
+          "Margus Global LLC, a family-owned company based in Parma, OH, serves Cleveland and Greater Cleveland homeowners with same-day oven repair, upfront quotes, and a 180-day parts and labor warranty.",
       },
       {
         id: "why-not-heating",

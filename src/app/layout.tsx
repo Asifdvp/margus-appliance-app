@@ -62,7 +62,7 @@ function buildOrganizationSchema(rating: number, reviewCount: number) {
     "@type": "LocalBusiness",
     "@id": "https://margusappliancerepair.com/#organization",
     name: "Margus Appliance Repair",
-    legalName: "Margus Appliance Repair LLC",
+    legalName: "Margus Global LLC",
     url: "https://margusappliancerepair.com",
     logo: "https://margusappliancerepair.com/logo.webp",
     telephone: CONTACT_INFO.phone,
