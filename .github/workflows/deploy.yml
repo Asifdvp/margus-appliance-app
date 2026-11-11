@@ -21,6 +21,9 @@ jobs:
           cache: npm
 
       - name: Build
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SERPAPI_PLACE_ID: ${{ secrets.SERPAPI_PLACE_ID }}
         run: |
           npm ci
           npm run build
