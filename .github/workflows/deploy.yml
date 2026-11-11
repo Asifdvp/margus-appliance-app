@@ -43,12 +43,14 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SERPAPI_PLACE_ID: ${{ secrets.SERPAPI_PLACE_ID }}
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          envs: TELEGRAM_BOT_TOKEN,TELEGRAM_CHAT_ID
+          envs: TELEGRAM_BOT_TOKEN,TELEGRAM_CHAT_ID,SERPAPI_API_KEY,SERPAPI_PLACE_ID
           script: |
             set -e
             mkdir -p ${{ env.DEPLOY_PATH }}
@@ -58,7 +60,7 @@ jobs:
             rm /tmp/release.tar.gz
 
             umask 077
-            printf 'TELEGRAM_BOT_TOKEN=%s\nTELEGRAM_CHAT_ID=%s\n' "$TELEGRAM_BOT_TOKEN" "$TELEGRAM_CHAT_ID" > .env.local
+            printf 'TELEGRAM_BOT_TOKEN=%s\nTELEGRAM_CHAT_ID=%s\nSERPAPI_API_KEY=%s\nSERPAPI_PLACE_ID=%s\n' "$TELEGRAM_BOT_TOKEN" "$TELEGRAM_CHAT_ID" "$SERPAPI_API_KEY" "$SERPAPI_PLACE_ID" > .env.local
 
             pm2 delete margus-app > /dev/null 2>&1 || true
             PORT=3000 HOSTNAME=127.0.0.1 pm2 start server.js --name margus-app
