@@ -5,6 +5,7 @@ import "./globals.css";
 import { Navbar } from "@/shared/components/Navbar";
 import { Footer } from "@/shared/components/Footer";
 import { Emergency } from "@/shared/components/Emergency";
+import { MobileStickyCTA } from "@/shared/components/MobileStickyCTA";
 import { BookingModalProvider } from "@/shared/components/book";
 import { CONTACT_INFO } from "@/constants";
 import { SITE_URL } from "@/shared/lib/seo";
@@ -143,6 +144,7 @@ export default async function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <MobileStickyCTA />
         </BookingModalProvider>
       </body>
     </html>
