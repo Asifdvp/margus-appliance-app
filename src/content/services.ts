@@ -10,9 +10,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/refrigator.webp",
     detailImage: "/images/services/refrigator.webp",
     heroTitle: "Refrigerator Repair in Cleveland & Parma",
-    metaTitle: "Refrigerator Repair Cleveland & Parma | Same-Day Service",
+    metaTitle: "Refrigerator Not Cooling? Cleveland & Parma Repair",
     metaDescription:
-      "Fast, same-day refrigerator repair in Cleveland & Parma, OH. Honest, upfront pricing, 180-day parts & labor warranty, all major brands. Call today!",
+      "Same-day refrigerator repair in Cleveland and Parma, OH. Compressors, condenser coils, defrost drains and water valves. $89 diagnostic waived with repair.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",
@@ -197,9 +197,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/dryer.webp",
     detailImage: "/images/services/dryer.webp",
     heroTitle: "Dryer Repair in Cleveland & Parma",
-    metaTitle: "Dryer Repair Cleveland & Parma | Same-Day Service",
+    metaTitle: "Dryer Repair Cleveland | Gas & Electric, Same-Day",
     metaDescription:
-      "Fast, same-day dryer repair in Cleveland & Parma, OH. Honest, upfront pricing, 180-day warranty, gas & electric, all major brands. Call today!",
+      "Dryer not heating or taking two cycles? Same-day repair across Greater Cleveland. Heating elements, thermal fuses, belts, blocked vents. 180-day warranty.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",
@@ -304,9 +304,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/stove.webp",
     detailImage: "/images/services/stove.webp",
     heroTitle: "Stove & Cooktop Repair in Cleveland & Parma",
-    metaTitle: "Stove & Cooktop Repair Cleveland & Parma | Same-Day",
+    metaTitle: "Stove & Cooktop Repair Cleveland | Gas & Induction",
     metaDescription:
-      "Fast, same-day stove & cooktop repair in Cleveland & Parma, OH. Gas & electric, honest upfront pricing, 180-day warranty. Call today!",
+      "Burner won't light or keeps clicking? Gas, electric and induction cooktop repair in Cleveland and Parma. Licensed techs, upfront pricing, 180-day warranty.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",
@@ -417,9 +417,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/dishwasher.webp",
     detailImage: "/images/services/dishwasher.webp",
     heroTitle: "Dishwasher Repair in Cleveland & Parma",
-    metaTitle: "Dishwasher Repair Cleveland & Parma | Same-Day Service",
+    metaTitle: "Dishwasher Repair Cleveland | Bosch, Kenmore, LG",
     metaDescription:
-      "Fast, same-day dishwasher repair in Cleveland & Parma, OH. Honest, upfront pricing, 180-day warranty, all major brands. Call today!",
+      "Dishwasher not draining or leaving dishes dirty? Same-day repair in Greater Cleveland. Drain pumps, spray arms, error codes. $89 waived with the repair.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",
@@ -511,9 +511,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/freezer.webp",
     detailImage: "/images/services/freezer.webp",
     heroTitle: "Freezer Repair in Cleveland & Parma",
-    metaTitle: "Freezer Repair Cleveland & Parma | Same-Day Service",
+    metaTitle: "Freezer Repair Cleveland | Chest, Upright & Garage",
     metaDescription:
-      "Fast, same-day freezer repair in Cleveland & Parma, OH. Honest, upfront pricing, 180-day warranty, all major brands. Call today!",
+      "Chest, upright and garage freezer repair across Greater Cleveland. Start relays, defrost heaters and door seals. Same-day service, 180-day parts & labor.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",
@@ -617,9 +617,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/icemaker.webp",
     detailImage: "/images/services/icemaker.webp",
     heroTitle: "Ice Maker Repair in Cleveland & Parma",
-    metaTitle: "Ice Maker Repair Cleveland & Parma | Same-Day Service",
+    metaTitle: "Ice Maker Repair Cleveland | Fridge & Standalone",
     metaDescription:
-      "Fast, same-day ice maker & ice machine repair in Cleveland & Parma, OH. Honest, upfront pricing, 180-day warranty, all brands. Call today!",
+      "No ice, hollow cubes or a leaking ice maker? Repair in Cleveland and Parma for Samsung, LG and all major fridges. $89 diagnostic waived with the repair.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",
@@ -717,9 +717,9 @@ export const SERVICES: Service[] = [
     icon: "/images/services/oven.webp",
     detailImage: "/images/services/oven.webp",
     heroTitle: "Oven Repair in Cleveland & Parma",
-    metaTitle: "Oven Repair Cleveland & Parma | Same-Day Service",
+    metaTitle: "Oven Repair Cleveland | Wall, Gas & Electric Ovens",
     metaDescription:
-      "Fast, same-day oven repair in Cleveland & Parma, OH. Gas & electric, all major brands, 180-day parts & labor warranty. Call today!",
+      "Oven not heating or baking unevenly? Same-day repair across Northeast Ohio. Bake elements, igniters, sensors, door glass. Upfront pricing, 180-day warranty.",
     badges: [
       "Same-day service",
       "Honest upfront pricing",

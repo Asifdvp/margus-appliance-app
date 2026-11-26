@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { FAQ } from "@/sections/shared/FAQ";
+import { servicesFaqs } from "@/content/faq";
 import { SERVICES } from "@/content/services";
 import { canonicalUrl } from "@/shared/lib/seo";
 
@@ -83,7 +84,7 @@ export default function ServicesPage() {
       <ServicesHero />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
       <ServicesList />
-      <FAQ />
+      <FAQ items={servicesFaqs} heading="Pricing, Scheduling & Warranty" />
       <Blogs />
       <CTABanner />
     </>

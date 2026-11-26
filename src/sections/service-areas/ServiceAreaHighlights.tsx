@@ -3,6 +3,23 @@ import { Container } from "@/shared/layout/Container";
 import { SERVICE_AREA_HIGHLIGHTS } from "@/content/service-area-highlights";
 import ArrowIcon from "@/shared/icons/right-arrow.svg";
 
+// The hub only teases each city — the full paragraph is the city page's one
+// piece of unique content, and printing it here too made this page a copy of
+// its own children.
+function teaser(text: string, maxWords = 28) {
+  const sentences = text.match(/[^.!?]+[.!?]+/g) ?? [text];
+  const kept: string[] = [];
+  let words = 0;
+  for (const sentence of sentences) {
+    const count = sentence.trim().split(/\s+/).length;
+    if (words + count > maxWords) break;
+    kept.push(sentence.trim());
+    words += count;
+  }
+  if (kept.length > 0) return kept.join(" ");
+  return text.split(/\s+/).slice(0, maxWords).join(" ") + "…";
+}
+
 export function ServiceAreaHighlights() {
   return (
     <section className="bg-[#F6F6F6] py-10 lg:py-16" aria-labelledby="service-area-highlights-heading">
@@ -25,7 +42,7 @@ export function ServiceAreaHighlights() {
                 </Link>
               </h3>
               <p className="font-manrope text-xs md:text-sm leading-4.5 md:leading-5.5 text-secondary">
-                {area.text}
+                {teaser(area.text)}
               </p>
               {area.jobSlug && (
                 <Link
