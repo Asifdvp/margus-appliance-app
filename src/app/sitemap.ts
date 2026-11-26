@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const servicePages: MetadataRoute.Sitemap = SERVICES.map((service) => ({
     url: `${BASE_URL}/services/${service.id}`,
+    ...(service.updated ? { lastModified: new Date(service.updated) } : {}),
     changeFrequency: "monthly",
     priority: 0.9,
   }));
