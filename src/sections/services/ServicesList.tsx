@@ -29,18 +29,15 @@ export function ServicesList() {
           <div>
             <h2 className={sectionHeading}>What a Repair Costs</h2>
             <p className={sectionBody}>
-              Every visit starts with an $89 diagnostic. The technician finds
-              the actual fault instead of guessing from a phone description,
-              then quotes the repair before touching anything. Go ahead with
-              the work and the $89 comes off the bill.
+              Every visit starts with an $89 diagnostic, and it comes off the
+              bill when you go ahead with the repair.
             </p>
             <p className={`${sectionBody} mt-2`}>
-              What the repair itself costs depends on the part. A thermostat,
-              door switch or drain pump sits at the low end. A compressor,
-              sealed system or control board sits at the high end — and on an
-              older machine that is usually the point where replacing makes
-              more sense than fixing. You get that number before any work
-              begins, and every completed repair carries a 180-day parts and
+              The repair itself depends on the part — a thermostat or drain
+              pump sits at the low end, a compressor or control board at the
+              high end, and on an older machine that is usually where
+              replacing beats fixing. You get the number before any work
+              starts, and every completed repair carries a 180-day parts and
               labor warranty.
             </p>
           </div>

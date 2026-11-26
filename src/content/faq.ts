@@ -47,7 +47,7 @@ export const servicesFaqs: FaqItem[] = [
     id: "what-happens-on-a-visit",
     question: "What happens during a repair visit?",
     answer:
-      "The technician diagnoses the fault on site rather than guessing from a phone description, then gives you a price before any work starts. Most repairs are finished in that same visit.",
+      "The technician diagnoses the fault on site, then gives you a price before any work starts. Most repairs are finished in that same visit.",
   },
   {
     id: "parts-on-truck",
