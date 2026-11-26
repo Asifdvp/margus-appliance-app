@@ -7,6 +7,7 @@ import { BlogRelatedService } from "@/sections/blog/BlogRelatedService";
 import { BlogDetailRelated } from "@/sections/blog/BlogDetailRelated";
 import { FAQ } from "@/sections/shared/FAQ";
 import { CTABanner } from "@/sections/shared/CTABanner";
+import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 import { canonicalUrl } from "@/shared/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -129,6 +130,13 @@ export default async function BlogDetailPage({ params }: Props) {
         />
       )}
       <BlogDetailHero post={post} />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: post.title },
+        ]}
+      />
       <BlogDetailContent post={post} />
       {post.relatedServiceId && (
         <BlogRelatedService serviceId={post.relatedServiceId} />

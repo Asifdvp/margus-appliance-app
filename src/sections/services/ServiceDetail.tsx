@@ -32,7 +32,7 @@ export function ServiceDetail({ service }: Props) {
         <FAQ items={service.faqs} heading="Frequently Asked Questions" />
       )}
       <RelatedServices currentId={service.id} />
-      <Blogs />
+      <Blogs serviceId={service.id} />
       <CTABanner />
     </>
   );
