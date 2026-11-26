@@ -113,7 +113,10 @@ export default async function CityServiceAreaPage({ params }: Props) {
         ]}
       />
       <CityPageContent city={city} nearbyCities={nearbyCities} />
-      <FAQ items={SERVICE_AREA_FAQS} heading={`${city.name} Service Questions`} />
+      <FAQ
+        items={[...(city.faqs ?? []), ...SERVICE_AREA_FAQS]}
+        heading={`${city.name} Appliance Repair Questions`}
+      />
       <Blogs />
       <CTABanner />
     </>

@@ -3,25 +3,40 @@ export type ServiceArea = {
   coords: [number, number];
 };
 
-export const SERVICE_AREA_FAQS = [
-  {
-    id: "how-fast-response",
-    question: "How quickly can you get to my area?",
-    answer:
-      "Same-day appointments are available across our entire service area. Parma and the immediately surrounding suburbs typically get the fastest response since that's where our shop is based; farther-out cities like Akron may be scheduled a bit later in the day.",
-  },
-  {
-    id: "travel-fee",
-    question: "Do you charge extra to come outside of Parma?",
-    answer:
-      "No. Our $89 diagnostic fee is the same everywhere in our service area — we don't add a separate trip or travel charge, and it's waived entirely once you move forward with the repair.",
-  },
-  {
-    id: "city-not-listed",
-    question: "What if I don't see my city listed?",
-    answer:
-      "We cover 57+ cities across Northeast Ohio, and the map above isn't necessarily exhaustive. If your city isn't shown, call us — there's a good chance we still service your area.",
-  },
+const TRAVEL_FEE_FAQ = {
+  id: "travel-fee",
+  question: "Do you charge extra to come outside of Parma?",
+  answer:
+    "No. Our $89 diagnostic fee is the same everywhere in our service area — we don't add a separate trip or travel charge, and it's waived entirely once you move forward with the repair.",
+};
+
+// Two versions because only the hub renders a map — the city pages don't, so
+// the shared answer there can't point at one.
+const CITY_NOT_LISTED_HUB_FAQ = {
+  id: "city-not-listed",
+  question: "What if I don't see my city listed?",
+  answer:
+    "We cover 57+ cities across Northeast Ohio, and the map above isn't necessarily exhaustive. If your city isn't shown, call us — there's a good chance we still service your area.",
+};
+
+const CITY_NOT_LISTED_FAQ = {
+  id: "city-not-listed",
+  question: "What if I don't see my city listed?",
+  answer:
+    "We cover 57+ cities across Northeast Ohio, and the cities with their own pages aren't the full list. If yours isn't among them, call us — there's a good chance we still service your area.",
+};
+
+/**
+ * Rendered after each city's own questions. Deliberately only two: this array
+ * previously held five and ran identically on the hub plus all 15 city pages,
+ * which made the same block the largest duplicated text on the site.
+ */
+export const SERVICE_AREA_FAQS = [TRAVEL_FEE_FAQ, CITY_NOT_LISTED_FAQ];
+
+/** The hub has no city of its own, so it keeps the coverage-wide questions. */
+export const SERVICE_AREA_HUB_FAQS = [
+  TRAVEL_FEE_FAQ,
+  CITY_NOT_LISTED_HUB_FAQ,
   {
     id: "apartments-condos",
     question: "Do you repair appliances in apartments and condos, not just houses?",

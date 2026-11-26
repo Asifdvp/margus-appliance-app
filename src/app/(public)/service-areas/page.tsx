@@ -6,10 +6,10 @@ import { ServiceAreaHighlights } from "@/sections/service-areas/ServiceAreaHighl
 import { FAQ } from "@/sections/shared/FAQ";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
-import { ALL_SERVICE_AREAS, SERVICE_AREA_FAQS } from "@/content/service-areas";
+import { ALL_SERVICE_AREAS, SERVICE_AREA_HUB_FAQS } from "@/content/service-areas";
 import { canonicalUrl } from "@/shared/lib/seo";
 
-const serviceAreaFaqs = SERVICE_AREA_FAQS;
+const serviceAreaFaqs = SERVICE_AREA_HUB_FAQS;
 
 export const metadata: Metadata = {
   title: "Appliance Repair Service Areas — Cleveland, Parma & Surrounding Cities",
