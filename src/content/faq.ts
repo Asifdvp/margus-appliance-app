@@ -44,16 +44,10 @@ export const servicesFaqs: FaqItem[] = [
       "Refrigerators, freezers, ice makers, washers, dryers, dishwashers, ovens, and stoves and cooktops — gas and electric, freestanding and built-in. Each appliance has its own page covering the faults we see most often on it.",
   },
   {
-    id: "what-happens-on-a-visit",
-    question: "What happens during a repair visit?",
+    id: "repair-cost",
+    question: "How much does appliance repair cost?",
     answer:
-      "The technician diagnoses the fault on site, then gives you a price before any work starts. Most repairs are finished in that same visit.",
-  },
-  {
-    id: "parts-on-truck",
-    question: "Will the technician have the part on the first visit?",
-    answer:
-      "Usually. Our technicians carry parts for the most common brands, which is why most repairs are completed on the first visit.",
+      "Most of the cost is the part. The $89 diagnostic identifies which part failed and what the repair will run, and it comes off the bill when you go ahead. You get that price before any work starts.",
   },
   {
     id: "not-worth-repairing",
