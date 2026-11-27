@@ -56,6 +56,14 @@ export type BlogPost = {
   faqs?: FaqItem[];
   /** Service id (from SERVICES) to link as a contextual CTA below the article. */
   relatedServiceId?: string;
+  /**
+   * ISO date this post's body copy was last genuinely rewritten. Drives the
+   * sitemap's lastmod, the BlogPosting `dateModified`, and the visible
+   * "Updated" line — all three, or the signal contradicts itself. Only set it
+   * when the copy actually changed. Never bump `date` instead: that is the
+   * displayed publish date and it also drives related-post ordering.
+   */
+  updated?: string;
 };
 
 export type Brand = {

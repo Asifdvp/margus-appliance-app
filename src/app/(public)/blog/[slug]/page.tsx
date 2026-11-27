@@ -65,7 +65,9 @@ export default async function BlogDetailPage({ params }: Props) {
     headline: post.title,
     description: post.excerpt ?? post.title,
     datePublished: toISODate(post.date),
-    dateModified: toISODate(post.date),
+    dateModified: post.updated
+      ? `${post.updated}T00:00:00Z`
+      : toISODate(post.date),
     url: `https://margusappliancerepair.com/blog/${slug}`,
     image: post.coverImage
       ? `https://margusappliancerepair.com${post.coverImage}`

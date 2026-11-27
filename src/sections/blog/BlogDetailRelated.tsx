@@ -6,9 +6,25 @@ import type { BlogPost } from "@/types";
 type Props = { currentSlug: string };
 
 export function BlogDetailRelated({ currentSlug }: Props) {
-  const related: BlogPost[] = blogPosts
-    .filter((p) => p.slug !== currentSlug)
-    .slice(0, 3);
+  const current = blogPosts.find((p) => p.slug === currentSlug);
+  const index = blogPosts.findIndex((p) => p.slug === currentSlug);
+
+  // A plain slice(0, 3) handed the same three posts to all 15 articles: the
+  // first three by array order, regardless of topic. Prefer posts about the
+  // same appliance (a real related-article signal), then rotate through the
+  // rest starting after this one, so internal links spread across the blog
+  // instead of piling onto whichever posts happen to be declared first.
+  const rotated =
+    index >= 0
+      ? [...blogPosts.slice(index + 1), ...blogPosts.slice(0, index)]
+      : blogPosts.filter((p) => p.slug !== currentSlug);
+
+  const sameAppliance = current?.relatedServiceId
+    ? rotated.filter((p) => p.relatedServiceId === current.relatedServiceId)
+    : [];
+  const rest = rotated.filter((p) => !sameAppliance.includes(p));
+
+  const related: BlogPost[] = [...sameAppliance, ...rest].slice(0, 3);
 
   if (related.length === 0) return null;
 

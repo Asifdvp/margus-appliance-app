@@ -92,10 +92,11 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "A few simple habits can add years to your washing machine's lifespan. Here's what our technicians recommend to keep your washer running like new.",
     relatedServiceId: "washer-repair",
+    updated: "2026-11-27",
     content: [
       {
         paragraphs: [
-          "The average washing machine lasts 10–14 years with proper care. With a few simple habits, you can push that number higher — and avoid the most common breakdowns our technicians see every week.",
+          "Most washing machines last 10 to 13 years. What decides where a particular machine lands in that range has less to do with how carefully it is loaded than most maintenance advice suggests — and more to do with how long it keeps running after something has already started to go wrong.",
         ],
       },
       {
@@ -113,13 +114,26 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Clean the Drum Monthly",
         paragraphs: [
-          "Run a hot empty cycle with two cups of white vinegar once a month. This dissolves mineral deposits, kills bacteria, and removes detergent residue that can clog the pump filter.",
+          "Run a cleaning cycle about once a month, using a washer-cleaner tablet or the cleaning cycle your machine's manual specifies. It clears the detergent residue and mineral scale that otherwise collect in the drum, the dispenser drawer and the pump filter.",
+          "One common piece of advice we would steer you away from: monthly white vinegar. Acetic acid degrades the rubber door gasket, the hoses and the seals over time — the parts whose whole job is keeping water inside the machine.",
         ],
       },
       {
-        heading: "Level the Machine",
+        heading: "One Symptom, Two Repairs",
         paragraphs: [
-          "A washer that rocks or vibrates excessively is working against itself. Check that all four feet are firmly on the floor and adjust the leveling legs as needed. Uneven machines wear out bearings and suspension components far sooner than they should.",
+          "A Cleveland Heights washer came to us as a leak. The pressure hose had worked loose from the outer tub and water was running into the base of the machine. Reconnecting it would have stopped the leak that afternoon — but it would not have explained why a hose that had been attached for years came off.",
+          "The machine had been moving far more than it should during the spin cycle, and that movement had gradually worked the hose loose. The wear itself was ordinary. The leak was not — it happened because the machine kept running in that state for months.",
+          "That is the honest answer to what maintenance buys you. The first fault is usually one part. The second one is bought with the time between noticing the first and fixing it.",
+        ],
+        links: [
+          {
+            href: "/jobs/washer-repair-cleveland-heights",
+            label: "See the Cleveland Heights washer repair",
+          },
+          {
+            href: "/blog/washing-machine-banging-noise",
+            label: "Why a washer shakes during the spin cycle",
+          },
         ],
       },
       {
@@ -132,22 +146,28 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       {
-        id: "how-long-should-last",
-        question: "How long should a washing machine last?",
+        id: "how-long-washer-lasts",
+        question: "How long does a washing machine last?",
         answer:
-          "With proper care, most washing machines last 10 to 14 years. Overloading, using too much detergent, and skipping routine cleaning are the biggest factors that shorten that lifespan.",
+          "Ten to thirteen years is the usual range. A machine reaches the top of it by having a worn part replaced when it fails, not by never needing a repair — inlet valves, pumps and water-level sensors have their own service life no matter how carefully the machine is used.",
       },
       {
-        id: "how-often-clean",
-        question: "How often should I clean my washing machine?",
+        id: "overloading-washer",
+        question: "What happens if you overload a washing machine?",
         answer:
-          "Run a hot, empty cycle with two cups of white vinegar about once a month. This clears mineral deposits and detergent residue before they can clog the pump filter or cause odors.",
+          "The strain goes into the parts that hold the drum steady, and those wear faster. Once they are worn, the drum moves more than it should on every spin, and that movement is what works hoses and fittings loose. Overloading rarely breaks anything on its own — it shortens the life of the parts that keep everything in place.",
       },
       {
-        id: "overloading-damage",
-        question: "Does overloading a washing machine really cause damage?",
+        id: "vinegar-washing-machine",
+        question: "Should you use vinegar to clean a washing machine?",
         answer:
-          "Yes. Overloading puts excess strain on the motor, drum bearings, and suspension springs, which wear out those components far sooner than normal use would.",
+          "We would not. Acetic acid degrades the rubber door gasket, the hoses and the seals over time. A washer-cleaner tablet or the cleaning cycle in your manual handles residue and scale without that cost. If the machine already smells, the residue is usually sitting in the dispenser drawer and the pump filter rather than the drum, so clean those two by hand first.",
+      },
+      {
+        id: "cost-of-waiting",
+        question: "What does waiting on a washer repair cost?",
+        answer:
+          "Usually the difference between one part and two. The Cleveland Heights repair above is the ordinary version of it — worn parts that needed replacing anyway, plus a leak that only happened because the machine ran for months in that condition.",
       },
     ],
   },

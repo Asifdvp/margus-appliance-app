@@ -6,6 +6,12 @@ type Props = { post: BlogPost };
 
 export function BlogDetailHero({ post }: Props) {
   const coverSrc = post.coverImage ?? "/images/blogs/blog.webp";
+  // Structured dateModified without a visible counterpart is a mismatch
+  // Google discounts, so the "Updated" line renders whenever `updated` is set.
+  const updatedDisplay = post.updated?.split("-").reverse().join(".");
+  // `date` is stored DD.MM.YYYY for display; the datetime attribute has to be
+  // ISO or it is not a valid machine-readable date.
+  const publishedISO = post.date.split(".").reverse().join("-");
 
   return (
     <section
@@ -22,12 +28,22 @@ export function BlogDetailHero({ post }: Props) {
             >
               {post.title}
             </h1>
-            <time
-              dateTime={post.date}
-              className="font-manrope text-[12px] leading-4.5 md:text-[18px] md:leading-6 text-grey"
-            >
-              {post.date}
-            </time>
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+              <time
+                dateTime={publishedISO}
+                className="font-manrope text-[12px] leading-4.5 md:text-[18px] md:leading-6 text-grey"
+              >
+                {post.date}
+              </time>
+              {post.updated && (
+                <time
+                  dateTime={post.updated}
+                  className="font-manrope text-[12px] leading-4.5 md:text-[18px] md:leading-6 text-grey"
+                >
+                  · Updated {updatedDisplay}
+                </time>
+              )}
+            </div>
           </div>
 
           {/* Cover image */}
