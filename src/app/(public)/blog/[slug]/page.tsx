@@ -18,6 +18,11 @@ function toISODate(dateStr: string): string {
   return `${year}-${month}-${day}T00:00:00Z`;
 }
 
+// Without this, an unknown slug triggers a full on-demand render — which runs
+// the root layout, and therefore its SerpApi call — before reaching notFound().
+// Googlebot sends a lot of 404s here. /brands and /service-areas already set it.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }

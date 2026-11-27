@@ -33,6 +33,10 @@ function getGalleryImages(jobId: string): string[] {
     .map((f) => `/images/recent-jobs/${jobId}/${f}`);
 }
 
+// Unknown slugs must 404 from disk, not trigger an on-demand render that runs
+// the root layout's SerpApi call first. Googlebot still requests stale job URLs.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return RECENT_JOBS.map((job) => ({ slug: job.slug }));
 }

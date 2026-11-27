@@ -38,7 +38,19 @@ export async function getGoogleBusinessData(): Promise<GoogleBusinessData | null
   const url = `${SERPAPI_URL}?engine=google_maps_reviews&place_id=${encodeURIComponent(placeId)}&hl=en&api_key=${apiKey}`;
 
   try {
-    const res = await fetch(url, { next: { revalidate: REVALIDATE_SECONDS } });
+    const res = await fetch(url, {
+      next: { revalidate: REVALIDATE_SECONDS },
+      // SerpApi's google_maps_reviews engine is a live scrape and can take many
+      // seconds. With no signal, undici gives up only after 300s — and the root
+      // layout's generateMetadata awaits this call, so one slow response holds a
+      // whole page render open for that long. The build gets a longer budget so
+      // a slow call there doesn't quietly bake the fallback numbers into every
+      // page. A timeout throws, which the existing catch already turns into a
+      // null return and the static fallback.
+      signal: AbortSignal.timeout(
+        process.env.NEXT_PHASE === "phase-production-build" ? 15_000 : 2_500,
+      ),
+    });
     if (!res.ok) return null;
 
     const data = (await res.json()) as SerpApiReviewsResponse;

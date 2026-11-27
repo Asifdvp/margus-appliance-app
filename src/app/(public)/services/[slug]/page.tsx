@@ -8,6 +8,10 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+// Unknown slugs must 404 from disk, not trigger an on-demand render that runs
+// the root layout's SerpApi call first.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return SERVICES.map((service) => ({ slug: service.id }));
 }
