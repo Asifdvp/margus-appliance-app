@@ -13,7 +13,7 @@ export function Breadcrumbs({ items }: Props) {
     <div className="bg-white py-4 lg:py-5">
       <Container>
         <nav aria-label="Breadcrumb">
-          <ol className="inline-flex items-center gap-2 rounded-full bg-[#F6F6F6] px-4 py-2 lg:px-5 lg:py-2.5 font-manrope text-xs lg:text-sm">
+          <ol className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-2xl bg-[#F6F6F6] px-4 py-2 lg:px-5 lg:py-2.5 font-manrope text-xs lg:text-sm">
             {items.map((item, i) => {
               const isLast = i === items.length - 1;
               return (

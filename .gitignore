@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vendored tooling checkouts (separate git repos, not part of the app)
+/spec-kit/
+/agents/

@@ -8,6 +8,7 @@ import { JobDetailContent } from "@/sections/jobs/JobDetailContent";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { canonicalUrl } from "@/shared/lib/seo";
+import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -134,6 +135,13 @@ export default async function JobDetailPage({ params }: Props) {
           badges={job.badges}
         />
       </div>
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Recent Jobs", href: "/jobs" },
+          { label: `${job.service ?? "Appliance Repair"} in ${job.location ?? "Cleveland"}` },
+        ]}
+      />
       <JobDetailContent job={job} gallery={gallery} />
       <Blogs />
       <CTABanner />

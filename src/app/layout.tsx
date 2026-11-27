@@ -7,7 +7,7 @@ import { Footer } from "@/shared/components/Footer";
 import { Emergency } from "@/shared/components/Emergency";
 import { MobileStickyCTA } from "@/shared/components/MobileStickyCTA";
 import { BookingModalProvider } from "@/shared/components/book";
-import { CONTACT_INFO } from "@/constants";
+import { ADDRESS, CONTACT_INFO } from "@/constants";
 import { SITE_URL } from "@/shared/lib/seo";
 import { getRatingSummary } from "@/shared/lib/googleReviews";
 
@@ -57,15 +57,16 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-function buildOrganizationSchema(rating: number, reviewCount: number) {
+function buildOrganizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     "@id": "https://margusappliancerepair.com/#organization",
     name: "Margus Appliance Repair",
     legalName: "Margus Global LLC",
     url: "https://margusappliancerepair.com",
     logo: "https://margusappliancerepair.com/logo.webp",
+    image: "https://margusappliancerepair.com/og-image.png",
     telephone: CONTACT_INFO.phone,
     email: CONTACT_INFO.email,
     address: {
@@ -76,6 +77,22 @@ function buildOrganizationSchema(rating: number, reviewCount: number) {
       postalCode: "44134",
       addressCountry: "US",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 41.387389,
+      longitude: -81.685062,
+    },
+    hasMap: ADDRESS.mapsHref,
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+        ],
+        opens: "08:00",
+        closes: "18:00",
+      },
+    ],
     description:
       "Certified appliance repair services in Cleveland, Parma, and surrounding areas. Same-day service with transparent pricing and a 180-day parts & labor warranty.",
     areaServed: [
@@ -94,12 +111,6 @@ function buildOrganizationSchema(rating: number, reviewCount: number) {
     ].map((name) => ({ "@type": "City", name })),
     serviceType: "Appliance Repair",
     priceRange: "$$",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: rating,
-      reviewCount,
-      bestRating: 5,
-    },
     sameAs: [
       "https://www.facebook.com/share/19699YsqAt/?mibextid=wwXIfr",
       "https://www.instagram.com/margusappliancerepair",
@@ -117,8 +128,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { rating, reviewCount } = await getRatingSummary();
-  const organizationSchema = buildOrganizationSchema(rating, reviewCount);
+  const organizationSchema = buildOrganizationSchema();
 
   return (
     <html lang="en" className={`h-full antialiased ${manrope.variable} ${workSans.variable}`}>

@@ -19,6 +19,13 @@ export type Service = {
   closingHeading?: string;
   closingText?: string[];
   faqs?: FaqItem[];
+  /**
+   * ISO date this page's content was last genuinely rewritten, used as the
+   * sitemap's lastmod. Only set it when the body copy actually changed — a
+   * build-time date on every page is the fake freshness signal the sitemap
+   * comment warns about.
+   */
+  updated?: string;
 };
 export type Step = {
   id: string;
@@ -31,6 +38,8 @@ export type BlogSection = {
   paragraphs: string[];
   list?: string[];
   note?: string;
+  /** Trailing links, for sections that hand a topic off to the page that owns it. */
+  links?: { href: string; label: string }[];
 };
 
 export type BlogPost = {

@@ -5,8 +5,8 @@ import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 import { Blogs } from "@/sections/shared/Blogs";
 import { CTABanner } from "@/sections/shared/CTABanner";
 import { FAQ } from "@/sections/shared/FAQ";
+import { servicesFaqs } from "@/content/faq";
 import { SERVICES } from "@/content/services";
-import { faqs } from "@/content/faq";
 import { canonicalUrl } from "@/shared/lib/seo";
 
 export const metadata: Metadata = {
@@ -70,16 +70,6 @@ const servicesListSchema = {
   })),
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.question,
-    acceptedAnswer: { "@type": "Answer", text: f.answer },
-  })),
-};
-
 export default function ServicesPage() {
   return (
     <>
@@ -91,14 +81,10 @@ export default function ServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesListSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <ServicesHero />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
       <ServicesList />
-      <FAQ />
+      <FAQ items={servicesFaqs} heading="Pricing, Scheduling & Warranty" />
       <Blogs />
       <CTABanner />
     </>

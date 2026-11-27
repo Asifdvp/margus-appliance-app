@@ -32,3 +32,27 @@ export const faqs: FaqItem[] = [
       "Every completed repair includes a 180-day parts & labor warranty. We also provide upfront pricing and complete most repairs in a single visit.",
   },
 ];
+
+// Hub questions for /services — how a repair is priced, scheduled and
+// guaranteed. Appliance-specific questions belong on the individual service
+// pages, and the five general ones above are the home page's.
+export const servicesFaqs: FaqItem[] = [
+  {
+    id: "which-appliances",
+    question: "Which appliances do you repair?",
+    answer:
+      "Refrigerators, freezers, ice makers, washers, dryers, dishwashers, ovens, and stoves and cooktops — gas and electric, freestanding and built-in. Each appliance has its own page covering the faults we see most often on it.",
+  },
+  {
+    id: "repair-cost",
+    question: "How much does appliance repair cost?",
+    answer:
+      "Most of the cost is the part. The $89 diagnostic identifies which part failed and what the repair will run, and it comes off the bill when you go ahead. You get that price before any work starts.",
+  },
+  {
+    id: "not-worth-repairing",
+    question: "What if my appliance isn't worth repairing?",
+    answer:
+      "We'll say so. The diagnosis gives you the actual fault and the actual cost, so the decision is based on your machine rather than a rule of thumb. If you decide not to go ahead, you pay the $89 diagnostic and nothing else.",
+  },
+];

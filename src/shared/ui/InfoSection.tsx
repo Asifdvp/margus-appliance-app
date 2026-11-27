@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { BlogSection } from "@/types";
 
 type Props = { section: BlogSection };
@@ -34,6 +35,19 @@ export function InfoSection({ section }: Props) {
         <p className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 text-secondary italic">
           {section.note}
         </p>
+      )}
+      {section.links && (
+        <div className="flex flex-wrap gap-x-4 gap-y-1">
+          {section.links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-manrope text-xs md:text-base leading-4.5 md:leading-6 font-semibold text-brand hover:underline"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
       )}
     </div>
   );
